@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="четверг, 31 декабря 2009 г. в 14:45:52
+CSS frameworks это набор подходов по упорядочиванию кода описывающего внешний вид страницы (representation) с учётом смысла содержания (семантики) для повышения эффективности.Кроме ускорения работы побочные эффекты — стандартизация и как результат плюсы в коммандной работе, более простой, понятный и единый код. Хотя тема затрагивает больше дизайнеров и верстальщиков которые занимаются созданием css&#43;html страниц из psd -макетов, тут и backend-программисты найдут для себя что-нибудь интересное.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/frontend/css/css-%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA%D0%B8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/frontend/css/css-%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA%D0%B8/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>четверг, 31 декабря 2009 г. в 14:45:52</p>
+<p><strong>CSS frameworks</strong> это <em>набор подходов</em> по упорядочиванию кода описывающего внешний вид страницы (<em>representation</em>) с учётом смысла содержания (семантики) для повышения эффективности.Кроме ускорения работы побочные эффекты — стандартизация и как результат плюсы в коммандной работе, более простой, понятный и единый код. Хотя тема затрагивает больше дизайнеров и верстальщиков которые занимаются созданием css+html страниц из psd -макетов, тут и backend-программисты найдут для себя что-нибудь интересное.</p>
+<h3 id="выключатели">Выключатели<a hidden class="anchor" aria-hidden="true" href="#выключатели">#</a></h3>
+<p><strong>Reset</strong>- код по обнулению стандартных значений браузера нужен для кроссбраузерного внешнего вида - раз браузеры не хотят договориться, то прикажем им сразу обнулить отступы, и некоторые значения по умолчанию. Самые популярные:</p>
+<ul>
+<li>
+<p><a href="http://meyerweb.com/eric/tools/css/reset/">Meyer&rsquo;s css reset</a> - обнуляет фокус, осторожно</p>
+</li>
+<li>
+<p><a href="http://developer.yahoo.com/yui/reset/">YUI css reset</a> - обнуляет все тексты, даже h1 и strong</p>
+</li>
+</ul>
+<h3 id="сетки">Сетки<a hidden class="anchor" aria-hidden="true" href="#сетки">#</a></h3>
+<p><strong>Grids</strong> нужны для облегчения восприятия. Человеку нравится видеть порядок в парках и дорогах, зданиях и страничках в интернете. Вертикальные или горизонтальные линии с равномерными отступами - основа сетки. Обычно вёрстка либо фиксированная (px), либо динамическая-резиновая (%, em). Смешанные достаточно сложно делать.</p>
+<p>Из вертикальных сеток существуют:</p>
+<ul>
+<li>
+<p><a href="http://www.blueprintcss.org/">Blueprint</a> - Полотно 950px с вертикальной сеткой. Последние элементы имеют класс last</p>
+</li>
+<li>
+<p><a href="http://960.gs/">960 grid system</a> - Первые и последние элементы alpha и omega классы соответсвенно.</p>
+</li>
+<li>
+<p><a href="http://developer.yahoo.com/yui/grids/">YUI grids</a> - наглядный пример как не стоит называть классы</p>
+</li>
+<li>
+<p><a href="http://www.yaml.de/en/">YAML</a></p>
+</li>
+</ul>
+<p>В целом все эти сетки говно, потому что несемантичны и нужны ленивым верстальщикам что-бы писать меньше кода - вместо style=&ldquo;width:960px;&rdquo; - class=&ldquo;block-24&rdquo;</p>
+<h3 id="чем-дальше-в-лес">Чем дальше в лес<a hidden class="anchor" aria-hidden="true" href="#чем-дальше-в-лес">#</a></h3>
+<p>Генераторы css-кода пишутся на серверных языках ради нововведений от которых отказываются продвигающие стандарт, а именно - переменных, логических операций, вложённости и питоновского стиля в отступах. Дополнительно библиотеки занимаются кешированием и компрессией. Мне известны следующие:</p>
+<ul>
+<li>Java - Google GWT</li>
+<li>Ruby - Sass и Compass</li>
+<li>PHP - <a href="http://code.google.com/p/extcss/">extcss</a>, <a href="http://wiki.github.com/anthonyshort/csscaffold">scaffold</a></li>
+<li>Python - <a href="http://sandbox.pocoo.org/clevercss/">cleverCSS</a></li>
+</ul>
+<p>Но зачем останавливаться только на этом? Можно ведь и вместо html писать иерархии в питоновском стиле -<a href="http://haml-lang.com/">haml</a>. Это уже не xml конечно, но фантазия уже начинает бурлить.. тут не возникнет проблем с потерянными и не закрытыми тэгами. Но вернёмся к внешнему слою.</p>
+<h3 id="самоорганизация">Самоорганизация<a hidden class="anchor" aria-hidden="true" href="#самоорганизация">#</a></h3>
+<p>Как вы организовываете стили в своей папке? В идеале я вижу примерно такую картинку</p>
+<ul>
+<li>
+<p>Отдельные файлы под необычные экраны - print, projector, pda/iphone</p>
+</li>
+<li>
+<p>Отдельные файлы-костыли под не строгие w3c браузеры и оси. Грабли для IE6, Mac, pngfixы, закруглённые уголки и тп.</p>
+</li>
+<li>
+<p>Один сгенерированный screen.css для открытой страницы только с тем что необходимо (типа css autoload)</p>
+<ul>
+<li>
+<p>Reset</p>
+</li>
+<li>
+<p>Layout - основная структура страницы. Ключевые слова классов - menu, content, article, search, breadcrumbs, comments, feedback, navigation, contact, paginator, gallery, news, login. По возможности по-минимому использовать нефункциональные &ldquo;sidebar, header, footer, left, right&rdquo; и служебные &ldquo;wrapper, container, inner, outer&rdquo;</p>
+</li>
+<li>
+<p>Иконки и флаги, наверняка спрайт</p>
+</li>
+<li>
+<p>Кнопки и табы, тоже спрайт</p>
+</li>
+<li>
+<p>Skin/Theme - в случае каких-то динамических стилей (в зависимости от сезона, группы пользователя, идентификации продукта) можно разным цветом раскрашивать элементы и имеет смысл выделить цвет в отдельный файл</p>
+</li>
+<li>
+<p>Content - основная составляющая статьи. Включает заголовки, списки, таблицы перечисления, <strong>формы</strong> ввода, обводы картинок, цитат и тп.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Левые библиотеки которые приходится порой подправлять, типа jquery ui, thickbox, fancybox, lightbox&hellip;</p>
+</li>
+</ul>
+<p><a href="http://www.contentwithstyle.co.uk/content/modular-css">Некоторые</a> предпочитают отдельно выделять ещё и типографику. Я не такой профессионал в вёрстке, может это и имеет смысл, но по-моему это излишне.</p>
+<p><img loading="lazy" src="img/Pasted%20image%2020241019192626.png" alt=""  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

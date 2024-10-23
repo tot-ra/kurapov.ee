@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="четверг, 29 сентября 2016 г. в 16:46:22
+В качестве основы, будем использовать CentOS 6.5
+
+Устанавливаем последние Virtualbox и Vagrant
+Создаём новую виртуалку в virtualbox на основе федоры, поставив 2ГБ RAM и 20 GB под жёсткий диск
+Скачиваем CentOS-6.5-x86_64-LiveCD.iso с http://mirror.nsc.liu.se/centos-store/6.5/isos/x86_64/. Он включает мгновенный бут (загрузчик), recovery и установку
+Ставим root&rsquo;у пароль vagrant (потом сменить можно)
+Добавляем стандартного пользователя vagrant:vagrant
+
+Обновляем систему:
+#dont update unless you want CentOS 6.8 upgrade
+#yum update -y
+
+#install basic tools
+yum install -y htop nano
+
+#reboot for kernel updates to take place
+shutdown -r now
+Систему надо настроить для вагранта, если мы хотим её автоматически выкатывать под разные проекты..">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/backend/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7-%D0%BE%D1%81-%D0%B4%D0%BB%D1%8F-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/backend/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7-%D0%BE%D1%81-%D0%B4%D0%BB%D1%8F-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>четверг, 29 сентября 2016 г. в 16:46:22</p>
+<p>В качестве основы, будем использовать CentOS 6.5</p>
+<ul>
+<li>Устанавливаем последние Virtualbox и <a href="https://www.vagrantup.com/downloads.html">Vagrant</a></li>
+<li>Создаём новую виртуалку в virtualbox на основе федоры, поставив 2ГБ RAM и 20 GB под жёсткий диск</li>
+<li>Скачиваем CentOS-6.5-x86_64-LiveCD.iso с <a href="http://mirror.nsc.liu.se/centos-store/6.5/isos/x86_64/">http://mirror.nsc.liu.se/centos-store/6.5/isos/x86_64/</a>. Он включает мгновенный бут (загрузчик), recovery и установку</li>
+<li>Ставим root&rsquo;у пароль vagrant (потом сменить можно)</li>
+<li>Добавляем стандартного пользователя vagrant:vagrant</li>
+</ul>
+<p>Обновляем систему:</p>
+<pre tabindex="0"><code>#dont update unless you want CentOS 6.8 upgrade
+#yum update -y
+
+#install basic tools
+yum install -y htop nano
+
+#reboot for kernel updates to take place
+shutdown -r now
+</code></pre><p>Систему надо <a href="https://blog.engineyard.com/2014/building-a-vagrant-box">настроить для вагранта</a>, если мы хотим её автоматически выкатывать под разные проекты..</p>
+<p>Сначала - настроить пользователя</p>
+<pre tabindex="0"><code>sudo visudo -f /etc/sudoers.d/vagrant
+#adding to this file:
+vagrant ALL(ALL) NOPASSWD:ALL
+
+#setup vagrant public key access
+mkdir -p /home/vagrant/.ssh
+chmod 0700 /home/vagrant/.ssh
+wget --no-check-certificate \
+    https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub \
+    -O /home/vagrant/.ssh/authorized_keys
+chmod 0600 /home/vagrant/.ssh/authorized_keys
+chown -R vagrant /home/vagrant/.ssh
+
+nano /etc/ssh/sshd_config
+#uncomment  AuthorizedKeysFile %h/.ssh/authorized_keys
+
+#enable public key authentication
+service sshd restart
+
+#start ssh on reboot
+chkconfig sshd on
+
+visudo #comment out requiretty option
+</code></pre><p>Теперь для вагранта нужны Guest Additions. Это iso файл который у virtual box&rsquo;а уже есть. Надо смонтировать его на диск и запустить установку пакетов</p>
+<pre tabindex="0"><code>yum install -y gcc build-essential perl kernel-devel
+
+#mount VBoxGuestAdditions.iso on CD in Virtualbox and run these:
+sudo mount /dev/cdrom /mnt 
+cd /mnt
+sudo ./VBoxLinuxAdditions.run
+
+echo export KERN_DIR=/usr/src/kernels/`uname -r`/ &gt;&gt; ~/.bashrc
+</code></pre><p>Теперь, у вас вероятно стоит надстройка для безопасности - SELinux. Если вы будете разрабатывать локально, то лучше его отключить</p>
+<pre tabindex="0"><code>setenforce Permissive
+nano /etc/sysconfig/selinux
+#set to:
+#SELINUX=disabled
+</code></pre><p>Теперь когда всё готово, выходим из виртуалки и упаковываем её для vagrant&rsquo;а. Для этого надо зайти в папку где лежит виртуалка и запустить комманду которая сгенерит package.box файлик на который в дальнейшем будет ссылаться Vagrantfile в нашем проекте:</p>
+<pre tabindex="0"><code>#package box and move it to desktop
+vagrant package --base CentosEmpty &amp;&amp; mv package.box ~/Desktop/
+
+#clean vagrant cache
+vagrant global-status --prune
+
+#cd to your project that references new box from desktop
+vagrant up
+</code></pre><p>См также:</p>
+<p><a href="http://williamwalker.me/blog/creating-a-custom-vagrant-box.html">http://williamwalker.me/blog/creating-a-custom-vagrant-box.html</a><br>
+<a href="https://www.vagrantup.com/docs/boxes/base.html">https://www.vagrantup.com/docs/boxes/base.html</a><br>
+<a href="http://aruizca.com/steps-to-create-a-vagrant-base-box-with-ubuntu-14-04-desktop-gui-and-virtualbox/">http://aruizca.com/steps-to-create-a-vagrant-base-box-with-ubuntu-14-04-desktop-gui-and-virtualbox/</a><a href="https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck"></a><br>
+<a href="https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck">https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck</a></p>
+<p><a href="http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only">http://unix.stackexchange.com/questions/18435/how-to-install-virtualbox-guest-additions-on-centos-via-command-line-only</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>_Posts on Artjom Kurapov blog</title>
+    <link>http://localhost:1313/_posts/</link>
+    <description>Recent content in _Posts on Artjom Kurapov blog</description>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>ru-RU</language>
+    <atom:link href="http://localhost:1313/_posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-05-24-latitude-59/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-05-24-latitude-59/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/live/o0R3yNvUGXk&#34;&gt;https://www.youtube.com/live/o0R3yNvUGXk&lt;/a&gt;
+&lt;a href=&#34;https://www.youtube.com/live/3vKvO7kIR74&#34;&gt;https://www.youtube.com/live/3vKvO7kIR74&lt;/a&gt;
+&lt;a href=&#34;https://www.youtube.com/live/jlp0uX0R_jE&#34;&gt;https://www.youtube.com/live/jlp0uX0R_jE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/ACoAAABbt4YBzWvw138zUp7KV4x5mEXcF12j_NM&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/andreskytt/&#34;&gt;Andres Kütt&lt;/a&gt; talking about bees 🐝 and AI on &lt;a href=&#34;https://www.linkedin.com/feed/hashtag/?keywords=latitude59&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7199833543647125504&#34;&gt;hashtag#Latitude59&lt;/a&gt; was my favourite, funny and bold part 😁&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/feed/hashtag/?keywords=latitude59&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7199334544850747392&#34;&gt;#latitude59&lt;/a&gt; is a hit, so many beautiful people&lt;/p&gt;
+&lt;p&gt;**&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224826.png&#34; alt=&#34;&#34;  /&gt;
+
+**
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224718.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224727.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224733.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224740.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224746.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224751.png&#34; alt=&#34;&#34;  /&gt;
+
+&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019224757.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-09-25-tallinnjs-meetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-09-25-tallinnjs-meetup/</guid>
+      <description>&lt;p&gt;Attended TallinnJS meetup organized by Stefano Amorelli at &lt;a href=&#34;https://www.linkedin.com/company/lift99/&#34;&gt;LIFT99&lt;/a&gt;. Won ticket to &lt;a href=&#34;https://www.linkedin.com/company/digitconf/&#34;&gt;Digit Conference&lt;/a&gt;. Almost won a hoodie from &lt;a href=&#34;https://www.linkedin.com/company/printify/&#34;&gt;Printify&lt;/a&gt; but figured that googling an answer was not fair 🤐&lt;/p&gt;
+&lt;p&gt;First talk was by &lt;a href=&#34;https://www.linkedin.com/in/ACoAACGf2uYB0JHH8ZSvNObEg2K4h5QlRCXAy4o&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/dmbaranov-io/&#34;&gt;Dmitrii Baranov&lt;/a&gt; about telegram bots using telegraf.js
+&lt;a href=&#34;https://telegraf.js.org/#md:introduction&#34;&gt;telegraf.js - v4.16.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Second talk was by Jan Johannes about workerd, a js runtime&lt;br&gt;
+&lt;a href=&#34;https://github.com/cloudflare/workerd/&#34;&gt;GitHub - cloudflare/workerd: The JavaScript / Wasm runtime that powers Cloudflare Workers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I think having a bot is a nice interface extension to any app, in addition to the usual web, mobile, desktop and cli apps. Telegram, discord, slack bots can improve support reaction time, push app alerting/notifications and more. I wish telegraf supported text and video streaming though.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-10-01-digit-2024-tartu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-01-digit-2024-tartu/</guid>
+      <description>&lt;p&gt;At &lt;a href=&#34;https://www.linkedin.com/company/digitconf/&#34;&gt;Digit Conference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/ACoAAATpyCYBNvTwrXbpyTzIbbsww6RGFgAqXfs&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/jaroslavjudin/&#34;&gt;Jaroslav Judin&lt;/a&gt; expanded on prior credit-card anti-fraud talk that &lt;a href=&#34;https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/elizaveta-lebedeva/&#34;&gt;Elizaveta Lebedeva&lt;/a&gt; did. This time focus was on redis. Sandbox - &lt;a href=&#34;https://lnkd.in/d78gmwZm&#34;&gt;https://lnkd.in/d78gmwZm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Swedbank talk by &lt;a href=&#34;https://www.linkedin.com/in/ACoAAC9rk-cBmz6tHVVW51iOplqkfSCUaBOinAQ&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/lehar-oha-8875301a2/&#34;&gt;Lehar Oha&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.linkedin.com/in/ACoAAAin2SgB0uwWuZhgFvq0WQoYVN_4UOhjSKg&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/markus-reimeg%C3%A5rd-12077240/&#34;&gt;Markus Reimegård&lt;/a&gt; was somewhat high-level about adding AI (similar to what &lt;a href=&#34;https://www.linkedin.com/company/clarifai/&#34;&gt;Clarifai&lt;/a&gt; does as a service). As I understood, pdf parsing for RAG might be hard, just to get right embeddings. But I hope I will be able to ask Swedbank GPT about my contracts (leasing or insurance) for preliminary analysis. Just add a notice that it&amp;rsquo;s an automated tool doing an analysis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-10-02-devclub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-02-devclub/</guid>
+      <description>&lt;p&gt;api gateway -
+TDD - Andrei Solntsev
+discussion on go with &lt;a href=&#34;https://www.linkedin.com/in/aleksandr-kasianov-84701888/&#34;&gt;Aleksandr Kasianov&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-10-04-pipedrive-meetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-04-pipedrive-meetup/</guid>
+      <description>&lt;p&gt;Listening to &lt;a href=&#34;https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/elizaveta-lebedeva/&#34;&gt;Elizaveta Lebedeva&lt;/a&gt; talk on fraud detection reminded me of similar talk at &lt;a href=&#34;https://www.linkedin.com/company/wiseaccount/&#34;&gt;Wise&lt;/a&gt; couple of years ago.&lt;/p&gt;
+&lt;p&gt;Maybe such anomalies and trends could be shared? An idea for a fraud/security startup 😉&lt;/p&gt;
+&lt;p&gt;Applied Machine Learning at Scale // a meetup by Pipedrive and PyData&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/pipedrive-meetups/events/302958983&#34;&gt;Login to Meetup | Meetup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019230055.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019230121.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019230127.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019230134.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;img/Pasted%20image%2020241019230139.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-10-12-katana-meetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-12-katana-meetup/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/company/katanamrp/&#34;&gt;Katana Cloud Inventory&lt;/a&gt; &amp;amp; ProductTank (&lt;a href=&#34;https://www.linkedin.com/in/ACoAACIXjrkBdR3BQpSC8VMMc_L4p3AMsA42kpc&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/annaalbertpm/&#34;&gt;Anna Albert&lt;/a&gt; + &lt;a href=&#34;https://www.linkedin.com/in/ACoAABStCPoBW7NsM8NtAnPJ2rLLkwbVuXRiPTQ&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/olesia-kucheryk/&#34;&gt;Olesia Kucheryk&lt;/a&gt;) hosting AI meetup ( &lt;a href=&#34;https://lnkd.in/dhUbzDE6&#34;&gt;https://lnkd.in/dhUbzDE6&lt;/a&gt; )&lt;/p&gt;
+&lt;p&gt;Got to listen about &lt;a href=&#34;http://opengenie.ai/&#34;&gt;opengenie.ai&lt;/a&gt;, Align, Databricks usage to analyze company data by auto generating SQL, summarization of support, customer research, lead/demo calls. Thx to &lt;a href=&#34;https://www.linkedin.com/in/ACoAAB4drxsB-m6Cy8CAYns3FTEuZtu7Oiv8Gi4&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/andres-aava-aa3264121/&#34;&gt;Andres Aava&lt;/a&gt;. Reminded me a bit about &lt;a href=&#34;https://www.linkedin.com/company/gosupersimple/&#34;&gt;Supersimple&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Second talk was about EU AI Act by &lt;a href=&#34;https://www.linkedin.com/in/ACoAABqQSWMBZBKHx4To7B7r-ztnuTraekdY_ws&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.linkedin.com/in/kretepaal/&#34;&gt;Krete Paal&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://lnkd.in/dgDZEGcd&#34;&gt;https://lnkd.in/dgDZEGcd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Personally, I see more and more risks with AI getting used. Privacy of LLM calls,&lt;br&gt;
+AI bots in youtube comments, bots creating meaningless PRs (looking at dependabot), creating fake and hallucinated issues (like CURL incident - &lt;a href=&#34;https://lnkd.in/dUmR3ucK&#34;&gt;https://lnkd.in/dUmR3ucK&lt;/a&gt; ) not to mention health ( &lt;a href=&#34;https://lnkd.in/dCkAPVVE&#34;&gt;https://lnkd.in/dCkAPVVE&lt;/a&gt; )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_posts/2024-10-18-asuurkeraamika/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-18-asuurkeraamika/</guid>
+      <description>&lt;p&gt;Are you planning a team building event and bored of bowling and billiard?&lt;/p&gt;
+&lt;p&gt;Try pottery. Clay is like playdough and looks simple, but it&amp;rsquo;s like programming and can reveal personal taste. You have a product vision, tight deadlines and extra features you want to include.&lt;/p&gt;
+&lt;p&gt;You can go straight in and fail fast to quickly recover (like I did) . Or you can plan ahead, cut different parts and assemble it like a puzzle, waterfall-style. Naturally you must be aware of tools and integration tricks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/_posts/2024-10-21-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_posts/2024-10-21-test/</guid>
+      <description>&lt;h2 id=&#34;test&#34;&gt;test&lt;/h2&gt;
+&lt;p&gt;test&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

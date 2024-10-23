@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Ruses | Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Ruses - Artjom Kurapov blog">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/rus/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Ruses
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>пятница, 15 февраля 2008 г. в 11:32:11
+Встала задача экспортирования данных из таблицы Firma в качестве строки. Если бы дело было в одноразовом копировании то проблемы особой и не-было бы - всегда есть клиентские программы, которые экспортируют хоть в Excel, хоть в текстовый файл какие угодно колонки. Но мне необходимо было это сделать при помощи SQL, потому что прямого доступа к live-базе данных у меня нет, а размер таблицы мне неизвестен.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/postgres/%D1%8D%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8F-create-view-%D0%B8-aggregate-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sphinx - полнотекстовый поисковик по Mysql и Postgre, отличающийся скоростью от своих конкурентов, представленный на РИТ-2007 Петром Зайцевым . Использовать его имеет смысл только на больших проектах, где объем данных вынуждает уже использовать выделенный сервер.Sphinx - полнотекстовый поисковик по Mysql и Postgre, отличающийся скоростью от своих конкурентов, представленный на [РИТ-2007](ht
+Обычный поиск как известно очень простой и очень медленный (условно 1.2 МБ/сек)
+SELECT * FROM my_table WHERE my_col LIKE &#39;%word%&#39;
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/sphinx/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>вторник, 7 сентября 2010 г. в 14:35:11
+MongoDB - очередное веяние моды в веб-разработке, когда хранение данных заранее планируется таким огромным, что необходимо их распределение на несколько серверов с помощью шардирования. Поизучаем же непростой синтаксис агрегирования данных в mongo &#43; php
+Уникальное поле Итак допустим есть коллекция объектов с повторяющимися полями, а нам хочется вытянуть только уникальные поля. В MySQL это делает DISTINCT(поле), здесь же надо запустить комманду которая вернёт только поле person_id.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D0%B0%D0%B3%D1%80%D0%B5%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-%D0%B2-mongodb-&#43;-php/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>четверг, 24 мая 2007 г. в 15:14:19
+Foreign keys это движущая сила реляционных БД. Выборка по нескольким таблицам по прежнему формируется при помощи JOIN-конструкций, но FK создаёт логические связи между таблицами, понятные человеку. Очень полезно в больших проектах, где уследить за всеми связями нелегко, а такие программки как MySQL Workbench хорошо могут эти связи показать.
+Создание связей начинается с создания тех таблиц, на которые надо ссылаться. Дальше в ссылающихся таблицах делается поле типа refID. Теперь создаётся уникальный FK который и связывает поля. Ключ может иметь дополнительные свойства, например каскадное удаление или update.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-foreign-keys/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>четверг, 27 декабря 2012 г. в 19:24:15
+(копия статьи Александра Макарова )
+В MySQL есть два расширения, которые позволяют атомарно вставить или обновить запись. Годятся они для штук с довольно высокой нагрузкой, когда без блокировок не работает типичный сценарий:
+Выбрать запись. Если выбралась — обновить. Если пусто — вставить.
+REPLACE INTO vote SET user_id = 13, object_id = 42, value = 7 INSERT INTO vote SET user_id = 13, object_id = 42, value = 7 ON DUPLICATE KEY UPDATE value = 7 ...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D1%8F%D0%B4%D0%B0-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86-mysql/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>воскресенье, 9 декабря 2007 г. в 14:06:28
+Редко когда, но всё же приходится делать в базе данных одиночные запросы по перемещению существующих данных из одной таблицы в другую. И если с добавлением рядов используя INSERT проблем возникает мало, то с обновлением существующих таблиц у меня возникла трудность. А именно - была старая таблица Invision Powerboard форума, и имелась новая таблица пользователей, с одинаковыми пользователями.
+Хотелось перенести поля из одной таблицы в другую. В самом худшем случае можно было написать цикл в php, где ряд за рядом делался бы одиночный UPDATE. Но поскольку лень - лучшая мотивация человечества к прогрессу, то по принципу наименьшего сопротивления пришлось обойтись таким запросом..
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D0%BC%D0%B5%D0%B6%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-update/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>вторник, 8 января 2008 г. в 14:18:38
+Редко когда приходится делать перечисление всех таблиц, колонок, прав - при разработке это всё делает клиентская программа. Но когда разработка ведётся удалённо и вы не видите разниц в продублированных базах данных в принципе безопасности, то что-бы сдвинуться с мёртвой точки гадания в чём же дело, почему не поступают данные, надо делать элементарные запросы о структуре таблиц и владений привилегиями.
+Ключём являются тн. системные таблицы, которые описывают остальные и самих себя. Из-за отсутсвия таких процедур, разные движки реализовали по разному доступ к таким таблицам.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D0%B2-%D0%B1%D0%B0%D0%B7%D0%B0%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>четверг, 8 мая 2008 г. в 19:43:15
+При разработке сайтов с международной аудиторией надо не только иметь списки стран и языков, но и учитывать их взаимосвязи, форматы, временные зоны. Я уже не говорю про трудности перевода и силлогизмы которые могут быть неправильно истолкованы публикой (например blue ? голубой). Но для простоты условимся что настала эпоха тотального глобализма и можно запросто скачать такие универсальные списки в SQL-формате как..
+Страны В основном этим занимается стандарт ISO3166-1. Проблем с нормализацией таблицы стран несколько.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%81%D1%82%D1%80%D0%B0%D0%BD-iso-%D0%B8-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>пятница, 9 ноября 2007 г. в 15:33:54
+Очень часто всплывает тема поиска дубликатов в таблицах, особенно когда надо установить UNIQUE constraint. Всегда можно обойтись таким запросом..
+SELECT login, COUNT(login) AS cnt FROM sys_users GROUP BY login HAVING ( COUNT(login) &gt; 1 ) И теперь..
+DELETE t1 FROM sys_users t1, sys_users t2 WHERE t1.login=t2.login AND t1.ID &gt; t2.ID Ещё один красивый и лаконичный способ..
+ALTER IGNORE TABLE sys_users ADD UNIQUE INDEX(login); Читайте также:
+Синтаксис DELETE в mysql </p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2-mysql/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>четверг, 11 октября 2007 г. в 16:32:56
+С СУБД сталкивается практически каждый разработчик, начиная как правило с PhpMyAdmin, PhpPgAdmin, простейших серверных скриптов, постепенно переходя на более тяжёлое но удобное ПО, которое я тут постараюсь описать.
+Maestro group SQL Maestro это компания, производящая административные программы баз данных. Практическая реализация очень схожа с SQLyog, т.е. так же позволяет легко управлять таблицами, данными, базами, схемами, функциями, тригеррами и тп. В плюс - возможность составление диаграммы структур. В комплекте есть поддержка MySQL, Postgre, Oracle, MS SQL server, Firebird, Max DB. В последних версиях есть HTTP-туннелирование. В минусы - порой выпадают ошибки нехватки памяти.
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/rus/tech/backend/db/%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%83%D0%B1%D0%B4/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/rus/page/10/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/rus/page/12/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

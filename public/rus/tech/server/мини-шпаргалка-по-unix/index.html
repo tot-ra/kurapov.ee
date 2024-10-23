@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="воскресенье, 11 сентября 2011 г. в 18:56:05
+С  юниксом я до некоторых пор был в достаточно прохладных отношениях - мы встречались довольно редко, каждый раз у него были новые дистрибутивы и формы. То в университете Солярис удивлял своим UI, то на хостинге каком-то надо покопаться через ssh. В какой-то момент я стал пристальней посматривать за его возможностями, удивляясь популярности. Наконец я поставил все основные дистрибутивы на виртуальные машины. Ленивый Slackware сопротивлялся больше всех. На этом казалось можно было бы и поставить точку в нашем романе. Но теперь я работаю на маке и приходится разбираться основательней. Основное преимущество *никсов это конечно консоль и гибкая обработка файлов и текста из неё.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/server/%D0%BC%D0%B8%D0%BD%D0%B8-%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-unix/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/server/%D0%BC%D0%B8%D0%BD%D0%B8-%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-unix/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>воскресенье, 11 сентября 2011 г. в 18:56:05</p>
+<p>С  юниксом я до некоторых пор был в достаточно прохладных отношениях - мы встречались довольно редко, каждый раз у него были новые дистрибутивы и формы. То в университете Солярис удивлял своим UI, то на хостинге каком-то надо покопаться через ssh. В какой-то момент я стал пристальней посматривать за его возможностями, удивляясь популярности. Наконец я поставил все основные дистрибутивы на виртуальные машины. Ленивый Slackware сопротивлялся больше всех. На этом казалось можно было бы и поставить точку в нашем романе. Но теперь я работаю на маке и приходится разбираться основательней. Основное преимущество *никсов это конечно консоль и гибкая обработка файлов и текста из неё.</p>
+<p>Итак, есть <a href="http://bhami.com/rosetta.html">много основанных на unix</a> систем - Solaris, MacOSX, FreeBSD и в частности Linux, у которого основные дистрибутивы: Debian - Ubuntu, Fedora - Red Hat, Slackware - Suse, Gentoo, Mandriva</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241020175519.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241020175524.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241020175529.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241020175534.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241020175539.png" alt=""  />
+</p>
+<p>Первое с чем столкнётся пользователь терминала это его интерфейс, hotkeys для быстрой работы</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tab</td>
+          <td>Автодополнение пути (для папок и файлов) при навигации</td>
+      </tr>
+      <tr>
+          <td>↑</td>
+          <td>Предыдущая комманда</td>
+      </tr>
+      <tr>
+          <td>CtrlC</td>
+          <td>Убить исполняемую программу (Cancel)</td>
+      </tr>
+      <tr>
+          <td>CtrlZ</td>
+          <td>Переключить вид из программы. Комманды fg, jobs, bg помогают управлять контекстом</td>
+      </tr>
+      <tr>
+          <td>Q</td>
+          <td>Выход из некоторых программ (как например man - помощи)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="навигация">Навигация<a hidden class="anchor" aria-hidden="true" href="#навигация">#</a></h3>
+<p>Теперь основная часть - ходить по файловой системе, будь то локальной или удалённой.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ls</td>
+          <td>список файлов и папок</td>
+      </tr>
+      <tr>
+          <td>cd</td>
+          <td>перейти в папку</td>
+      </tr>
+      <tr>
+          <td>pwd</td>
+          <td>узнать в какой папке я нахожусь</td>
+      </tr>
+      <tr>
+          <td>tail</td>
+          <td>быстрый просмотр конца файла (полезно для логов)</td>
+      </tr>
+      <tr>
+          <td>cat</td>
+          <td>быстрый просмотр содержимого файла</td>
+      </tr>
+      <tr>
+          <td>tree -d -L 2</td>
+          <td>двух уровневое дерево папок</td>
+      </tr>
+      <tr>
+          <td>find . -name *txt</td>
+          <td>поиск файла по имени</td>
+      </tr>
+      <tr>
+          <td>grep &ldquo;needle&rdquo; file.txt</td>
+          <td>поиск по паттерну</td>
+      </tr>
+      <tr>
+          <td>whoami</td>
+          <td>узнать какой я пользователь</td>
+      </tr>
+      <tr>
+          <td>uname -a</td>
+          <td>узнать что за ядро (и может дистрибутив)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="файловая-структура">Файловая структура<a hidden class="anchor" aria-hidden="true" href="#файловая-структура">#</a></h3>
+<p>Что-бы ходить по файловой системе, надо понимать по какому принципу дерево построено, и хотя в разных дистрибутивах оно немного отличается, стандарт FSSTND такой..</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>FSSTND Стандарт</td>
+          <td>Suse 11</td>
+          <td>Mac OS 10.7</td>
+          <td>Описание</td>
+      </tr>
+      <tr>
+          <td>boot</td>
+          <td></td>
+          <td>mach_kernel</td>
+          <td>Файлы загрузчика. Lilo и образ ядра</td>
+      </tr>
+      <tr>
+          <td>tmp</td>
+          <td></td>
+          <td>private/tmp</td>
+          <td>Временные фейлы для бута. Остальным - в /var/tmp</td>
+      </tr>
+      <tr>
+          <td>sbin</td>
+          <td></td>
+          <td></td>
+          <td>Системные комманды нужные при буте</td>
+      </tr>
+      <tr>
+          <td>bin</td>
+          <td></td>
+          <td></td>
+          <td>Пользовательские комманды нужные при буте</td>
+      </tr>
+      <tr>
+          <td>proc</td>
+          <td></td>
+          <td></td>
+          <td>Виртуальная папка настроек и процессов ядра</td>
+      </tr>
+      <tr>
+          <td>dev</td>
+          <td></td>
+          <td></td>
+          <td>Подключённые устройства</td>
+      </tr>
+      <tr>
+          <td>mnt</td>
+          <td></td>
+          <td>Volumes</td>
+          <td>Доступные через файловую систему устройства</td>
+      </tr>
+      <tr>
+          <td>lib</td>
+          <td></td>
+          <td></td>
+          <td>Общедоступные библиотеки root-уровня</td>
+      </tr>
+      <tr>
+          <td><strong>etc</strong></td>
+          <td></td>
+          <td>private/etc</td>
+          <td>Конфигурационные файлы, зависящие от машины</td>
+      </tr>
+      <tr>
+          <td>root</td>
+          <td></td>
+          <td>private/var/root</td>
+          <td>Домашняя папка главного пользователя</td>
+      </tr>
+      <tr>
+          <td>home</td>
+          <td></td>
+          <td></td>
+          <td>Домашние папки остальных пользователей, в том числе ftp, httpd, samba-сервисов</td>
+      </tr>
+      <tr>
+          <td><strong>usr</strong></td>
+          <td></td>
+          <td></td>
+          <td>Cтатичные файлы программ, библиотек, игр, документации, утилит не используемых при загрузке</td>
+      </tr>
+      <tr>
+          <td><strong>var</strong></td>
+          <td></td>
+          <td>private/var</td>
+          <td>Часто меняющиеся файлы - почтовые сообщения, логи, временные файлы</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>cdrom</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>opt</td>
+          <td>+</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>image</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>lost+found</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>media</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>selinux</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>srv</td>
+          <td></td>
+          <td>Папка для апача, корень документов вместо htdocs</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>net</td>
+          <td>маунт для NFS дисков</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>private</td>
+          <td>сюда сгруппированы разные папки для ограничения доступа</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>cores</td>
+          <td>место для сохранения дампов памяти при падении.. можно почистить при недостатке места</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Applications</td>
+          <td>Все установленные пользователем приложения</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Developer</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Library</td>
+          <td>Общедоступные файлы (например шрифты) межпрограммного уровя</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Network</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>System</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Users</td>
+          <td>домашние папки настоящих пользователей, расширение home</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="комбинирование">Комбинирование<a hidden class="anchor" aria-hidden="true" href="#комбинирование">#</a></h4>
+<p>Удобство синтаксиса юникса как я уже сказал в гибкости, а именно в символах управления, которые используются с несколькими коммандами</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>|</td>
+          <td>труба - передача данных от одной комманды в другую, например ls -F | grep /</td>
+      </tr>
+      <tr>
+          <td>;</td>
+          <td>последовательный запуск комманд, например date;cal</td>
+      </tr>
+      <tr>
+          <td>&gt;</td>
+          <td>перенаправление стандартного вывода в файл с перезаписью, например ls / -F &gt; list.txt</td>
+      </tr>
+      <tr>
+          <td>&raquo;</td>
+          <td>перенаправление вывода в файл с добавлением в конец</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="обработка-файлов">Обработка файлов<a hidden class="anchor" aria-hidden="true" href="#обработка-файлов">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mv</td>
+          <td>переименовывание</td>
+      </tr>
+      <tr>
+          <td>rm</td>
+          <td>удаление</td>
+      </tr>
+      <tr>
+          <td>rm -rf</td>
+          <td>рекурсивное удаление</td>
+      </tr>
+      <tr>
+          <td>cat</td>
+          <td>объединить файлы и выдать в поток</td>
+      </tr>
+      <tr>
+          <td>paste</td>
+          <td>объекдинить строки файла(-ов)</td>
+      </tr>
+      <tr>
+          <td>ln</td>
+          <td>ссылка на файл или папку</td>
+      </tr>
+      <tr>
+          <td>split</td>
+          <td>бинарное разделение файла</td>
+      </tr>
+      <tr>
+          <td>join</td>
+          <td>построчно объединяет два файла по общему слову</td>
+      </tr>
+      <tr>
+          <td>cut</td>
+          <td>построчно (и/или) поколоночное вырезание текста из файла как из матрицы символов</td>
+      </tr>
+      <tr>
+          <td>cat</td>
+          <td>последовательное объединение двух файлов и вывод в терминал (или файл)</td>
+      </tr>
+      <tr>
+          <td>sort</td>
+          <td>отсортировать строчки по алфавиту</td>
+      </tr>
+      <tr>
+          <td>uniq</td>
+          <td>оставить уникальные строчки</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="установка-программ">Установка программ<a hidden class="anchor" aria-hidden="true" href="#установка-программ">#</a></h3>
+<p>Поскольку *никсы занимаются целым спектром разных задач, следовательно разные дистрибутивы, со своими установщиками. </p>
+<table>
+  <thead>
+      <tr>
+          <th>Дистрибутив</th>
+          <th>Установщик пакетов</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Gentoo</td>
+          <td>emerge</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Debian</td>
+          <td>apt-get update  <!-- raw HTML omitted -->apt-get install &hellip;  <!-- raw HTML omitted -->dpkg &ndash;install</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Fedora</td>
+          <td>rpm -ivh &hellip;  <!-- raw HTML omitted -->yum -y install &hellip;</td>
+          <td>Гляньте также на <a href="http://rpmfind.net/linux/RPM/index.html">возможные репозитории</a></td>
+      </tr>
+      <tr>
+          <td>Mandriva</td>
+          <td>urpm</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Slackware</td>
+          <td>yast, zypper  <!-- raw HTML omitted -->gzip, lzma</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>Кроме системных общих установщиков, есть и специфичные под конкретные нужды установщики</p>
+<ul>
+<li>
+<p>port install mongodb -  Установщик macports </p>
+</li>
+<li>
+<p>pear install phpunit/PHPUnit</p>
+</li>
+<li>
+<p>pecl install mongo</p>
+</li>
+<li>
+<p>gem</p>
+</li>
+</ul>
+<p>Текстовые редакторы</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>Vi</td>
+          <td>Vim</td>
+          <td>Nano</td>
+          <td>Gedit</td>
+          <td>Mate</td>
+          <td>Pico</td>
+          <td>Emacs</td>
+      </tr>
+      <tr>
+          <td>Ubuntu</td>
+          <td>+</td>
+          <td></td>
+          <td>+</td>
+          <td>+</td>
+          <td>-</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Mac OS Lion</td>
+          <td></td>
+          <td>+</td>
+          <td>+</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+      </tr>
+      <tr>
+          <td>Debian 5</td>
+          <td>+</td>
+          <td></td>
+          <td>+</td>
+          <td>+</td>
+          <td>-</td>
+          <td>+</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>Suse 11</td>
+          <td></td>
+          <td>+</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="http://ru.wikipedia.org/wiki/Vi">vi</a> readme.txt<br>
+i - режим редактирования<br>
+esc - выход в общий режим<br>
+ZZ - сохранить и выйти<br>
+&quot; - режим консоли<br>
+!q - выход без сохранения<br>
+wq - выход с записью</p>
+<p>Архиваторы</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>gunzip</td>
+          <td>распаковать .gz</td>
+      </tr>
+      <tr>
+          <td>bunzip2</td>
+          <td>распаковать .bz2</td>
+      </tr>
+      <tr>
+          <td>tar -jxvf</td>
+          <td>распаковать .tar</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="процессы-и-диагностика">Процессы и диагностика<a hidden class="anchor" aria-hidden="true" href="#процессы-и-диагностика">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>top</td>
+          <td>запущенные процессы. См. также htop, pstree</td>
+      </tr>
+      <tr>
+          <td>netstat</td>
+          <td>открытые соединения  <!-- raw HTML omitted -->например открытые порты в линуксе: netstat -atp | grep -i &ldquo;listen&rdquo; или netstat -tupl  <!-- raw HTML omitted -->на маке: lsof -n -i4TCP | grep LISTEN</td>
+      </tr>
+      <tr>
+          <td>lsof</td>
+          <td>открытые файлы (например открытые порты в маке: sudo lsof -i -P|grep -i &ldquo;listen&rdquo;)</td>
+      </tr>
+      <tr>
+          <td>killall</td>
+          <td>убить процесс по имени. Иногда приходится убивать точечно (например подвисший mysql) по PID:  <!-- raw HTML omitted -->kill -9 1566</td>
+      </tr>
+      <tr>
+          <td>whereis</td>
+          <td>подсказка где находятся файлы процесса</td>
+      </tr>
+      <tr>
+          <td>df -h</td>
+          <td>отчёт о свободной HDD-памяти (в читаемой форме). Что-бы найти большие файлы на сервере:  <!-- raw HTML omitted -->find . -type f -size +50000k -exec ls -lh {} ; | awk &lsquo;{ print $9 &ldquo;: &quot; $5 }&rsquo;</td>
+      </tr>
+      <tr>
+          <td>w</td>
+          <td>список пользователей в данный момент</td>
+      </tr>
+      <tr>
+          <td>opensnoop</td>
+          <td>слежка за доступом к файловым указателям</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="работа-с-серверами">Работа с серверами<a hidden class="anchor" aria-hidden="true" href="#работа-с-серверами">#</a></h3>
+<p>Практически все постоянно работающие программы - демоны находятся в /etc/init.d/ и имеют комманды start, stop, restart. Необходимы права рута для их управления. В некоторых случаях (Fedora) может прийдётся использовать /sbin/service для доступа к ним</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ssh</td>
+          <td>Удалённое соединение</td>
+      </tr>
+      <tr>
+          <td>scp</td>
+          <td>Безопасное сетевое копирование через SSH с одного сервера на другой. Флаг -r делает рекурсивное копирование папок. Например:  <!-- raw HTML omitted --><code>scp -r root@example.com:/srv/htdocs/ /home/html_sources/</code></td>
+      </tr>
+      <tr>
+          <td>ab</td>
+          <td>(Apache Bench) - нагрузочное тестирование (например с параметрами -r -c 100 -n 1000)</td>
+      </tr>
+      <tr>
+          <td>nc</td>
+          <td>(netcat) - прямое сокет-соединение</td>
+      </tr>
+      <tr>
+          <td>rsync</td>
+          <td>Синхронизация файлов <code>rsync -av -e ssh --progress /local/source user@example.com:remote/target</code></td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="apache">Apache<a hidden class="anchor" aria-hidden="true" href="#apache">#</a></h5>
+<p>На маке апач2 встроен (включается в настройках sharing) и в нём имеет смысл включить .htaccess (см. директиву AllowOverride)</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>Linux</td>
+          <td>Mac OSX</td>
+      </tr>
+      <tr>
+          <td>Запуск</td>
+          <td>/etc/init.d/httpd restart/etc/init.d/apache2 restart</td>
+          <td>/etc/apache2/  <!-- raw HTML omitted -->/usr/sbin/apachectl restart  <!-- raw HTML omitted -->/private/etc/apache2/httpd.conf/private/var/log/httpd/access_log</td>
+      </tr>
+      <tr>
+          <td>Логи</td>
+          <td></td>
+          <td>/private/var/log/apache2/access_log  <!-- raw HTML omitted -->/private/var/log/httpd/access_log</td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="php">PHP<a hidden class="anchor" aria-hidden="true" href="#php">#</a></h5>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Suse 11</td>
+          <td>Mac OSX</td>
+      </tr>
+      <tr>
+          <td>/etc/php5/apache2/php.ini  <!-- raw HTML omitted -->/usr/share/php5/  <!-- raw HTML omitted -->/usr/lib64/php5/</td>
+          <td>/private/etc/php.ini  <!-- raw HTML omitted -->/usr/local/php5/lib/php/extensions/</td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="mysql">MySQL<a hidden class="anchor" aria-hidden="true" href="#mysql">#</a></h5>
+<p>Настройки MySQL по умолчанию используются зашитые (их можно спросить у mysqladmin посмотреть), для перезаписи на свои, надо в /etc положить my.cnf файлик (образец есть в папке support-files). Самые полезные утилиты в bin папке это mysql (прямой консольный доступ к серверу) и mysqldump (для миграции больших баз).</p>
+<p>Если вы сидите на маке, но хочется через виртуалку использовать sqlyog, можно расшарить соединение..</p>
+<p><code>CREATE USER 'your_user_id'@'localhost' IDENTIFIED BY 'your_password';   GRANT ALL ON your_database_name.* TO your_user_id@'%' IDENTIFIED BY 'your_password';</code></p>
+<p>При быстрой работе с самим сервером наиболее востребованы комманды</p>
+<p>SHOW PROCESSLIST;<br>
+SHOW DATABASES;<br>
+CHECK TABLE;<br>
+REPAIR TABLE;</p>
+<p>Управление демоном</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Linux</td>
+          <td>Mac OSX</td>
+      </tr>
+      <tr>
+          <td>/etc/init.d/mysql restart</td>
+          <td>/usr/local/mysql/bin/mysqld_safe  <!-- raw HTML omitted -->/usr/local/mysql/bin/mysqladmin shutdown</td>
+      </tr>
+  </tbody>
+</table>
+<p>См. также</p>
+<ul>
+<li><a href="http://cb.vu/unixtoolbox.xhtml">Unix Toolbox</a></li>
+<li><a href="http://kimmo.suominen.com/docs/ssh/">Работа с ключами</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

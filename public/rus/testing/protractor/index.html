@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="понедельник, 28 июля 2014 г. в 11:47:18
+Protractor — движок для запуска системных (end-to-end, браузерных) тестов. Внутри он использует selenium с драйверами для браузера (chromedriver), а сами тесты пишутся с синтаксисом jasmine. Про него и карму я уже писал, впрочем mocha и cucumber тоже поддерживаются.
+Из особенностей - protractor имеет интеграцию с angular (находит модели и repeat-директивы) - отсюда и название слов (angle - угол, protractor - транспортир, т.е. угловая линейка), но может тестировать и любые другие сайты. Из недостатков - ">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/testing/protractor/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/testing/protractor/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>понедельник, 28 июля 2014 г. в 11:47:18</p>
+<p><a href="http://angular.github.io/protractor/">Protractor</a> — движок для запуска системных (end-to-end, браузерных) тестов. Внутри он использует <a href="http://www.seleniumhq.org/">selenium</a> с драйверами для браузера (chromedriver), а сами тесты пишутся с синтаксисом <a href="http://jasmine.github.io/">jasmine</a>. Про него и карму я <a href="http://kurapov.name/rus/lab/quality_control/karma_jasmine_testing_angularjs/">уже писал</a>, впрочем mocha и cucumber тоже поддерживаются.</p>
+<p>Из особенностей - protractor имеет интеграцию с angular (находит модели и <a href="https://docs.angularjs.org/api/ng/directive/ngRepeat">repeat</a>-директивы) - отсюда и название слов (<em>angle</em> - угол, <em>protractor</em> - транспортир, т.е. угловая линейка), но может тестировать и любые другие сайты. Из недостатков - </p>
+<ol>
+<li>Мне всё-таки пришлось добавить angular.js и ng-app к body на не-ангулярную страницу логина что-бы работал protractor</li>
+<li>В отличие от selenium, тесты надо писать вручную, никакого browser-плагина нет для записи кликов как то было в <a href="http://docs.seleniumhq.org/projects/ide/">selenium ide</a></li>
+</ol>
+<p><img loading="lazy" src="../lab/img/Pasted%20image%2020241020024321.png" alt=""  />
+</p>
+<p>Ставим, запускаем selenium и в другом процессе запускаем исполнение тестов по заданной конфигурации:</p>
+<pre tabindex="0"><code>npm install protractor -g
+webdriver-manager start
+clear &amp;&amp; protractor conf.js --verbose
+</code></pre><p> </p>
+<p>Конфигурация в стиле node-модуля, просто экспортирует данные о том где запущен selenium, какие spec-файлы надо запустить, какие переменные сделать глобальными.</p>
+<pre tabindex="0"><code>exports.config = {
+    seleniumAddress: &#39;http://localhost:4444/wd/hub&#39;,
+    specs: [
+        &#39;login.js&#39;,
+        &#39;profile.js&#39;,
+        &#39;categories.js&#39;,
+        &#39;products.js&#39;
+    ],
+    baseUrl: &#39;http://kurapov.name&#39;,
+    onPrepare: function() {
+        global.$p = protractor.getInstance();
+        //global.$ = require(&#39;./myjquery.js&#39;).$;
+        browser.driver.manage().window().setSize(1200, 800);
+    },
+    
+    capabilities: [
+        {
+            &#39;browserName&#39;: &#39;chrome&#39;,
+            &#39;chrome.cli.args&#39;: [&#39;--ignore-ssl-errors=true&#39;, &#39;--web-security=false&#39;]
+        },
+
+        {
+            &#39;browserName&#39;: &#39;phantomjs&#39;,
+            &#39;phantomjs.cli.args&#39;: [&#39;--debug=false&#39;, &#39;--ignore-ssl-errors=true&#39;, &#39;--web-security=false&#39;, &#39;--webdriver-loglevel=INFO&#39;]
+        }
+    ]
+    
+    
+    jasmineNodeOpts: {
+        showColors: true
+    }
+</code></pre><p> </p>
+<h3 id="недостатки-работы-с-dom">Недостатки работы с DOM<a hidden class="anchor" aria-hidden="true" href="#недостатки-работы-с-dom">#</a></h3>
+<p>В моём случае я использую свою wrapper-функцию $() для обращения к DOM. Проблема в том, что protractor общается с selenium драйверами через свои интерфейсы, т.е. вы не можете напрямую как-то обращаться к DOM браузера или с удобством вызывать javascript. </p>
+<p>Локаторы</p>
+<ul>
+<li>
+<p><strong>by.css</strong></p>
+</li>
+<li>
+<p><strong>by.model</strong> </p>
+</li>
+<li>
+<p><strong>by.repeater</strong> </p>
+</li>
+<li>
+<p>by.id</p>
+</li>
+<li>
+<p>by.js</p>
+</li>
+<li>
+<p>by.className </p>
+</li>
+<li>
+<p>by.linkText</p>
+</li>
+<li>
+<p>by.name</p>
+</li>
+<li>
+<p>by.partialLinkText</p>
+</li>
+<li>
+<p>by.tagName</p>
+</li>
+<li>
+<p>by.xpath</p>
+</li>
+<li>
+<p>by.addLocator</p>
+</li>
+<li>
+<p>by.binding</p>
+</li>
+<li>
+<p>by.buttonText</p>
+</li>
+<li>
+<p>by.cssContainingText</p>
+</li>
+<li>
+<p>by.exactBinding</p>
+</li>
+<li>
+<p>by.options</p>
+</li>
+<li>
+<p>by.partialButtonText</p>
+</li>
+</ul>
+<p>Найти элементы можно с помощью локаторов, из которых самый популярный — by.css(&rsquo;#myelement&rsquo;). Дальше надо обернуть локатор выборкой элемента:</p>
+<p>element(by.css(&rsquo;#myelement&rsquo;)).click();</p>
+<p>Проблема в том, что элементов может быть много, а может и вообще не быть. Поэтому ваш тест должен знать что ищет </p>
+<p>element.all(by.css(&rsquo;.row&rsquo;)).first()</p>
+<p>Это плохо, потому что если вы обращаетесь к <strong>элементу которого ещё нет</strong>, то protractor выкинет ошибку и stacktrace. Это усложняет написание повторяемых тестов.</p>
+<p>Поэтому для себя я написал обёртку вида $(&rsquo;#myelement .row&rsquo;,3).click() которая будет выбирать третий элемент.</p>
+<p>Вторая проблема с локаторами — асинхронность. Т.е. это конечно хорошо что гибко, но тесты получаются сложными. Методы действия над элементами как .click(), .getText() или .count() возвращают <strong>promise-обьект</strong> и получается что для правильной последовательности теста, надо городить лестницы из click-then</p>
+<p>Та же проблема была и с селениумом кстати. Это неопределённость от синхронизации приложения с DOM, из-за которой приходится писать различные хаки с таймаутом</p>
+<h3 id="практически-полезные-фишки">Практически полезные фишки<a hidden class="anchor" aria-hidden="true" href="#практически-полезные-фишки">#</a></h3>
+<p>В файле тестов полезно перед каждым тестов вставлять ожидание..</p>
+<pre tabindex="0"><code>describe(&#39;profile&#39;, function () {
+    beforeEach(function () {
+        $p.sleep(400); //в миллисекундах
+        $p.ignoreSynchronization = true; //для страниц без angular синхронизации
+
+        console.log(jasmine.getEnv().currentSpec.description + &#39; started:&#39;);
+    });
+    
+    ..
+});
+</code></pre><p> </p>
+<p>При работе со списками, в зависимости от того используете вы angular или нет, имеет смысл обращаться либо by.repeater, либо по css, например:</p>
+<p>#countries select option:nth-child(2) </p>
+<p>Тестирование субмита форм с помощью энтера.. да и вообще эмуляция нажатий клавиш тоже возможна..</p>
+<p>element( by.model(&rsquo;name&rsquo;) ).sendKeys(&ldquo;James Bond&rdquo;, protractor.Key.ENTER); </p>
+<p>Protractor умеет работать с алертами и confirm-диалогами..</p>
+<p>$p.switchTo().alert().accept();</p>
+<p>Он и файлы может загружать, но для этого надо заинклудить path из nodejs</p>
+<pre tabindex="0"><code>var path = require(&#39;path&#39;);
+$(&#34;#new_avatar input[type=&#39;file&#39;]&#34;).val(path.resolve(__dirname,&#39;./testfiles/artjom_kurapov.jpg&#39;));
+</code></pre><p> </p>
+<p>В приведённом мною выше конфиге вы увидите, что я пытаюсь несколько браузеров использовать. Увы, <a href="http://phantomjs.org/">phantomjs</a> у меня пока не удалось успешно запустить. Он поднимается, открывает страницу, ищет элемент и потом падает</p>
+<blockquote>
+<p>&ldquo;errorMessage&rdquo;:&ldquo;Element is not currently interactable and may not be manipulated&rdquo; </p>
+</blockquote>
+<h3 id="дебаг">Дебаг<a hidden class="anchor" aria-hidden="true" href="#дебаг">#</a></h3>
+<p>В коде теста, браузер можно остановить. Для меня это была основной способ разобраться что не так</p>
+<p>browser.pause();</p>
+<p>Кроме того protractor можно запустить в дебаг режиме, тогда клавишами c и d можно проматывать комманды теста</p>
+<p>protractor debug conf.js</p>
+<p>Есть ещё вариант открыть страницу и попробовать интерактивный синтаксис обращения к DOM. Об этом подробней в видео советую посмотреть - это научит вас лексикону</p>
+<p>node ./bin/elementexplorer.js http://kurapov.name</p>
+<h3 id="организация-тестов">Организация тестов<a hidden class="anchor" aria-hidden="true" href="#организация-тестов">#</a></h3>
+<p>Тесты можно сгруппировать в suite, для этого в конфиге можно задать:</p>
+<p>  suites: {</p>
+<p>    users: &lsquo;spec/*.user.js&rsquo;,</p>
+<p>    admins: &lsquo;spec/*.admin.js&rsquo;</p>
+<p>  } </p>
+<p>И запускать только конкретную группу:</p>
+<p>protractor conf.js &ndash;suite admins</p>
+<p>Когда приложение слишком большое, то имеет смысл создавать т.н. <strong>page objects</strong> - отдельные обьекты к которым будут привязываться элементы по css, а в самих тестах уже использовать только свойства (property) этих обьектов.</p>
+<p>Написание тестов достаточно противоречиво - с одной стороны они должны быть изолированы что-бы можно было запустить каждый тест самим по себе, с другой - короткими, без повторения нудных операций авторизации и подхода к нужному месту. Для этого я тесты обёртываю в такую конструкцию..</p>
+<p>myApp.usePageAs(&lsquo;<a href="mailto:artjom@kurapov.name">artjom@kurapov.name</a>&rsquo;, &lsquo;admin/dash&rsquo;, function () {<br>
+//test here<br>
+});</p>
+<p>Код myApp позволяет мне логиниться если я ещё не залогинен, используя стандартные аккаунты для тестов, открывать страницу и запускать функцию теста. В myApp я помещаю и методы проверки каких-то оповещений (messages/notifications), на случай если DOM и стили оных поменяются.</p>
+<p>См. также.. </p>
+<ul>
+<li>
+<p><a href="https://egghead.io/lessons/angularjs-getting-started-with-protractor">Egghead - Getting started with Protractor</a> </p>
+</li>
+<li>
+<p><a href="http://stepansuvorov.com/blog/2014/02/angularjs-protractor/">Тестируем AngularJS используя Protractor</a></p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

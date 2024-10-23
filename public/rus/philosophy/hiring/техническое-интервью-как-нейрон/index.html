@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="вторник, 18 сентября 2018 г. в 22:14:41
+Процесс найма разработчиков различен и на моём пути я был как на стороне кандидата со своей системой вопросов, получал свою уйму лулзов, так и на стороне интервьюера. Поскольку встреч с кандидатом в больших компаниях несколько, то мне удалось принимать интервью на фазе технической оценки. Постараюсь тут кратко описать итоги.
+Цели
+Для компании смысл технического интервью - оценка кандидата. В это входит:
+
+
+Оценка горизонтальных архитектурных познаний. Насколько богатый спектр технологий и процессов разработки использовал или хотя-бы знает человек. Как он может связать их между собой. Какие решения для одной и той же проблемы он может предложить.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/philosophy/hiring/%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/philosophy/hiring/%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>вторник, 18 сентября 2018 г. в 22:14:41</p>
+<p>Процесс найма разработчиков различен и на моём пути я был как на стороне <a href="https://kurapov.ee/rus/pholosophica/8258/">кандидата со своей системой вопросов</a>, получал свою <a href="https://kurapov.ee/rus/lab/control/phpdev_interview/">уйму лулзов</a>, так и на стороне интервьюера. Поскольку встреч с кандидатом в больших компаниях несколько, то мне удалось принимать интервью на фазе технической оценки. Постараюсь тут кратко описать итоги.</p>
+<h3 id="цели">Цели<a hidden class="anchor" aria-hidden="true" href="#цели">#</a></h3>
+<p>Для компании смысл технического интервью - оценка кандидата. В это входит:</p>
+<ol>
+<li>
+<p>Оценка горизонтальных архитектурных познаний. Насколько богатый спектр технологий и процессов разработки использовал или хотя-бы знает человек. Как он может связать их между собой. Какие решения для одной и той же проблемы он может предложить.</p>
+</li>
+<li>
+<p>Оценка вертикальных, практических познаний. Насколько глубоко он знает технологии с которыми он работает. Как детально он вникает во все возможные нюансы. Как сильно он может оптимизировать задачу по performance</p>
+</li>
+<li>
+<p>Прочие не технические качества - инициативность, качество, скорость мышления, реакция на критику, любопытство</p>
+</li>
+</ol>
+<h3 id="объективная-оценка">Объективная оценка<a hidden class="anchor" aria-hidden="true" href="#объективная-оценка">#</a></h3>
+<p>Как это же оценить разработчика на деле и сравнить его с другими разработчиками, если все люди разные? Дабы уменьшить уровень философии и субъективности, я подхожу к оценке очень практично. </p>
+<p>Почти все компании высылают кандидатам <strong>домашнее задание</strong>. Я подхожу к оценке его с холодным расчётом Excel&rsquo;я и TDD. Так как домашняя работа должна показать знание всего цикла разработки, то я составляю <strong>таблицу оценок</strong> на каждого кандидата
+<img loading="lazy" src="../img/evaluation_table.png" alt=""  />
+</p>
+<p>Таблица большая где каждый ряд это своего рода тест домашней работы итог которого - оценка от 0 до 10.</p>
+<p>Дальше каждая оценка умножается на относительный коэффициент важности и итог суммируется. Дальше он делится на максимально достижимый рейтинг и мы получаем простое число от 0 до 100.</p>
+<p>По такому же принципу работает искусственный нейрон. Вся тонкость конечно в том на что надо проверять домашнюю работы (какие ряды = тесты = входы) и насколько они друг относительно друга важны (веса = коэффициенты)</p>
+<p><img loading="lazy" src="../img/Neuro4.jpg" alt=""  />
+</p>
+<p>Могу сказать что такая оценка даёт хорошую обратную связь для HR. Некоторые разработчики набирают пункты делая прилежную работу по всем пунктам, некоторые углубляются в performance, теряя качество, но относительно друг-друга, оценка разработчиков выходит объективная.</p>
+<h3 id="интервью">Интервью<a hidden class="anchor" aria-hidden="true" href="#интервью">#</a></h3>
+<p>Ко времени встречи, я уже знаю сильные и слабые стороны разработчика судя по его коду. Интервью достаточно напряжённое и длится ~1.5 часа. Встреча состоит из нескольких частей:</p>
+<ol>
+<li>
+<p>Объяснение с его стороны, как работает приложение. По ходу дела я могу спрашивать почему так или иная часть сделана так (плохо) и как это можно улучить.</p>
+</li>
+<li>
+<p>Пробегание по разным областям. Это мини-тест на понимание концепций и получение опыта не выводимого из домашней работы.</p>
+</li>
+<li>
+<p>Архитектурные проблемы которые у нас есть и какие решения он может нам предложить. Это фаза эмоционального подъёма, т.к. задачи становятся более абстрактными. Типичным вопросом может быть - каким проектом вы гордитесь и как бы его переделали сегодня?</p>
+</li>
+<li>
+<p>Его вопросы. К этому времени кандидат уже устал, поэтому надо спрашивать именно &ldquo;Какие вопросы у вас&rdquo;, а не &ldquo;Есть ли у вас вопросы&rdquo;, т.к. это заставляет думать и на самом деле показывает что человеку важно.</p>
+</li>
+</ol>
+<h3 id="итог">Итог<a hidden class="anchor" aria-hidden="true" href="#итог">#</a></h3>
+<p>В конце для HR у меня есть доклад - как сделана домашняя работа, что человек знает, как общается, в каких областях проблемные места и что это будет значить для организации. Например если разработчик широко использует фреймворки и показывает способности организации кода, но при этом не может сделать хороший performance это одна крайность, а если разработчик намеренно тратит мало времени и пишет лаконичный код заточенный только на performance одной области, то это другая крайность. </p>
+<p>Люди сложные, говорят и мыслят с разной скоростью, предлагают решения со своими преимуществами, но в итоге интервью, HR должен получить упрощённую цифру уровня ЗП + возможные риски и стратегии по обучению и росту</p>
+<p>P.S. <a href="https://www.pipedrive.com/en/jobs">мы нанимаем</a>, приходите попробовать на практике</p>
+<!-- raw HTML omitted -->
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+baseURL = 'https://kurapov.ee/'
+languageCode = 'ru-RU'
+title = 'Artjom Kurapov blog'
+theme = 'PaperMod'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.link]
+        enableDefault = true

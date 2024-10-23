@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Engs on Artjom Kurapov blog</title>
+    <link>http://localhost:1313/eng/</link>
+    <description>Recent content in Engs on Artjom Kurapov blog</description>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>ru-RU</language>
+    <atom:link href="http://localhost:1313/eng/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eng/dream-of-scalable--enriched-graphql-subscriptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/eng/dream-of-scalable--enriched-graphql-subscriptions/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg&#34; alt=&#34;https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Stylized photo of Jagala juga (Estonia), original photo by Aleksandr Abrosimov, Wikimedia Commons&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/pipedrive-engineering/journey-to-federated-graphql-2a6f2eecc6a4&#34;&gt;Last time&lt;/a&gt;, I wrote about 5-year long journey of having GraphQL in Pipedrive. Now, let me tell you about a 10-year long journey of delivering websocket events to frontend.. and maybe help you out with it too.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif&#34; alt=&#34;https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif&#34;  /&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;why&#34;&gt;&lt;strong&gt;Why&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;product need&lt;/strong&gt; of asynchronous events comes up any time user needs to be notified about something by the server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eng/homework-sandboxes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/eng/homework-sandboxes/</guid>
+      <description>&lt;p&gt;I did some throw-away home coding assignments back in the days:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-open-time-json&#34;&gt;https://github.com/tot-ra/sandbox-open-time-json&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-express-axios-api-composition&#34;&gt;https://github.com/tot-ra/sandbox-express-axios-api-composition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-airport&#34;&gt;https://github.com/tot-ra/sandbox-airport&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-chocolate-factory&#34;&gt;https://github.com/tot-ra/sandbox-chocolate-factory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-nestjs-auth-ratelimit&#34;&gt;https://github.com/tot-ra/sandbox-nestjs-auth-ratelimit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tot-ra/sandbox-guest-book&#34;&gt;https://github.com/tot-ra/sandbox-guest-book&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/eng/journey-to-a-federated-graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/eng/journey-to-a-federated-graphql/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png&#34; alt=&#34;https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Image taken from &lt;a href=&#34;http://dgraph.io&#34;&gt;dgraph.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Engineers tend to love good stories, so hopefully our 5-year journey of moving towards API composition with &lt;a href=&#34;https://graphql.org/&#34;&gt;GraphQL&lt;/a&gt; now in production (serving at peak 110 requests per second at 100ms latency) provides a good story.&lt;/p&gt;
+&lt;p&gt;[If you’re in a hurry, scroll down to &lt;em&gt;Lessons learned&lt;/em&gt; and check out the open-sourced &lt;a href=&#34;https://github.com/pipedrive/graphql-schema-registry&#34;&gt;graphql-schema-registry&lt;/a&gt;.]&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://miro.medium.com/max/1400/1*d32xg4FUICDlOm9q0PCLkw.png&#34; alt=&#34;https://miro.medium.com/max/1400/1*d32xg4FUICDlOm9q0PCLkw.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;schema registry with some &lt;a href=&#34;https://github.com/jeffwillette/graphql-go-pets-example&#34;&gt;example schema&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;our-requirement&#34;&gt;&lt;strong&gt;Our Requirement&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;For years, Pipedrive (which hit 10 years near the beginning of 2020) has had a &lt;a href=&#34;https://developers.pipedrive.com/docs/api/v1/&#34;&gt;public REST API&lt;/a&gt;, as well as hidden, undocumented endpoints for our webapp — one of which is &lt;em&gt;/users/self,&lt;/em&gt; that was initially for loading user information but over time became a page-load API, composed of 30 different entity types. It originated in our PHP monolith which by nature is synced. We &lt;a href=&#34;https://medium.com/pipedrive-engineering/how-two-developers-accelerated-php-monolith-in-pipedrive-df8a18bc2d8a&#34;&gt;tried to split it&lt;/a&gt; into parallel threads but that didn’t work out so well.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

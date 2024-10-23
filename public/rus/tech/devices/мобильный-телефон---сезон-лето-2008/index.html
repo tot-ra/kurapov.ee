@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="четверг, 7 августа 2008 г. в 10:28:46
+Эволюция мобильника
+Современные мобильные телефоны уже не просто телефоны как это изначально планировалось. Функциональность обрастала постепенно - сначала адресная книга была очень нужной, потом добавились текстовые сообщения SMS, одновременно с множеством настроек времени, калькулятора, будильников и звонков. С уменьшением транзисторов стала увеличиваться внутренняя память и процессор - появился встроенный фотоаппарат, плееры музыки в mp3, а потом и видео.
+В плане софта модели как правило делались закрытыми, хотя и были некоторые исключения где можно было оперировать файлами напрямую, вместо копирования только разрешённых java-апплетов. На данный момент заметна тенденция перехода со своих ОС на общие - Symbian, Windows Mobile, т.е. рынок в руках &ldquo;смартфонов&rdquo;.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/devices/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD---%D1%81%D0%B5%D0%B7%D0%BE%D0%BD-%D0%BB%D0%B5%D1%82%D0%BE-2008/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/devices/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD---%D1%81%D0%B5%D0%B7%D0%BE%D0%BD-%D0%BB%D0%B5%D1%82%D0%BE-2008/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>четверг, 7 августа 2008 г. в 10:28:46</p>
+<h3 id="эволюция-мобильника">Эволюция мобильника<a hidden class="anchor" aria-hidden="true" href="#эволюция-мобильника">#</a></h3>
+<p>Современные мобильные телефоны уже не просто телефоны как это изначально планировалось. Функциональность обрастала постепенно - сначала <strong>адресная книга</strong> была очень нужной, потом добавились текстовые сообщения SMS, одновременно с множеством настроек времени, калькулятора, будильников и звонков. С уменьшением транзисторов стала увеличиваться внутренняя память и процессор - появился встроенный фотоаппарат, плееры музыки в mp3, а потом и видео.</p>
+<p>В плане софта модели как правило делались закрытыми, хотя и были некоторые исключения где можно было оперировать файлами напрямую, вместо копирования только разрешённых java-апплетов. На данный момент заметна тенденция перехода со своих ОС на общие - Symbian, Windows Mobile, т.е. рынок в руках &ldquo;смартфонов&rdquo;.</p>
+<h3 id="проблема-выбора">Проблема выбора<a hidden class="anchor" aria-hidden="true" href="#проблема-выбора">#</a></h3>
+<p>Наверняка я не один, и выбор мобильника для рядового человека становится достаточно тупиковой ситуацией. Число параметрам по которым можно оценивать все телефоны может достигать сотни! Число же относительно новых моделей которые можно застать вживую в магазине колеблется от десяти до сотни, я уже не говорю про интернет-магазины где можно найти как двадцатилетней давности модели, так и только готовящиеся к выпуску.</p>
+<p>Прежде всего что-бы вы понимали мои предпочтения - мой старый телефон <a href="http://www.mobile-review.com/review/siemens-cx75-m75-en.shtml">Siemens M75</a>, за исключением глюков со внезапным выключением радовал меня более 3х лет своей прочностью и медийными способностями. Покумекав, я решил выписать категории по которым надо искать претендентов:</p>
+<ol>
+<li><strong>Корпус и его эргономика</strong><br>
+Представляя себе спектр внешних видов, я нелюблю раскладушки, крутилки и очень широкие &ldquo;наладонники&rdquo;. Для меня в идеале это кирпич который хорошо помещается в руку, не слишком тонкий. Допускаю тип &ldquo;слайдеров&rdquo;, но в любом случае корпус должен быть надёжный, при возможности - очень прочный и водонепроницаемый. Стилус (перо для сенсорного экрана) мне не хочется для мобильника, не очень удобно особенно за рулём.</li>
+<li><strong>Аккумулятор</strong><br>
+Я нелюблю постоянно беспокоится что-бы у меня не сел телефон. В любом случае за 1000 мАмп, и в зависимости от медиа-нагруженности - от 350 ч при ожидании. В смешанном режиме я надеюсь хотя-бы 4 дня что-бы он работал без зарядки.</li>
+<li><strong>Связь</strong><br>
+За видео звонками будущее, поэтому - 3G. Так же я люблю посидеть бесплатно в интернете, поэтому WiFi. Я планирую путешествовать на природе, поэтому GPS может пригодится.</li>
+<li><strong>Soft и useability</strong><br>
+Я люблю на досуге поиграть в шахматы и читать книжки, думаю Java MIDP 2.0 уже завоевала рынок, поэтому Opera mini работать будет. В плане органайзера - календарь как правило у многих уже присутсвует, а синхронизация, outlook и офис меня мало волнуют. Для этого есть ноутбуки, можно потерпеть.<br>
+В плане удобства, я нелюблю когда кнопок натыкано со всех сторон. Вполне можно обойтись 14ю кнопками. Сенсорный экран хорош, но может мешать из-за отсутсвия осязаемости кнопок.</li>
+<li><strong>Камера</strong><br>
+Пользуюсь я ей очень редко, но это как правило самые запоминающиеся моменты. Она не должна выпирать из корпуса. Лучше бы была хорошая оптика чем высокое разрешение. Было бы очень красиво выкладывать сделанные фотки сразу в интернет</li>
+</ol>
+<hr>
+<h3 id="цена-и-претенденты">Цена и претенденты<a hidden class="anchor" aria-hidden="true" href="#цена-и-претенденты">#</a></h3>
+<p>Определив категории и поняв насколько я закатал губу как клиент, мне так-же стало понятно что выкладывать более половины месячной зарплаты я не хочу, поэтому недавно аннонсированые топовые модели Samsung i8510 INNOV8 и <a href="http://www.nokia.ru/A4879223">Nokia N96</a> сразу отпадают, хотя они практически со всеми современными возможностями.</p>
+<p>Я полистал обзоры мобильников типа <a href="http://mobiguru.ru/">мобигуру</a> и <a href="http://www.mobile-review.com/index.shtml">mobilereview</a>, понял что будет в будующем и что много ещё нет на прилавках у местных операторов, более того — производители как будто нарочно вносят неразбериху как в названия моделей так и в их возможности, видимо чтобы продовалось лучше. Заказывать по интернету мне лень, поэтому претенденты сформировались при помощи <a href="http://market.yandex.ru/catalogmodels.xml?CAT_ID=160043&hid=91491">Яндекс Маркета</a> и ценовой диапазон у всех в районе 400-700$ с обязательным 3G и WiFi</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>Цена и корпус</td>
+          <td>Преимущества</td>
+          <td>Недостатки</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.mobile-review.com/review/nokia-n82.shtml">Nokia N82</a></td>
+          <td>650$ Монолит</td>
+          <td>GPS, 5мп камера, microSD, GPS + карта</td>
+          <td>225/4 ч = 1050мАч, практически - 2 дня, узкие по виду клавиши</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.mobile-review.com/review/nokia-e51-2.shtml">Nokia E51</a></td>
+          <td>400$ Монолит с клавишами</td>
+          <td>microSD, Symbian, достаточно прост и дёшев, металлический корпус</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.digital-review.ru/reviews/samsung_g810/">Samsung SGH-G810</a></td>
+          <td>600$ Слайдер</td>
+          <td>5 мп камера со вспышкой, GPS, частично металлический, выход на наушники</td>
+          <td>большой корпус</td>
+      </tr>
+      <tr>
+          <td>LG KS20 Corona</td>
+          <td>600$ Монолит с сенсорным экраном</td>
+          <td>SD-карта и 256 МБ памяти.</td>
+          <td>1050 мАч, широкий корпус</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.3dnews.ru/phone/sony_ericsson_g900/">SonyEricsson G900</a></td>
+          <td>600$ Монолит с кнопками и сенсорным экраном</td>
+          <td>Symbian, 5мпикс камера, сенсорный экран, энергопотребление - 380/12 часов, фонарик</td>
+          <td>M2 тип карточки, 160 МБ памяти, 950 мАч, тонкая крышка корпуса, стилус</td>
+      </tr>
+      <tr>
+          <td><a href="http://www.mobile-review.com/pda/review/asus-p320.shtml">Asus P320</a> + GPS</td>
+          <td>600$ Монолит</td>
+          <td>Сенсорный экран, GPS, Windows mobile 6.1, SD-карты более 4 гб</td>
+          <td>посредственная камера, стилус</td>
+      </tr>
+  </tbody>
+</table>
+<p>Последние мысли перед выбором:</p>
+<ul>
+<li>Почему Nokia ставит GPS с картой которые я так ценю для похода, но при этом забывает что я могу в лесу быть дольше двух дней, а вышки там далеко, батарея сядет быстро. Да и в городе два дня маловато.</li>
+<li>Маленький корпус E51 с другой стороны удобно - всего по минимому, только то что надо.</li>
+<li>Выход на наушники в Samsung и защита камеры пластиком конечно полезны, но не в ущерб эргономике. Такая бандура получается</li>
+<li>Сенсорный экран LG и стиль под чёрное стекло идёт дамам за 30</li>
+<li>В меру функциональный и не выдающийся размерами SonyEricsson хорош для молодёжи</li>
+</ul>
+<p>Совершенно случайно взял iphone</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

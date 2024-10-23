@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="пятница, 6 мая 2016 г. в 14:40:39
+Микросервисы в современной веб-разработке это архитектурный подход по разделению изначального монолитного приложения на независимые системные (linux) процессы. Необходимость в таком разделении возникает когда монолит становится слишком медленным для одного синхронного процесса, когда код тянет слишком много зависимостей и когда повышается риск что-то сломать в этой длинной цепочке обработки данных.
+Микросервисы — не панацея и тоже усложняют всё приложение в плане транзактивности, логов, и обработки ошибок, управления конфигураций, версионирования, деплоя, возникает дублирование bootstrap-кода из-за изоляции сервисов. Поэтому стоит осторожно подходить к тому, что вы хотите выделить в микросервис и что он даст по характеристикам приложения (performance, стабильность, масштабирование, разделение нагрузки). Как правило, веб-приложения создаются сначала монолитом, а потом разделяются на сервисы — так эффективней и проще эволюционировать.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/backend/%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/backend/%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>пятница, 6 мая 2016 г. в 14:40:39</p>
+<p>Микросервисы в современной веб-разработке это <a href="https://habrahabr.ru/post/249183/">архитектурный подход</a> по разделению изначального монолитного приложения на независимые системные (linux) процессы. Необходимость в таком разделении возникает когда монолит становится <strong>слишком медленным</strong> для одного синхронного процесса, когда код тянет <strong>слишком много зависимостей</strong> и когда <strong>повышается риск</strong> что-то сломать в этой длинной цепочке обработки данных.</p>
+<p>Микросервисы — не панацея и тоже усложняют всё приложение в плане транзактивности, логов, и обработки ошибок, управления конфигураций, версионирования, деплоя, возникает дублирование bootstrap-кода из-за изоляции сервисов. Поэтому стоит осторожно подходить к тому, что вы хотите выделить в микросервис и что он даст по <strong>характеристикам</strong> приложения (performance, стабильность, масштабирование, разделение нагрузки). Как правило, веб-приложения создаются <a href="https://martinfowler.com/bliki/MonolithFirst.html">сначала монолитом</a>, а потом разделяются на сервисы — так эффективней и проще эволюционировать.</p>
+<!-- raw HTML omitted -->
+<h3 id="паттерны-взаимодействия">Паттерны взаимодействия<a hidden class="anchor" aria-hidden="true" href="#паттерны-взаимодействия">#</a></h3>
+<p>Общение между сервисами можно делать по-разному:</p>
+<ol>
+<li>
+<p>Синхронно — сервис вызывают явно как веб-сервис по HTTP/REST, делая работу <strong>синхронно</strong> по-старинке, подобно веб-серверу, тогда как клиент ждёт ответа (подобно ajax)</p>
+</li>
+<li>
+<p>Асинхронно — cервис вызывают явно по HTTP/REST, регистрируется задача и клиент тут же получает job ID. Клиент обязан сам проверить состояние задачи, периодически спрашивая у сервиса (polling, aws transcoder)</p>
+</li>
+<li>
+<p>Асинхронно — сервис как работник (демон) без публичного доступа. Слушает какой-то ресурс и генерирует новые вызовы. Это может быть</p>
+</li>
+</ol>
+<ul>
+<li>единая шина сообщений (<a href="https://www.rabbitmq.com/">RabbitMQ</a>,<a href="http://gearman.org/">Gearman</a>, <a href="http://zeromq.org/">0MQ</a>, Kafka, AWS SQS, AWS Kinesis)&gt;</li>
+<li>хранилище с локами (файлы, память, Memcache, Redis)</li>
+<li>другие ресурсы (процессы, сеть, железо)</li>
+</ul>
+<ol start="4">
+<li>Асинхронно, не используя MQ, регистрирует слушателей в себе и сам знает к кому куда стучать</li>
+</ol>
+<p>Главное что-бы подход был единый, с предсказуемым форматом данных (<a href="http://json.org/">JSON</a>, <a href="https://github.com/google/protobuf">protobuf</a>, <a href="http://thrift.apache.org/">thrift</a>, <a href="http://msgpack.org/">messagepack</a>).Для удобной конфигурации и дружбы между сервисами, надо ставить <a href="https://www.consul.io/">Consul</a>, <a href="https://github.com/coreos/etcd">ETCD</a> или <a href="https://zookeeper.apache.org/">ZooKeeper</a> — они позволят абстрагироваться от конкретных IP адресов и PID процессов.</p>
+<h3 id="пример">Пример<a hidden class="anchor" aria-hidden="true" href="#пример">#</a></h3>
+<p>Например пользователь приложения имеет возможность <strong>загружать файлы</strong>.Обработка файла очень тяжёлая по CPU, генерирует несколько результатов и занимает много времени из-за долгих внутренних сетевых запросов по загрузке готовых обработанных файлов в хранилище. Допустим эта синхронная операция upload+resize+store занимает 20 секунд в монолитном приложении. В микросервисном приложении, вы решаете создать сервис <strong>обработки</strong> картинки, а для очередей сначала создаёте табличку в БД. Отлично, это даёт возможность сервис положить на другую машину и не нагружать основной сайт. Теперь возникают практические вопросы — как это всё сделать? Практически, если раньше в монолите разные слои приложения проверяли всё за вас, то теперь чуть ли не все значимые классы надо будет выделять отдельные сервисы авторизацию, логирование, менеджер картинок, менеджер транзакций и сам ресайз картинок.</p>
+<h3 id="веб-сервис-на-php">Веб-сервис на PHP<a hidden class="anchor" aria-hidden="true" href="#веб-сервис-на-php">#</a></h3>
+<p>Если ваш сервис должен иметь публичный веб-интерфейс, проще всего запустить php в качестве сервера под конкретную папку и она будет по запросу дёргаться. Тут пригодятся микро-фреймворки типа <a href="http://silex.sensiolabs.org/">Silex</a>, <a href="https://www.slimframework.com/">Slim</a> или <a href="https://lumen.laravel.com/">Lumen</a></p>
+<pre tabindex="0"><code>#run me as:
+#php -S 0.0.0.0:80 -t /var/www/silex
+
+#install me with:
+#composer require silex/silex:~1.3
+
+$loader = require __DIR__.&#39;/vendor/autoload.php&#39;;
+
+$app = new Silex\Application();
+
+#синхронная работа
+$app-&gt;post(&#39;/resizeImage&#39;, function(Request $request) use($app) {
+    #загрузить imagemagick, сделать resize, сохранить
+    
+    return &#34;{success:true}&#34;;
+});
+
+#асинхронная работа
+$app-&gt;post(&#39;/resizeImageAsync&#39;, function(Request $request) use($app) {
+    #зарегистрировать новую работу и передать её демону через RabbitMQ, см. ниже
+    #клиента оповестим автоматом через websocketы
+    
+    return &#34;{success:true}&#34;;
+});
+</code></pre><h3 id="демон-работник-на-php">Демон-работник на PHP<a hidden class="anchor" aria-hidden="true" href="#демон-работник-на-php">#</a></h3>
+<p>Хотя php изначально разрабатывался как интерпретатор html файлов, современный php может работать в постоянном режиме как сервис если его запустить в CLI режиме. В реальной жизни, php демоны как правило нестабильны из-за утечек памяти и не так эффективны по скорости как сервисы на nodejs или go. Запустить демон можно из коммандной строки..</p>
+<pre tabindex="0"><code>php -f /var/www/app/daemon/myImageProcessor.php
+
+#let it live after terminal exit:
+nohup php -f myImageProcessor.php &amp;
+</code></pre><p>С демонами есть несколько особенностей</p>
+<ul>
+<li>Работая в бесконечном цикле надо чистить ресурсы (DB-соединения, file handles)</li>
+<li>Надо мониторить рост своей памяти что-бы не умереть от fatal error</li>
+<li>Надо поддерживать graceful stop при получении SIGTERM и прочих сигналов что-бы не повредить данные на случай если кто-то остановит демона из консоли или перезапустит сервис</li>
+<li>Надо ловить все исключения, делать альтернативную функциональность бэкапов и откатов, формировать красивый log</li>
+<li>Перезапуск сервера должен запускать демоны заново — через крон или через регистрацию демона в виде системного сервиса</li>
+</ul>
+<p>У вас может быть несколько экземпляров (instance) одного и того же демона в виде разных процессов. Тогда очень важно не попасть в проблемы многопоточности — дедлоки транзакций, запись в один log файл параллельно и обработка одного и того же задания. Обо всём этом чуть позже..</p>
+<p>А пока, вот простой пример с бесконечным циклом и псевдо-кодом:</p>
+<pre tabindex="0"><code>//myImageProcessor.php
+//set custom process name
+cli_set_process_title(&#39;php - daemon - myImageProcessor.php&#39;);
+
+//enable process interruption handling
+declare(ticks = 1);
+$interrupted = false;
+function handleSignal(){
+    $interrupted = true;
+}
+
+pcntl_signal(SIGTERM, &#34;handleSignal&#34;);
+pcntl_signal(SIGHUP, &#34;handleSignal&#34;);
+pcntl_signal(SIGUSR1, &#34;handleSignal&#34;);
+pcntl_signal(SIGINT, &#34;handleSignal&#34;);
+
+while(true){
+    $db-&gt;connect();
+    
+    $db-&gt;query(&#34;SELECT * FROM images WHERE processed = 0&#34;);
+    
+    //do some work here with resize &amp; upload
+    
+    $db-&gt;disconnect();
+    
+    //memory cleanup &amp; check
+    gc_collect_cycles();
+    const MAX_MEMORY_EXTRA = 10 * 1024 * 1024;
+    if (convertToBytes(ini_get(&#39;memory_limit&#39;)) &lt; (memory_get_usage(true) + MAX_MEMORY_EXTRA)) {
+        exit();
+    }
+    
+    //graceful shutdown
+    if($interrupted){
+        exit();
+    }
+    
+    //wait for some time to decrease load on DB above
+    sleep(10);
+}
+</code></pre><h2 id="управление-процессами">Управление процессами<a hidden class="anchor" aria-hidden="true" href="#управление-процессами">#</a></h2>
+<p>Проверку на УЖЕ запущенного демона можно сделать как на уровне bash, так и на уровне самого php с использованием экзотических флагов в базе, флагов во временных файлах или же используя такой же доступ к shell. С такой проверкой, комманду можно смело класть в cron и демон будет запускаться автоматом (раз в минуту)</p>
+<h3 id="bash">Bash<a hidden class="anchor" aria-hidden="true" href="#bash">#</a></h3>
+<pre tabindex="0"><code>#check if daemon is not running yet
+#add logs
+[ &#34;$(ps -ef| grep -v grep | grep myImageProcessor|wc -l)&#34; -eq 0 ] &amp;&amp; php -f myImageProcessor.php &gt; /var/www/logs/myImageProcessor.log
+
+#up to 5 instances!
+[ &#34;$(ps -ef| grep -v grep | grep imageResizer|wc -l)&#34; -lt 5 ] &amp;&amp; php myImageProcessor.php &gt; /var/logs/myImageProcessor.log
+</code></pre><p>Остановить демона можно так же из шелла..</p>
+<pre tabindex="0"><code>sudo /usr/bin/kill -9 `ps aux | grep &#39;myImageProcessor&#39; | grep -v grep | awk &#39;{print $2}&#39;`
+</code></pre><h3 id="pm2">PM2<a hidden class="anchor" aria-hidden="true" href="#pm2">#</a></h3>
+<p>Для более могучего nodejs, существует отличный process manager, который может управлять и php-демонами! С его помощью можно сразу видеть <strong>только</strong> процессы демонов. Кроме того:</p>
+<ul>
+<li>перезапускать демона сразу после его падения</li>
+<li>следить за изменениями файла что-бы перезапустить демон (watch)</li>
+<li>следить за памятью и CPU и перезапускать при их превышениях</li>
+</ul>
+<p>Менеджеры попроще — <a href="https://github.com/foreverjs/forever">forever</a> и <a href="https://github.com/tableflip/guvnor">guvnor</a></p>
+<h3 id="очереди-и-rabbitmq">Очереди и RabbitMQ<a hidden class="anchor" aria-hidden="true" href="#очереди-и-rabbitmq">#</a></h3>
+<p>Как только вы начали использовать демонов, вероятней всего вы станете использовать и паттерн Command, по которому микросервисы выполняют роль работников (workers). MQ-сервер выступает в роли брокера и шины, связывающей асинхронные процессы воедино. Он отвечает за надёжность передачи сообщения сервису и за то что несколько сервисов не получат одну и ту же комманду. Реализовывать это на стандартной БД было бы сложней</p>
+<p>Для PHP-демонов, подключение rabbitMQ делается с помощью <a href="https://github.com/php-amqplib/php-amqplib">php-amqplib</a> библиотеки и бесконечный цикл в этом случае начинает зависеть от неё..</p>
+<pre tabindex="0"><code>$callback = function($msg){
+    //actual work here
+    $data = json_decode($msg-&gt;body, true);
+    
+    //Ack message that everything is done
+    $msg-&gt;delivery_info[&#39;channel&#39;]-&gt;basic_ack($msg-&gt;delivery_info[&#39;delivery_tag&#39;]);
+}
+
+
+//technical details..
+$connection = new AMQPStreamConnection(&#39;localhost&#39;, 5672, &#39;root&#39;, &#39;pass&#39;);
+$channel    = $connection-&gt;channel();
+
+//new queue if it was missing
+$channel-&gt;queue_declare($queue, false, true, false, false);
+
+//one entry at a time
+$channel-&gt;basic_qos(null, 1, null);
+$channel-&gt;basic_consume($queue, $receiverName, false, false, false, false, $callback);
+
+//almost infinite cycle
+while (count($channel-&gt;callbacks)) {
+	$channel-&gt;wait(null);
+}
+
+$channel-&gt;close();
+$connection-&gt;close();
+</code></pre><p>Понятно что один сервис хорошо, но архитектура ценна именно тем что сервисы взаимодействуют между собой. Поэтому сообщения можно генерировать другому сервису. Например если обработалось изображение, значит надо оповестить пользователя в реальном времени и обновить UI.</p>
+<pre tabindex="0"><code>$queue = &#39;datasync&#39;;
+$message = [&#39;imageID&#39;=&gt;34, &#39;status&#39;=&gt;&#39;processed&#39;];
+$message = json_encode($message);
+
+$connection = new AMQPStreamConnection($server, $port, $login, $pass);
+$channel    = $connection-&gt;channel();
+$channel-&gt;queue_declare($queue, false, true, false, false);
+
+$channel-&gt;basic_publish(new AMQPMessage($message, [&#39;delivery_mode&#39; =&gt; 2]), &#39;&#39;, $routeKey);
+$channel-&gt;close();
+$connection-&gt;close();
+</code></pre><h3 id="перспективы">Перспективы<a hidden class="anchor" aria-hidden="true" href="#перспективы">#</a></h3>
+<p>Более серьёзные сервисы пишутся на nodejs, а лучше на Go.</p>
+<p>Грубо говоря, если прогнать <a href="https://github.com/tsenart/vegeta">нагрузочный тест</a>, то с PHP вы получите 300 req/s, тогда как с node 7000 req/s, а с go 9000 req/s.</p>
+<p>С Go можно копать в сторону <a href="https://github.com/micro/go-micro">go-micro</a></p>
+<p>См. также</p>
+<ul>
+<li><a href="http://kamashev.name/2011/05/daemons-base/">Демоны — Основы</a></li>
+<li><a href="http://kamashev.name/2011/06/daemons-signals/">Демоны — Сигналы</a></li>
+<li><a href="http://kvz.io/blog/2009/01/09/create-daemons-in-php/">Create Daemons in PHP</a></li>
+<li><a href="https://www.sitepoint.com/php-rabbitmq-advanced-examples/">PHP and RabbitMQ : Advanced examples</a></li>
+<li><a href="https://www.rabbitmq.com/tutorials/tutorial-one-php.html">RabbitMQ introduction</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-manage-rabbitmq">How to Install and Manage RabbitMQ</a></li>
+<li><a href="https://rclayton.silvrback.com/failing-at-microservices">Failing at Microservices</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

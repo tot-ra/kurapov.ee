@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="четверг, 4 ноября 2010 г. в 09:48:19
+Мой комп потихоньку устаревает с прошлого обновления и я решил потратить пару дней и изучить рынок на случай апгрейда, заодно узнать что нового есть и куда движется железо.
+Требования
+Это центральный многофункциональный комп в доме — хранилище и просмотра фильмов на телевизоре, игровая станция,
+рабочая станция
+и сервер для торрентов (т.е. постоянно включен). В связи с этим необходимо что-бы он был
+
+
+Тихий, т.е. не мешал работать, смотреть кино или даже ночью спать — уровень шума ниже 30 дб на расстоянии 1 м">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/devices/%D1%82%D0%B8%D1%85%D0%B8%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BA-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%83-2011-%D0%B3%D0%BE%D0%B4%D0%B0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/devices/%D1%82%D0%B8%D1%85%D0%B8%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BA-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%83-2011-%D0%B3%D0%BE%D0%B4%D0%B0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>четверг, 4 ноября 2010 г. в 09:48:19</p>
+<p>Мой комп потихоньку устаревает <a href="http://kurapov.name/rus/technology/gadgets/bying_PC_2006/">с прошлого обновления</a> и я решил потратить пару дней и изучить рынок на случай апгрейда, заодно узнать что нового есть и куда движется железо.</p>
+<h2 id="требования">Требования<a hidden class="anchor" aria-hidden="true" href="#требования">#</a></h2>
+<p>Это центральный многофункциональный комп в доме — хранилище и просмотра фильмов на телевизоре, игровая станция,</p>
+<p><strong>рабочая станция</strong></p>
+<p>и сервер для торрентов (т.е. постоянно включен). В связи с этим необходимо что-бы он был</p>
+<ul>
+<li>
+<p>Тихий, т.е. не мешал работать, смотреть кино или даже ночью спать — уровень шума ниже 30 дб на расстоянии 1 м</p>
+</li>
+<li>
+<p>Производительный — что-бы можно было играть в последние игры хотя бы с DirectX 10, желательно с возможностью апгрейда до двух видеокарт, пятиканальный звук, USB3</p>
+</li>
+<li>
+<p>Без оптических дисководов (5¼&quot;) но с большим числом жёстких дисков (3½&quot;)</p>
+</li>
+<li>
+<p>Эстетически красивый и небольшой (с поддержкой ATX материнки)</p>
+</li>
+<li>
+<p>По возможности дёшево (до 1200 € за корпус и 500 € за монитор) и качественно</p>
+</li>
+</ul>
+<h2 id="компоненты">Компоненты<a hidden class="anchor" aria-hidden="true" href="#компоненты">#</a></h2>
+<p>Модульность созданной в IBM архитектуры ПК играет такую же роль как и модульность в программном обеспечении — выбор огромен но ещё больше комбинаций всех компонентов. Решаешь взять одно - оказывается что нельзя выбрать другое. Всевозможные несовмести сокетов и частот ограничивают все возможные вариации, но неискушённый пользователь в своём максимализме может просто переплатить и не получить то что хочется. В этом плане очень хочется вслепую взять Apple Mac Pro и надеяться что там железо топовое, но переплачивать в два раза нет возможности (~2000€) так же как и за HP Z800, где два Xeon процессора, водяное охлаждение, поддержка до 192 гб оперативки, красивый корпус (~4615€)</p>
+<h3 id="корпус">Корпус<a hidden class="anchor" aria-hidden="true" href="#корпус">#</a></h3>
+<p>Корпуса делают из стали (прочней) или алюминия (легче) с отделкой из полированного алюминия, пластика, резины. Задача корпуса — удобно крепить компоненты и провода, изолировать шум, поддерживать вентиляцию и охлаждение компонентов. Естественно одно другому противоречит — чем больше элементов корпуса и вентиляторов с сеткой и фильтрами тем больше шума.</p>
+<p>Отличные корпуса в порядке убывания производят следующие компании — Silverstone, Antec, Nexus, Lian Li, Thermaltake. Мне не нужен дорогой корпус типа Thermaltake Level10 а так же я немогу достать только вышедшие типа <a href="http://www.nexustek.nl/nexus_prominent9_premium_silent_pc_case.htm">Nexus Prominent 9</a>. и немогу взять красивый SilverStone Fortress FT02 из-за 5 мест под жёсткие диски. Поэтому наиболее подходят:</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Zalman MS1000-HS1</strong></td>
+          <td>Thermaltake Element G</td>
+          <td><a href="http://www.fractal-design.com/?view=product&category=2&prod=48">Fractal Design Define R3, Black Pearl</a></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Отличный внешний вид</li>
+<li>Звукоизоляция</li>
+<li>7 отсеков под жёсткие диски</li>
+<li>Hot swap жёстких дисков</li>
+</ul>
+<ul>
+<li>внутренность не окрашена</li>
+</ul>
+<p>~<strong>146€</strong> + 7 отсеков под жесткие диски с доставаемым контейнером</p>
+<ul>
+<li>Три огромных 200 мм вентилятора</li>
+<li>Закрываемый на замок корпус</li>
+<li>4 USB розетки</li>
+<li>Уплотнители на дверцах</li>
+</ul>
+<ul>
+<li>Сбоку вентилятор без фильтра и отверстие не круглое</li>
+<li>Шумный</li>
+<li>Нет USB3</li>
+</ul>
+<p><strong>~117 €</strong><br>
+<a href="http://www.youtube.com/watch?v=uFg1JluB8hI">Обзор</a> Горизонтальная вентиляция</p>
+<ul>
+<li>Звукоизоляция и чёрный интерьер</li>
+<li>8 отсеков под жёсткие диски</li>
+</ul>
+<ul>
+<li>Съёмная передняя панель с проводами и дверцей</li>
+<li>Из Эстонии трудно достать<br>
+Теперь высокие (full tower) корпуса..</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>BitFenix Collosus</td>
+          <td>Antec Dark Fleet 85</td>
+          <td>Zalman GS1000</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p> </p>
+<p> </p>
+<ul>
+<li>7 отсеков под жёсткие диски</li>
+<li>Резиновая отделка снаружи</li>
+<li>Внешняя панель с USB3 и замком</li>
+<li>Большие 230мм вентиляторы</li>
+</ul>
+<ul>
+<li>5 отсеков под оптические диски</li>
+<li>Рифлёная поверхность для подсветки</li>
+<li>Пластиковая дверца</li>
+</ul>
+<ul>
+<li>USB3</li>
+<li>9 Жестких дисков</li>
+</ul>
+<ul>
+<li>Некрасивые и мешающие дверцы</li>
+<li>Слишком игровой (7 кулеров), конкурирует с CoolerMaster HAF-X</li>
+<li>Hotswap SATA диск наверху</li>
+</ul>
+<p><strong>~125 <strong>€</strong></strong></p>
+<p>6 отсеков под жёсткие диски<br>
+-вертикально откидывающиеся дверцы</p>
+<p><strong>~150 €</strong><br>
+ Блок питания — SeaSonic 750w, <strong>143€</strong></p>
+<p>Взял корпус Zalman HS1 + HDD модуль, фактически HS2 версия с 6 быстро сменяемыми дисками. Блок питания Seasonic 600w</p>
+<hr>
+<h3 id="охлаждение">Охлаждение<a hidden class="anchor" aria-hidden="true" href="#охлаждение">#</a></h3>
+<p>Теперь когда выбран корпус, надо продумать какое будет использоваться охлаждение процессора и видеокарты. Их три типа и я выбираю пассивное, надеясь на внутренний обдув корпуса - это самое тихое решение, но рассеивание тепла радиатора должно быть больше чем нагрев того же процессора.</p>
+<p>Я выбрал Scythe Ninja в надежде что его радиатор справится с Intel i7, но как оказалось, без движения воздуха температура растёт чуть ли не на 1 градус каждые 30 сек и спокойно доходит до 60-70 градусов Цельсия. Поэтому поставляемый с ним же вентилятор я поставил на минимальные обороты.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Радиатор + вентилятор</th>
+          <th>Водяное</th>
+          <th>Пассивное</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Типичное и относительно дешёвое решение, хотя и шумное. Например медный Zalman CNPS9700</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>
+<p>Swiftech + Koolance для охлаждения всех компонентов</p>
+</li>
+<li>
+<p>внешний <a href="http://www.zalman.co.kr/ENG/product/Product_Read.asp?idx=183">Zalman Reserator 1 V2</a></p>
+</li>
+<li>
+<p>внутренние Corsair Hydro Series H50</p>
+</li>
+<li>
+<p><strong>Scythe Ninja 3 - 44 EUR</strong></p>
+</li>
+<li>
+<p>Arctic Freezer 7</p>
+</li>
+<li>
+<p>Coolermaster Z600 - до 89W</p>
+</li>
+<li>
+<p>Thermalright HR-01</p>
+</li>
+</ul>
+<h3 id="процессор">Процессор<a hidden class="anchor" aria-hidden="true" href="#процессор">#</a></h3>
+<p>Как <a href="http://www.cpubenchmark.net/high_end_cpus.html">показывают тесты</a>, сейчас самые топовые модели у Intel это серия Core i7 и Xeon X56** и если равняться на сборку от Apple Mac Pro, то они используют 4х ядерный Intel Xeon X3460 или же двухпроцессорную сборку из E5620. Более топовые модели практически сразу приближаются к 1000$ и мне не по карману. Из приведённых ниже вариантов видно что 800 серия быстрей работает с памятью, но максимальная пропускная способность при полной загрузке ниже учитывая трёхканальность 900 серии.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Название</td>
+          <td>Частота</td>
+          <td>Пункты</td>
+          <td>Цена</td>
+          <td>Работа с памятью</td>
+      </tr>
+      <tr>
+          <td><a href="http://ark.intel.com/Product.aspx?id=48499">Intel Core i7 875K</a></td>
+          <td>2.93ГГц</td>
+          <td>6,443</td>
+          <td>300 €</td>
+          <td>Двухканальная до 16ГБ на 1333МГц</td>
+      </tr>
+      <tr>
+          <td><a href="http://ark.intel.com/Product.aspx?id=37150"><strong>Intel Core i7 950</strong></a></td>
+          <td>3.07ГГц</td>
+          <td>6,307</td>
+          <td><strong>256 €</strong></td>
+          <td>Трёхканальная до 24ГБ на 1033МГц</td>
+      </tr>
+      <tr>
+          <td><a href="http://ark.intel.com/Product.aspx?id=42931">Intel Xeon X3460</a></td>
+          <td>2.80ГГц</td>
+          <td>6,239</td>
+          <td>$348.99</td>
+          <td>Двухканальная до 32ГБ на 1333МГц</td>
+      </tr>
+  </tbody>
+</table>
+<p>Разница невелика, я возьму 950 что подешевле. Отличия от предыдущего поколения Intel Core 2 в целом - улучшение пропускных способностей внутренних шин между 4 ядрами, их модульность, виртуализация и улучшение энергопотребления. Если хочется использовать более быструю (1333MHz и выше) память, то прийдётся ускорять процессор, благо он разгоняется до 4 ГГц без проблем, иначе же смысла брать быструю память без поддержки её процессором смысла нет.</p>
+<h3 id="материнская-плата">Материнская плата<a hidden class="anchor" aria-hidden="true" href="#материнская-плата">#</a></h3>
+<p>В выбранном процессоре используется LGA1366 сокет и сразу надо ограничить себя в желании удариться в геймеров-максималистов с <a href="http://www.youtube.com/watch?v=08q6vJZ7FZM">GA-X58A-UD9</a>. Материнка должна поддерживать кроме выбранного процессора и трёхканальной памяти минимум 6 жёстких дисков, желательно с дополнительным SATA3 диском под SSD, минимум 6 USB2 портов сзади и два USB3</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="http://www.msi.com/index.php?func=proddesc&prod_no=1804&maincat_no=1">MSI X58 Pro-E</a></td>
+          <td><a href="http://www.gigabyte.ru/products/mb/specs/ga-x58a-ud3r_10.html"><strong>GIGABYTE GA-X58A-UD3R</strong></a></td>
+          <td><a href="http://www.asus.com/product.aspx?P_ID=QtpKQuERkuYw6trc&templete=2">ASUS P6T</a></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>+Трёхканальная память до 24 ГБ</p>
+<ul>
+<li>8 канальный звук</li>
+<li>до 7 SATA жёстких дисков<br>
++3 PCI слота</li>
+<li>Crossfire есть</li>
+</ul>
+<ul>
+<li>SLI нет</li>
+<li>Есть старая IDE шина</li>
+<li>Нет USB3</li>
+</ul>
+<p><strong>150 €</strong></p>
+<ul>
+<li>Трёхканальная память до 24 ГБ</li>
+<li>7.1 канальный звук</li>
+<li>гигабитный ethernet</li>
+<li>Crossfire/SLI поддержка для видеокарт</li>
+<li>до 10 жёстких дисков (!), из них</li>
+<li>два SATA3 (!)</li>
+<li>два USB3</li>
+</ul>
+<ul>
+<li>возможный писк конденсаторов</li>
+<li>мало USB2 сзади (4 шт.)</li>
+<li>радиатор перегораживает некоторые интерфейсы</li>
+</ul>
+<p><strong>182 €</strong></p>
+<ul>
+<li>8 SATA интерфейсов</li>
+</ul>
+<p><strong>173€</strong></p>
+<h3 id="оперативка">Оперативка<a hidden class="anchor" aria-hidden="true" href="#оперативка">#</a></h3>
+<p>Kingston PC3-10600 1333MHz 6GB (3 штуки по 2GB) - <strong>77</strong>**€**</p>
+<h3 id="жесткие-диски">Жесткие диски<a hidden class="anchor" aria-hidden="true" href="#жесткие-диски">#</a></h3>
+<p>Некоторая память у меня осталась от старого компа которая пойдёт на 3-терабайтовое хранилище. Из новых хочется один SSD под операционную систему для тишины и быстрой загрузки с последующим апгрейдом дисков из хранилища в два в RAID0-режимном диска под критические данные (фото и документы) + те же 3 терабайта под мультимедиа. </p>
+<p><a href="http://www.thg.ru/storage/ssd_2010_2/print.html">Cогласно тестам</a> на первом месте стоит продукт компании Crucial. Можно заметить что у всех SSD дисков на запись скорость всегда ниже чтения, а у лидера она ещё и нестабильная. Кроме того из Эстонии его не просто достать, а SATA3 на выбранной материнке у меня тоже нет.</p>
+<ul>
+<li>
+<p>Crucial 128GB RealSSD C300 2.5-inch SATA 6GB/s CTFDDAC128MAG-1G1 (~300MB/s при чтении 192MB/s при записи).</p>
+</li>
+<li>
+<p>Kingston SSDNow V Series 128GB D/Kit (250MB/s, 182MB/s) ~<strong>206€</strong></p>
+</li>
+<li>
+<p>OCZ Vertex Series 120GB (203MB/s при записи, 82 MB/s при чтении)</p>
+</li>
+</ul>
+<p>upd. Взял Crucial M4 128 GB SSD. Если вы хотите хороший диск, то не смотрите на скорость, а смотрите на <a href="http://en.wikipedia.org/wiki/IOPS">IOPS</a>. Мой, согласно спецификации достигает 40 тыс IOPS, за 190€.</p>
+<p>upd2. Через 2 года работы, SSD начал пахать носом - внезапно каждые пол часа работы останавливались подвисанием ОСи. Как оказалось, это из-за бага ранних версий (в моём случае версии 0002). Решается обновлением firmware, просто запустив exe файлик с офф сайта. Сначала у меня не работало, надо было перевести в режим IDE + кабель HDD поставить в гнездо master.</p>
+<h3 id="видеокарты">Видеокарты<a hidden class="anchor" aria-hidden="true" href="#видеокарты">#</a></h3>
+<p>Играть я буду редко но хочется что-бы последние игры работали без проблем. Поэтому желательны DirectX 11 и возможность расширения с Crossfire, в то же время желательно пассивное охлаждение и несколько выходов на разные мониторы.</p>
+<p>Что-бы разобраться в нумерации продуктов Nvidia надо вспомнить что моя предыдущая видеокарта была 7900GS. После 7* серии нумерация пошла дальше - 8,9,200, 400. На данный момент в среднебюджетном варианте Nvidia предлагает например <strong>N460</strong> чип с 1 ГБ памятью, DirectX 11, с 150 Вт потреблением, 675 Мгц, 907 Гигафлопс. За ~192 €. Более мощные 480 примерно в полтора раза мощней, более дешёвые 430 так же более слабые. . </p>
+<p>У поглощённой AMD ATI в такой же ситуации находится Radeon R800 серия и из неё например чип <strong>HD 5850</strong> - 725 Мгц, 150 Вт, 1 ГБ памяти, 2088 Гигафлопс. За ~241 €.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="http://www.gigabyte.com/products/product-page.aspx?pid=3584#ov"><strong>Gigabyte Radeon HD 5770 GV-R577SL-1GD  <!-- raw HTML omitted --></strong></a></td>
+          <td>MSI Nvidia N460GTX Cyclone</td>
+          <td><a href="http://www.sapphiretech.com/presentation/product/?leg=&psn=000101&pid=352">Sapphire ATI HD5670</a> ULTIMATE</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Пассивное охлаждение</li>
+<li>1GB DDR5</li>
+<li>DirectX 11</li>
+</ul>
+<ul>
+<li>Достаточно длинная и может не поместиться в корпус<br>
+150 €</li>
+</ul>
+<ul>
+<li>1GB GDDR5</li>
+<li>Мощнее</li>
+<li>DirectX 11</li>
+</ul>
+<ul>
+<li>Вентилятор, хоть и тихий</li>
+</ul>
+<p>+1GB DDR5</p>
+<ul>
+<li>Пассивное охлаждение</li>
+<li>Crossfire</li>
+<li>DirectX 11</li>
+</ul>
+<h3 id="итого">Итого<a hidden class="anchor" aria-hidden="true" href="#итого">#</a></h3>
+<p>В качестве монитора я выбрал дорогой но качественный Dell 2209WA U2711 из-за IPS-матрицы за <strong>247 ~600 €</strong>. С поворачиваемым дисплеем код будет удобней писаться, да и сайты читать лучше. В перспективе — поставить второй.</p>
+<p>В сумме - тихий но очень быстрый комп за <strong>1640€</strong>.</p>
+<p>Читайте по теме:</p>
+<ul>
+<li><a href="http://www.quietpc.com/">quietpc.com</a></li>
+<li><a href="http://acousticpc.com/">acousticpc.com</a></li>
+<li><a href="http://www.gamepc.com/shop/systemfamily.asp?family=ds1">gamepc.com</a></li>
+</ul>
+<p>You try to install Windows 8 (CP), and encountered the following error:</p>
+<p>&ldquo;We couldn&rsquo;t create a new partition or locate an existing one. For more information, see the Setup log files.&rdquo;</p>
+<p>Resolution:</p>
+<p>Try to following methods:</p>
+<p>1)Check if you have an SD Card in the system. If you do, you remove it and run setup again ( you may have to remove a drive if u have more than one drive)</p>
+<ol start="2">
+<li>Once the setup fails to find the partition, just close the setup window (the top-right-hand side red X does the job).</li>
+</ol>
+<p>From that point, you should be brought back at the initial setup screen.Choose &ldquo;Repair&rdquo; then go to the advanced tools and start the command line.</p>
+<p>Type Start DISKPART.</p>
+<p>Type LIST DISK and identify your SSD disk number (from 0 to n disks).</p>
+<p>Type SELECT DISK where is your SSD disk number.</p>
+<p>Once u have selected the disk you have to type the selected disk in front of each command ie &ldquo;DISK 0 CLEAN, DISK 0 CREATE PARTITION PRIMARY &quot; etc.</p>
+<p>Type CLEAN</p>
+<p>Type CREATE PARTITION PRIMARY</p>
+<p>Type ACTIVE</p>
+<p>Type FORMAT FS=NTFS QUICK</p>
+<p>Type ASSIGN</p>
+<p>Type EXIT twice ( U end up with two command boxes) one EXIT to get out of DiskPart, the other EXIT to get out of the command line tool)</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

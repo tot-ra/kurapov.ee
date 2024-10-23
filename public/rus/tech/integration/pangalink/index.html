@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="среда, 25 апреля 2007 г. в 12:18:50
+Банковская ссылка (pangalink) — способ обмена данных купли-продажи между клиентом, банком и магазином, очень распространённая в Эстонии. Эта услуга предоставляется банками в виде услуги магазинам, которым надо платить
+
+За подключение (SEB - 750 крон, Hanza - 1000 крон)
+1% или 2-50 крон за сделку
+Месячная оплата (Hanza - 1000 крон)
+
+Кроме возможности оплаты имеется возможность авторизации пользователей (что используется например на учебном sais.ee ). Зачем это надо? Потому что для клиента это очень удобно, судите сами - весь процесс оплаты счёта:">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/integration/pangalink/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/integration/pangalink/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>среда, 25 апреля 2007 г. в 12:18:50</p>
+<p>Банковская ссылка (pangalink) — способ обмена данных купли-продажи между клиентом, банком и магазином, очень распространённая в Эстонии. Эта услуга предоставляется банками в виде услуги магазинам, которым надо платить</p>
+<ul>
+<li>За подключение (SEB - 750 крон, Hanza - 1000 крон)</li>
+<li>1% или 2-50 крон за сделку</li>
+<li>Месячная оплата (Hanza - 1000 крон)</li>
+</ul>
+<p>Кроме возможности оплаты имеется возможность авторизации пользователей (что используется например на учебном <a href="http://sais.ee/">sais.ee</a> ). Зачем это надо? Потому что для клиента это очень удобно, судите сами - весь процесс оплаты счёта:</p>
+<ol>
+<li>Клиент выбирает нужные товары и получает в итоге счёт и ссылку на банк</li>
+<li>Внутри ссылки зашиты все данные об оплате и счетах, и подтверждены криптоустойчивой подписью (signature). Клиент оплачивает в банке полноценный информативный счёт.</li>
+<li>Банк редиректит клиента обратно на сайт опять со всеми данными об оплате вместе с подписью.</li>
+</ol>
+<p>Отчасти поэтому в Эстонии уже есть и <a href="https://www.arved.ee/">arved.ee</a> и практически в каждом магазине иконки банков.</p>
+<p><a href="http://seb.ee/index/010227020201"><img loading="lazy" src="https://www.arved.ee/public/gfx/banklink_seb.gif" alt=""  />
+</a><a href="http://www.sampopank.ee/et/14730.html"><img loading="lazy" src="https://www.arved.ee/public/gfx/banklink_sampo.gif" alt=""  />
+</a><a href="http://www.krediidipank.ee/ari/arveldus/pangalink/index.html"><img loading="lazy" src="https://www.arved.ee/public/gfx/banklink_krediidi.gif" alt=""  />
+</a><a href="http://www.nordea.ee/Teenused+ettev%C3%B5ttele/E-lahendused/E-makse/787812.html"><img loading="lazy" src="https://www.arved.ee/public/gfx/banklink_nordea.gif" alt=""  />
+</a></p>
+<p>В общем для работы необходимы:</p>
+<ul>
+<li>уникальный id, выдаётся в банке после заключения договора</li>
+<li>сертификаты - <a href="http://en.wikipedia.org/wiki/Public_key">публичный ключ</a> банка и собственные публичные и приватные ключи</li>
+<li>собственно программа для обмена данными (об этом чуть ниже)</li>
+</ul>
+<p>Что-бы подать заявление, необходимо сначала сгенерировать свой приватный ключ и CSR-запрос в банк. Сергей <a href="http://setor.net/pangalink.html">подробно об этом рассказывает</a></p>
+<hr>
+<h3 id="html-форма-ipizza">Html форма, iPizza<a hidden class="anchor" aria-hidden="true" href="#html-форма-ipizza">#</a></h3>
+<p>Что-бы передать данные в банк необходимо создать в обычном html-документе форму, куда в скрытых параметров прописать нужные данные. Названия параметров - описаны в спецификациях, но в общем почти все банки кроме Nordea следуют протоколу iPizza. Когда параметры готовы, то пользователю остаётся перейти по соответсвующему адрессу формы, который зависит от банка:</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Банк</strong></td>
+          <td><strong>Gateway</strong></td>
+          <td><strong>VK_REC_ID получателя</strong></td>
+      </tr>
+      <tr>
+          <td>Hanza</td>
+          <td><a href="https://www.hanza.net/cgi-bin/hanza/pangalink.jsp">https://www.hanza.net/cgi-bin/hanza/pangalink.jsp</a></td>
+          <td>HP</td>
+      </tr>
+      <tr>
+          <td>SEB</td>
+          <td><a href="https://www.seb.ee/cgi-bin/unet3.sh/un3min.r">https://www.seb.ee/cgi-bin/unet3.sh/un3min.r</a></td>
+          <td>EYP</td>
+      </tr>
+      <tr>
+          <td>Sampo pank</td>
+          <td><a href="https://www2.sampopank.ee/ibank/pizza/pizza">https://www2.sampopank.ee/ibank/pizza/pizza</a></td>
+          <td>SAMPOPANK</td>
+      </tr>
+      <tr>
+          <td>Krediidipank</td>
+          <td><a href="https://i-pank.krediidipank.ee/teller/maksa">https://i-pank.krediidipank.ee/teller/maksa</a></td>
+          <td>KREP</td>
+      </tr>
+      <tr>
+          <td>Nordea</td>
+          <td><a href="https://netbank.nordea.com/pnbepay/epay.jsp">https://netbank.nordea.com/pnbepay/epay.jsp</a></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="защищённая-передача">Защищённая передача<a hidden class="anchor" aria-hidden="true" href="#защищённая-передача">#</a></h3>
+<p>Что-бы никто не мог вмешаться в такой важный финансовый процесс, передаваемые данные шифруются по алгоритму RSA, фактически обмен происходит с SSL протоколом. Для генерирования всех передаваемых параметров магазину необходимы:</p>
+<ul>
+<li>Банковский публичный ключ что-бы сгенерировать сообщение банку, обычно это файл с расширением .pem (но подходят и сертификаты .cer)</li>
+<li>Личный ключ что-бы раcкодировать сообщение которое сгенерировал банк публичным ключём магазина</li>
+<li>Имя банковского сервиса в качестве параметра (VK_SND_ID по iPizza)</li>
+<li>Счёт на который деньги будут переводиться в качестве параметра (VK_ACC по iPizza)</li>
+</ul>
+<p>Таким образом приватный ключ магазина выглядит примерно так (данных в <a href="http://www.php.net/manual/en/function.base64-encode.php">base64</a> -кодировке больше просто)</p>
+<p><code>-----BEGIN RSA PRIVATE KEY----- MIICWwIBAAKBgQC6GI5uaA7hEkgeP98VHL6TSxJwwPI+Mh+rFxKQPCgarT3/nZCS Gz1r223+gfH/adV4IDvlbYT18VQ4vSspX+QRAidFeZvsfv99FewnwNoTL3LwYp/K r9eW5YCpCEe8Crziks0vf92PNoHgNAL0iVo0Zma1ScDBSPBlQJoZ1UiwoQIDAP// -----END RSA PRIVATE KEY-----</code></p>
+<p>И соответсвенно вместо PRIVATE, у публичного ключа другие данные и PUBLIC заголовок. Естественно что приватный ключ на то и приватный, и если он вдруг засветится, то любой желающий с достаточным умением сможет подписать фиктивную оплату товара, поэтому убедитесь, что ключи находятся в каталогах выше читаемого из сети www-каталога . Ключи можно <a href="http://www.kaubandus.fantaasia.com/votmed.html">сгенерировать</a> при помощи <a href="http://www.slproweb.com/products/Win32OpenSSL.html">OpenSSL</a>. Банку в свою очередь для активирования услуги необходим публичный ключ магазина.</p>
+<h3 id="создание-подписи">Создание подписи<a hidden class="anchor" aria-hidden="true" href="#создание-подписи">#</a></h3>
+<p>После того как мы прописали hidden-поля параметров с названиями типа VK_RETURN (ссылка куда надо вернуться после оплаты), необходимо все эти данные подписать переменной VK_MAC, которая генерируется фукциями openssl_pkey_get_private и openssl_sign. </p>
+<p>После того как товар оплачен <strong>надо сделать подтверждение</strong> оплаты на своём сайте. Иначе получится <a href="http://math.ut.ee/~arnis/bankauth/thesis.pdf">такая уязвимость</a>. Для этого мы из REQUEST переменной выдираем что нам выслал банк и подтверждаем подпись используя функции <em>openssl_pkey_get_public</em> и <em>openssl_verify</em> из той же VK_MAC. Ну а если подпись банка правильная и VK_SERVICE=1101, то всё в порядке.</p>
+<p>Вот пример <a href="http://blog.zone.ee/2006/12/12/pangalink/">zone.ee</a> - <a href="https://data.zone.ee/phpsn/banklink/pay.php">pay.php</a> с формой оплаты, <a href="https://data.zone.ee/phpsn/banklink/notify.php">notify.php</a> с подтверждением и <a href="https://data.zone.ee/phpsn/banklink/config.php">config.php</a> с настройками. Подобное можно сотворить и <a href="http://www.php.ee/foorum/index.php?post=11187&j=2">на c++</a> , но естественно с большими нервами.</p>
+<h3 id="авторизация">Авторизация<a hidden class="anchor" aria-hidden="true" href="#авторизация">#</a></h3>
+<p>Кроме экзотических способов оплаты есть и способ авторизации пользователя - магазину передаются имя, фамилия и личный код (isikukood) по Эстонии. Дальше всё сводится к аутидентификации <a href="https://kurapov.ee/technology/web/id_kaart_login">с id-картой</a>. Авторизация отличается лишь тем что нет нужды передавать данные об оплате, а вместо этого указать другой код сервиса (4002 для SEB) и VK_REC_ID (EYP для SEB). Кстати по слухам авторизация для клиентов - платная услуга, так что пользуйтесь ID-картой</p>
+<h3 id="nordea-e-payment">Nordea e-payment<a hidden class="anchor" aria-hidden="true" href="#nordea-e-payment">#</a></h3>
+<p>Банк Nordea решил отличиться — если Hanza, SEB и Sampo отличаются мелкими различиями в длине передаваемых параметров, то в Nordea не используется iPizza вовсе, а вместо этого своя система &ldquo;e-payment&rdquo; (префиксу кодов - SOLOPMT). А ведь в мире ещё есть и <a href="http://www.itransact.com/">iTransact</a> …</p>
+<p>Главное отличие - отсутсвие RSA, т.е. шифрование симметричное и очень простое, хотя алгоритм очень схож с iPizza. Для создания подписи, MAC (message authentication code) надо просто сложить определённые в спецификации поля вместе (подобно GET запросу), полученную строку сложить с высланным из банка ключём (32 символа) и получить md5-hash. Конечно защита послабей чем у sha-алгоритма, зато реализация проще - на пальцах можно за день сделать.</p>
+<p>Функция для создания подписи, куда передаются поля и симметричный ключ выглядит так:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">genMac</span>($arrFields, $strMacKey){
+</span></span><span style="display:flex;"><span>    $strMac<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ((<span style="color:#66d9ef">array</span>)$arrFields <span style="color:#66d9ef">as</span> $key<span style="color:#f92672">=&gt;</span>$item){
+</span></span><span style="display:flex;"><span>        $strMac<span style="color:#f92672">.=</span><span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;&amp;&#39;</span>,<span style="color:#e6db74">&#39;&amp;&#39;</span>,$item)<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    $strMac<span style="color:#f92672">.=</span>$strMacKey<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>;
+</span></span><span style="display:flex;"><span>    $strMac<span style="color:#f92672">=</span><span style="color:#a6e22e">strtoupper</span>(<span style="color:#a6e22e">md5</span>($strMac));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $strMac;
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><p>Подтверждение оплаты в результате такое же простое</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$hash <span style="color:#f92672">=</span> $_REQUEST[<span style="color:#e6db74">&#39;SOLOPMT_RETURN_VERSION&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">.</span>$_REQUEST[<span style="color:#e6db74">&#39;SOLOPMT_RETURN_STAMP&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">.</span>$_REQUEST[<span style="color:#e6db74">&#39;SOLOPMT_RETURN_REF&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">.</span>$_REQUEST[<span style="color:#e6db74">&#39;SOLOPMT_RETURN_PAID&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">.</span>$MAC_KEY<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;&amp;&#39;</span>; <span style="color:#75715e">//Mac key из конфигурации
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>$hash<span style="color:#f92672">=</span><span style="color:#a6e22e">strtoupper</span>(<span style="color:#a6e22e">md5</span>(($hash)));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>($hash<span style="color:#f92672">==</span>$_REQUEST[<span style="color:#e6db74">&#39;SOLOPMT_RETURN_MAC&#39;</span>]){} <span style="color:#75715e">//success
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">else</span>{} <span style="color:#75715e">//failure
+</span></span></span></code></pre></div><h3 id="отладка">Отладка<a hidden class="anchor" aria-hidden="true" href="#отладка">#</a></h3>
+<p>Режим тестирования есть также практически у каждого банка, куда можно зайти при помощи тестового аккаунта, но только SEB сделал его открытым (см. приложенные файлы). Местные программеры даже создали эмулятор всех этих протоколов - <a href="https://www.pangalink.net/en/">pangalink.net</a></p>
+<ul>
+<li>
+<p>SEB: <a href="https://www.seb.ee/cgi-bin/dv.sh/un3min.r">https://www.seb.ee/cgi-bin/dv.sh/un3min.r</a></p>
+</li>
+<li>
+<p>Sampo: высылает по договорённости доступ к своему серверу с виртуальным доменом *.optiva.ee, поэтому надо прописывать вручную IP в свой hosts файл.</p>
+</li>
+<li>
+<p>Nordea: <a href="https://solo3.nordea.fi/cgi-bin/SOLOPM01">https://solo3.nordea.fi/cgi-bin/SOLOPM01</a><br>
+SOLOPMT_CUR=EUR<br>
+SOLOPMT_RCV_ID=12345678<br>
+MAC key=LEHTI</p>
+</li>
+<li>
+<p>Krediidipank имеет тестовый доступ по https://secure.krediidipank.ee/teller/maksa</p>
+</li>
+</ul>
+<p>Из личного опыта проблемы возникали из-за того что</p>
+<ol>
+<li>
+<p>Сервис на стороне банка не был активирован</p>
+</li>
+<li>
+<p>Различия спецификации и реальной работы:</p>
+<ul>
+<li>длины параметра имени получателя (например Hanza должен его обрезать на 30 символах)</li>
+<li>Nordea - SOLOPMT_LANGUAGE обязателен на самом деле</li>
+</ul>
+</li>
+<li>
+<p>Для тестирования живой системы нужен счёт</p>
+</li>
+</ol>
+<p>Сайты по теме:</p>
+<ul>
+<li>
+<p><a href="https://www.pangalink.net/">среда для тестирования</a> </p>
+</li>
+<li>
+<p><a href="http://banklink.inoryy.com/#examples">хорошо структурированная библиотека</a> на php от Романа
+<img loading="lazy" src="img/61.pdf" alt=""  />
+
+<img loading="lazy" src="img/60.pdf" alt=""  />
+</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

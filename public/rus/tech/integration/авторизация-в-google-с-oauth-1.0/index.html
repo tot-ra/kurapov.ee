@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="пятница, 10 декабря 2010 г. в 11:06:14
+Google как и Твиттер, предоставляет разработчикам возможность использовать OAuth 1.0 для авторизации пользователя стороннему приложению предоставлению конкретных данных по API, причём поскольку Google не централизованный Facebook и у него много полноценных сервисов типа Youtube и Picasa, то для каждого из них выборка данных своя. В общем эта авторизация (ключевые слова - OpenID, AuthSub, Federated Login) и доступ к данным (ключевые слова - JSON, XML, REST, Atom) называется Google Data Protocol.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/integration/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-google-%D1%81-oauth-1.0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/integration/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-google-%D1%81-oauth-1.0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>пятница, 10 декабря 2010 г. в 11:06:14</p>
+<p>Google как и Твиттер, предоставляет разработчикам возможность использовать <strong>OAuth 1.0</strong> для авторизации пользователя <a href="https://www.google.com/accounts/IssuedAuthSubTokens">стороннему приложению</a> предоставлению конкретных данных по API, причём поскольку Google не централизованный Facebook и у него много полноценных сервисов типа Youtube и Picasa, то для каждого из них выборка данных своя. В общем эта авторизация (ключевые слова - OpenID, AuthSub, Federated Login) и доступ к данным (ключевые слова - JSON, XML, REST, Atom) называется <a href="http://code.google.com/intl/ru/apis/gdata/"><strong>Google Data Protocol</strong></a>.</p>
+<p><img loading="lazy" src="img/Pasted%20image%2020241020020908.png" alt=""  />
+</p>
+<h3 id="используем-zend-framework">Используем Zend Framework<a hidden class="anchor" aria-hidden="true" href="#используем-zend-framework">#</a></h3>
+<p>OAuth библиотек много - есть поставляемая для твиттера библиотека, есть <a href="http://code.google.com/p/oauth-php/">поставляемая для гугла</a>.. но я воспользуюсь Zend - платформой.</p>
+<p>1. <a href="https://www.google.com/accounts/ManageDomains">Регистрируем домен</a> = приложение, запоминаем Consumer Key + Secret. На локальной машине не получится - надо полноценно работающий домен</p>
+<ol start="2">
+<li>
+<p>Ставим из Zend Framework два модуля - Crypt и Oauth.</p>
+</li>
+<li>
+<p>Создаём настройки где указываем пути к услугам авторизации</p>
+</li>
+</ol>
+<pre tabindex="0"><code>$aGoogleConfig = array(
+    &#39;callbackUrl&#39;       =&gt;  &#39;http://kurapov.name&#39;,
+    &#39;siteUrl&#39;           =&gt; &#39;https://www.google.com/accounts/&#39;,
+    &#39;authorizeUrl&#39;      =&gt; &#39;https://www.google.com/accounts/OAuthAuthorizeToken&#39;,
+    &#39;requestTokenUrl&#39;   =&gt; &#39;https://www.google.com/accounts/OAuthGetRequestToken&#39;,
+    &#39;accessTokenUrl&#39;    =&gt; &#39;https://www.google.com/accounts/OAuthGetAccessToken&#39;,
+          &#39;consumerKey&#39;       =&gt; &#39;kurapov.name&#39;,
+    &#39;consumerSecret&#39;    =&gt; &#39;netetonenastojashijsekreteokfpwoekrf&#39;
+ );
+
+$consumer = new Zend_Oauth_Consumer($aGoogleConfig);
+$token = null;
+</code></pre><hr>
+<ol start="4">
+<li>Теперь проверяем есть ли у нас ключ доступа (access token) - на самом деле этот этап в самом конце происходит, но в коде он стоит именно тут. Ключ доступа мы получаем либо обменом на ключ запроса (request token), либо из сессии/БД куда его сохранили после первого получения. Метод getAccessToken возвращает полноценный объект, поэтому мы сериализуем его</li>
+</ol>
+<pre tabindex="0"><code>if($_SESSION[&#39;GOOGLE_ACCESS_TOKEN&#39;]){
+    $token = unserialize($_SESSION[&#39;GOOGLE_ACCESS_TOKEN&#39;]);
+}
+else
+    if(isset($_GET[&#39;oauth_token&#39;])){
+    $token = $consumer-&gt;getAccessToken( $_GET, unserialize($_SESSION[&#39;GOOGLE_REQUEST_TOKEN&#39;]) );
+    $_SESSION[&#39;GOOGLE_ACCESS_TOKEN&#39;] = serialize($token));
+}
+</code></pre><ol start="5">
+<li>Основная часть - если ключа доступа нет - запрашиваем ключ запроса с указанными двумя услугами (scope). Первый даст доступ к контактам а второй - к почте. Если же клиент уже подтвердил запрос и ключ доступа мы имеем (или получили из сессии/БД), то делаем два http-запроса.</li>
+</ol>
+<pre tabindex="0"><code>if(!$token){
+    $token = $consumer-&gt;getRequestToken(array( &#39;scope&#39; =&gt; &#39;http://www-opensocial.googleusercontent.com/api/people/ https://www.googleapis.com/auth/userinfo#email&#39;));
+
+    $_SESSION[&#39;GOOGLE_REQUEST_TOKEN&#39;] = serialize($token));
+    $consumer-&gt;redirect();
+}
+else{
+    $client = $token-&gt;getHttpClient($aGoogleConfig);
+    $client-&gt;setUri(&#39;https://www-opensocial.googleusercontent.com/api/people/@me/@self&#39;);
+    $client-&gt;setMethod(Zend_Http_Client::GET);
+    $response = $client-&gt;request();
+
+    $data = Zend_Json::decode($response-&gt;getBody());
+
+    $client = $token-&gt;getHttpClient($aGoogleConfig);
+    $client-&gt;setUri(&#39;https://www.googleapis.com/userinfo/email&#39;);
+    $client-&gt;setMethod(Zend_Http_Client::GET);
+    $response = $client-&gt;request();
+
+    $emailData=explode(&#39;&amp;&#39;,$response-&gt;getBody());
+    if($emailData){
+        foreach($emailDataas $sRow){
+            $aRow=explode(&#39;=&#39;,$sRow);
+            $data[$aRow[0]]=$aRow[1];
+        }
+    }
+
+    $arrProfile=array(
+        &#39;identifier&#39;       =&gt; $data[&#39;entry&#39;][&#39;profileUrl&#39;],
+        &#39;access_token&#39;     =&gt; serialize($token),
+        &#39;verifiedEmail&#39;    =&gt; $data[&#39;email&#39;],
+        &#39;name&#39;             =&gt; $data[&#39;entry&#39;][&#39;name&#39;],
+        &#39;photo&#39;            =&gt; $data[&#39;entry&#39;][&#39;thumbnailUrl&#39;],
+        &#39;url&#39;              =&gt; $data[&#39;entry&#39;][&#39;profileUrl&#39;]
+        );
+}
+</code></pre><p>В помощь существует <a href="http://googlecodesamples.com/oauth_playground/">OAuth playground</a>. Если вам нужны другие данные от гугла, то по протоколу достаточно определить другой scope, вот некоторые из них..</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Некоторые возможные значения scope-параметра</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Analytics</td>
+          <td><a href="https://www.google.com/analytics/feeds/">https://www.google.com/analytics/feeds/</a></td>
+      </tr>
+      <tr>
+          <td>Google Buzz</td>
+          <td><a href="https://www.googleapis.com/auth/buzz">https://www.googleapis.com/auth/buzz</a></td>
+      </tr>
+      <tr>
+          <td>Calendar</td>
+          <td><a href="https://www.google.com/calendar/feeds/">https://www.google.com/calendar/feeds/</a></td>
+      </tr>
+      <tr>
+          <td>Contacts</td>
+          <td><a href="https://www.google.com/m8/feeds/">https://www.google.com/m8/feeds/</a></td>
+      </tr>
+      <tr>
+          <td>Documents</td>
+          <td><a href="https://docs.google.com/feeds/">https://docs.google.com/feeds/</a></td>
+      </tr>
+      <tr>
+          <td>GMail</td>
+          <td><a href="https://mail.google.com/mail/feed/atom">https://mail.google.com/mail/feed/atom</a></td>
+      </tr>
+      <tr>
+          <td>orkut</td>
+          <td><a href="https://orkut.gmodules.com/social/rest">https://orkut.gmodules.com/social/rest</a></td>
+      </tr>
+      <tr>
+          <td>Picasa Web</td>
+          <td><a href="https://picasaweb.google.com/data/">https://picasaweb.google.com/data/</a></td>
+      </tr>
+  </tbody>
+</table>
+<p>Единственная огромная проблема всего этого решения — повторный запрос на привилегии когда пользователь уже авторизовал доступ. В твиттере это решалось использование authenticate URL, в фейсбуке в принципе нет такой проблемы.. с гуглом же пока есть <a href="http://googlecodesamples.com/hybrid/">гибридное решение</a> с OpenID где я сейчас и <a href="http://code.google.com/p/gdata-samples/source/browse/#svn/trunk/hybrid%3Fstate%3Dclosed">копаюсь</a>.</p>
+<p><img loading="lazy" src="img/Pasted%20image%2020241020020924.png" alt=""  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

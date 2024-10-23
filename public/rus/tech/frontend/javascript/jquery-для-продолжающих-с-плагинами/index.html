@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="понедельник, 28 апреля 2008 г. в 15:16:39
+jQuery - библиотека о которой в последнее время говорит практически каждый web-разработчик, верстальщик и дизайнер. Написанная с учётом CSS, она упрощает доступ к одному или нескольким DOM-элементам. Если вы ещё используете prototype, то можно использовать режим совместимости (правда не факт что у вас будут работать плагины). Стандартно доступ происходит благодаря функции $ или JQuery. Элементу можно добавить (.addClass) или отнять (.removeClass) CSS-класс. Если это input-элемент, то запись и чтение происходит в аттрибуты элемента (.attr) и напрямую к значению (.val) . Внутренние элементы можно задать как через (.html). Ajax очень просто вызывается функцией $.post (url, val, callback)">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/frontend/javascript/jquery-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D1%81-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/frontend/javascript/jquery-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D1%81-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>понедельник, 28 апреля 2008 г. в 15:16:39</p>
+<p><a href="http://docs.jquery.com/">jQuery</a> - библиотека о которой в последнее время говорит практически <a href="http://anton.shevchuk.name/javascript/jquery-for-beginners/">каждый web-разработчик</a>, верстальщик и дизайнер. Написанная с учётом CSS, она упрощает доступ к одному или нескольким DOM-элементам. Если вы ещё используете prototype, то можно использовать режим совместимости (правда не факт что у вас будут работать плагины). Стандартно доступ происходит благодаря функции $ или JQuery. Элементу можно добавить (<em>.addClass</em>) или отнять (<em>.removeClass</em>) CSS-класс. Если это input-элемент, то запись и чтение происходит в аттрибуты элемента (<em>.attr</em>) и напрямую к значению (<em>.val)</em> . Внутренние элементы можно задать как через (<em>.html</em>). Ajax очень просто вызывается функцией <em>$.post (url, val, callback)</em></p>
+<p>Кроме минимализма, ускоренности и CSS-селекторов библиотека мало чем по функциональности отличается от prototype, mootools. Она не расширяет родные JS-объекты, как это делает protype и существует в своём пространстве переменных, поэтому не конфликтует с другими библиотеками</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241016182436.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241016182447.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241016182456.png" alt=""  />
+</p>
+<h3 id="примеры">Примеры<a hidden class="anchor" aria-hidden="true" href="#примеры">#</a></h3>
+<ol>
+<li>Допустим надо сделать массовое удаление из списка (как в почте), для этого генерируется огромный список checkbox&rsquo;ов, а что-бы их все их массово выделить можно создать глобальный checkbox<code>&lt;input type=&quot;checkbox&quot; name=&quot;group[{$item.id}]&quot; class=&quot;group_checkbox&quot; onchange=&quot;$('.group_checkbox').attr('checked',this.checked);&quot;&gt;</code></li>
+<li>Часто встаёт вопрос оповещения пользователей об удачном добавлении, ошибке или просто информации. Для этого можно использовать три CSS-класса, при этом элементы можно прятать по прошествии какого-то времени. Для этого используется конструкция, запускающаяся сразу после создания DOM-дерева (а не всего документа)<code>$(document).ready(function() { setTimeout(function() {$('.error').fadeOut('slow');}, 20000);});</code></li>
+<li>Работа с select&rsquo;ами очень проста (даже с multiple=true), например если надо двумя кнопками перекидывать элементы двух списков, то поможет <a href="http://blog.jeremymartin.name/2008/02/easy-multi-select-transfer-with-jquery.html">такой код</a>:<code>$().ready(function() {   $('#add').click(function() { return !$('#select1 option:selected').remove().appendTo('#select2'); }); $('#remove').click(function() { return !$('#select2 option:selected').remove().appendTo('#select1'); });   $('#save').click(function(){ $('#select1 option').attr('selected',true); $('#select2 option').attr('selected',true);}); //при сохранении формы выделяем все эелементы   });</code></li>
+<li>Выделить в select&rsquo;е нужный элемент можно без цикла:<br>
+<code>$(&quot;#mySelect option[value='3']&quot;).attr('selected', 'selected');</code></li>
+<li>Проверить число отмеченных checkbox&rsquo;ов очень просто:<code>if (!$('.check_one:checked').length)</code></li>
+<li>Каждому элементу можно подключать (bind-ить) обработчики событий, даже несколько за раз…<code>$('#someinput').bind('keyup change keydown', function() { alert (&quot;one of three events is called!&quot;);});</code></li>
+<li>Изменить направление формы в зависимости от select&rsquo;а можно явно (но лучше выносить все обработчики в отдельный файл)<br>
+<code>&lt;form method=&quot;post&quot; action=&quot;{$data.filter_link}&quot; onsubmit=&quot;this.action=this.action+'/'+$('#filter_category option:selected').val();&quot;&gt;</code></li>
+</ol>
+<h3 id="классы-в-javascript">Классы в javascript<a hidden class="anchor" aria-hidden="true" href="#классы-в-javascript">#</a></h3>
+<p>Несмотря на отличные библиотеки я не спешу бросать prototype.js и переходить на jQuery, потому что плохой код можно писать в любом языке и с любой библиотекой. Поэтому немного ликбеза. В Javascript можно делать объекты - очень удобно инициализировать, но они уникальны и их как массив использовать нельзя:</p>
+<pre tabindex="0"><code>var CommentControl={ // объект читающий все комментарии
+    strURL:&#39;/comments/read/&#39;, //обычный параметр
+    Init:function(){ //декларация функции
+}}
+</code></pre><p>Классы в javascript инициализируются как обычные функции, внутри которых используется ключевое слово this</p>
+<pre tabindex="0"><code>function CommentBox(ID){
+    this.strURL=&#39;/comments/reply/&#39;+ID; //параметр куда отсылать ответ
+    this.ID=ID;
+    this.reply=function(){
+    alert(&#34;AJAX request goes here&#34;);
+}
+this.update=CommentControl.Read(ID); //ссылка на }
+</code></pre><h3 id="расширения-и-библиотеки">Расширения и библиотеки<a hidden class="anchor" aria-hidden="true" href="#расширения-и-библиотеки">#</a></h3>
+<p>Расширения (<a href="http://plugins.jquery.com/">plugins</a>) в основном написаны обычными разработчиками. В качестве более функциональных наработок с интерфейсом создаётся и <a href="http://ui.jquery.com/">jQuery UI</a>, как аналог scriptaculous для prototype, куда входят перетаскиваемые и сортируемые элементы и виджеты для интерфейса - аккордеон, табы, слайдеры и тп. Ниже привожу свой список полезных плагинов + советую уделить внимание презентации об разработке с учётом отключённого javascript. Значительно более детальный список есть на <a href="http://jquerylist.com/">jquerylist</a></p>
+<h2 id="изображения">Изображения<a hidden class="anchor" aria-hidden="true" href="#изображения">#</a></h2>
+<ul>
+<li><a href="http://jquery.com/demo/thickbox/">ThickBox</a> - галерея, аналог lightbox</li>
+<li><a href="http://fancy.klade.lv/">FancyBox</a> - тоже галерея, мне меньше нравится</li>
+<li><a href="http://devkick.com/lab/galleria/">Galleria</a> - галерея</li>
+<li><a href="http://www.openstudio.fr/jQuery-Multimedia-Portfolio.html?lang=en">Multimedia portfolio</a> - горизонтальный слайдер с видео, картинками и звуком</li>
+<li><a href="http://odyniec.net/projects/imgareaselect/">imgAreaSelect</a> - выделение области для вырезания</li>
+<li><a href="http://www.openstudio.fr/Animated-InnerFade-with-JQuery.html">Анимированный блок</a> изображений, подходит при портфолио и панорамах</li>
+<li><a href="http://www.balupton.com/sandbox/jquery_lightbox/">Lightbox</a> с более плавной анимацией чем в prototype + занавеска как положено.</li>
+</ul>
+<h5 id="таблицы">Таблицы<a hidden class="anchor" aria-hidden="true" href="#таблицы">#</a></h5>
+<ul>
+<li><a href="http://webplicity.net/flexigrid/">Flexigrid</a> - табличные данные</li>
+<li><a href="http://www.reconstrukt.com/ingrid/">InGrid</a> - ajax&rsquo;ная таблица, но не на json, а на открытом html&rsquo;е. Впрочем компактном и без хаков.</li>
+</ul>
+<h5 id="формы">Формы<a hidden class="anchor" aria-hidden="true" href="#формы">#</a></h5>
+<ul>
+<li><a href="http://www.malsup.com/jquery/form/">ajaxForm</a> - создаём как обычно статичную форму, а скрипт делает из неё ajax&rsquo;овую</li>
+<li><a href="http://www.pengoworks.com/workshop/jquery/autocomplete.htm">Autocomplete</a> - на самом деле подгружает html. Небольшие заминки были с настройкой параметра extraParams</li>
+<li><a href="http://marcgrabanski.com/code/ui-datepicker/">DatePicker</a> - показывает генерирует календарик под указынными полями</li>
+<li><a href="http://web2ajax.fr/2008/02/03/facebook-like-jquery-and-autosuggest-search-engine/">FaceBook like</a> - автоподсказки</li>
+<li><a href="http://lab.berkerpeksag.com/jGrow">jGrow</a> - размер textarea в зависимости от размера текста</li>
+<li><a href="http://www.avidansoft.com/dsrte/dsrte.php">DamnSmallRTE</a> - мелкий WYSIWYG</li>
+<li><a href="http://abeautifulsite.net/notebook_files/62/demo/jqueryMultiSelect.html">Multiselect</a> как обычный select + выезжающие checkbox-ы</li>
+<li><a href="http://www.whitespace-creative.com/jquery/jNice/">NiceForms</a> - обрамляет input-ы div-элементами с закруглёнными углами, стилизует radio и checkbox&rsquo;ы. Я правда предпочитаю более независимую версию <a href="http://www.badboy.ro/articles/2007-01-30/niceforms/">nice forms</a></li>
+<li><a href="http://www.kaktus.cc/weblog/view/1192629359.html">JQuery select</a> - конвертирует все select-элементы в UL, которые можно более гибко стилизовать</li>
+<li><a href="http://digitalbush.com/projects/masked-input-plugin">MaskedInput</a> - маска заполнения input-форм</li>
+<li><a href="http://www.phpletter.com/DOWNLOAD/">Закачка файлов</a> с созданием iframe-элементов (напоминаю что в XHTML) они не валидные</li>
+<li><a href="http://widowmaker.kiev.ua/checkbox/">Манипуляция checkbox</a>ами и radio с превращением в iphone-стиль</li>
+<li><a href="http://projects.bundleweb.com.ar/jWYSIWYG/">jWYSIWYG</a> - простейший редактор<a href="http://malsup.com/jquery/form/#getting-started"><br>
+</a></li>
+</ul>
+<h5 id="layout">Layout<a hidden class="anchor" aria-hidden="true" href="#layout">#</a></h5>
+<ul>
+<li><a href="http://plugins.jquery.com/project/jquery-roundcorners-canvas">RoundedCorners</a> - закруглённые углы при помощи генерации элемента canvas</li>
+<li><a href="http://www.ndoherty.com/demos/coda-slider/1.1.1/#1">CodaSlider</a> - слайды в дополнение закладкам (tabs)</li>
+<li><a href="http://www.sunsean.com/idTabs/">idTabs</a> - закладки для экономии пространства, но надо стилизовать</li>
+<li><a href="http://cssglobe.com/lab/tooltip/01/">tooltips</a> - расширенные всплывающие подсказки</li>
+</ul>
+<p>Смотрите также:</p>
+<ul>
+<li><a href="http://javascript.ru/tutorial/object/inheritance">ООП в javascript: наследование</a></li>
+<li><a href="http://www.slideshare.net/simon/unobtrusive-javascript-with-jquery?src=embed" title="View Unobtrusive JavaScript with jQuery on SlideShare">Unobtrusive JavaScript with jQuery</a></li>
+<li><a href="http://ouch.kiev.ua/2007-04-17/1299.html">Перевод статьи Getting Startded with jQuery</a></li>
+<li><a href="http://www.linkexchanger.su/2008/61.html">Эффекты jQuery</a></li>
+</ul>
+<p><img loading="lazy" src="../img/Pasted%20image%2020241016182535.png" alt=""  />
+</p>
+<!-- raw HTML omitted -->
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

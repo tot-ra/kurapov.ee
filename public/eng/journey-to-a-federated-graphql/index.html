@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+
+Image taken from dgraph.io
+Engineers tend to love good stories, so hopefully our 5-year journey of moving towards API composition with GraphQL now in production (serving at peak 110 requests per second at 100ms latency) provides a good story.
+[If you’re in a hurry, scroll down to Lessons learned and check out the open-sourced graphql-schema-registry.]
+
+
+schema registry with some example schema
+Our Requirement
+For years, Pipedrive (which hit 10 years near the beginning of 2020) has had a public REST API, as well as hidden, undocumented endpoints for our webapp — one of which is /users/self, that was initially for loading user information but over time became a page-load API, composed of 30 different entity types. It originated in our PHP monolith which by nature is synced. We tried to split it into parallel threads but that didn’t work out so well.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/eng/journey-to-a-federated-graphql/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/eng/journey-to-a-federated-graphql/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p><img loading="lazy" src="https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png" alt="https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png"  />
+</p>
+<p>Image taken from <a href="http://dgraph.io">dgraph.io</a></p>
+<p>Engineers tend to love good stories, so hopefully our 5-year journey of moving towards API composition with <a href="https://graphql.org/">GraphQL</a> now in production (serving at peak 110 requests per second at 100ms latency) provides a good story.</p>
+<p>[If you’re in a hurry, scroll down to <em>Lessons learned</em> and check out the open-sourced <a href="https://github.com/pipedrive/graphql-schema-registry">graphql-schema-registry</a>.]</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*d32xg4FUICDlOm9q0PCLkw.png" alt="https://miro.medium.com/max/1400/1*d32xg4FUICDlOm9q0PCLkw.png"  />
+</p>
+<p>schema registry with some <a href="https://github.com/jeffwillette/graphql-go-pets-example">example schema</a></p>
+<h1 id="our-requirement"><strong>Our Requirement</strong><a hidden class="anchor" aria-hidden="true" href="#our-requirement">#</a></h1>
+<p>For years, Pipedrive (which hit 10 years near the beginning of 2020) has had a <a href="https://developers.pipedrive.com/docs/api/v1/">public REST API</a>, as well as hidden, undocumented endpoints for our webapp — one of which is <em>/users/self,</em> that was initially for loading user information but over time became a page-load API, composed of 30 different entity types. It originated in our PHP monolith which by nature is synced. We <a href="https://medium.com/pipedrive-engineering/how-two-developers-accelerated-php-monolith-in-pipedrive-df8a18bc2d8a">tried to split it</a> into parallel threads but that didn’t work out so well.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*pqnU6EvMYnIQmVnnt5V1mA.png" alt="https://miro.medium.com/max/1400/1*pqnU6EvMYnIQmVnnt5V1mA.png"  />
+</p>
+<p>/users/self latency distribution currently for the remaining traffic</p>
+<p>From a maintenance point of view, with every new change, it became messier as nobody wanted to own this enormous endpoint.</p>
+<h1 id="direct-db-access-poc"><strong>Direct DB Access PoC</strong><a hidden class="anchor" aria-hidden="true" href="#direct-db-access-poc">#</a></h1>
+<p>Let&rsquo;s go back in time to when our devs experimented with graphql.</p>
+<p>About 3–4 years ago in the <a href="https://marketplace.pipedrive.com/">marketplace</a> team, I began hearing new terms like “<a href="https://elixir-lang.org/">elixir</a>” and “graphql” from <a href="https://twitter.com/bashmach">Pavel</a>, our fullstack engineer. He was involved in a proof-of-concept project which directly accessed MySQL and exposed the <em>/graphql</em> endpoint for querying core Pipedrive entities.</p>
+<p>It worked fine in dev, but it wasn’t scalable because our backend was not only CRUD and nobody wanted to rewrite the monolith.</p>
+<h1 id="stitching-poc"><strong>Stitching PoC</strong><a hidden class="anchor" aria-hidden="true" href="#stitching-poc">#</a></h1>
+<p>Fast forward to 2019 when I saw another internal PoC by a colleague that used GraphQL schema stitching with <a href="https://github.com/graphql-compose/graphql-compose">graphql-compose</a> and makes requests to our REST API. As you can imagine, this was a major improvement since we wouldn’t need to re-implement all of the business logic and it was just a wrapper.</p>
+<p>The downsides in this PoC were:</p>
+<ul>
+<li>
+<p><strong>Performance</strong></p>
+<p>. It didn’t have</p>
+<p><a href="https://github.com/graphql/dataloader">dataloader</a></p>
+<p>, so it had a potential N+1 API call problem. It didn’t limit query complexity and it didn’t have any intermediate caching. On average, the latency was higher than with the monolith.</p>
+</li>
+<li>
+<p><strong>Schema management.</strong> With schema stitching, we need to define a schema in the single repo, separate from an actual service that serves data. This complicates deployment, as we would need intermediate backward-compatible deployments to avoid crashes in case service changes.</p>
+</li>
+</ul>
+<h1 id="preparation"><strong>Preparation</strong><a hidden class="anchor" aria-hidden="true" href="#preparation">#</a></h1>
+<p>In October 2019, I started to prepare for the mission that would move the previous PoC into production, but with a new Apollo federation that <a href="https://www.apollographql.com/blog/apollo-federation-f260cf525d21/">came out</a> the same year. This would also land into a core team that would maintain the service through the long-term.</p>
+<h2 id="gathering-developer-expectations"><strong>Gathering developer expectations</strong><a hidden class="anchor" aria-hidden="true" href="#gathering-developer-expectations">#</a></h2>
+<p>Internally, some developers were skeptical and suggested building an in-house API composition by stitching REST API URLs and their payloads into a single POST request and relying on an internal gateway to split requests on the backend.</p>
+<p>Some saw graphql as still too raw to adopt in production &amp; keep a status-quo. Some suggested exploring alternatives, like Protobuf or <a href="https://thrift.apache.org/">Thrift</a>, and using transport conventions like <a href="https://grpc.io/">GRPC</a>, <a href="https://www.odata.org/">OData</a>.</p>
+<p>Conversely, some teams went full throttle and already had graphql in production for individual services (insights, teams), but couldn’t reuse other schemas (like User entity). Some (<a href="https://www.pipedrive.com/en/jobs/czech-republic">leads</a>) used a typescript + <a href="https://relay.dev/">relay</a> which still needed to figure out <a href="https://github.com/apollographql/apollo-server/issues/3159">how to federate</a>.</p>
+<p>Local conference talk about a similar topic (VP of Tech @ <a href="https://medium.com/@MyMonese">Monese</a>)</p>
+<p>Researching new tech was exciting:Strict, self-describing API for frontend developers? Global entity declaration and ownership that forces the reduction of duplication and increases transparency? A gateway that could automatically join data from different services without over-fetching? Wow.</p>
+<p>I knew that we needed schema management as a service to not rely on a hard-coded one and have visibility on what’s happening. Something like <a href="https://docs.confluent.io/current/schema-registry/index.html">Confluent’s schema-registry</a> or <a href="https://bitbucket.org/atlassian/graphql-braid/src/master/">Atlassian’s Braid</a>, but not Kafka-specific or written in Java, which we didn’t want to maintain.</p>
+<h1 id="the-plan"><strong>The plan</strong><a hidden class="anchor" aria-hidden="true" href="#the-plan">#</a></h1>
+<p>I pitched an engineering mission that focused on 3 goals:</p>
+<ul>
+<li>Reducing initial page load time (pipeline view) by 15%. Achievable by joining some REST API calls into a single /graphql request</li>
+<li>Reducing API traffic by 30%. Achievable by moving deal loading for the pipeline view to graphql and requesting fewer properties.</li>
+<li>Using strict schema in API (for the frontend to write less <a href="https://en.wikipedia.org/wiki/Defensive_programming">defensive code</a>)</li>
+</ul>
+<p>I was lucky to get <a href="https://github.com/pipedrive/graphql-schema-registry#honorable-mentions">3 awesome experienced developers</a> to join the mission, including a PoC author.</p>
+<p>Multiple REST API calls from webapp done at different time</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/5004/1*jmyHq5UWstzZeCuXSPYHIw.png" alt="https://miro.medium.com/max/5004/1*jmyHq5UWstzZeCuXSPYHIw.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/5000/1*_L6W6bxg5jt4oC_Yd6jkAw.png" alt="https://miro.medium.com/max/5000/1*_L6W6bxg5jt4oC_Yd6jkAw.png"  />
+</p>
+<p>The original plan for the services looked like this:</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*hZPmw66Kk3e9TtYj-FWNEg.png" alt="https://miro.medium.com/max/1400/1*hZPmw66Kk3e9TtYj-FWNEg.png"  />
+</p>
+<p>Services we would need to work on</p>
+<p>The schema-registry here would be a generic service that could store any type of schema you throw at it as an input (<a href="https://editor.swagger.io/">swagger</a>, typescript, graphql, avro, proto). It would also be smart enough to convert an entity to whatever format you want for the output. The gateway would poll schema and call services that own it. Frontend components would need to download schema and use it for making queries.</p>
+<p>In reality however, we implemented only graphql because federation only need this and we ran out of time pretty quickly.</p>
+<h1 id="results"><strong>Results</strong><a hidden class="anchor" aria-hidden="true" href="#results">#</a></h1>
+<p>The main goal of replacing messy <em>/users/self</em> endpoint in the webapp was done within the first 2 weeks of the mission 😳 (yay!). Polishing it so that it’s performant and reliable, took most of the mission time though.</p>
+<p>By the end of the mission (in February 2020), we <em>did</em> achieve <strong>13%</strong> initial page load time reduction and <strong>25%</strong> on page reload (due to introduced caching) based on the synthetic <a href="https://www.datadoghq.com/">Datadog</a> test that we used.</p>
+<p>We did not reach the goal of traffic volume reduction, because we didn’t reach the refactoring <em>pipeline</em> view in webapp — we still use REST there.</p>
+<p>To increase adoption we added internal tooling to ease federation process and recorded onboarding videos for teams to understand how it works now. After the mission ended, IOS and Android clients also migrated to graphql and the teams gave positive feedback.</p>
+<h1 id="lessons-learned"><strong>Lessons learned</strong><a hidden class="anchor" aria-hidden="true" href="#lessons-learned">#</a></h1>
+<p>Looking back at the mission log that I kept for all of the 60 days, I can outline the biggest issues so that you don’t make the same mistakes</p>
+<h2 id="manage-your-schema"><strong>Manage your schema</strong><a hidden class="anchor" aria-hidden="true" href="#manage-your-schema">#</a></h2>
+<blockquote>
+<p>Could we have built this ourselves? Maybe, but it wouldn’t be as polished.Mark Stuart, Paypal Engineering</p>
+</blockquote>
+<p>Through the first couple of days, I tried <a href="https://studio.apollographql.com/">Apollo studio</a> &amp; its <a href="https://www.apollographql.com/docs/studio/schema-checks/#the-check-process">tooling</a> for CLI to validate schema. The service is excellent and works out-of-the-box with minimal gateway configuration.</p>
+<p>Our internal tools to see schema diffs and validate pushed schema from the terminal, similar to Apollo’s tooling</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/2612/1*peOiXrxaxYTeJ0kAjXOqnA.png" alt="https://miro.medium.com/max/2612/1*peOiXrxaxYTeJ0kAjXOqnA.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3700/1*0PkQISCe0ux2nG6c6l5wXg.png" alt="https://miro.medium.com/max/3700/1*0PkQISCe0ux2nG6c6l5wXg.png"  />
+</p>
+<p>As well as it works, I still felt that tying core backend traffic to an external SaaS is too risky for business continuity, regardless of its great features or pricing plans. This is why we wrote a service of our own, with basic functionality — now it’s an open-source <a href="https://github.com/pipedrive/graphql-schema-registry">graphql-schema-registry</a>.</p>
+<p>The second reason to have in-house schema-registry was to follow Pipedrive’s <a href="https://medium.com/pipedrive-engineering/tanker-the-story-of-multi-dc-customer-data-migration-framework-ad842c2c6b9c">distributed datacenter model</a>. We don’t rely on centralized infrastructure, every datacenter is self-sufficient. This gives us higher reliability as well as a potential advantage in case we need to open a new DC in places like China, Russia, Iran, or Mars 🚀</p>
+<h2 id="version-your-schema"><strong>Version your schema</strong><a hidden class="anchor" aria-hidden="true" href="#version-your-schema">#</a></h2>
+<p>Federated schema and graphql gateway are very fragile. If you have type name collision or invalid reference in one of the services and serve it to the gateway, it won’t like it.</p>
+<p>By default, a gateway’s behavior is to <a href="https://www.apollographql.com/docs/apollo-server/federation/introduction/#gateway-example">poll services for their schemas</a> so it&rsquo;s easy for one service to crash the traffic. Apollo studio solves it by validating schema on-push and rejecting registration if it causes possible conflict.</p>
+<p>The validation concept is the right way to go, but the implementation also means that Apollo studio is a <strong>stateful</strong> service that holds <strong>current</strong> valid schema. It makes the schema <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting-protocol/#protocol-sequence">registration protocol</a> more complex and <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting/#rolling-deploys-with-schema-reporting">dependent on time</a>, which can be somewhat hard to debug in case of <em>rolling deploys</em>.</p>
+<p>In contrast, we tied the service version (based on <strong>docker image hash</strong>) to its schema. Service registers schema also in runtime, but we do it once, without <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting/#rolling-deploys-with-schema-reporting">constant pushing</a>. The gateway takes federated services from service discovery (<a href="https://www.consul.io/">consul</a>) and asks schema-registry to <em>/schema/compose</em>, providing their services’ <strong>versions</strong>.</p>
+<p>If schema-registry sees that the provided set of versions is not stable, it falls back to the last registered versions (which are used for schema validation on commit, so should be stable).</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*Sw5SVUCfE0pU3eqpcVg7EQ.png" alt="https://miro.medium.com/max/1400/1*Sw5SVUCfE0pU3eqpcVg7EQ.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*ycJcR95HBuDhgkyWkUN2aw.png" alt="https://miro.medium.com/max/1400/1*ycJcR95HBuDhgkyWkUN2aw.png"  />
+</p>
+<p>Runtime schema registration example using an internal library</p>
+<p>Services can serve both REST and Graphql APIs, so we resort to alerts in case schema registration fails, keeping service operational for REST to work.</p>
+<h2 id="defining-schema-based-on-existing-rest-is-not-so-straightforward"><strong>Defining schema based on existing REST is not so straightforward</strong><a hidden class="anchor" aria-hidden="true" href="#defining-schema-based-on-existing-rest-is-not-so-straightforward">#</a></h2>
+<p>Since I didn’t know how to convert our REST API to graphql, I tried <a href="https://github.com/IBM/openapi-to-graphql">openapi-to-graphql</a>, but our <a href="https://developers.pipedrive.com/docs/api/v1/">API reference</a> didn’t have sufficiently detailed swagger documentation to cover all inputs/outputs at the time.</p>
+<p>Asking each team to define schema would take so much time that we just defined the schema for main entities ourselves 😓 based on REST API responses.</p>
+<p>Doing this came back to haunt us later, when it turned out that some of the REST API depended on the client that makes requests <strong>OR</strong> had different response format depending on some business logic/state.</p>
+<p>For example, <strong>custom fields</strong> affect API response depending on the customer. If you add a custom field to a deal, it will be served as a <em>hash</em> on the same level as <em>deal.pipeline_id</em>. Dynamic schema is not possible with graphql federation, so we had to work-around that by moving custom fields into a separate property.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3040/1*wRvmLci_zeX8SI3XLablcA.png" alt="https://miro.medium.com/max/3040/1*wRvmLci_zeX8SI3XLablcA.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/5452/1*jYUN6yru6BRPltGcZvQzqQ.png" alt="https://miro.medium.com/max/5452/1*jYUN6yru6BRPltGcZvQzqQ.png"  />
+</p>
+<p>Another long-term issue is <strong>naming conventions</strong>. We wanted to use <em>camelCase</em>, but since most of REST used <em>snake_case</em>, we ended up with a mix for now.</p>
+<p>Current Pipedrive’s federated graph (on the left) with 2 federated microservices (out of 539) and not-yet federated leads (on the right), generated with <a href="https://github.com/APIs-guru/graphql-voyager">voyager</a></p>
+<p><img loading="lazy" src="https://miro.medium.com/max/2420/1*4FDJvhR6Z9zQSCF4_lu-Qg.png" alt="https://miro.medium.com/max/2420/1*4FDJvhR6Z9zQSCF4_lu-Qg.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3860/1*x2jV67R_69ZYy6y75TsDiA.png" alt="https://miro.medium.com/max/3860/1*x2jV67R_69ZYy6y75TsDiA.png"  />
+</p>
+<h2 id="cqrs-and-cache"><strong>CQRS and cache</strong><a hidden class="anchor" aria-hidden="true" href="#cqrs-and-cache">#</a></h2>
+<p>The Pipedrive data model isn’t simple enough to rely only on a TTL-cache.</p>
+<p>For example, if a support engineer creates a <em>global message</em> about maintenance from our backoffice, he also expects it to be immediately shown to customers. Those global messages can be shown to <em>all customers</em> or can affect <em>specific users</em> or <em>companies</em>. Breaking such cache needs 3 layers.</p>
+<p>To handle php monolith with graphql in async mode, we have created a nodejs service (called <em>monograph</em>) which caches everything php responded into memcached. This cache has to be cleaned from PHP depending on business-logic making it a bit of an anti-pattern of tightly-coupled cross-service cache.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*MWhY3MEiDCMs2lnpWjyvIQ.png" alt="https://miro.medium.com/max/1400/1*MWhY3MEiDCMs2lnpWjyvIQ.png"  />
+</p>
+<p>You can see the <a href="https://martinfowler.com/bliki/CQRS.html">CQRS pattern</a> here. Such cache makes it possible to speed-up 80% of requests and get avg latency to the same as php-app, while still having strict schema and no overfetching</p>
+<p>Average latency in php-app (left) vs graphql gateway (right) in US region via NewRelic</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3192/1*-6FCWqp-bdqK64_5wq-wtw.png" alt="https://miro.medium.com/max/3192/1*-6FCWqp-bdqK64_5wq-wtw.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3128/1*F6ArQsPeRYYiAeD4zOAOCg.png" alt="https://miro.medium.com/max/3128/1*F6ArQsPeRYYiAeD4zOAOCg.png"  />
+</p>
+<p>Another complication is the <em>customer’s language</em>. Changing this affects so many different entities — from activity types to google map views and to make things worse, the user language is not managed by php-app anymore, its in <em>identity</em> service — and I didn’t want to couple even more services to a single cache.</p>
+<p><em>Identity</em> owns user information, so it emits a change event that <em>monograph</em> listens to and clears its caches. This <em>means</em> that there is some delay (maybe max ~1 sec) between changing language and getting caches cleared, but it&rsquo;s not critical, because a customer won’t navigate away from a page <em>so fast</em> to notice the old language still in the cache.</p>
+<h2 id="track-performance"><strong>Track performance</strong><a hidden class="anchor" aria-hidden="true" href="#track-performance">#</a></h2>
+<p>Performance was the main goal and to reach that goal we had to master APM and distributed tracing between microservices to see what is the slowest area. We used Datadog during this time and it showed the main issues.</p>
+<p>We also used memcached to cache all 30 parallel requests. The problem (shown on this picture) displays that purple requests to memcached for some of the resolvers throttled up to 220ms, whereas the first 20 requests saved data in 10ms. This was because I used the same <a href="https://github.com/facebook/mcrouter">mcrouter</a> host for all of the requests. Rotating hosts reduced caching write latency to 20 ms max.</p>
+<p>To reduce latency due to network traffic, we got data from memcached with a single batch request for different resolvers using <a href="https://github.com/3rd-Eden/memcached#public-methods">getMulti</a> and a 5 ms debounce.</p>
+<p>Issues during mission — memcached (left), slow single resolver (right) in Datadog distributed tracing</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3700/1*ibZbgnevw9dsYg0nVHbo3Q.png" alt="https://miro.medium.com/max/3700/1*ibZbgnevw9dsYg0nVHbo3Q.png"  />
+</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/2388/1*bB4N6SdLy0kAQvRO5o3aAQ.png" alt="https://miro.medium.com/max/2388/1*bB4N6SdLy0kAQvRO5o3aAQ.png"  />
+</p>
+<p>Notice also the yellow bars on the right — that’s the graphql <strong>gateway’s tax</strong> on making data strictly typed after all data is resolved. It grows with the amount of data you transfer.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*KKchwFbhA817Ok5Eugq7hQ.png" alt="https://miro.medium.com/max/1400/1*KKchwFbhA817Ok5Eugq7hQ.png"  />
+</p>
+<p>We needed to find the slowest resolvers because the latency of the entire request depends entirely on them. It was pretty infuriating to see 28 out of 30 resolvers reply in 40ms time.. and 2 of the APIs taking 500ms, because they didn’t have any cache.</p>
+<p>We had to move some of these endpoints out of the initialization query to create better latency. So we actually make 3–5 separate graphql queries from frontend, depending on when query is requested (also with some debounce logic).</p>
+<h2 id="do-not-track-performance-in-production"><strong>Do not track performance (in production)</strong><a hidden class="anchor" aria-hidden="true" href="#do-not-track-performance-in-production">#</a></h2>
+<p>The counter-intuitive clickbait heading here actually means that you should avoid using APMs in production for graphql gateway or apollo server’s built-in <a href="https://www.apollographql.com/docs/apollo-server/api/apollo-server/#apolloserver">tracing:true</a>.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*u0oVzzJPCylM7aR47ZzzHA.png" alt="https://miro.medium.com/max/1400/1*u0oVzzJPCylM7aR47ZzzHA.png"  />
+</p>
+<p><a href="https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27">Profiling graphql gateway with Chrome DevTools</a> flame chart is not apparent if the function is small but there are many calls to it</p>
+<p>Both turning on and removing them resulted in a 2x latency reduction from 700ms to 300ms for our test company. The reason at the time (as I understand) was that the time functions (like <em>performance.now()</em>) that measure spans for every resolver are too CPU-intensive.</p>
+<p><a href="https://www.youtube.com/watch?v=VnG7ej56lWw">Ben here</a> did a nice benchmark of different backend servers and confirmed this.</p>
+<h2 id="consider-prefetching-on-frontend"><strong>Consider prefetching on frontend</strong><a hidden class="anchor" aria-hidden="true" href="#consider-prefetching-on-frontend">#</a></h2>
+<p>The timing of graphql query on a frontend is tricky. I wanted to move the initial graphql request as early as possible (before vendors.js) in the network waterfall. Doing this granted us some time, but it made the webapp much less maintainable.</p>
+<p>To make the query, you need <a href="https://github.com/apollographql/apollo-client">graphql client</a> and <a href="https://github.com/apollographql/graphql-tag">gql literal parsing</a> and these typically would come via vendors.js. Now you would either need to bundle them separately or make a query with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">raw fetch</a>. Even if you do make a raw request, you’ll need to manage the response gracefully so that the response gets propagated into the correct models, (but those are initialized until later). So it made sense to not continue with this and maybe resort to server-side-rendering or <a href="https://medium.com/samsung-internet-dev/a-beginners-guide-to-service-workers-f76abf1960f6">service workers</a> in the future.</p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1400/1*GZSPDEh_sZrYsl2OHxxG_A.png" alt="https://miro.medium.com/max/1400/1*GZSPDEh_sZrYsl2OHxxG_A.png"  />
+</p>
+<p>Moving /graphql call earlier in the chain of network requests (Google Chrome inspector)</p>
+<h2 id="evaluate-query-complexity"><strong>Evaluate query complexity</strong><a hidden class="anchor" aria-hidden="true" href="#evaluate-query-complexity">#</a></h2>
+<p>What makes graphql unique from REST is that you can estimate how complicated a client’s request is going to be for your infrastructure before processing it. This is based purely on what he requests and how you define execution costs for your schema. If the estimated cost is too big, we reject the request, similar to our <a href="https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting">rate limiting</a>.</p>
+<p>We first tried <a href="https://github.com/pa-bru/graphql-cost-analysis">graphql-cost-analysis</a> library but ended up creating our own because we wanted logic to take into account pagination multipliers, nesting, and impact types (network, I/O, DB, CPU). Though the hardest part is injecting custom cost directive into gateway &amp; schema-registry. I hope we can opensource it too in the near future.</p>
+<h2 id="schema-has-many-faces"><strong>Schema has many faces</strong><a hidden class="anchor" aria-hidden="true" href="#schema-has-many-faces">#</a></h2>
+<p>Working with schema in js/typescript on a low level is confusing. You figure it out when you try to integrate federation into your existing graphql service.</p>
+<p>For example, plain <a href="https://github.com/graphql-community/koa-graphql#options">koa-graphql</a> and <a href="https://www.apollographql.com/docs/apollo-server/v1/servers/koa/">apollo-server-koa</a> setups expect a nested <a href="https://github.com/graphql/graphql-js#using-graphqljs"><strong>GraphQLSchema</strong></a> param that includes resolvers, but federated apollo/server <a href="https://www.apollographql.com/docs/apollo-server/federation/implementing-services/#generating-a-federated-schema">wants schema to be passed separately</a>:</p>
+<blockquote>
+<p>buildFederatedSchema([{typeDefs, resolvers}])</p>
+</blockquote>
+<p>In another case, you may want to define schema as an inline <a href="https://github.com/apollographql/graphql-tag">gql tag</a> string or store it as schema.graphql file, but when you want to do cost evaluation, you may need it as <a href="https://github.com/graphql/graphql-js/blob/master/src/language/ast.js">ASTNode</a> (<a href="https://github.com/graphql/graphql-js/blob/d4c82e0849318d045107321c6655c1a5da37b798/src/language/parser.d.ts#L58">parse</a> / <a href="https://github.com/graphql/graphql-js/blob/dd0297302800347a20a192624ba6373ee86836a3/src/utilities/buildASTSchema.js#L121">buildASTSchema</a>).</p>
+<h2 id="gradual-canary-rollout"><strong>Gradual canary rollout</strong><a hidden class="anchor" aria-hidden="true" href="#gradual-canary-rollout">#</a></h2>
+<p>During the mission, we did a gradual rollout to all internal <strong>developers first</strong> to catch obvious errors.</p>
+<p>By the end of the mission, in February, we released graphql only to 100 lucky companies. We then slowly rolled it out to 1000 — 1%, 10%, 30%, 50%, and finally 100% of the customers finishing it in June.</p>
+<p>The rollout was based on company ID and modulo logic. We also had allow- and deny-lists for test companies and for cases when developers didn’t want their companies to have graphql on yet. We also had an emergency off-switch that would revert it, which was handy during incidents to ease debugging</p>
+<p>Considering how big of a change we did, it was a great way to get feedback and find bugs, while having lower risks for our customers.</p>
+<h1 id="hopes--dreams"><strong>Hopes &amp; dreams</strong><a hidden class="anchor" aria-hidden="true" href="#hopes--dreams">#</a></h1>
+<p>To get all of the graphql benefits, we need to adopt mutations, <strong>subscriptions,</strong> and batch operations on a federated level. All of this needs teamwork &amp; internal evangelism to expand the <strong>number of federated services.</strong></p>
+<p>Once graphql is stable and sufficient enough for our customers, it can become version 2 of our public API. A public launch would need directives to limit entity access based on <a href="https://oauth.net/2/scope/">OAuth scopes</a> (for marketplace apps) and our <a href="https://www.pipedrive.com/en/pricing">product suites</a>.</p>
+<p>For schema-registry, we need <strong>tracking clients,</strong> and getting <strong>usage analytics</strong> for better deprecation experience, <strong>filtering</strong>/highlighting of schemas’ costs &amp; visibility, <strong>naming validation</strong>, managing non-ephemeral <strong>persisted queries</strong>, public schema <strong>change history</strong>.</p>
+<p>As we have services in <a href="https://golang.org/">go</a>, it&rsquo;s unclear how internal communication should happen — over GRPC for speed &amp; reliability, or individual graphql endpoints, or via centralized internal graphql gateway? If GRPC is better only due to its binary nature, could we make graphql binary instead with <a href="https://msgpack.org/">msgpack</a>?</p>
+<p>As for the outside world, I hope Apollo’s roadmap with <a href="https://www.youtube.com/watch?v=MvHzOwdLb_o">project Constellation</a> will optimize <em>Query planner</em> in <a href="https://www.rust-lang.org/">Rust</a> so that we don’t see that 10% <em>gateway tax</em> on performance, as well as enable flexible federation of services without their knowledge.</p>
+<p>Exciting times to enjoy software development, full of complexity!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

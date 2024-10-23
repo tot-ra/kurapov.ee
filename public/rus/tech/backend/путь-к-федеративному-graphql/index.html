@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="понедельник, 21 ноября 2022 г. в 00:34:12
+
+
+Картинка с dgraph.io
+Программисты любят хорошие истории, поэтому надеюсь что пятилетний путь к композитному API с помощью GraphQL в боевой среде (на пике выдающей 110 запросов в секунду при 100мс задержке) будет интересен.
+[Если вы спешите, проскрольте ниже к урокам и гляньте на открытый код graphql-schema-registry]
+
+
+schema registry с примером тестовой схемы
+Задача
+Годами, Pipedrive (которому в начале 2020 стукнуло уже 10 лет), давал публичный REST API где были и недокументированные пути для нашего веб приложения. Один из них /users/self, который изначально задумывался для загрузки информации о пользователе, нормально с течением времени стал грузить все что надо для первой загрузки страницы, доходя до 30 разных типов сущностей. Сам он выдавался PHP монолитом, который по натуре синхронный. Мы пытались его распараллелить, но неудачно.
+
+
+/users/self распределение задержки для оставшегося траффика">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/tech/backend/%D0%BF%D1%83%D1%82%D1%8C-%D0%BA-%D1%84%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%BC%D1%83-graphql/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/tech/backend/%D0%BF%D1%83%D1%82%D1%8C-%D0%BA-%D1%84%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%BC%D1%83-graphql/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>понедельник, 21 ноября 2022 г. в 00:34:12</p>
+<p><img loading="lazy" src="../img/e28dc66e8bb64f31576418ef1b102685.png" alt=""  />
+</p>
+<p>Картинка с dgraph.io</p>
+<p>Программисты любят хорошие истории, поэтому надеюсь что пятилетний путь к композитному API с помощью GraphQL в боевой среде (на пике выдающей 110 запросов в секунду при 100мс задержке) будет интересен.</p>
+<p>[Если вы спешите, проскрольте ниже к <em>урокам</em> и гляньте на открытый код <a href="https://github.com/pipedrive/graphql-schema-registry">graphql-schema-registry</a>]</p>
+<p><img loading="lazy" src="../img/c0651522464466d29683331192513234.png" alt=""  />
+</p>
+<p>schema registry с примером тестовой схемы</p>
+<h2 id="задача">Задача<a hidden class="anchor" aria-hidden="true" href="#задача">#</a></h2>
+<p>Годами, <a href="https://www.pipedrive.com/">Pipedrive</a> (которому в начале 2020 стукнуло уже 10 лет), давал публичный <a href="https://developers.pipedrive.com/docs/api/v1/">REST API</a> где были и недокументированные пути для нашего веб приложения. Один из них /users/self, который изначально задумывался для загрузки информации о пользователе, нормально с течением времени стал грузить все что надо для первой загрузки страницы, доходя до 30 разных типов сущностей. Сам он выдавался PHP монолитом, который по натуре синхронный. Мы <a href="https://medium.com/pipedrive-engineering/how-two-developers-accelerated-php-monolith-in-pipedrive-df8a18bc2d8a">пытались его распараллелить</a>, но неудачно.
+<img loading="lazy" src="../img/2f8932407cb9eab3eed55e354353c688.png" alt=""  />
+
+/users/self распределение задержки для оставшегося траффика</p>
+<p>С точки зрения поддержки, каждое новое изменение все больше усложняло код и никто не хотел владеть этой огромной функцией.</p>
+<h2 id="прототип-с-прямым-доступом-к-бд">Прототип с прямым доступом к БД<a hidden class="anchor" aria-hidden="true" href="#прототип-с-прямым-доступом-к-бд">#</a></h2>
+<p>Давайте вернемся назад в прошлое, когда наши разработчики стали экспериментировать с graphql.</p>
+<p>Года 3-4 назад, в команде разработки <a href="https://marketplace.pipedrive.com/">рынка приложений</a>, я услышал от <a href="https://twitter.com/bashmach">Паши</a>, нашего фулл-стек разработчика новенькие для меня термины - <a href="https://elixir-lang.org/">elixir</a> и graphql. Он участвовал в тестовом проекте в котором напрямую работал с MySQL и выдавал основные сущности Pipedrive по /graphql.</p>
+<p>На локальной машине работало прекрасно, но это не масштабировалось на весь код, потому что функционал - не обычный CRUD, а весь монолит переписывать никто не хотел.</p>
+<h2 id="прототип-со-склейкой">Прототип со склейкой<a hidden class="anchor" aria-hidden="true" href="#прототип-со-склейкой">#</a></h2>
+<p>Переносимся в 2019, когда я заметил еще один тестовый репозиторий от другого коллеги, который стал использовать GraphQL stitching с определением сущностей с помощью <a href="https://github.com/graphql-compose/graphql-compose">graphql-compose</a> и резолверами которые делали запрос уже к нашему REST API. Как можете представить, это уже было значительным улучшением, потому что нам не надо было переопределять всю бизнес-логику и graphql становился просто приятной оберткой.</p>
+<p>Из недостатков этого решения:</p>
+<ul>
+<li>
+<p><strong>Производительность</strong>. Небыло <a href="https://github.com/graphql/dataloader">dataloader</a>&lsquo;а, поэтому был риск N+1 сетевых запросов. Небыло ограничения сложности запроса и какого-либо промежуточного кеширования.</p>
+</li>
+<li>
+<p><strong>Управление схемой</strong>. При склейке типов, мы определяли все сущности в одном репозитории, отдельно от самих сервисов которые этими даннами владеют. Это усложняло деплой - приходилось бы писать обратно-совместимые изменения, что-бы избегать несовпадения схемы и функций.</p>
+</li>
+</ul>
+<h2 id="подготовка">Подготовка<a hidden class="anchor" aria-hidden="true" href="#подготовка">#</a></h2>
+<p>В Октябре 2019, я стал готовиться к <a href="https://www.youtube.com/watch?v=ekKp-tA0A9k">миссии</a>, которая превратила бы прошлое решение в рабочее с помощью Apollo федерации, которая <a href="https://www.apollographql.com/blog/apollo-federation-f260cf525d21/">вышла чуть ранее</a> в этом же году. Кроме того, результат приземлился бы в команде <em>Core</em>, которая стала бы поддерживать его в долгосрочной перспективе.</p>
+<h2 id="сбор-ожиданий-разработчиков">Сбор ожиданий разработчиков<a hidden class="anchor" aria-hidden="true" href="#сбор-ожиданий-разработчиков">#</a></h2>
+<p>В компании некоторые разработчики были довольно скептичны и предлагали построить свое решение просто склеивая запросы воедино, отправляя по POST и надеясь на свой gateway который будет распараллеливать обработку.</p>
+<p>Другие считали что graphql еще слишком сырой что-бы использовать в жизни и лучше подождать. Третьи предлагали рассмотреть альтернативы, типа Protobuf и Thrift, а в качестве транспорта рассмотреть <a href="https://grpc.io/">GRPC</a>, <a href="https://www.odata.org/">OData</a>.</p>
+<p>Четвертые напротив, на полном ходу писали graphql под одиночные сервисы (insights, teams) и выкатывали в лайв, однако не могли повторно использовать сущности (например User). В <a href="https://www.pipedrive.com/en/jobs/czech-republic">Праге</a> ребята написали все на typescript + <a href="https://relay.dev/">relay</a> на фронтенде, который нам еще предстоит <a href="https://github.com/apollographql/apollo-server/issues/3159">перенести в федерацию</a>.</p>
+<p>Изучать новую технологию было круто.</p>
+<p>Строгий, само-документирующийся API для фронтендеров? Глобально определяемые сущности уменьшающие дублирование и улучшающие прозрачность и владение среди всех команд? Gateway который автоматом делает под-запросы и между сервисами без избыточной выборки? Ухх.</p>
+<p>Впрочем, я знал что нам понадобится управлять схемой как-то динамически, что-бы не полагаться на захардкоженые значения и видеть что происходит. Нечно типа <a href="https://docs.confluent.io/current/schema-registry/index.html">Confluent’s schema-registry</a> или <a href="https://bitbucket.org/atlassian/graphql-braid/src/master/">Atlassian’s Braid</a>, но они либо под Кафку делались, либо на Java, которую мы не хотели поддерживать.</p>
+<h2 id="план">План<a hidden class="anchor" aria-hidden="true" href="#план">#</a></h2>
+<p>Я выступил с инженерной миссией у которой было 3 цели:</p>
+<ul>
+<li>
+<p>Уменьшение первичной загрузки страницы (<em>воронка продаж</em>) на 15%. Достижимо если заменить некоторые REST запросы в один /graphql</p>
+</li>
+<li>
+<p>Уменьшение траффика на 30%. Достижимо если перенести загрузку всех <em>сделок для воронки продаж</em> в graphql и спрашивать меньше свойств.</p>
+</li>
+<li>
+<p>Использовать строгую типизацию (что-бы фронтендерам надо было писать меньше кода в <a href="https://en.wikipedia.org/wiki/Defensive_programming">защитном стиля</a>)</p>
+</li>
+</ul>
+<p>Мне повезло, <a href="https://github.com/pipedrive/graphql-schema-registry#honorable-mentions">трое разработчиков</a> присоединились к миссии, в т.ч. автор прототипа.</p>
+<p><img loading="lazy" src="../img/55e6e4675e2b2ad39f82f66a62e4d05f.png" alt=""  />
+</p>
+<p>Сетевые запросы по мере загрузки веб-приложения</p>
+<p>Изначальный план по сервисам выглядел так:
+<img loading="lazy" src="../img/e21b54c336353f713dfb5e6cd8a353f2.png" alt=""  />
+</p>
+<p>Сервисы над которыми предстояло бы работать</p>
+<p>Тут schema-registry был бы общим сервисом, который мог бы хранить схему любого типа, получая на входе что вы в него кинете (swagger, typescript, graphql, avro, proto). На выходе он мог бы так же выдавать что вы хотите.</p>
+<p>Gateway периодически опрашивал бы schema-registry и вызывал бы уже сервисы которые владеют данными согласно запросу и схеме. В свою очередь frontend компоненты могли бы скачивать актуальную схему для autocomplete и самих запросов.</p>
+<p>На деле впрочем, мы сделали только поддержку graphql формата, потому что для федерации его было достаточно, а время как обычно быстро закончилось.</p>
+<h2 id="итоги">Итоги<a hidden class="anchor" aria-hidden="true" href="#итоги">#</a></h2>
+<p>Главную цель по замене /users/self в веб-приложении мы сделали в течение первых двух недель ? (ничоси!). А вот полировка всего решения что-бы оно быстро и надежно работало, заняло все оставшееся время.</p>
+<p>К концу миссии (в феврале 2020), мы каким-то чудом достигли 13% ускорения первой загрузки страницы и 25% ускорения при повторной загрузке (из-за добавленного кеширования), согласно синтетическому UI тесту который мы гоняли на <a href="https://www.datadoghq.com/">Datadog</a>.</p>
+<p>Уменьшить трафик нам не удалось, потому что мы не достигли рефакторинга вида воронки продаж - там все еще REST.</p>
+<p>Что-бы ускорить добавление сервисов в федерацию другими командами (у нас 600+ человек), мы записали обучающие видео что-бы все были в курсе как оно все работает вместе. После окончания миссии IOS- и Android- клиенты тоже мигрировали на graphql и в целом были рады.</p>
+<h2 id="выученные-уроки">Выученные уроки<a hidden class="anchor" aria-hidden="true" href="#выученные-уроки">#</a></h2>
+<p>Глядя на дневник миссии из этих 60 дней, могу выделить наибольшие трудности что-бы вам было бы попроще</p>
+<h2 id="управляйте-своей-схемой">Управляйте своей схемой<a hidden class="anchor" aria-hidden="true" href="#управляйте-своей-схемой">#</a></h2>
+<blockquote>
+<p>_Могли бы мы построить это сами? Возможно, но это не было бы так отполировано.<br>
+_<a href="https://medium.com/paypal-engineering/scaling-graphql-at-paypal-b5b5ac098810"><em>Mark Stuart, Paypal Engineering</em></a></p>
+</blockquote>
+<p>В течение первых пары дней я попробовал <a href="https://studio.apollographql.com/">Apollo studio</a> и их <a href="https://www.apollographql.com/docs/studio/schema-checks/#the-check-process">инструментарий</a> для терминала по проверке схемы. Сервис прекрасный и работает из коробки с минимальными настройками gateway.</p>
+<p><img loading="lazy" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/166/7a4/d4f/1667a4d4f5851f4095d94a7bdf8ab8d7.png" alt="Написанный нами инструментарий для валидации схемы"  title="Написанный нами инструментарий для валидации схемы"  />
+</p>
+<p>Написанный нами инструментарий для валидации схемы</p>
+<p>Однако несмотря на все фишки этого облачного сервиса, я посчитал что для такого важного дела как маршрутизация траффика было бы опрометчиво полагаться на сторонний сервис из-за рисков для жизнеспособности нашего дела, несмотря на богатый функционал и сколько-то выгодные расценки. Поэтому мы написали свой сервис с минимально нужным функционалом и теперь отправили его в opensource -  <a href="https://github.com/pipedrive/graphql-schema-registry"><strong>graphql-schema-registry</strong></a> .</p>
+<p>Вторая причина была в том что-бы следовать модели <a href="https://medium.com/pipedrive-engineering/tanker-the-story-of-multi-dc-customer-data-migration-framework-ad842c2c6b9c">распределенной архитектруры датацентров</a> Pipedrive. У нас нет центрального датацентра, каждый DC самодостаточен. Это дает нам как более высокую надежность, так и способность открывать новые датацентры в Китае, России, Иране или на Марсе ?</p>
+<h2 id="версионируйте-свою-схему">Версионируйте свою схему<a hidden class="anchor" aria-hidden="true" href="#версионируйте-свою-схему">#</a></h2>
+<p>Федеративная схема и graphql gateway очень хрупкие. Если у вас появится конфликт имен у типов или неверная ссылка между типами в одном из сервисов, то gateway может этого не пережить.</p>
+<p>По умолчанию, gateway напрямую <a href="https://www.apollographql.com/docs/apollo-server/federation/introduction/#gateway-example">опрашивает все сервисы</a> касательно их схемы, поэтому достаточно одного из сервисов с ошибкой что-бы поломать всем трафик. Apollo studio решает это посредством проверки схемы еще до деплоя и отказе если видит какой-то конфликт.</p>
+<p>Проверка совместимости схем правильный подход, но конкретное решение у Apollo зависит от их внутреннего состояния, т.к. они хранят правильную склеенную схему на данный момент. Это делает <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting-protocol/#protocol-sequence">протокол регистрации</a> сложным и <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting/#rolling-deploys-with-schema-reporting">зависящим от времени</a>.</p>
+<p>Мы же напротив, связали версии микросервисов (генерируемые на основе хешей докер-образов) со схемой. Микросервисы регистрируют уже в ходе своей работы и делают это один раз без <a href="https://www.apollographql.com/docs/studio/schema/schema-reporting/#rolling-deploys-with-schema-reporting">последующих повторений</a>. Gateway делает выборку всех федерированных сервисов из <a href="https://www.consul.io/">консула</a> и спрашивает schema-registry составить схему /schema/compose , предоставляя их версии.</p>
+<p>Если schema-registry видит что предоставленные версии несовместимы, она откатывается на прошлые версии
+<img loading="lazy" src="../img/ac6951a7e0a2933369f74b934e035e80.png" alt=""  />
+
+<img loading="lazy" src="../img/3feed981ef1fc75944a76cf3754056b5.png" alt=""  />
+</p>
+<p>Регистрация схемы при старте сервиса</p>
+<p>Микросервисы могут выдавать как REST так и Graphql API, поэтому мы используем оповещения тревоги при неудачной регистрации схемы, оставляя при этом работу REST.</p>
+<h2 id="определение-схемы-на-основе-rest-не-просто">Определение схемы на основе REST не просто<a hidden class="anchor" aria-hidden="true" href="#определение-схемы-на-основе-rest-не-просто">#</a></h2>
+<p>Поскольку я не знал как лучше перенести схему из нашего REST в graphql, я сначала попробовал <a href="https://github.com/IBM/openapi-to-graphql">openapi-to-graphql</a>, нормально наша документация на тот момент не имела детального описания запросов и ответов.</p>
+<p><img loading="lazy" src="../img/2fc46dbba5892bd114758c2604b48e46.png" alt=""  />
+
+Спрашивать у каждой команды что-бы они написали бы ее, очевидно заняло бы уйму времени, поэтому мы определили основные сущности сами ? просто глядя на ответ при разных REST запросах.</p>
+<p>В дальнейшем это нам аукнулось, так как оказалось что REST API иногда зависит от того кто делает запрос, либо зависит от внутреннего состояния и логики.
+<img loading="lazy" src="../img/b30de9ea845324d1f49bb1a79e5b4acb.png" alt=""  />
+</p>
+<p>Например после настраиваемые <em>поля данных</em> меняют REST API в зависимости от пользователя. Если его добавить к сделке, то он оно будет выдаваться с ключем-хешем на уровне deal.pipeline_id. С федеративным graphql, динамическая схема невозможно, поэтому нам пришлось передвигать эти настраиваемые поля в отдельный список</p>
+<p>Другая проблема это стиль наименований в json-ответе. Мы хотели поддерживать верблюжийСтиль, но почти весь REST отвечал нам в змеином_стиле, пришлось пока остаться на смешанном.</p>
+<p><img loading="lazy" src="../img/617cbdac0101669627746edf3b773e48.png" alt=""  />
+</p>
+<p>федеративный граф данных Pipedrive (слева) с 2 сервисами (из 539) и еще-не-федеративный граф сервиса leads (справа)</p>
+<h2 id="cqrs-и-кеш">CQRS и кеш<a hidden class="anchor" aria-hidden="true" href="#cqrs-и-кеш">#</a></h2>
+<p>Модель данных в Pipedrive не может полагаться на простой TTL-кеш.</p>
+<p>Например, когда инженер поддержки создает глобальное оповещение о предстоящем техническом обслуживании приложения из нашей админки, он ожидает что сообщение будет сразу же видно пользователям. Эти глобальные оповещения могут быть адресованы как всем пользователям, так и конкретным компаниям и индивидуальным людям. Чистить такой кеш приходится используя 3 разных ключа.</p>
+<p>Что-бы делать параллельные запросы к PHP-монолиту, мы написали сервис на nodejs (назвали его monograph), который кеширует все что отвечает монолит в memcached. Этот кеш надо чистить из монолита в зависимости от бизнес-логики. Это немного антипаттерн, потому что кеш получается общим для разных сервисов и сильно их связывает.</p>
+<p><img loading="lazy" src="../img/a8837cc6450f909abee25a30a2e28981.png" alt=""  />
+</p>
+<p>Тут можно заметить <a href="https://martinfowler.com/bliki/CQRS.html">CQRS pattern</a>. Впрочем, такой кеш позволяет ускорять 80% запросов и дает итоговую среднюю задержку такую же как и у монолита.</p>
+<p><img loading="lazy" src="../img/64d0d5bf393aa6ba6bf232332db1d3eb.png" alt=""  />
+</p>
+<p>Время средней задержки ответа монолита (слева) и graphql gateway (справа) в регионе US на основе NewRelic</p>
+<p>Еще одна сложность - язык пользователя. Как только он меняется, нам надо чистить уйму разных сущностей - от типов активности до того какие настройки должны быть при показе гугл карт. И что еще хуже - язык уже управляется не в монолите, а был вынесен в отдельный сервис <em>identity</em>. Связывать его с общим кешем очень не хотелось.</p>
+<p>Identity владеет данными пользователей, поэтому мы сделали так что он кидает событие через kafka, которое ловит monograph и чистит все нужные кеши. Тут есть недостаток, что событие приходит с задержкой (может максимум 1 сек), поэтому чистка кеша происходит не мгновенно. Нормально это не критично, потому что пользователь не так быстро уходит со страницы что-бы сделать повторный запрос к бекенду и заметить что в кешах еще старый язык.</p>
+<h2 id="следите-за-производительностью">Следите за производительностью<a hidden class="anchor" aria-hidden="true" href="#следите-за-производительностью">#</a></h2>
+<p>Производительность была главной целью и для этого нам пришлось хорошо прокачаться в знании APM и выслеживании распределенных запросов между микросервисами что-бы определить самые медленные места. Мы на тот момент использовали Datadog и он хорошо себя зарекомендовал.</p>
+<p>Для ускорения, мы кешировали все 30 параллельных запросов в memcached. Но по ходу дела возникали проблемы. Например на картинке слева видно что некоторые резолверы делают запрос в memcached и получают ответ за 10мс, а другие тупят, словно жду своей очереди выростая до 220мс. Как оказалось, это было из-за того что я использовал один и тот же хост <a href="https://github.com/facebook/mcrouter">mcrouter</a>. Как только я стал их ротировать, мемкеш стал отдавать все за 20мс максимум.</p>
+<p>Что-бы уменьшить количество этих сетевых запросов к мемкешу, мы склеили его в один используя <a href="https://github.com/3rd-Eden/memcached#public-methods">getMulti</a> функцию. Получается что несмотря на то что все resolver&rsquo;ы выполняются независимо, они блочатся на 5мс с помощью debounce и склеиваются воедино.</p>
+<p><img loading="lazy" src="../img/1dc6beb1bfea7bfe18afdd32f3fbefa6.png" alt=""  />
+</p>
+<p>На картинке справа видна другая проблема. Эти желтые линии это налог graphql gateway на приведение данных к строгому типу. Причем чем больше данных вы гоняете через сервис, тем дольше будет эта фаза выполнятся.</p>
+<p><img loading="lazy" src="../img/65652f1707e2c00f50b1cae39c4c04b8.png" alt=""  />
+</p>
+<p>Вобщем по ходу миссии постоянно приходилось мониторить какие же запросы нам надо еще закешировать и под конец стало бесить что скажем 28 из 30 запросов прекрасно кешируются, а оставшиеся два мало того что отвечают целых 500мс, так их еще и невозможно легко закешировать.</p>
+<p>Нам пришлось вынести их в отдельный graphql запрос, который делается после первого /graphql запроса на инициализацю страницы. Так что сейчас мы на деле делаем уже порядка 3-5 независимых запросов, в зависимости от тайминга фронтенда (там тоже debounce зависящий от параллельной подгрузки FE компонентов)</p>
+<h2 id="не-следите-за-производительностью">Не следите за производительностью<a hidden class="anchor" aria-hidden="true" href="#не-следите-за-производительностью">#</a></h2>
+<p>Казалось бы полностью противоположный урок, но на деле это значит что в лайв-среде вам лучше отключить мониторинг приложения (APM) и <a href="https://www.apollographql.com/docs/apollo-server/api/apollo-server/#apolloserver">tracing:true</a>, если вы используете их.</p>
+<p><img loading="lazy" src="../img/7ed98ffd99435aa8f49204f198739783.png" alt=""  />
+</p>
+<p>Отключение отслеживания у нас ускорило среднюю задержку в два раза с 700мс до 300мс для нашей тестовой компании. Насколько я понимаю, причина крылась в функциях которые замеряют время (типа performance.now()), которые необходимы для замера каждого резолвера.</p>
+<p>Мы делали профайлинг graphql gateway с помощью  <a href="https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27">Chrome DevTools</a>, но так просто вызов этих мелких функций, раскиданных повсюду не заметишь.</p>
+<p><a href="https://www.youtube.com/watch?v=VnG7ej56lWw">Бен тут</a> делал замеры и тоже пришел к этому.</p>
+<h2 id="попробуйте-ранний-запрос">Попробуйте ранний запрос<a hidden class="anchor" aria-hidden="true" href="#попробуйте-ранний-запрос">#</a></h2>
+<p>На фронтенде, время создания graphql запроса для нас оказалось сложновато. Я хотел передвинуть первый /graphql как можно раньше (даже до загрузки всего кода в vendors.js) в графике сетевых запросов. Мы смогли это сделать, но веб-приложение из-за этого стало значительно сложней.</p>
+<p>Что-бы делать запрос вам понадобится <a href="https://github.com/apollographql/apollo-client">graphql клиент</a> и парсинг <a href="https://github.com/apollographql/graphql-tag">gql литералов</a> для определения самого запроса. Дальше его надо либо выдавать в отдельном bundle, либо отказываться от всех удобств и использовтать сырой <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">fetch</a>. Даже если делать сырой запрос, дальше надо что-то делать с ответом - распределять данные по моделям либо сохранять в глобальную переменную. Вобщем мы решили отказаться от этого и надеяться на server-side-rendering и <a href="https://medium.com/samsung-internet-dev/a-beginners-guide-to-service-workers-f76abf1960f6">service workers</a> в будущем.
+<img loading="lazy" src="../img/45a6bc6fa90a4b4d4f92170543daa475.png" alt=""  />
+</p>
+<p>Перенос /graphql запроса левей</p>
+<h2 id="оценивайте-сложность-запроса">Оценивайте сложность запроса<a hidden class="anchor" aria-hidden="true" href="#оценивайте-сложность-запроса">#</a></h2>
+<p>Чем graphql примечателен, так это то что тут можно оценивать насколько больно запрос клиента будет бить по инфраструктуре не делая при этом еще никакой работы. Для оценки сложности надо указывать цену внутри самой схемы с помощью директив, а дальше делать саму проверку при получении запроса и отклонять его если сложность слишком велика, подобно нашему <a href="https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting">rate limit</a> на частоту запросов.</p>
+<p>Сначала мы попробовали <a href="https://github.com/pa-bru/graphql-cost-analysis">graphql-cost-analysis</a> библиотеку, но в итоге написали свою, поскольку захотели больше фич - множителях при выдаче списков данных, вложенности и рекурсии, а так же определении типов влияния на инфраструктуру (сетевой запрос, БД, CPU, работа с файлами). Тут сложней всего оказалось внедрять поддержку своей директивы в gateway и schema-registry. Надеюсь мы нашу библиотеку тоже опубликуем.</p>
+<h2 id="у-схемы-много-лиц">У схемы много лиц<a hidden class="anchor" aria-hidden="true" href="#у-схемы-много-лиц">#</a></h2>
+<p>Работать со схемой в js/typescript на низком уровне порой мучительно. Это начинаешь понимать когда пробуешь интегрировать существующий graphql сервис в федерацию.</p>
+<p>Например настройки <a href="https://github.com/graphql-community/koa-graphql#options">koa-graphql</a> и <a href="https://www.apollographql.com/docs/apollo-server/v1/servers/koa/">apollo-server-koa</a> ожидают что вы создадите вложенный объект  <a href="https://github.com/graphql/graphql-js#using-graphqljs"><strong>GraphQLSchema</strong></a>  который включает и сами резолверы. Но федеративный apollo/server <a href="https://www.apollographql.com/docs/apollo-server/federation/implementing-services/#generating-a-federated-schema">хочет схему и резолверы отдельно</a>:</p>
+<pre tabindex="0"><code>buildFederatedSchema([{typeDefs, resolvers}])
+</code></pre><p>В другом случае, как я уже писал, вам захочется определить схему с помощью <a href="https://github.com/apollographql/graphql-tag">gql литерала</a>, или сохранить схему в schema.graphql файл, а когда вам надо будетделать проход по всей схеме для оценки сложности, понадобится <a href="https://github.com/graphql/graphql-js/blob/master/src/language/ast.js">ASTNode</a> (и функции <a href="https://github.com/graphql/graphql-js/blob/d4c82e0849318d045107321c6655c1a5da37b798/src/language/parser.d.ts#L58">parse</a> / <a href="https://github.com/graphql/graphql-js/blob/dd0297302800347a20a192624ba6373ee86836a3/src/utilities/buildASTSchema.js#L121">buildASTSchema</a>)</p>
+<h2 id="плавная-canary-деплой">Плавная canary деплой<a hidden class="anchor" aria-hidden="true" href="#плавная-canary-деплой">#</a></h2>
+<p>Во время миссии мы выкатывали изменения сначала всем разработчикам что-бы отследить очевидные ошибки.</p>
+<p>Под конец миссии в феврале, мы выкатили graphql только на 100 компаний-&ldquo;везунчиков&rdquo;. Дальше мы медленно выкатывали их до 1000 компаний, потом 1%, 10%, 30%, 50% и наконец в июне выкатили всем.</p>
+<p>Деплоили мы просто используя логику деления company ID без остатка. В дополнение, у нас было несколько настроек - кому еще включать, кому не включить никогда и рубильник выключающий graphql сразу у всех на фронтенде. Было очень полезно во время инцидентов сразу избавиться от подозрений что это все из-за нового graphql и упростить дебаг.</p>
+<p>Учитывая насколько большие изменения мы делали, это был хороший опыт быстро получить обратную связь, найти баги (с кешированием), при этом снизив риски для большинства пользователей.</p>
+<h2 id="надежды-и-мечты">Надежды и мечты<a hidden class="anchor" aria-hidden="true" href="#надежды-и-мечты">#</a></h2>
+<p>Что-бы достичь всех плюшек от того что graphql может нам дать, надо еще много что поменять - добавить мутации, подписки, массовые операции на уровне федерации. Все это требует работы с командами и евангелизм что-бы увеличить количество федерируемых сервисов.</p>
+<p>Как только наш graphql API станет стабильным и достаточным для использования любыми пользователями, его можно выкатить в качестве второй версии нашего API. Для публикации впрочем понадобятся еще директивы для ограничения доступа к сущностям согласно <a href="https://oauth.net/2/scope/">OAuth видимости</a> (для приложений из рынка) и согласно нашим <a href="https://www.pipedrive.com/en/pricing">продуктам</a>.</p>
+<p>В самой schema-registry надо добавить отслеживание клиентов, связать ее gateway для получения аналитики трафика что-бы проще было понять какие поля можно удалять, надо добавить фильтрацию и подсветку сущностей в зависимости от директив цены и видимости, валидировать именование, хранить постоянные запросы (persisted query), публиковать историю изменений итоговой схемы для сторонних разработчиков.</p>
+<p>Кроме того, поскольку у нас есть сервисы на go, еще непонятно как стоит делать внутренний трафик - стоит ли использовать GRPC из-за скорости и надежности, либо использовать независимые graphql эндпоинты, либо ставить централизованный внутренний gateway. Если GRPC лучше только из-за его бинарности, может мы можем написать библиотечку которая тоже упакует graphql данные с помощью <a href="https://msgpack.org/">msgpack</a>?</p>
+<p>Что касается внешнего мира, надеюсь Apollo со своим <a href="https://www.youtube.com/watch?v=MvHzOwdLb_o">проектом Constellation</a> ускорят обработку запроса на Rust что-бы небыло этих 10% налога на производительность и смогут федерировать graphql сервисы без серьезных изменений последних.</p>
+<p>Вобщем прекрасное время что-бы наслаждаться разработкой где уйма сложности!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

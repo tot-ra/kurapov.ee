@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Artjom Kurapov blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="среда, 13 августа 2014 г. в 18:56:33
+Если у вас есть веб-приложение и вы задались тем что-бы идеально его покрыть тестами, то вот что у вас должно быть:
+
+
+unit-тесты бэкэнда — в основном покрываются модели, генерируется покрытие — получаете необходимость изолировать модели (заодно single responsibility principle выполняется)
+
+
+unit-тесты frontend — карма &#43; phantomjs прокрутят все ваши angular-сервисы и backbone-модели — тоже приходится изолировать код
+
+
+e2e (сценарные, системные) тесты — наверняка основанный на selenium (protractor, selenide). Медленно тестируется функционал работающей системы из UI — приходится задумываться о том что пользователь вообще делает (use cases)">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/rus/testing/%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B8%D0%BD%D1%8A%D0%B5%D0%BA%D1%86%D0%B8%D0%B8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rus/testing/%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B8%D0%BD%D1%8A%D0%B5%D0%BA%D1%86%D0%B8%D0%B8/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Artjom Kurapov blog (Alt + H)">Artjom Kurapov blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/rus/gaming/" title="Игры">
+                    <span>Игры</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/movies/" title="Кино">
+                    <span>Кино</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/about/%D0%BE%D0%B1-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B5/" title="Об авторе">
+                    <span>Об авторе</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rus/tech/" title="Технологии">
+                    <span>Технологии</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>среда, 13 августа 2014 г. в 18:56:33</p>
+<p>Если у вас есть веб-приложение и вы задались тем что-бы идеально его покрыть тестами, то вот что у вас должно быть:</p>
+<ul>
+<li>
+<p>unit-тесты бэкэнда — в основном покрываются модели, генерируется покрытие — получаете необходимость изолировать модели (заодно single responsibility principle выполняется)</p>
+</li>
+<li>
+<p><a href="http://kurapov.name/rus/lab/quality_control/karma_jasmine_testing_angularjs/">unit-тесты frontend</a> — карма + phantomjs прокрутят все ваши angular-сервисы и backbone-модели — тоже приходится изолировать код</p>
+</li>
+<li>
+<p><a href="http://kurapov.name/rus/lab/quality_control/protractor/">e2e (сценарные, системные) тесты</a> — наверняка основанный на <a href="http://kurapov.name/rus/lab/quality_control/selenium_server_phpstorm/">selenium</a> (protractor, selenide). Медленно тестируется функционал работающей системы из UI — приходится задумываться о том что пользователь вообще делает (use cases)</p>
+</li>
+<li>
+<p>db/entity тесты миграций — &ldquo;с нуля&rdquo; запускают изменения в БД и когда всё готово - сравнивают с <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html">entity/record классами</a> для синхронизации кода с БД (так находятся лишние свойства и недостающие )</p>
+</li>
+<li>
+<p>тестирования db-процедур я не рассматриваю, потому что PL/SQL не увлекаюсь</p>
+</li>
+<li>
+<p>интеграционные тесты внешних систем/api - любого типа (rest, ftp, soap) и источника (соц.сети, бухгалтерия, склад, SMS-gateway), тестируют на</p>
+</li>
+<li>
+<p>доступность (а-ля pingdom)</p>
+</li>
+<li>
+<p>предсказуемый формат (банальный get и проверка json)</p>
+</li>
+<li>
+<p>полное взаимодействие с записью (обычно партнёрская компания с разработчиком ставит тестовую машинку)</p>
+</li>
+<li>
+<p>нагрузочные тесты (load, stress) тестируют всю систему что-бы определить максимальное число подключённых клиентов</p>
+</li>
+<li>
+<p>тесты производительности (performance) тестируют эффективность использования памяти, CPU, сети, HDD IO в среднем при разных запросах что-бы выявить какие конкретно области приложения медленные и в что можно улучшить</p>
+</li>
+<li>
+<p>интеграционные тесты контроллеров/api — запускающиеся без браузера, через CURL запросы, эмулирующие вызов из javascript или мобильных приложений</p>
+</li>
+<li>
+<p>простые get - запросы, проверяющие на наличие ошибок/stacktrace</p>
+</li>
+<li>
+<p>post/put запросы, меняющие данные</p>
+</li>
+<li>
+<p>в запущенных случаях (мобильные приложения), когда с мобильника e2e тесты не запустить, а функционал надо тестировать, то получаются последовательные сценарные (а не одинарные get-post) запросы, сохраняющие состояние сущностей и пользователя (в БД и сессии)</p>
+</li>
+</ul>
+<p>Вот на предпоследних я немножко и остановлюсь</p>
+<h3 id="unit-тестирование-контроллеров-неудобно">Unit-тестирование контроллеров неудобно<a hidden class="anchor" aria-hidden="true" href="#unit-тестирование-контроллеров-неудобно">#</a></h3>
+<p>Тестировать контроллеры с помощью юнит-тестов, хоть и быстро исполняется в phpunit, пишется очень с большим трудом. Да, я слышал Боба Мартина что код надо полностью покрывать, но контроллер это место сосредоточения нескольких сущностей:</p>
+<ul>
+<li>получение конфигурации (из php-include, yaml, БД, констант и проч) — значит надо либо исполнять всю загрузку системы, либо мокать, либо заменять константы/значения</li>
+<li>создание instance новых моделей – значит надо мокать</li>
+<li>вызовы глобальных IO-переменных/методов - значит надо их рефакторить, убирать в нетестируемые модели и мокать в контроллерах</li>
+<li>глобальные переменные, Factory-вызовы, статика - как и с конфигурацией, всё сложно</li>
+<li>аспекты - аннотации, доступ, логгинг + логика системы основанная на reflection — совсем какой-то магический мокинг должен быть. Например определение шаблона в аннотациях к методу контроллера..</li>
+</ul>
+<p>Но хуже всего конечно не в самом мокании, а в количестве. Когда у вас метод контроллера использует 5 моделей, то вам надо столько же моков определить. А потом на каждую строчку поведения модели написать порой и не одну строчку эмулирования её поведения — какой и сколько раз метод вызвался, с какими аргументами, что вернулось. А порой ведь мок может вернуть обьект (как в PDO - PDOStatement например) и вызвать у него метод. Получается что моки надо связывать между собой. Я часто ещё и путаюсь в каком порядке их надо регистрировать, ведь вызов тестируемой функции в коде теста должно быть внизу, а регистрация моков в phpunit - до неё, фактически получается что код теста пишется <strong>задом наперёд</strong>. Короче — писать юнит-тесты для контроллеров опасно. (Впрочем некоторые советуют глянуть на <a href="http://www.phpspec.net/">phpspec</a>)</p>
+<h3 id="как-стоит-тестировать-контроллеры">Как стоит тестировать контроллеры<a hidden class="anchor" aria-hidden="true" href="#как-стоит-тестировать-контроллеры">#</a></h3>
+<p>Интеграционные же тесты в чём-то схожи с e2e тестами, но они не включают в себя UI.</p>
+<ol>
+<li>
+<p>Пишем класс с CURL- запросами (get,post.. при необходимости delete и put, если ваш api их использует)</p>
+</li>
+<li>
+<p>Решаем вопрос с авторизацией, если она есть (я использую сохранение сессии в cookie-файл) - CURL это поддерживает</p>
+</li>
+<li>
+<p>Пишем зависимость всех тестов от login-теста, что-бы не насиловать сервер если авторизация провалилась</p>
+</li>
+<li>
+<p>Простые get-запросы с существующими в БД id-шками должны вам будут сказать если где-то закралась ошибка, которую пропустили unit-тесты</p>
+</li>
+</ol>
+<p>Теперь POST/PUT - они чаще содержат ошибки на безопасность, потому что параметров и логики при изменении больше. Добавление и изменения сущностей должно возвращать какой-то результат. Скажем {result:1, id:3} в JSON скажет что обьект создался, id такой-то. Кроме обычных тестов на сохранение, надо попробовать во все возможные поля запихнуть sql-инъекцию и XSS. </p>
+<p>SQL-инъекции должны либо выдать сразу ошибку, либо при чтении entity, переданное значение (скажем 1&rsquo; OR 1=1) будет отличаться от сохранённого в БД (в данном случае, возможно &ldquo;1&rdquo;). Иногда, из-за приведения типов, строка станет int-значением и это тоже надо считать как ok.</p>
+<p>С XSS чуть сложней - должен быть браузер. Я решаю это так, что e2e тесты запускаются после интеграционных и reset БД не происходит, а значит навигация по системе, где недавно внедрены alert-ы, должно сломать e2e тесты. Список <a href="https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet">атакующих XSS токенов</a> есть на OWASP.</p>
+<p>Для автоматизации я пишу trait для PHPUnit-тестов, потому что так проще всего использовать один и тот же код в разных тестах. </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> <span style="color:#a6e22e">SQLinjection</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> $AttackTokens <span style="color:#f92672">=</span> [ 
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;1&#34; OR 1=1&#39;</span>
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkInfectedUpdate</span>($saveURL,$readURL,$fields,<span style="color:#a6e22e">callable</span> $comparisonFn){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">foreach</span>($this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">attackTokens</span> <span style="color:#66d9ef">as</span> $injection){
+</span></span><span style="display:flex;"><span>            $data <span style="color:#f92672">=</span> $fields;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">foreach</span>($fields <span style="color:#66d9ef">as</span> $k<span style="color:#f92672">=&gt;</span>$v){
+</span></span><span style="display:flex;"><span>                $data[$k]<span style="color:#f92672">=</span>($v<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#f92672">?</span> $injection <span style="color:#f92672">:</span> $v);            
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            $saveResult <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">post</span>($saveURL, $data);
+</span></span><span style="display:flex;"><span>            $getResult <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">get</span>($getURL);
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>            $comparisonFn($injection, $getResult, $saveResult);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkInfectedInsert</span>(<span style="color:#f92672">..</span>){<span style="color:#f92672">..</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p> </p>
+<p>Каждый интеграционный тест наследует IntegrationBaseTest - в котором определены CURL-обёртки и путь к серверу. Метод теста сам должен решать как сравнивать результат с инъекцией, потому что иногда результат от вызова из API get() отличается в зависимости от entity - где-то это простой массив, а где-то иерархия со списками, по которым ещё надо пройтись (и скажем вычленить последнюю <em>версию</em>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">InvoiceControllerTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">IntegrationBaseTest</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> $phpErrorDetection <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;error&#39;</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">use</span> <span style="color:#a6e22e">SQLinjection</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @test
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">login</span>() {
+</span></span><span style="display:flex;"><span>        $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">parent</span><span style="color:#f92672">::</span><span style="color:#a6e22e">login</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @test
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @depends login
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @group security
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">postSave_AddingInjection</span>() {
+</span></span><span style="display:flex;"><span>        $self <span style="color:#f92672">=</span> $this;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">checkInfectedUpdate</span>(
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">baseURL</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;invoice/save&#39;</span>,
+</span></span><span style="display:flex;"><span>            $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">baseURL</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;invoice/get?id=3&#39;</span>,
+</span></span><span style="display:flex;"><span>            [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;company_id&#39;</span>  <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;1&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;title&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;*&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;description&#39;</span>  <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;*&#39;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">function</span> ($injection, $getResponse, $insertResponse) <span style="color:#66d9ef">use</span> ($self) {
+</span></span><span style="display:flex;"><span>                $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertEquals</span>($injection, $getResponse[<span style="color:#e6db74">&#39;result&#39;</span>][<span style="color:#e6db74">&#39;title&#39;</span>]);
+</span></span><span style="display:flex;"><span>                $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertEquals</span>($injection, <span style="color:#a6e22e">json_decode</span>($getResponse[<span style="color:#e6db74">&#39;result&#39;</span>][<span style="color:#e6db74">&#39;description&#39;</span>]));
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p> </p>
+<p>По мере того, как вы пишете тесты для контроллеров, получается что заодно вам приходится</p>
+<ol>
+<li>тестировать привилегии (кто может получить ответ?)</li>
+<li>рефакторить код контроллера, вынося логику в модели (потому что сложно понять толстые контроллеры)</li>
+<li>избавляться от stacktrace - потому что это выдаёт лишнюю информацию</li>
+<li>решать случаи с integrity violation, когда вы пытаетесь скажем добавить entity без проверки его связи с другими entity в БД</li>
+</ol>
+<p>Описанный мною вариант не решает вопросов с CSRF, редиректами, несолёными паролями, SSL, сессиями и ошибками конфигурации сервера, но зато улучшает функции приложения по безопасности/логичности, даже если у вас всюду используется безопасный PDO с bindParam().</p>
+<p>См. также <a href="https://code.google.com/p/zaproxy/">ZAP</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Artjom Kurapov blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
