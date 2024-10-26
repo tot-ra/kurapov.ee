@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "aafe0ee88d01d401",
+        "id": "3bc7c19307200caa",
         "type": "tabs",
         "children": [
           {
-            "id": "5c0928a9169bb7d6",
+            "id": "84058766da1ce4af",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/Опыт работы/Clarifai.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Clarifai"
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/Опыт работы/Clarifai.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Clarifai"
             }
           },
           {
@@ -107,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/Опыт работы/Clarifai.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Clarifai"
             }
           },
           {
@@ -132,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "docs/Опыт работы/Clarifai.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Clarifai"
             }
           }
         ]
@@ -154,54 +162,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c0928a9169bb7d6",
+  "active": "84058766da1ce4af",
   "lastOpenFiles": [
-    "static/img/favicon/web-app-manifest-512x512.png",
-    "static/img/favicon/web-app-manifest-192x192.png",
+    "1694690930981.jpg",
+    "1703367175304.jpg",
+    "20230825_011542.jpg",
+    "docs/Опыт работы/Pipedrive.md",
+    "1668505795821.jpg",
+    "1670441670387.jpg",
+    "1668505831479.jpg",
+    "docs/Опыт работы/Clarifai.md",
+    "i-vTBkj7W-4K.jpg",
+    "i-Q4Wbr9v-X4.jpg",
+    "docs/Опыт работы/Opus.md",
+    "docs/Опыт работы/Web Expert.md",
+    "P8250013.jpg",
+    "P2160010.jpg",
+    "P9080004.jpg",
+    "docs/Опыт работы/Elitec.md",
+    "docs/Опыт работы/Exact.md",
+    "docs/Опыт работы/Exove.md",
+    "docs/Опыт работы/Netron & Tactic Realtime Marketing.md",
+    "Untitled.canvas",
+    "docs/img",
+    "docs/Университет/Работа магистра.md",
+    "docs/Доклады/Многообразие тестов.md",
+    "docs/Университет/pdfs/presentation-111102103001-phpapp02.pdf",
+    "blog/универ/Презентация к диплому.md",
+    "docs/Университет/presentation-111102103001-phpapp02.pdf",
+    "docs/Доклады/presentation-111102103001-phpapp02.pdf",
+    "docs/Доклады/varietyofautomatedtests-151028134806-lva1-app6892.pdf",
+    "docs/Опыт работы/Mikare.md",
+    "docs/Доклады/Пчелы и AI.md",
+    "docs/Доклады/Пчелы и AI.pdf",
+    "docs/Доклады/Scaling GraphQL subscriptions.md",
     "static/img/favicon/site.webmanifest",
-    "static/img/favicon/favicon.svg",
     "static/img/favicon/favicon.ico",
-    "static/img/favicon/favicon-48x48.png",
-    "static/img/favicon/apple-touch-icon.png",
     "static/img/favicon",
     "blog/tech/soft/Как записывать экран с круглой камерой.md",
     "blog/img/272.pdf",
-    "blog/img/Pasted image 20241020180840.png",
     "blog/универ/Анализ сетей.md",
     "blog/tech/Проектирование оповещений.md",
-    "blog/img/2010-10-28_1055.png",
-    "blog/img/Screen+Shot+2012-07-13+at+12.01.13.png",
-    "blog/img/software_engineering_explained.gif",
-    "blog/img/Войны планет.pdf",
     "blog/tech/Google AI challenge - стратегии ботов.md",
-    "blog/img/Pasted image 20241020023207.png",
     "blog/универ/Web-службы и архитектуры приложений для интернета.md",
     "blog/универ/Алгоритмы и структуры данных.md",
-    "blog/tech/img/Result+Cache.png",
     "blog/философия/Кайдзен — философия Lean, Kanban и JIT.md",
     "blog/философия/О целостности.md",
     "blog/философия/Планирование проекта в MS Project.md",
     "blog/философия/Про аннотации и авторство кода.md",
-    "blog/философия/Тамара Кулинкович о мотивации в IT проектах.md",
-    "blog/философия/Управление IT-проектом.md",
-    "blog/философия/Эволюция разума и человечества.md",
-    "blog/img/Визуализация каскадов.pdf",
-    "blog/универ/Предпринимательство в Эстонии TMJ3330.md",
-    "blog/универ/Стратегический анализ инфосистемы.md",
-    "docs/Университет/Работа магистра.md",
-    "blog/универ/Интеллигентные системы.md",
-    "blog/универ",
-    "blog/управление/study/Web-службы и архитектуры приложений для интернета.md",
-    "blog/управление/study/Алгоритмы и структуры данных.md",
-    "blog/управление/study/Введение в инфосистемы и UML.md",
-    "blog/управление/study/Интеллигентные системы.md",
-    "docs/Университет/Презентация к диплому.md",
-    "blog/управление/study/Оценка сложности, качества и коллектива проекта.md",
-    "blog/универ/Сетевые интерфейсы к базам данных.md",
-    "blog/управление/study/Сетевые интерфейсы к базам данных.md",
-    "blog/кино/img",
-    "blog/кино",
-    "blog/кино/img",
-    "Untitled.canvas"
+    "blog/философия/Тамара Кулинкович о мотивации в IT проектах.md"
   ]
 }

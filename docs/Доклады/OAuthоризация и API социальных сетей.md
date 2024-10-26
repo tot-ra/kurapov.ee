@@ -7,6 +7,5 @@
 
 OAuth занимается именно авторизацией (разрешением действий приложению благодаря токену), но не запрашиваемыми привилегиями или последующими действиями с API. А вот authentication должна делать сама социальная сеть.
 
-https://vimeo.com/17136348
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/17136348?h=0b6ff5aa77" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/17136348?h=0b6ff5aa77" width="100%" height="400" frameborder="0"    allowfullscreen></iframe>

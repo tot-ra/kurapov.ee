@@ -1,10 +1,18 @@
-# Web Expert
-
 среда, 30 октября 2013 г. в 22:45:56
 
 [Web Expert](http://we.ee/)
 
-|                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+▪ Developed short-term projects with custom CMS (LAMP stack), for example:
+- SICP. Toll & education. Docx parsing, tree search & highlighting, MS Access DB import
+- EIQA. Cleaning audit. Heavy forms, PDF export, process workflows, customers
+
+Company background: estonian market, web-development company
+
+Gained experience with handling large databases in mysql. First Oracle experience. Developed custom CMS modules and custom applications with interesting algorithms (like tree search, distributed session management), Pangalink, WSDL for SOA, Zend IDE.
+
+## Проекты
+
+| Название                                    | Описание                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SEB ISIC promo                              | Промо-сайт банка SEB по продвижению студенческой карточки. Идея продвижения была в приглашении друзей, за что получались пункты. Пункты можно было потратить на мелкие аксессуары по принципу магазина                                                                                                                                                                                                                                                    |
 | [Baltcap](http://baltcap.ee/)               | Сайт венчурной группы инвесторов Балтии. Делал модуль файлов, категорий, пользователей                                                                                                                                                                                                                                                                                                                                                                    |
@@ -26,3 +34,11 @@
 | [Kinder](http://www.kinder.ee/)             | Изменения ввода данных в "Корзину" магазина игрушек, их обработка до и после оплаты через банк. Форма вычисления даты доставки товара на Javascript. Установка стилей css и изменение темплейтов. Установка модуля рассылки                                                                                                                                                                                                                               |
 | GSK                                         | GlaxoSmithKline - крупнейший производитель медицинских лекарств в мире. Установка CMS, изменение модуля feedback, usermanagment и banners, установка templates. Полное портирование CMS c [mysql](http://en.wikipedia.org/wiki/Mysql) на [Oracle](http://en.wikipedia.org/wiki/Oracle_database), первый опыт работы с Oracle.                                                                                                                             |
 | [Kommest](http://www.kommest.ee/)           | Изменения в CMS-модуле feedback                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+![](../../P2160010.jpg)
+![](../../P9080005.jpg)
+
+![](../../P9080004.jpg)
+
+
+

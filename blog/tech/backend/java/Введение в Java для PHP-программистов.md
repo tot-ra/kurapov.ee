@@ -110,13 +110,13 @@ class Derived extends Base{
     - List - элементы могут повторяться. Основаны на индексах-числах.  
         Не оперирует многомерными индексами, поиск логарифмической сложности.  
         
-        ```
-        ArrayList list=new ArrayList();
-        
-        list.add(C); //C автоматически переводится в базовый класс типа Object
-        
-        C=(Character) list.get(0); //обратное преобразование типа в Character схоже с php 
-        ```
+```java
+ArrayList list=new ArrayList();
+
+list.add(C); //C автоматически переводится в базовый класс типа Object
+
+C=(Character) list.get(0); //обратное преобразование типа в Character схоже с php 
+```
         
     - ArrayList
     - LinkedList
@@ -133,7 +133,7 @@ class Derived extends Base{
 
 Вместо привычного foreach, в java для вывода объектов можно воспользоваться конструкцией итератора вне зависимости от типа контейнера:
 
-```
+```java
 Iterator  it=list.iterator();
 while(it.hasNext()){
     Mouse m=(Mouse)it.next();
@@ -145,7 +145,7 @@ while(it.hasNext()){
 
 Примитивные типы данных созданы из прагматических что-бы было удобней писать код. Эти типы можно перевести в объекты при помощи "упаковочных классов"
 
-```
+```java
 char c='x';
 
 Character C = new Character(c); 
@@ -159,7 +159,7 @@ n=(int)x; //надо явно указывать преобразование
 
 В массивы по молчанию всегда сохраняются только объекты преобразованные в Object. Поэтому чтение из этих массивов может оказаться неудачным и нужно явно указывать преобразование. Начиная с Java 2 в синтаксис введено понятие генерических типов (generic classes), отмечается символами "больше" и "меньше", и благодаря этому можно опускать проверку типов вносимых в коллекцию элементов. Эта декларативность видна и в назвать Visual Basic (Dim Students(6) As Integer)
 
-```
+```java
  class MouseList{
    private ArrayList <mouse> list = new ArrayList <mouse>  (); //list.get:mouse
 }
@@ -183,16 +183,16 @@ _Exception in thread "main" java.lang.ArithmeticException: / by zero_
 - Явно прописать проверку. В нашем случае - если ноль, то не делить.
 - Словить исключение - как и в php/javascript, явно использовать try..catch блок  
     
-    ```
-    try{
-        int out=3/in;
-    }
-    
-    catch(Exception e){
-        System.out.println("Division by zero:"+e);
-    }
-    finally{} // не обязательный блок, вызываемый независимо от наличия исключения
-    ```
+```java
+try{
+    int out=3/in;
+}
+
+catch(Exception e){
+    System.out.println("Division by zero:"+e);
+}
+finally{} // не обязательный блок, вызываемый независимо от наличия исключения
+```
     
 - Передать исключение вызываемому объекту, который обязан его обработать. Для этого пишем у функции "_throws Exception_", и внутри функции кидаем "_throw e_" исключение наверх.
 

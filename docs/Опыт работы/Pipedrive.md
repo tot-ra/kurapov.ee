@@ -2,7 +2,8 @@
 sidebar_position: 2
 ---
 
-Engineering Platform
+## Principal Software Engineer, Engineering Platform
+
 ▪ Mission lead of GraphQL subscriptions mission (~4 developers × 3 months)  
 ▪ Launchpad lead of (high-load) core services team (cross-team comms, reviews, backlog grooming, on-call; ~12 developers × 6 months)  
 ▪ Hiring interviewer and onboarding instructor (system design step, 4h+ videos)  
@@ -16,7 +17,8 @@ Engineering Platform
 Gained experience in:  
 - Kafka, Redis sentinel, PromQL
 
-Core Tribe
+## Senior Software Engineer, Core Tribe
+
 ▪ Mission lead of API composition mission that introduced Federated graphQL layer (~4 developers × 3 months scope)  
 ▪ Mission lead of API performance improvements (~ 2 developers × 2 months)  
 ▪ Solution architect role, reviewing landing mission results  
@@ -39,7 +41,8 @@ Gained experience in:
 - Pipedrive + FB Messenger integration hackaton
 
 
-Marketplace team (Indigo)
+## Senior Software Engineer, Marketplace (Indigo) team
+
 ▪ Developed Pipedrive marketplace catalog, OAuth server and app manager  
 ▪ Supported webhooks high-load services (encryption)  
 ▪ Improved API reference page (swagger-ui, search)  
@@ -52,3 +55,18 @@ Gained experience in:
 - Frontend: React, Scss  
 - QA: Sinon, Mocha, Jest  
 - Monitoring: newrelic, prometheus
+
+
+![](../../i-Q4Wbr9v-X4.jpg)
+
+![](../../i-vTBkj7W-4K.jpg)
+
+![](../img/1670441310936.jpg)
+
+![](../img/1670441423216.jpg)
+
+![](../../1668505831479.jpg)
+
+![](../../1670441670387.jpg)
+
+![](../../1668505795821.jpg)
