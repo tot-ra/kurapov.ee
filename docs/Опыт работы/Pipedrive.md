@@ -57,16 +57,16 @@ Gained experience in:
 - Monitoring: newrelic, prometheus
 
 
-![](../../i-Q4Wbr9v-X4.jpg)
+![](../img/i-Q4Wbr9v-X4.jpg)
 
-![](../../i-vTBkj7W-4K.jpg)
+![](../img/i-vTBkj7W-4K.jpg)
 
 ![](../img/1670441310936.jpg)
 
 ![](../img/1670441423216.jpg)
 
-![](../../1668505831479.jpg)
+![](../img/1668505831479.jpg)
 
-![](../../1670441670387.jpg)
+![](../img/1670441670387.jpg)
 
-![](../../1668505795821.jpg)
+![](../img/1668505795821.jpg)

@@ -10,6 +10,6 @@ title: Netron & Tactic Realtime Marketing
 
 ![](../img/1602200343176.jpg)
 
-![](../img/1670448527614.jpg)![](../img/DSCF5943.jpg)![](../../IMG_0964.jpg)
+![](../img/1670448527614.jpg)![](../img/DSCF5943.jpg)![](../img/IMG_0964.jpg)
 
-![](../../IMG_0815.jpg)
+![](../img/IMG_0815.jpg)

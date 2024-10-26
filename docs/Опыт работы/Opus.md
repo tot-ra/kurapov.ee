@@ -31,6 +31,6 @@ Introduced unit testing with PHPUnit, selenium grid automated testing on multipl
 | [Puhastaja Kaubamaja](http://www.puhastajakaubamaja.ee/) | **Магазин** средств очистки помещений. Делал обширную двустороннюю синхронизацию данных с системой бухгалтерии и складирования [Hansaworld](http://www.excellent.ee/) (с unit-тестами) и частично модуль магазина и пользовательских настроек с несколькими ролями и привилегиями                                               |
 
 
-![](../../IMG_5500.jpg)
+![](../img/IMG_5500.jpg)
 
-![](../../IMAG0187.jpg)![](../../IMAG0291.jpg)
+![](../img/IMAG0187.jpg)![](../img/IMAG0291.jpg)

@@ -36,9 +36,9 @@ Gained experience with handling large databases in mysql. First Oracle experienc
 | [Kommest](http://www.kommest.ee/)           | Изменения в CMS-модуле feedback                                                                                                          
 
 
-![](../../P2160010.jpg)
-![](../../P9080005.jpg)
-![](../../P9080004.jpg)
+![](../img/P2160010.jpg)
+![](../img/P9080005.jpg)
+![](../img/P9080004.jpg)
 
 
 

@@ -16,6 +16,6 @@ Company background: Global market, software as a service, Fullstack AI platform,
 
 
 
-![](../../20230825_011542.jpg)![](../../1703367175304.jpg)
+![](../img/20230825_011542.jpg)![](../img/1703367175304.jpg)
 
-![](../../1694690930981.jpg)
+![](../img/1694690930981.jpg)
