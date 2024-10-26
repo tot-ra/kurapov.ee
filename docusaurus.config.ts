@@ -67,9 +67,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Artjom Kurapov',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Artjom Kurapov',
         src: 'img/artjom.jpg',
       },
       items: [
