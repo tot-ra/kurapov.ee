@@ -2,46 +2,71 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Об авторе
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- вторник, 12 декабря 2006 г. в 18:44:12
 
-## Getting Started
+- [Опыт работы](Опыт%20работы.md)
+- [Работа мастера](Работа%20магистра.md)
+  - [Анализ сетей](Анализ%20сетей.md)
+- Доклады
+  - [Пчелы и AI](../доклады/Пчелы%20и%20AI.md)
+  - [Scaling GraphQL subscriptions](../доклады/Scaling%20GraphQL%20subscriptions.md)
+  - [Многообразие тестов](../доклады/Многообразие%20тестов.md)
+  - [OAuthоризация и API социальных сетей](../доклады/OAuthоризация%20и%20API%20социальных%20сетей.md)
+  - [Pangalink](../доклады/Pangalink.md)
+  - [В облаке AWS](../доклады/В%20облаке%20AWS.md)
 
-Get started by **creating a new site**.
+Меня зовут Артём Курапов, я инженер из Эстонии. 
+Развиваю свой проект по пчеловодству - [Gratheon](http://gratheon.com/)
+Активно участвую в [девклубе](http://devclub.eu/), DrupalCamp, TallinnJS и других конференциях
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+<!-- truncate -->
 
-### What you'll need
+## Образование
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Таллинский Технический Университет](http://ttu.ee/),  
+    Информатика, магистр (2007-2011)
+  - [Работа магистра](Работа%20магистра.md)
+- [Таллинский Технический Университет](http://ttu.ee/),  
+    Компьютерная и системная техника, бакалавр (2002-2007)
+    - [Работа бакалавра (Bsc)](Работа%20бакалавра%20(Bsc).md)
+- [Таллинская Средняя Школа №6  
+    ](http://www.kvg.tln.edu.ee/)(Центральная Русская Гимназия) (1993-2002)
+- [Харьковская Средняя Школа №4  
+    ](http://lyceum4.edu.kh.ua/)(Педагогический Лицей) (1992-1995)
 
-## Generate a new site
+## Опыт работы
 
-Generate a new Docusaurus site using the **classic template**.
+- [Clarifai](https://www.clarifai.com/) (2023-)
+- [Pipedrive](../../работа/Pipedrive/Pipedrive.md) (2017 - 2022)
+- [Netron & Tactic Realtime Marketing](Netron%20&%20Tactic%20Realtime%20Marketing.md) (2014 - 2017)
+- [Exove](Exove.md) (2011 - 2014)
+- [Opus](Opus.md) + [Exact](Exact.md) (2008 - 2011)
+- [Elitec](Elitec.md) (2007 - 2008)
+- [Web Expert](Web%20Expert.md) (2006 - 2007)
+- [Mikare](Mikare.md) (2004 - 2006)
 
-The classic template will automatically be added to your project after you run the command:
+| Age     | Backend                                      | Frontend                           | Domain         |
+| ------- | -------------------------------------------- | ---------------------------------- | -------------- |
+| Детство | QBasic -> C -> Delphi -> Java                |                                    |                |
+| 20+     | PHP + MySQL + Nginx + Vagrant                | jquery, protojs, angular, backbone | CMS, CRMs      |
+| 30+     | Node + Go + GraphQL + Docker                 | backbone, react, typescript        | single-product |
+| ...     | Go + Postgres + Python + Node (preact) + K8S | preact, typescript                 | AI & robots    |
 
-```bash
-npm init docusaurus@latest my-website classic
-```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Профессия
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Я люблю изучать и проектировать сложные системы, потоки информации во временных и пользовательских контекстах с ограничениями платформы. Поэтому я занимаюсь их  ****интеграцией****  и тестированием. Я знаю что на практике значат модные слова - CMS, CRM, ECM, онлайн-магазины, API социальных сетей, мобильные приложения.
 
-## Start your site
+#### Опыт работы с технологиями
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+|                        |                                                                                                                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Языки                  | PHP, Javascript (ES6+, Node), Java (Android), Delphi, Objective C                                                                                                                           |
+| Базы данных            | MySQL5+ (FK, транзакции), Postgre, Oracle 10, MongoDB                                                                                                                                       |
+| Backend фреймворки     | Koa, Express, Zend Framework, Code igniter, Yii, Kohana, Symfony                                                                                                                            |
+| Разработка и поддержка | PHPUnit & SeleniumRC/Grid, SVN, Git, Jenkins, Webgrind, XDebug, XHProf Bower, Karma, Grunt, Jasmine                                                                                         |
+| API                    | Социальные сети (Facebook,Twitter,Google,Linkedin) Бухгалтерия (Hansaworld, Economics) Оплата (DIBS, Cybersource, Fortumo) Специализированные (Micros MyFidelio, Xtee, Mobiil-ID & Digidoc) |
+| Трекеры                | Trello, Pivotaltracker, Mantis, Jira                                                                                                                                                        |
+| Frontend фреймворки    | React, Backbone, AngularJS                                                                                                                                                                  |

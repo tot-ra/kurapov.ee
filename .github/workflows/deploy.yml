@@ -11,3 +11,6 @@ jobs:
       - name: pull
         working-directory: /www/kurapov.ee/
         run: git reset --hard && git pull
+      - name: build
+        working-directory: /www/kurapov.ee/
+        run: npm run build

@@ -1,0 +1,13 @@
+---
+title: ...
+date: {{date:YYYY-MM-DD}}T{{time:HH:mm}}
+
+description: ...
+slug: ...
+tags: []
+image: ...
+---
+# Title
+
+
+<!-- truncate -->

@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Artjom Kurapov',
-  tagline: 'Инженер',
+  title: 'Артём Курапов',
+  tagline: 'Инженер-программист из Эстонии',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -41,6 +41,7 @@ const config: Config = {
             'https://github.com/tot-ra/kurapov.ee/tree/main/',
         },
         blog: {
+          blogSidebarCount: 20,
           showReadingTime: true,
           postsPerPage: 10,
           feedOptions: {
@@ -49,8 +50,11 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/tot-ra/kurapov.ee/tree/main/',
+          editUrl: 'https://github.com/tot-ra/kurapov.ee/tree/main/',
+
+
+          tagsBasePath: '/tags',
+
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -67,19 +71,21 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Artjom Kurapov',
+      title: 'Артём Курапов',
       logo: {
         alt: 'Artjom Kurapov',
         src: 'img/artjom.jpg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Об авторе',
+        },
+        {to: '/blog', label: 'Блог', position: 'left'},
+
+
         {
           href: 'https://github.com/tot-ra/kurapov.ee',
           label: 'GitHub',
@@ -90,53 +96,115 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
         {
-          title: 'Community',
+          title: 'Media',
           items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
             {
-              label: 'Twitter',
+              label: 'Short news on Twitter',
               href: 'https://twitter.com/tot_ra',
+            },
+            {
+              label: 'Long videos on Youtube',
+              href: 'https://www.youtube.com/user/artkurapov/',
+            },
+            {
+              label: 'Streams on Twitch',
+              href: 'https://www.twitch.tv/tot_ra/',
+            },
+            {
+              label: 'Nature on Instagram',
+              href: 'https://www.instagram.com/tot_ra/',
             },
           ],
         },
+
+
         {
-          title: 'More',
+          title: 'Business',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/kurapov/',
             },
+
             {
               label: 'GitHub',
-              href: 'https://github.com/tot-ra',
+              href: 'https://github.com/tot_ra',
+            },
+
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/users/158448/artjom-kurapov?tab=profile',
+            },
+            
+            {
+              label: 'Slideshare',
+              href: 'https://www.slideshare.net/totra/presentations',
+            },
+            {
+              label: 'Habr',
+              href: 'https://habr.com/ru/users/tot_ra/posts/',
+            },
+            
+          ],
+        },
+
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/artkurapov',
+            },
+            {
+              label: 'ВКонтакте',
+              href: 'https://vk.com/artkurapov',
+            },
+            {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/user/tot_ra/',
+            },
+            {
+              label: 'LiveJournal',
+              href: 'https://tot-ra.livejournal.com/',
+            },
+            
+          ],
+        },
+        {
+          title: 'Media',
+          items: [
+            {
+              label: 'Books on Goodreads',
+              href: 'https://goodreads.com/tot_ra',
+            },
+            {
+              label: 'Games on Steam',
+              href: 'https://steamcommunity.com/id/tot_ra/',
+            },
+            {
+              label: 'Music on Spotify',
+              href: 'https://open.spotify.com/user/1176479585',
+            },
+            {
+              label: 'Music on Soundcloud',
+              href: 'https://soundcloud.com/tot_ra',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Artjom Kurapov. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;
