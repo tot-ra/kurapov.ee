@@ -11,7 +11,7 @@
 
 ### IDE
 
-![](../../gaming/img/Pasted%20image%2020241020180021.png)
+![](../../игры/img/Pasted%20image%2020241020180021.png)
 
 Графическая оболочка разработчика (IDE) состоит из 4 основных панелей
 
@@ -26,7 +26,7 @@
 
 Карта (Terrain) создаётся очень просто из меню и по умолчанию уже есть. Курсором как в фотошопе можно изменять высоту рельефа (в том числе используя Shift). Более [продвинутые](http://bmp.thefloatingwidget.net/heightmaps/) господа придумали как импортировать карты из реального мира с помощью google earth, [openTDD](http://www.tt-forums.net/viewtopic.php?f=33&t=33956), делая так называемые heightmaps. Встроенный импорт работает только с raw форматами, надо [использовать хак](http://www.unifycommunity.com/wiki/index.php?title=HeightmapFromTexture). Недавно вышел генератор карт
 
-![](../../gaming/img/Pasted%20image%2020241020180040.png)
+![](../../игры/img/Pasted%20image%2020241020180040.png)
 
 ### Игровой объект Unity  
 
@@ -139,7 +139,7 @@ Unity позволяет не только писать скрипты под с
 - [Skydome](http://www.pixelstudio.nl/?p=138) - динамическое небо
 - [Last Bastion Games](http://lastbastiongames.com/) - диалоги, recorder, прототип RTS и гонок
 
-![](../../gaming/img/Pasted%20image%2020241020180055.png)
+![](../../игры/img/Pasted%20image%2020241020180055.png)
 
 Обязательно гляньте:  
 

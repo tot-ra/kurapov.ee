@@ -1,4 +1,9 @@
-понедельник, 3 марта 2008 г. в 22:08:39
+---
+title: Random order в Postgres
+date: 2008-03-03T10:05:00
+tags:
+  - db
+---
 
 > Случайность — маска неузнанной закономерности  
 > [Александр Волков](http://www.inauka.ru/analysis/article71323/print.html)

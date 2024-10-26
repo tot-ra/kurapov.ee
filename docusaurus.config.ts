@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Артём Курапов',
   tagline: 'Инженер-программист из Эстонии',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://kurapov.ee',
@@ -29,11 +29,13 @@ const config: Config = {
     locales: ['en'],
   },
 
+
   presets: [
     [
       'classic',
       {
         docs: {
+          showLastUpdateTime: false,
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -41,7 +43,9 @@ const config: Config = {
             'https://github.com/tot-ra/kurapov.ee/tree/main/',
         },
         blog: {
-          blogSidebarCount: 20,
+
+          showLastUpdateTime: false,
+          blogSidebarTitle: 'Последние заметки',
           showReadingTime: true,
           postsPerPage: 10,
           feedOptions: {
@@ -195,6 +199,13 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()}`,
     },
+
+    blog: {
+      sidebar: {
+        groupByYear: true,
+      },
+    },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f1967fb3221e3c9e",
+        "id": "aafe0ee88d01d401",
         "type": "tabs",
         "children": [
           {
-            "id": "90590117688dcd4f",
+            "id": "5c0928a9169bb7d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Об авторе.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Об авторе"
+              "title": "New tab"
             }
           }
         ]
@@ -77,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 409.5
   },
   "right": {
     "id": "7ff0fc2c20dd250d",
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Об авторе.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Об авторе"
+              "title": "Backlinks"
             }
           },
           {
@@ -112,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Об авторе.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Об авторе"
+              "title": "Outgoing links"
             }
           },
           {
@@ -138,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/Об авторе.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Об авторе"
+              "title": "Outline"
             }
           }
         ]
@@ -162,27 +154,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "90590117688dcd4f",
+  "active": "5c0928a9169bb7d6",
   "lastOpenFiles": [
-    "docs/intro.md",
-    "docs/Университет/Стратегический анализ инфосистемы.md",
-    "docs/Университет/Сетевые интерфейсы к базам данных.md",
-    "docs/Университет/Интеллигентные системы.md",
-    "docs/Университет/Алгоритмы и структуры данных.md",
-    "docs/Университет/Web-службы и архитектуры приложений для интернета.md",
-    "docs/Университет/master-degree/Работа магистра.md",
-    "docs/Университет/master-degree/Анализ сетей.md",
-    "docs/Университет/master-degree/Msc work.pdf",
-    "docs/Об авторе.md",
-    "docs/Университет/master-degree/img/Pasted image 20241020181002.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180954.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180945.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180934.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180930.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180925.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180915.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180911.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180906.png",
-    "docs/Университет/master-degree/img/Pasted image 20241020180852.png"
+    "static/img/favicon/web-app-manifest-512x512.png",
+    "static/img/favicon/web-app-manifest-192x192.png",
+    "static/img/favicon/site.webmanifest",
+    "static/img/favicon/favicon.svg",
+    "static/img/favicon/favicon.ico",
+    "static/img/favicon/favicon-48x48.png",
+    "static/img/favicon/apple-touch-icon.png",
+    "static/img/favicon",
+    "blog/tech/soft/Как записывать экран с круглой камерой.md",
+    "blog/img/272.pdf",
+    "blog/img/Pasted image 20241020180840.png",
+    "blog/универ/Анализ сетей.md",
+    "blog/tech/Проектирование оповещений.md",
+    "blog/img/2010-10-28_1055.png",
+    "blog/img/Screen+Shot+2012-07-13+at+12.01.13.png",
+    "blog/img/software_engineering_explained.gif",
+    "blog/img/Войны планет.pdf",
+    "blog/tech/Google AI challenge - стратегии ботов.md",
+    "blog/img/Pasted image 20241020023207.png",
+    "blog/универ/Web-службы и архитектуры приложений для интернета.md",
+    "blog/универ/Алгоритмы и структуры данных.md",
+    "blog/tech/img/Result+Cache.png",
+    "blog/философия/Кайдзен — философия Lean, Kanban и JIT.md",
+    "blog/философия/О целостности.md",
+    "blog/философия/Планирование проекта в MS Project.md",
+    "blog/философия/Про аннотации и авторство кода.md",
+    "blog/философия/Тамара Кулинкович о мотивации в IT проектах.md",
+    "blog/философия/Управление IT-проектом.md",
+    "blog/философия/Эволюция разума и человечества.md",
+    "blog/img/Визуализация каскадов.pdf",
+    "blog/универ/Предпринимательство в Эстонии TMJ3330.md",
+    "blog/универ/Стратегический анализ инфосистемы.md",
+    "docs/Университет/Работа магистра.md",
+    "blog/универ/Интеллигентные системы.md",
+    "blog/универ",
+    "blog/управление/study/Web-службы и архитектуры приложений для интернета.md",
+    "blog/управление/study/Алгоритмы и структуры данных.md",
+    "blog/управление/study/Введение в инфосистемы и UML.md",
+    "blog/управление/study/Интеллигентные системы.md",
+    "docs/Университет/Презентация к диплому.md",
+    "blog/управление/study/Оценка сложности, качества и коллектива проекта.md",
+    "blog/универ/Сетевые интерфейсы к базам данных.md",
+    "blog/управление/study/Сетевые интерфейсы к базам данных.md",
+    "blog/кино/img",
+    "blog/кино",
+    "blog/кино/img",
+    "Untitled.canvas"
   ]
 }

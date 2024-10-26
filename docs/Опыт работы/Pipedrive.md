@@ -1,4 +1,6 @@
-# Pipedrive
+---
+sidebar_position: 2
+---
 
 Engineering Platform
 ▪ Mission lead of GraphQL subscriptions mission (~4 developers × 3 months)  
