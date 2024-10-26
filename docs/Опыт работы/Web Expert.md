@@ -33,11 +33,11 @@ Gained experience with handling large databases in mysql. First Oracle experienc
 | [Salinger](http://www.salinger.ee/)         | Установка модуля рассылки и изменение порядка вводимых данных.                                                                                                                                                                                                                                                                                                                                                                                            |
 | [Kinder](http://www.kinder.ee/)             | Изменения ввода данных в "Корзину" магазина игрушек, их обработка до и после оплаты через банк. Форма вычисления даты доставки товара на Javascript. Установка стилей css и изменение темплейтов. Установка модуля рассылки                                                                                                                                                                                                                               |
 | GSK                                         | GlaxoSmithKline - крупнейший производитель медицинских лекарств в мире. Установка CMS, изменение модуля feedback, usermanagment и banners, установка templates. Полное портирование CMS c [mysql](http://en.wikipedia.org/wiki/Mysql) на [Oracle](http://en.wikipedia.org/wiki/Oracle_database), первый опыт работы с Oracle.                                                                                                                             |
-| [Kommest](http://www.kommest.ee/)           | Изменения в CMS-модуле feedback                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [Kommest](http://www.kommest.ee/)           | Изменения в CMS-модуле feedback                                                                                                          
+
+
 ![](../../P2160010.jpg)
 ![](../../P9080005.jpg)
-
 ![](../../P9080004.jpg)
 
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Опыт работы/Clarifai.md",
+                "file": "docs/Опыт работы/Web Expert.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clarifai"
+              "title": "Web Expert"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Опыт работы/Clarifai.md",
+                "file": "docs/Опыт работы/Web Expert.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Clarifai"
+              "title": "Backlinks for Web Expert"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Опыт работы/Clarifai.md",
+                "file": "docs/Опыт работы/Web Expert.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Clarifai"
+              "title": "Outgoing links from Web Expert"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Опыт работы/Clarifai.md"
+                "file": "docs/Опыт работы/Web Expert.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Clarifai"
+              "title": "Outline of Web Expert"
             }
           }
         ]
@@ -164,6 +164,7 @@
   },
   "active": "84058766da1ce4af",
   "lastOpenFiles": [
+    "docs/Опыт работы/Clarifai.md",
     "1694690930981.jpg",
     "1703367175304.jpg",
     "20230825_011542.jpg",
@@ -171,14 +172,12 @@
     "1668505795821.jpg",
     "1670441670387.jpg",
     "1668505831479.jpg",
-    "docs/Опыт работы/Clarifai.md",
     "i-vTBkj7W-4K.jpg",
     "i-Q4Wbr9v-X4.jpg",
     "docs/Опыт работы/Opus.md",
     "docs/Опыт работы/Web Expert.md",
     "P8250013.jpg",
     "P2160010.jpg",
-    "P9080004.jpg",
     "docs/Опыт работы/Elitec.md",
     "docs/Опыт работы/Exact.md",
     "docs/Опыт работы/Exove.md",
