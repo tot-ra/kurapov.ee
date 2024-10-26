@@ -13,4 +13,4 @@ jobs:
         run: git reset --hard && git pull
       - name: build
         working-directory: /www/kurapov.ee/
-        run: npm run build
+        run: npm i && npm run build
