@@ -11,10 +11,14 @@
             "id": "3d04f97687f6724d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/Об авторе.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Об авторе"
             }
           }
         ]
@@ -73,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 242.5
   },
   "right": {
     "id": "7ff0fc2c20dd250d",
@@ -155,11 +159,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "12138ffd3b9dff4b",
+  "active": "3d04f97687f6724d",
   "lastOpenFiles": [
-    "blog/img/442479731_10161753612732973_6175466893130348624_n.jpg",
-    "docs/img/453313974_10161913384892973_412011336903824679_n.jpg",
+    "docs/Университет/Работа бакалавра.md",
+    "docs/Университет/Работа магистра.md",
+    "docs/Опыт работы/Web Expert.md",
+    "docs/Опыт работы/Clarifai.md",
+    "docs/Опыт работы/Elitec.md",
+    "docs/Опыт работы/Exact.md",
+    "docs/Опыт работы/Exove.md",
+    "070625_163028.jpg",
+    "IMG_2934.jpg",
+    "docs/Опыт работы/Opus.md",
+    "docs/Опыт работы/Netron & Tactic Realtime Marketing.md",
+    "docs/Опыт работы/Pipedrive.md",
     "docs/Об авторе.md",
+    "ttu-07.jpg",
+    "080606_121622.jpg",
+    "docs/img/453313974_10161913384892973_412011336903824679_n.jpg",
+    "blog/img/442479731_10161753612732973_6175466893130348624_n.jpg",
     "blog/события/2024-05-24-Latitude 59.md",
     "blog/tech/backend/img/177.pdf",
     "blog/tech/backend/img/174.pdf",
@@ -170,7 +188,6 @@
     "blog/tech/security/Простейший backdoor на php.md",
     "blog/tech/security/img/97.pdf",
     "blog/tech/security/img/100.pdf",
-    "docs/Университет/Работа магистра.md",
     "blog/tech/backend/Infinite scolling.md",
     "docs/img/Networks, Crowds, and Markets.pdf",
     "blog/img/Networks, Crowds, and Markets.pdf",
@@ -182,10 +199,6 @@
     "build/img/favicon/web-app-manifest-192x192.png",
     "build/img/favicon/favicon.svg",
     "build/img/favicon/favicon-48x48.png",
-    "build/img/favicon/apple-touch-icon.png",
-    "build/img/undraw_docusaurus_tree.svg",
-    "build/img/undraw_docusaurus_react.svg",
-    "build/img/undraw_docusaurus_mountain.svg",
     "node_modules/autocomplete.js/README.md",
     "node_modules/autocomplete.js/CONTRIBUTING.md",
     "node_modules/autocomplete.js/CHANGELOG.md",
@@ -194,14 +207,6 @@
     "node_modules/rehype-parse/node_modules/parse5/README.md",
     "node_modules/docusaurus-lunr-search/README.md",
     "node_modules/gauge/README.md",
-    "node_modules/rehype-parse/node_modules/property-information/readme.md",
-    "node_modules/hast-util-select/node_modules/property-information/readme.md",
-    "node_modules/gauge/CHANGELOG.md",
-    "node_modules/immediate/README.md",
-    "node_modules/hast-util-select/readme.md",
-    "node_modules/rehype-parse/readme.md",
-    "node_modules/docusaurus-lunr-search/node_modules/vfile/readme.md",
-    "node_modules/rehype-parse/node_modules/vfile/readme.md",
     "Untitled.canvas"
   ]
 }
