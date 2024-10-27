@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef095c30e6548565",
+        "id": "c9f91d044ece94e6",
         "type": "tabs",
         "children": [
           {
-            "id": "86e4facd598e5f98",
+            "id": "e01cb242011c4dce",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "docs/img/20230825_011542.jpg"
-              },
-              "icon": "lucide-image",
-              "title": "20230825_011542"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -91,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/img/20230825_011542.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +98,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 20230825_011542"
+              "title": "Backlinks"
             }
           },
           {
@@ -110,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/img/20230825_011542.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 20230825_011542"
+              "title": "Outgoing links"
             }
           },
           {
@@ -136,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/img/20230825_011542.jpg"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of 20230825_011542"
+              "title": "Outline"
             }
           }
         ]
@@ -160,22 +154,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12138ffd3b9dff4b",
+  "active": "e01cb242011c4dce",
   "lastOpenFiles": [
-    "node_modules/lunr-languages/build/stopwords-filter/LICENSE.txt",
-    "node_modules/lunr-languages/build/lunr.template",
+    "build/blog/rss.xml",
+    "build/blog/atom.xml",
+    "build/blog/rss.css",
+    "build/blog/atom.css",
+    "build/blog/atom.xsl",
+    "build/blog/rss.xsl",
+    "build/search-index-docs-default-current.json",
+    "build/search-index-blog_posts_list.json",
+    "build/search-index-default.json",
+    "build/sitemap.xml",
+    "build/index.html",
+    "build/img/favicon/web-app-manifest-512x512.png",
+    "build/img/favicon/web-app-manifest-192x192.png",
+    "build/img/favicon/favicon.svg",
+    "build/img/favicon/favicon-48x48.png",
+    "build/img/favicon/apple-touch-icon.png",
+    "build/img/undraw_docusaurus_tree.svg",
+    "build/img/undraw_docusaurus_react.svg",
+    "build/img/undraw_docusaurus_mountain.svg",
+    "build/img/logo.svg",
+    "build/img/docusaurus.png",
+    "docs/Опыт работы/Clarifai.md",
+    "docs/Об авторе.md",
+    "docs/Университет/Работа бакалавра.md",
     "node_modules/lunr-languages/build/stopwords-filter/README.md",
-    "node_modules/lunr-languages/build/stopwords-filter/spec/lib/snowball_filter_spec.rb",
-    "node_modules/lunr-languages/build/stopwords-filter/spec/lib/filter_spec.rb",
-    "node_modules/lunr-languages/build/stopwords-filter/spec/spec_helper.rb",
-    "node_modules/lunr-languages/build/stopwords-filter/spec/lib",
-    "node_modules/lunr-languages/build/stopwords-filter/spec",
     "node_modules/lunr-languages/README.md",
     "node_modules/lunr-languages/CONTRIBUTING.md",
-    "node_modules/lunr-languages/build/stopwords-filter/Gemfile.lock",
-    "node_modules/lunr-languages/bower.json",
-    "node_modules/lunr-languages/package.json",
-    "node_modules/lunr-languages/wordcut.js",
     "node_modules/lunr-languages/build/snowball-js/README.md",
     "node_modules/@cmfcmf/docusaurus-search-local/node_modules/clsx/readme.md",
     "node_modules/@cmfcmf/docusaurus-search-local/README.md",
@@ -190,24 +197,11 @@
     "node_modules/mark.js/ISSUE_TEMPLATE.md",
     "node_modules/mark.js/README.md",
     "node_modules/mark.js/CONTRIBUTING.md",
-    "docs/img/P9080005.jpg",
     "docs/Опыт работы/Web Expert.md",
-    "docs/Опыт работы/Clarifai.md",
-    "docs/img/1694690930981.jpg",
-    "docs/img/1703367175304.jpg",
-    "docs/img/20230825_011542.jpg",
     "docs/Опыт работы/Pipedrive.md",
-    "docs/img/1668505795821.jpg",
-    "docs/img/1670441670387.jpg",
-    "docs/img/1668505831479.jpg",
-    "docs/img/i-vTBkj7W-4K.jpg",
-    "docs/img/i-Q4Wbr9v-X4.jpg",
     "docs/Опыт работы/Opus.md",
-    "docs/img/P8250013.jpg",
     "docs/Опыт работы/Elitec.md",
     "docs/Опыт работы/Exact.md",
-    "docs/Опыт работы/Exove.md",
-    "docs/Опыт работы/Netron & Tactic Realtime Marketing.md",
     "Untitled.canvas"
   ]
 }

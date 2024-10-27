@@ -83,3 +83,7 @@ pre code *{
 .container_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Info-styles-module{
   color: gray;
 }
+
+.navbarSearchContainer_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module{
+  width: 200px;
+}
