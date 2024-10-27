@@ -1,4 +1,8 @@
-понедельник, 16 апреля 2007 г. в 20:26:18
+---
+title: Введение в Postgre
+date: 2007-04-16T10:00
+tags: [backend, db]
+---
 
 [PostgreSQL](http://en.wikipedia.org/wiki/Postgre) - крутая СУБД, потому что..
 

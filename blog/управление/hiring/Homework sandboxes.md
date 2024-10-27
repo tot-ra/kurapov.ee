@@ -1,6 +1,7 @@
 ---
 title: Sandboxes for homework assignments
 date: 2024-01-20T15:22
+tags: [hiring]
 ---
 
 # Sandboxes for homework assignments
