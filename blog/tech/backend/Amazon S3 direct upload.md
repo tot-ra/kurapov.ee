@@ -1,3 +1,9 @@
+---
+title: Amazon S3 direct upload
+date: 2016-03-01T10:00
+tags: [backend]
+---
+
 вторник, 1 марта 2016 г. в 11:07:40
 
 Amazon S3 [поддерживает](http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html) прямой upload. Делается всё просто со [сторонними библиотеками](https://github.com/uqee/angular-evaporate), особенно если у вас ангуляр

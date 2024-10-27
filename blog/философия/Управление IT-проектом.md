@@ -1,4 +1,8 @@
-воскресенье, 18 марта 2007 г. в 01:04:09
+---
+title: Управление IT-проектом
+date: 2007-03-18T10:00
+tags: [управление]
+---
 
 Несомненно в мире множество фирм в каждой из которых принят некий обычай как проект надо делать, а для этого созданы всевозможные процессы развития проекта типа [waterfall](http://en.wikipedia.org/wiki/Waterfall_model), [spiral](http://en.wikipedia.org/wiki/Spiral_model), [RUP](http://en.wikipedia.org/wiki/Unified_Process) и тд.
 
