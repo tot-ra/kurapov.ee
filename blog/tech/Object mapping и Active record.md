@@ -1,4 +1,7 @@
-четверг, 1 февраля 2007 г. в 21:50:20
+---
+title: Object mapping и Active record
+date: 2007-02-01T21:50
+---
 
 [ORM](http://en.wikipedia.org/wiki/Object-relational_mapping) (практически в коде известный как [Active record](http://en.wikipedia.org/wiki/Active_Record) ) - достаточно простой, но очень эффективный метод соединения принципов объектно-ориентированного программирования с базой данных.
 

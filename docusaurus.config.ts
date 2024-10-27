@@ -119,6 +119,10 @@ const config: Config = {
               label: 'Nature on Instagram',
               href: 'https://www.instagram.com/tot_ra/',
             },
+            {
+              label: 'Short videos on TikTok',
+              href: 'https://www.tiktok.com/@artkurapov',
+            },
           ],
         },
 
@@ -216,15 +220,6 @@ const config: Config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-
-  plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        language: "ru",
-      },
-    ],
-  ],
 };
 
 export default config;
