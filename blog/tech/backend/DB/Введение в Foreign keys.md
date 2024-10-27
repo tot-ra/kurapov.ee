@@ -1,4 +1,7 @@
-четверг, 24 мая 2007 г. в 15:14:19
+---
+title: Введение в Foreign keys
+date: 2007-05-24T10:00
+---
 
 [Foreign keys](http://dev.mysql.com/doc/refman/5.0/en/innodb-foreign-key-constraints.html) [](http://dev.mysql.com/doc/refman/5.0/en/innodb-foreign-key-constraints.html)это движущая сила реляционных БД. Выборка по нескольким таблицам по прежнему формируется при помощи JOIN-конструкций, но FK создаёт логические связи между таблицами, понятные человеку. Очень полезно в больших проектах, где уследить за всеми связями нелегко, а такие программки как MySQL Workbench хорошо могут эти связи показать.
 

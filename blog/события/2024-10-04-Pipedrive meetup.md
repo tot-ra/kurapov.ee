@@ -1,3 +1,8 @@
+---
+title: Pipedrive meetup
+date: 2024-10-04T15:22
+---
+
 Listening to [](https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8)[Elizaveta Lebedeva](https://www.linkedin.com/in/elizaveta-lebedeva/) talk on fraud detection reminded me of similar talk at [Wise](https://www.linkedin.com/company/wiseaccount/) couple of years ago.  
   
 Maybe such anomalies and trends could be shared? An idea for a fraud/security startup 😉

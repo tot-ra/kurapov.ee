@@ -1,3 +1,8 @@
+---
+title: Katana meetup
+date: 2024-10-12T15:22
+---
+
 [Katana Cloud Inventory](https://www.linkedin.com/company/katanamrp/) & ProductTank ([](https://www.linkedin.com/in/ACoAACIXjrkBdR3BQpSC8VMMc_L4p3AMsA42kpc)[Anna Albert](https://www.linkedin.com/in/annaalbertpm/) + [](https://www.linkedin.com/in/ACoAABStCPoBW7NsM8NtAnPJ2rLLkwbVuXRiPTQ)[Olesia Kucheryk](https://www.linkedin.com/in/olesia-kucheryk/)) hosting AI meetup ( [https://lnkd.in/dhUbzDE6](https://lnkd.in/dhUbzDE6) )  
   
 Got to listen about [opengenie.ai](http://opengenie.ai/), Align, Databricks usage to analyze company data by auto generating SQL, summarization of support, customer research, lead/demo calls. Thx to [](https://www.linkedin.com/in/ACoAAB4drxsB-m6Cy8CAYns3FTEuZtu7Oiv8Gi4)[Andres Aava](https://www.linkedin.com/in/andres-aava-aa3264121/). Reminded me a bit about [Supersimple](https://www.linkedin.com/company/gosupersimple/).  

@@ -1,4 +1,7 @@
-четверг, 27 декабря 2012 г. в 19:24:15
+---
+title: Замена данных одного ряда таблиц Mysql
+date: 2012-12-27T10:00
+---
 
 (копия статьи [Александра Макарова](http://rmcreative.ru/blog/post/mysql--replace-into-i-on-duplicate-key-update?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Rmcreative+%28RMCreative%29) )
 

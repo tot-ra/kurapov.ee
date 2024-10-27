@@ -1,3 +1,8 @@
+---
+title: Tallinn JS meetup
+date: 2024-09-25T15:22
+---
+
 Attended TallinnJS meetup organized by Stefano Amorelli at [LIFT99](https://www.linkedin.com/company/lift99/). Won ticket to [Digit Conference](https://www.linkedin.com/company/digitconf/). Almost won a hoodie from [Printify](https://www.linkedin.com/company/printify/) but figured that googling an answer was not fair 🤐  
   
 First talk was by [](https://www.linkedin.com/in/ACoAACGf2uYB0JHH8ZSvNObEg2K4h5QlRCXAy4o)[Dmitrii Baranov](https://www.linkedin.com/in/dmbaranov-io/) about telegram bots using telegraf.js 
