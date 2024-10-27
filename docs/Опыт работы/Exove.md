@@ -3,6 +3,8 @@ sidebar_position: 4
 title: Exove
 ---
 
+(2011 - 2014)
+
 [![Exove](https://s3-eu-west-1.amazonaws.com/kurapov/image/f3944c3d7486/original/Screen+Shot+2012-01-31+at+18.06.07.png)](https://s3-eu-west-1.amazonaws.com/kurapov/image/f3944c3d7486/original/Screen+Shot+2012-01-31+at+18.06.07.png "Exove")
 
 ## Проекты

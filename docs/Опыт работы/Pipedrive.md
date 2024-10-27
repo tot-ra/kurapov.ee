@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 ---
+(2017 - 2022)
 
 ## Principal Software Engineer, Engineering Platform
 

@@ -1,4 +1,7 @@
-среда, 30 октября 2013 г. в 22:40:32
+---
+sidebar_position: 5
+---
+(2008 - 2011)
 
 ▪ Developed medium-term projects, such as:
 - Rovio.com - famous angry birds company public website

@@ -1,3 +1,9 @@
+---
+sidebar_position: 6
+---
+
+(2008 - 2011)
+
 ▪ Developed CMS SSO for all projects with secure protocol
 ▪ Developed CMS search indexation
 ▪ Developed short-term projects, such as:

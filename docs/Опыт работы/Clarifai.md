@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 ---
+(2023-)
+
 [Clarifai](https://www.clarifai.com/) - Global market, software as a service, Fullstack AI platform, startup
 
 ## Senior Software Engineer
