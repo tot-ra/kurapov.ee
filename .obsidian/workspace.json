@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "часы",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,6 +156,8 @@
   },
   "active": "e01cb242011c4dce",
   "lastOpenFiles": [
+    "blog/tech/devices/Часы Normal DG-L01.md",
+    "blog/tech/devices/Моя коллекция часов в 2024.md",
     "build/blog/rss.xml",
     "build/blog/atom.xml",
     "build/blog/rss.css",
@@ -166,7 +168,6 @@
     "build/index.html",
     "build/docs/Университет/Работа магистра/index.html",
     "build/docs/Университет/Работа бакалавра/index.html",
-    "build/docs/Опыт работы/Web Expert/index.html",
     "build/img/favicon/web-app-manifest-512x512.png",
     "build/img/favicon/web-app-manifest-192x192.png",
     "build/img/favicon/favicon.svg",
@@ -201,7 +202,6 @@
     "node_modules/aproba/README.md",
     "node_modules/to-vfile/readme.md",
     "node_modules/bcp-47-match/readme.md",
-    "node_modules/hast-util-select/node_modules/hast-util-whitespace/readme.md",
     "Untitled.canvas"
   ]
 }

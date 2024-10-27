@@ -1,4 +1,7 @@
-вторник, 11 ноября 2014 г. в 17:23:01
+---
+title: UserScripts
+date: 2014-11-11T15:22
+---
 
 Часто сталкиваюсь с желанием поменять что-то на сайтах, добавив свой функционал, сделав их удобней или автоматизировав многие вещи. Во многих случаях это становится **хорошим лайфхаком**. К счастью для браузеров есть расширения, добавляющие возможность запуска user-скриптов. Для firefox это [greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey/), а для chrome - [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ru).
 
