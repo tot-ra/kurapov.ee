@@ -1,4 +1,8 @@
-понедельник, 8 января 2007 г. в 15:04:20
+---
+title: Прозрачность с PNG
+date: 2007-01-08T10:00
+tags: [графика]
+---
 
 PNG - специально созданный графический формат для WEB, однако его использование затруднено багами в IE. PNG позволяет использовать альфа-канал, попросту - многоуровневую прозрачность. Используем IE 5.5 фильтр [AlphaImageLoader](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/filter/reference/filters/AlphaImageLoader.asp) (обратите внимание на передаваемые параметры и sizingMethod)  
 

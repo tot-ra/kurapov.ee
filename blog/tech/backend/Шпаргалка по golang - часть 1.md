@@ -24,7 +24,7 @@ go get -u https://github.com/x/y → импортирование зависим
 |с плавающей точкой|float, float32, float64|0|
 |строка|string, rune|(пустая строка)|
 
-```
+```go
 var i int = 10;
 var myfirstvar, mysecondvar int = 3, 4; // объявление разом
 var autoInt = -10 // компилятор сам подберёт тип
@@ -38,7 +38,7 @@ myMathVar = 7+3i // математикам
 
 ### Приведение типов
 
-```
+```go
 int(myfloat)
 float64(myInt)
 string(48) //будет номер символа, а не строчка "48"
@@ -47,7 +47,7 @@ bin := []byte(mystr) //перевод строки в массив байтов 
 
 ### Константа
 
-```
+```go
 const fullName = "Artjom"
 
 //объявление нескольких переменных с инкрементом
@@ -62,7 +62,7 @@ const (
 
 Низкоуровневый тип. Длина массива фиксирована.
 
-```
+```go
 var a1 [3]int //длина массива, сразу заполнится [0 0 0]
 var a1 [2*size]bool //длина зависит от перменной
 a3:=[...]int (1,2,3) //инициализирование значениями
@@ -75,7 +75,7 @@ len(mystring) //длина строк и массивов
 
 Более сложная структура. Состоит из массива с фиксированной длиной (capacity) в которую записано меньшее количество элементов (length). Как только length превышает capacity, размер capacity удваивается
 
-```
+```go
 var s1 []int //без размера
 append(s1, 100) // добавление
 len(s1)
@@ -95,7 +95,7 @@ b:=a[:] //слайс теперь ссылается на массив
 
 ### Мап (ассоциативный массив)
 
-```
+```go
 var myEmptyMap map[string]string // [тип ключа] и тип данных, но пустой, в него нельзя писать
 
 var mm1 map[string]string = map[string]string{} //пустой интерфейс
@@ -123,7 +123,7 @@ _, exists = mm3["missing"] // проверка есть ли такой ключ
 
 init() - вызывается при старте программы в любом из пакетов (порядок неконтролируемый)
 
-```
+```go
 //аргументы передаются по значению
 func avg(x int) float{ //возвращаемый тип в конце
 }
@@ -150,4 +150,5 @@ func mysql(file File, bool x){
 - [​Go by example](https://gobyexample.com/)
 - [Go tour](https://tour.golang.org/list)
 - [Slice tricks](https://github.com/golang/go/wiki/SliceTricks)
-<iframe width="934" height="350" src="https://www.youtube.com/embed/9Pk7xAT_aCU" title="1. Программирование на Go. Введение" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/9Pk7xAT_aCU" title="1. Программирование на Go. Введение" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

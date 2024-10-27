@@ -70,9 +70,9 @@ tags: [управление]
 - Знайте когда перестать устраивать чат в гитхабе/битбакете
 - Если всё тлен - подходите физически и ****программируйте парно****
 
-<iframe width="467" height="260" src="https://www.youtube.com/embed/PJjmw9TRB7s" title="RailsConf 2015 - Implementing a Strong Code-Review Culture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/PJjmw9TRB7s" title="RailsConf 2015 - Implementing a Strong Code-Review Culture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="467" height="260" src="https://www.youtube.com/embed/rHVlFOB5BpU" title="Better Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/rHVlFOB5BpU" title="Better Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Типы комментариев
 
@@ -124,9 +124,9 @@ tags: [управление]
 - контракт (пара) на спринт — может вызвать губительное привыкание
 - эксперт со стороны — полезно для редких ситуаций
 
-<iframe width="467" height="260" src="https://www.youtube.com/embed/RFGiRuLERmc" title="Егор Толстой — May the Code Review be with you" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/RFGiRuLERmc" title="Егор Толстой — May the Code Review be with you" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="467" height="260" src="https://www.youtube.com/embed/edNscDtiYGE" title="Николай Алименков, Алексей Солнцев, В погоне за качеством. Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/edNscDtiYGE" title="Николай Алименков, Алексей Солнцев, В погоне за качеством. Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Конфликт
 
@@ -206,7 +206,7 @@ tags: [управление]
 - Создаёт историю причин и следствий
 - Позволяет оценивать работу команды через сбор метрик
 
-<iframe width="934" height="350" src="https://www.youtube.com/embed/2F6J82-Ch88" title="Code review at large scale (Mikalai Alimenkou, Ukraine)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/2F6J82-Ch88" title="Code review at large scale (Mikalai Alimenkou, Ukraine)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 См. также
 

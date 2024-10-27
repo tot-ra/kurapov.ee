@@ -28,7 +28,7 @@ location /influx/ {
 
 Теперь встаёт вопрос как данные добавить в influx. Писать будет процесс на node, поэтому я по-быстрому нашёл библиотечку и пример подключения: 
 
-```
+```js
 const Influx = require('influx');
 
 const influx = new Influx.InfluxDB({

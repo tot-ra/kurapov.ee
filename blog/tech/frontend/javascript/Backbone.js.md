@@ -1,4 +1,8 @@
-понедельник, 17 октября 2011 г. в 10:35:44
+---
+title: Backbone.js
+date: 2011-11-17T10:00
+tags: [javascript]
+---
 
 ![](../img/Pasted%20image%2020241016183217.png)
 

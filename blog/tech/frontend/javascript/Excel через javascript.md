@@ -1,4 +1,8 @@
-вторник, 10 апреля 2007 г. в 12:25:10
+---
+title: Excel через javascript
+date: 2007-04-10T10:00
+tags: [javascript]
+---
 
 **Microsoft Excel** - незаменимый spreadsheet-редактор, попробуем сделать нечто похожее уже в web-середе.
 

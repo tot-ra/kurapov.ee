@@ -1,6 +1,6 @@
 ---
 title: Путь к Федеративному GraphQL
-date: 2022-11-21T10:00
+date: 2020-09-09T10:00
 tags: [backend]
 ---
 

@@ -1,4 +1,8 @@
-понедельник, 12 октября 2015 г. в 10:13:20
+---
+title: JSDoc
+date: 2015-11-12T10:00
+tags: [javascript]
+---
 
 Скопирую [статью](http://www.thinkingmedia.ca/2013/08/valid-jsdoc-annotations-supported-by-phpstorm/) про аннотации для javascript - [JSDoc](http://usejsdoc.org/). Порой бывает очень полезно для автокомплита и прыгания в нужные места в IDE..
 

@@ -1,4 +1,8 @@
-понедельник, 10 сентября 2007 г. в 16:22:02
+---
+title: Синхронизация Google Calendar c MS Outlook
+date: 2007-09-10T10:00
+tags: [soft]
+---
 
 Синхронизируем Outlook и Google calendar. Самый недавно вышедший и простой способ - [Google Calendar Sync](http://googleblog.blogspot.com/2008/03/google-calendar-sync.html).
 

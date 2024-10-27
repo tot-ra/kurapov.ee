@@ -1,4 +1,8 @@
-пятница, 4 апреля 2014 г. в 12:36:59
+---
+title: Недостатки AngularJS
+date: 2014-04-04T10:00
+tags: [javascript]
+---
 
 Я уже несколько месяцев работаю с AngularJS и после [Backbone](http://kurapov.name/rus/technology/ui/js/backbone_js)/jQuery впечатления неоднородные
 
