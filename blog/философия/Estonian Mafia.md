@@ -1,4 +1,8 @@
-суббота, 27 апреля 2013 г. в 11:47:03
+---
+title: Estonian Mafia
+date: 2013-04-27T10:00
+tags: [управление]
+---
 
 Когда-то в далёком 2008 году я [писал про местные IT компании](http://kurapov.name/rus/pleasure/it/it_estonia/).
 
