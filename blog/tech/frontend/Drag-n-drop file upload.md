@@ -1,3 +1,9 @@
+---
+title: Drag-n-drop file upload
+date: 2009-09-26T10:00
+tags: [frontend]
+---
+
 суббота, 26 сентября 2009 г. в 22:21:16
 
 В продолжение статьи о [новинках в html5](https://kurapov.ee/rus/technology/web/html5_intro/), вот нашёл [демо](http://yehudab.com/apps/drag-n-drop/demo.html) где уже работает загрузка файлов обычным перетаскиванием в [браузер Firefox 3.6](http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/). Обычный drag-n-drop файлов пока в стабильных браузерах [максимально что могут](http://decafbad.com/blog/2009/07/15/html5-drag-and-drop) — создать события аналогичные перетаскиванию dom-элементов в определённые контейнеры.
