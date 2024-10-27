@@ -44,10 +44,11 @@ const config: Config = {
         },
         blog: {
 
+          blogSidebarCount: 20,
           showLastUpdateTime: false,
           blogSidebarTitle: 'Последние заметки',
           showReadingTime: true,
-          postsPerPage: 10,
+          postsPerPage: 20,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,

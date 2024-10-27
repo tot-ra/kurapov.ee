@@ -1,8 +1,14 @@
-понедельник, 28 июля 2014 г. в 11:47:18
+---
+title: Protractor
+date: 2014-07-28T10:00
+tags: [tests]
+---
 
 [Protractor](http://angular.github.io/protractor/) — движок для запуска системных (end-to-end, браузерных) тестов. Внутри он использует [selenium](http://www.seleniumhq.org/) с драйверами для браузера (chromedriver), а сами тесты пишутся с синтаксисом [jasmine](http://jasmine.github.io/). Про него и карму я [уже писал](http://kurapov.name/rus/lab/quality_control/karma_jasmine_testing_angularjs/), впрочем mocha и cucumber тоже поддерживаются.
 
 Из особенностей - protractor имеет интеграцию с angular (находит модели и [repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat)-директивы) - отсюда и название слов (_angle_ - угол, _protractor_ - транспортир, т.е. угловая линейка), но может тестировать и любые другие сайты. Из недостатков - 
+
+<!-- truncate -->
 
 1. Мне всё-таки пришлось добавить angular.js и ng-app к body на не-ангулярную страницу логина что-бы работал protractor
 2. В отличие от selenium, тесты надо писать вручную, никакого browser-плагина нет для записи кликов как то было в [selenium ide](http://docs.seleniumhq.org/projects/ide/)

@@ -1,4 +1,8 @@
-среда, 20 марта 2013 г. в 09:42:57
+---
+title: Покрытие кода с PHPUnit и Selenium
+date: 2013-03-20T10:00
+tags: [tests]
+---
 
 Расширение [PHPUnit для Selenium](https://github.com/sebastianbergmann/phpunit-selenium) как оказывается умеет генерировать покрытие кода! Напомню, что сам по себе Selenium через браузер бегает по сайту, тогда как покрытие кода генерируется на сервере.
 
@@ -15,7 +19,7 @@
 }
 ```
 
-   
+<!-- truncate -->
 
 Теперь надо отключить встроенный старый загрузчик phpunit, указав путь к автозагрузчику composer..
 ![](../img/phpunit_unable_to_attach_test_framework_fix.png)

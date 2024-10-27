@@ -1,4 +1,8 @@
-среда, 4 июня 2014 г. в 14:52:53
+---
+title: Юнит-тестирование AngularJS с Karma и Jasmine
+date: 2014-06-04T10:00
+tags: [tests]
+---
 
 Я когда-то писал про тестирование [javascriptа с помощью jstestdriver](http://kurapov.name/rus/lab/quality_control/requirejs_jstestdriver/) , поскольку тот был первым интегрированным в PHPStorm, но инструменты развиваются и теперь для ангуляра есть простор для проверки качества кода.
 
@@ -6,9 +10,11 @@
 
 [Jasmine](http://jasmine.github.io/2.0/introduction.html) это уже библиотека для тестирования, аналог Mocha.
 
+<!-- truncate -->
+
 Для установки всего набора:
 
-```
+```bash
 npm install karma -g
 npm install phantomjs -g
 npm install karma-jasmine karma-chrome-launcher karma-phantomjs-launcher istanbul --save

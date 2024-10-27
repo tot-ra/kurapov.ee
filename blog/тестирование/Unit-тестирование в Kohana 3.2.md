@@ -1,6 +1,12 @@
-вторник, 6 декабря 2011 г. в 14:29:11
+---
+title: Kohana
+date: 2011-12-06T10:00
+tags: [tests]
+---
 
 [Kohana](http://kohanaframework.org/) - один из десятка php-фреймворков, имеющий в том числе и модуль для юнит-тестирования написанного кода. Про [тестирование в общем](http://kurapov.name/rus/lab/software_testing/) я уже писал, про [настройку phpunit](http://kurapov.name/rus/lab/php_unit_testing/) тоже. Упростив [статью одного безымянного товарища](http://blog.lysender.com/2011/02/kohana-3-1-migration-unit-testing/), в сторону использования PHPStorm IDE вот к чему я пришёл..
+
+<!-- truncate -->
 
 1. В application/boostrap.php надо найти строчку с unittest модулем и раскоментировать
 2. Создать папку и файл application/tests/boostrap.php - тут у нас будут лежать тесты для приложения  
