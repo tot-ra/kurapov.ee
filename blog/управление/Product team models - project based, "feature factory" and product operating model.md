@@ -10,8 +10,9 @@ Was interesting to listen and reflect how organizations tend to have indeed diff
 
 So I do wonder how does [](https://www.linkedin.com/in/ACoAAAY2INMBWEFb2DGIN_C90g7kFrUNleyMCAE)[Aive Uus](https://www.linkedin.com/in/aive-uus/) break those mindsets 😄 Hopefully we'll see more of this  
   
-  
-And for books I suppose these are the recommended ones?  
+<!--truncate-->
+
+And for books I suppose these are the recommended ones
 - Marty Cagan [https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/](https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/)  
 - David Pereira [https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/](https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/)  
 - Teresa Torres [https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/](https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/)
