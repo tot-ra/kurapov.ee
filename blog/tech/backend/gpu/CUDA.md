@@ -11,8 +11,8 @@ date: 2024-10-15T10:00
 
 ![](Screenshot%202024-10-20%20at%2000.04.55.png)
 ![](Screenshot%202024-10-20%20at%2000.37.08.png)
-![](../../../../../gratheon.com/docs/img/Screenshot%202024-10-20%20at%2000.12.01.png)
-![](../../../../../gratheon.com/docs/img/Screenshot%202024-10-20%20at%2000.12.49.png)
+![](Screenshot%202024-10-20%20at%2000.12.01.png)
+![](Screenshot%202024-10-20%20at%2000.12.49.png)
 ![](Screenshot%202024-10-20%20at%2000.14.45.png)
 ![](Screenshot%202024-10-20%20at%2000.16.25.png)
 ![](Screenshot%202024-10-20%20at%2000.17.31.png)
