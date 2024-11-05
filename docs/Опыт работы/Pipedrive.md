@@ -18,6 +18,12 @@ sidebar_position: 2
 Gained experience in:  
 - Kafka, Redis sentinel, PromQL
 
+![](../img/Pipedrive-people-with-president-Alar-Karis.jpg)
+
+![](../img/i-vTBkj7W-4K.jpg)
+
+![](../img/i-Q4Wbr9v-X4.jpg)
+
 ## Senior Software Engineer, Core Tribe
 
 ▪ Mission lead of API composition mission that introduced Federated graphQL layer (~4 developers × 3 months scope)  
@@ -41,6 +47,8 @@ Gained experience in:
 - Backend: Go, Gin  
 - Pipedrive + FB Messenger integration hackaton
 
+![](../img/1670441670387.jpg)
+
 
 ## Senior Software Engineer, Marketplace (Indigo) team
 
@@ -58,16 +66,12 @@ Gained experience in:
 - Monitoring: newrelic, prometheus
 
 
-![](../img/i-Q4Wbr9v-X4.jpg)
-
-![](../img/i-vTBkj7W-4K.jpg)
-
 ![](../img/1670441310936.jpg)
 
 ![](../img/1670441423216.jpg)
 
 ![](../img/1668505831479.jpg)
 
-![](../img/1670441670387.jpg)
+
 
 ![](../img/1668505795821.jpg)
