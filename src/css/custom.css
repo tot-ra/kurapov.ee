@@ -13,7 +13,7 @@
   --ifm-color-primary-light: #0049f1;
   --ifm-color-primary-lighter: #004cfc;
   --ifm-color-primary-lightest: #1e62ff;
-  --ifm-background-color: #fafafa;
+  /* --ifm-color-secondary: #FFD900; */
 
   --ifm-code-font-size: 95%;
   --ifm-font-size-base: 110%;
@@ -30,9 +30,20 @@
   --ifm-h6-font-size: 0.85rem;
 }
 
+.footer__link-item{
+  line-height: 1.5;
+}
+
+.footer--dark{
+  --ifm-footer-title-color: #FFD900;
+
+  --ifm-footer-background-color: #000;
+  background-color: var(--ifm-footer-background-color);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #759fff;
+  --ifm-color-primary: #0248FF;
   --ifm-color-primary-dark: #5085ff;
   --ifm-color-primary-darker: #3d78ff;
   --ifm-color-primary-darkest: #0551ff;
