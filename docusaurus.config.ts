@@ -184,6 +184,10 @@ const config: Config = {
           title: 'Media',
           items: [
             {
+              label: 'Generated music on Suno',
+              href: 'https://suno.com/@tot_ra',
+            },
+            {
               label: 'Books on Goodreads',
               href: 'https://goodreads.com/tot_ra',
             },

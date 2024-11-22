@@ -8,7 +8,11 @@ title: Andmete ja tehisintellekti olulisusest personaliseerituma õppe poole lii
 
 
 
-![](img/Screenshot%202024-11-14%20at%2013.47.02.png)![](img/Screenshot%202024-11-14%20at%2013.52.09.png)![](img/Screenshot%202024-11-14%20at%2013.53.50.png)![](img/Screenshot%202024-11-14%20at%2013.54.34.png)
+![](img/Screenshot%202024-11-14%20at%2013.47.02.png)
+
+<!-- truncate -->
+
+![](img/Screenshot%202024-11-14%20at%2013.52.09.png)![](img/Screenshot%202024-11-14%20at%2013.53.50.png)![](img/Screenshot%202024-11-14%20at%2013.54.34.png)
 ![](img/Screenshot%202024-11-14%20at%2013.56.54.png)
 ![](img/Screenshot%202024-11-14%20at%2013.58.02.png)
 ![](img/Screenshot%202024-11-14%20at%2013.59.19.png)
