@@ -194,3 +194,12 @@ Kristjan:
 	+ feels like we are creating artificial scarcity
 - To Külli - examples of circular economy projects
 - To Külli - isn't needed infrastructure for the software sufficient for estimating the climate impact?
+
+
+![](img/1732650720819.jpg)
+
+![](img/1732650720894.jpg)
+
+![](img/1732650720730.jpg)
+
+![](img/1732650718388.jpg)
