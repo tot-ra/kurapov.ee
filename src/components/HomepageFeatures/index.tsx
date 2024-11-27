@@ -9,6 +9,12 @@ export default function HomepageFeatures(): JSX.Element {
           title="О канале" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
+
+          <iframe 
+          src="https://open.spotify.com/embed/album/2lulBSRsNIxUwTQQdlwjwK?utm_source=generator&theme=0" 
+          width="100%" height="500" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          
         </div>
       </div>
     </section>
