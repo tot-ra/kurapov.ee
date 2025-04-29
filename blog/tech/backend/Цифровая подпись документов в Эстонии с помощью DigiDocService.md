@@ -129,11 +129,11 @@ dsiglite2.cab это альтернатива для создания подп�
 
         `function hex2bin($data) {               $len = strlen($data);               for($i=0;$i<$len;$i+=2) {               $newdata .= pack("C",hexdec(substr($data,$i,2)));               }               return $newdata;           }`
 
-![](img/177.pdf)
+[img/177.pdf](img/177.pdf)
 
 
-![](img/172.pdf)
+[img/172.pdf](img/172.pdf)
 
-![](img/173.pdf)
+[img/173.pdf](img/173.pdf)
 
-![](img/174.pdf)
+[img/174.pdf](img/174.pdf)

@@ -141,6 +141,6 @@ date: 2012-04-16T18:31:00
 - [Cosmic Encounter Wiki](http://cosmicencounter.wikia.com/wiki/Cosmic_Encounter_Wiki)
 
 
-![](../img/267.pdf)
+[../img/267.pdf](../img/267.pdf)
 
-![](../img/268.pdf)
+[../img/268.pdf](../img/268.pdf)
