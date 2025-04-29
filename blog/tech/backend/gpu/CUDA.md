@@ -5,7 +5,7 @@ date: 2024-10-15T10:00
 
 Послушал случайную онлайн лекцию по CUDA и поскольку это интересно, скопировал себе немного слайдов
 
-![](cuda_example.ipynb)
+[cuda_example.ipynb](cuda_example.ipynb)
 
 (From public video stream workshop)
 
