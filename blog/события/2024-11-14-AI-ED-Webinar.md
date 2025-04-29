@@ -6,9 +6,10 @@ title: Andmete ja tehisintellekti olulisusest personaliseerituma õppe poole lii
 - machines as instruments
 - requires command and control
 
-
-
 ![](img/Screenshot%202024-11-14%20at%2013.47.02.png)
+
+<!--truncate-->
+
 
 <!-- truncate -->
 

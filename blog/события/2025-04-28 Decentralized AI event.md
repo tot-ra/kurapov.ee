@@ -16,6 +16,8 @@ Secondly, I saw there is a lot of confusion about definition of decentralized AI
 
 Picking one property does not make it a decentralized AI.
 
+<!--truncate-->
+
 I doubt that we can put "trustworthy", "ethical", "self-aware" on the list. I think future is complex and we will see all mixes of architectures out there. I'm sure that there will be agentic military drones gone rogue, centrally owned corporate fleet of robots leaking video footage of day-to-day life at homes, AI health trackers selling data to corporations for ads, AI-powered cars having built-in training preference whom to kill (elderly or kids) depending on the government priorities and its population age structure diagram.
 
 But at the same time, we build the future we want to live in. 

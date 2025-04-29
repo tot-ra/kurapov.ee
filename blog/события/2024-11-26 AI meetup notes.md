@@ -12,6 +12,8 @@ I liked quote by [Astra Tikas](https://www.linkedin.com/in/astratikas/) (targete
 + Impactly
 + Up Catalyst
 + TalTech
+
+<!--truncate-->
 ## Panel discussion on "Green Tech through AI"
 
 [Kristjan Järvi](https://www.linkedin.com/in/kristjan-jarvi-b0412ab3/)

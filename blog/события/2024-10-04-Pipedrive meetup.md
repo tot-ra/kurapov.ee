@@ -13,6 +13,8 @@ Applied Machine Learning at Scale // a meetup by Pipedrive and PyData
 
 ![](img/Pasted%20image%2020241019230055.png)
 
+<!--truncate-->
+
 ![](img/Pasted%20image%2020241019230121.png)
 
 ![](img/Pasted%20image%2020241019230127.png)

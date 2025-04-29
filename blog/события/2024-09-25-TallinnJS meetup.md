@@ -13,7 +13,9 @@ Second talk was by Jan Johannes about workerd, a js runtime
   
 I think having a bot is a nice interface extension to any app, in addition to the usual web, mobile, desktop and cli apps. Telegram, discord, slack bots can improve support reaction time, push app alerting/notifications and more. I wish telegraf supported text and video streaming though.  
   
-Then it could also be more seamlessly integrated with LLMs, say if you had a [Clarifai](https://www.linkedin.com/company/clarifai/) bot streaming AI questions and answers, switching ML model on the fly would you use it over a web UI? With bots and AI element to it, apps could become much more interactive and lose UI entirely. You can see that change on the example of google search -> perplexity & chatgpt transition.  
+Then it could also be more seamlessly integrated with LLMs, say if you had a [Clarifai](https://www.linkedin.com/company/clarifai/) bot streaming AI questions and answers, switching ML model on the fly would you use it over a web UI? With bots and AI element to it, apps could become much more interactive and lose UI entirely. You can see that change on the example of google search -> perplexity & chatgpt transition.
+
+<!--truncate-->
   
 Regarding workerd, its quite a niche engine that I feel does a bit too much (I would not want to re-learn k8s), but it may be useful in cases when you want your app users to run custom code, so you could allow some javascript sandbox to run closer to your dataserver, instead of using webhooks. For example [Pipedrive](https://www.linkedin.com/company/pipedrive/) marketplace could allow external app vendors to run custom js code on its backend, similar to how go playground, coderpad, leetcode, github or other platforms allow running custom code.
 

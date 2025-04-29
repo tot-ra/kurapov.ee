@@ -6,7 +6,9 @@ First talk by [Andrei Sbitnev](https://www.linkedin.com/in/andrei-sbitnev-a69958
 I also like visual workflows and [Clarifai](https://www.linkedin.com/company/clarifai/) has workflows as a major feature. I was wondering if open-source has sufficiently advanced capabilities like streaming and video support. Workflows can become hard to manage if there are too many node types as combinatorics grows and you need to know what use-cases are compatible. It becomes a programming language quite fast.  
   
 Second talk was by [Mikhail Dunaev](https://www.linkedin.com/in/mikhail-dunaev/) on [https://www.hexagen.world/](https://www.hexagen.world/) . An infinite canvas project with hexagonal ai-generated tiles that make up a cool map that over 8 thousand users tried out. Most of it coded also using cursor, making author 2x more efficient, shifting work into more product-oriented thinking.  
-  
+
+<!--truncate-->
+
 I hope this project gets some revenue flow and develops some more features:  
 - zoom in with upscale  
 - 3d map of the tiles for navigation  
