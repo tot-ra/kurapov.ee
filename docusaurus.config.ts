@@ -29,6 +29,16 @@ const config: Config = {
     locales: ['ru'],
   },
 
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
 
   presets: [
     [
@@ -184,7 +194,7 @@ const config: Config = {
           title: 'Media',
           items: [
             {
-              label: 'Generated music on Suno',
+              label: 'Music on Suno',
               href: 'https://suno.com/@tot_ra',
             },
             {
@@ -203,6 +213,11 @@ const config: Config = {
               label: 'Music on Soundcloud',
               href: 'https://soundcloud.com/tot_ra',
             },
+
+            {
+              label: '3D models on Thingiverse',
+              href: 'https://www.thingiverse.com/tot_ra/designs',
+            }
           ],
         },
       ],
