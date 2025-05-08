@@ -5,5 +5,5 @@ nvm use
 
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 
-pnpm install
-pnpm build
+/home/www/.local/share/pnpm/pnpm install
+/home/www/.local/share/pnpm/pnpm build
