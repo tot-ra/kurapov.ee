@@ -45,3 +45,16 @@
   font-size: 0.9rem;
   color: var(--ifm-color-content-secondary); /* Use Docusaurus theme variable for secondary text color */
 }
+
+.projectImageContainer {
+  margin-bottom: 1rem; /* Space between image and title */
+  text-align: center; /* Center the image if it's smaller than the container */
+}
+
+.projectImage {
+  max-width: 100%; /* Ensure image is responsive and doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Optional: constrain image height */
+  border-radius: var(--ifm-global-radius); /* Consistent border radius */
+  object-fit: cover; /* Or 'contain', depending on desired image scaling */
+}

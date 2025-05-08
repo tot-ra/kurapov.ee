@@ -1,12 +1,14 @@
 import React from 'react'; // Import React
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link'; // Import Link component
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Import useBaseUrl
 
 // Define a type for our project data
 type ProjectItem = {
   title: string;
   link: string;
   description: string; // Added a description field for more context
+  image?: string; // Optional image path
 };
 
 // Example project data - user wants to keep these
@@ -15,13 +17,26 @@ const ProjectList: ProjectItem[] = [
     title: '🐝 Gratheon',
     link: 'https://gratheon.com',
     description: 'A startup. Modular robotic beehive and app with data analytics and AI.',
+    image: '/img/projects/gratheon.png',
   },
 
   {
     title: 'GraphQL Schema Registry',
     link: 'https://github.com/tot-ra/graphql-schema-registry',
     description: 'A registry for GraphQL schemas, allowing you to manage and version your schemas easily on premise.',
+    image: '/img/projects/gql.png',
   },
+
+
+
+  {
+    title: 'Workstation',
+    link: 'https://github.com/tot-ra/workstation',
+    description: 'Collection of scripts to automate the setup of a new workstation',
+    image: '/img/projects/work.png',
+  },
+
+  
   {
     title: 'Clarifai Docusaurus integration',
     link: 'https://github.com/tot-ra/clarifai-docusaurus',
@@ -39,12 +54,6 @@ const ProjectList: ProjectItem[] = [
     description: 'A VSCode agentic extension that helps you write better code. Hard fork of Cline',
   },
 
-
-  {
-    title: 'Workstation',
-    link: 'https://github.com/tot-ra/workstation',
-    description: 'Collection of scripts to automate the setup of a new workstation',
-  },
 
   {
     title: 'Clarify PR',
@@ -70,9 +79,15 @@ const ProjectList: ProjectItem[] = [
   },
 ];
 
-const Project: React.FC<ProjectItem> = ({title, link, description}) => {
+const Project: React.FC<ProjectItem> = ({title, link, description, image}) => {
+  const imageUrl = image ? useBaseUrl(image) : null;
   return (
     <div className={styles.projectItem}>
+      {imageUrl && (
+        <div className={styles.projectImageContainer}>
+          <img src={imageUrl} alt={title} className={styles.projectImage} />
+        </div>
+      )}
       <h3>
         <Link to={link} target="_blank" rel="noopener noreferrer">
           {title}
@@ -98,7 +113,7 @@ export default function HomepageFeatures(): React.ReactElement {
           <h2>My Projects</h2>
           <div className={styles.projectsGrid}>
             {ProjectList.map((project, idx) => (
-              <Project key={idx} title={project.title} link={project.link} description={project.description} />
+              <Project key={idx} {...project} />
             ))}
           </div>
         </div>
