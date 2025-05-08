@@ -11,6 +11,9 @@ jobs:
       - name: pull
         working-directory: /www/kurapov.ee/
         run: git reset --hard && git pull
+      - name: install
+        working-directory: /www/kurapov.ee/
+        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
       - name: build
         working-directory: /www/kurapov.ee/
         run: pnpm install && pnpm build
