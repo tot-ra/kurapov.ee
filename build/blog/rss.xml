@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Артём Курапов Blog</title>
+        <link>https://kurapov.ee/blog</link>
+        <description>Артём Курапов Blog</description>
+        <lastBuildDate>Wed, 07 May 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ru</language>
+        <item>
+            <title><![CDATA[ AWS Gen AI meetup]]></title>
+            <link>https://kurapov.ee/blog/2025/05/07/события/ AWS Gen AI meetup</link>
+            <guid>https://kurapov.ee/blog/2025/05/07/события/ AWS Gen AI meetup</guid>
+            <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Visited Gen AI meetup organized by AWS. Strangely, the meetup had a "Chatham House Rule" so I'm not sure if I can reveal who talked about what.]]></description>
+            <content:encoded><![CDATA[<p>Visited Gen AI meetup organized by AWS. Strangely, the meetup had a "Chatham House Rule" so I'm not sure if I can reveal who talked about what.</p>
+<blockquote>
+<p>neither the identity nor the affiliation of the speaker(s), nor that of any other participant, may be revealed</p>
+</blockquote>
+<p>So I'll say that:</p>
+<ul>
+<li>
+<p>someone talked about high-level topics. Amazon-specific culture (like "Working backwards", "One-way door vs two-way door", "You build it, you own it"), some of their services, being customer-centric, gathering data, building AI organization. I was interested here in agents. Two things were mentioned - RUFUS (some sort of shopping assistant) and AWS Connect (or was it Agent Assist?) I got lost with names 🫣<br>
+<!-- -->I liked the demo of an agent taking a call and answering a specific question. Having such transcript to have follow-up emails and analyze data later on is great. I once talked to an AI agent over the phone for 20 minutes and it was good experience too.</p>
+</li>
+<li>
+<p>someone talked about business intelligence. Again cultural topic of "juniors can overrule seniors if they have the data" sounded logical. Gave a demo of querying data, getting graphs (<a href="https://www.linkedin.com/company/gosupersimple/" target="_blank" rel="noopener noreferrer">Supersimple</a> or Databricks came to my mind). I'm not sure it will be that viable with agents, I think they will be capable of querying data from my local machine. Amazon Q agent was mentioned, but nothing specific was shown so I suppose its still in development or wasn't fit for this meeting</p>
+</li>
+<li>
+<p>someone talked about a sensitive topic. I may have misunderstood it. But it was about AI tracking news (to combat money laundering?), extracting relevancy to a specific topic. I was triggered that it may be used for AI surveillance, but who knows, maybe GDPR or AI Act is not applicable here. The workflow for processing data seemed complex and impressive though</p>
+</li>
+</ul>
+<p>And later in networking, I got to talk to a startup that is working on making onboarding for sales/GTM easier using AI.</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559637147-18fb750d2878432a3879f7fde9a627cf.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p>Recommended <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> as a model training and hosting platform 😊</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="people-detected-in-the-promotion-notes">People detected in the promotion notes<a href="https://kurapov.ee/blog/2025/05/07/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AWS%20Gen%20AI%20meetup#people-detected-in-the-promotion-notes" class="hash-link" aria-label="Прямая ссылка на People detected in the promotion notes" title="Прямая ссылка на People detected in the promotion notes">​</a></h2>
+<ul>
+<li>Seppo Kalliomaki</li>
+<li>Marys Benge van Megen</li>
+<li>Ezaldeen Arafat</li>
+<li>Michael Lundgaard</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559634261-10ef7bfb27c882728b5154e9b249fc03.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559634180-ba71a40045953d5d6636dbdfdeeec7dc.jpg" width="1280" height="1706" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559632600-f28e3e5ac268770121b1300d6b1f0f18.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559634271-87e960d65e756e60bf72a0831f2e65c5.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559635724-844af870899432ba6e101db048bec746.jpg" width="1280" height="1706" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559633925-6bad2986b851be4ebac4c37def0260ae.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1746559637481-ebd382b960966625ef8cd43a23a21d02.jpg" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AGI: Beyond the Hype, Before the Storm]]></title>
+            <link>https://kurapov.ee/blog/2025/04/29/события/ AGI - Beyond the Hype Before the Storm</link>
+            <guid>https://kurapov.ee/blog/2025/04/29/события/ AGI - Beyond the Hype Before the Storm</guid>
+            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Visited another AI meetup on promoting Estonia as AI nation. After opening words from Vattan PS and Allan Martinson:]]></description>
+            <content:encoded><![CDATA[<p>Visited another AI meetup on promoting Estonia as AI nation. After opening words from <a href="https://www.linkedin.com/in/ACoAACYD-BoBz1_dPvItXFafnO8EQ2fy3aGs78g" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/vattan/" target="_blank" rel="noopener noreferrer">Vattan PS</a> and <a href="https://www.linkedin.com/in/ACoAAAACUqYBhX9H-zK4-h5M2aOW3vpaeJonk6E" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/allanmartinson/" target="_blank" rel="noopener noreferrer">Allan Martinson</a>:</p>
+<p>First talk from <a href="https://www.linkedin.com/in/ACoAAAEmdswBnW8YpFLMVw-7_4SdKxHQiB7wCBQ" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/linnarviik/" target="_blank" rel="noopener noreferrer">Linnar Viik</a> about usage of OpenAI / Anthropic in education. I support it, AI is great at having student-tailored approach. There are however 2 dangers I see - model bias/ hallucinations in models and using closed API models as providers.</p>
+<p>I think Estonian schools should use locally hosted models that are trained in collaboration with Estonian Ministry of Education and maybe <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> could help with that.</p>
+<p>Second set of talks, was about local AI startups and their 5-min pitches from some of them: <a href="https://www.linkedin.com/company/askel-ai/" target="_blank" rel="noopener noreferrer">Askel.ai</a>, <a href="https://www.linkedin.com/company/gosupersimple/" target="_blank" rel="noopener noreferrer">Supersimple</a>, <a href="https://www.linkedin.com/company/targumai/" target="_blank" rel="noopener noreferrer">Targum</a>, Align (<a href="http://getalign.com/" target="_blank" rel="noopener noreferrer">getalign.com</a>), <a href="https://www.linkedin.com/company/forgemasterai/" target="_blank" rel="noopener noreferrer">Forgemaster AI</a>. I like Askel a lot, because its about agents and I'm very optimistic and bullish on that, using and building some myself.</p>
+<p>I asked bunch of scary questions about agents and how they are going to distrupt their business, so Vattan banned me from scaring the panel speakers later on 😅</p>
+<p>Finally, a panel discussion "AGI: Beyond the Hype, Before the Storm".</p>
+<p>My questions for panelist would have been:</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/ACoAAABhrcQBL5eCpcaYR4-0qFWEJSzPFtR0amQ" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/gertjervan/" target="_blank" rel="noopener noreferrer">Gert Jervan</a>. Education institutions. Why do we need them if AI is the best teacher? Social norm? Guidance on the progression? Culture? Socialization?</li>
+<li><a href="https://www.linkedin.com/in/ACoAAAHxbzEB8cmCUnTi4mtNtJSp1zQ7Lh4eFh4" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/andre-visse-cto/" target="_blank" rel="noopener noreferrer">Andre Visse</a>: Security in telecom infrastructure in AI era. If AI agent can hack a router, how is <a href="https://www.linkedin.com/company/teliacompany/" target="_blank" rel="noopener noreferrer">Telia</a> going to defend itself?</li>
+<li><a href="https://www.linkedin.com/in/ACoAABS0r4wBUv5UT0op6twfmCKHQkfudFMQ8w0" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/pungas/" target="_blank" rel="noopener noreferrer">Taivo Pungas</a>: Agents in retail on consumer side. Are we going to get them? Can they negotiate prices if culture is using fixed prices?</li>
+<li><a href="https://www.linkedin.com/in/ACoAABS0r4wBUv5UT0op6twfmCKHQkfudFMQ8w0" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/pungas/" target="_blank" rel="noopener noreferrer">Taivo Pungas</a>: Intelligence is becoming cheap. Is everyone going to become smarter or dumber due to that?</li>
+<li><a href="https://www.linkedin.com/in/ACoAACYD-BoBz1_dPvItXFafnO8EQ2fy3aGs78g" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/vattan/" target="_blank" rel="noopener noreferrer">Vattan PS</a>: Why should Estonia be special if AI will be accessible in all countries? Shouldn't this be the big equalizer, like open education (Courseram Harvard lectures) should have been affecting the developing world?</li>
+</ul>
+<p>There were also two notable questions:</p>
+<ul>
+<li><a href="https://www.linkedin.com/in/ACoAACZrVv0BT8Ra7Q390rXa1KGF2RLMMJ7qnWA" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/astratikas/" target="_blank" rel="noopener noreferrer">Astra Tikas</a> on ethics vs commerce (if I heard correctly)</li>
+<li>on AI heads race of domination</li>
+</ul>
+<p>Afterwards, I had a debate on whether agents give you 10x productivity boost, wether we have achieved AGI, are models are better at reasoning that average human, whats going to happen next. Was surprised people don't see how agents are going to affect most of businesses.</p>
+<ul>
+<li>We are in process of making models stable enough to be more trusted using multiagentic systems</li>
+<li>I think its fair to ask questions like "Why do you need UI for SaaS if agents can interact with you over API"?</li>
+</ul>
+<p>I think we have AGI already and models already exceed 130 IQ and we are going to get super intelligence soon, because model training will enter into self-improvement phase (that CEO of <a href="https://www.linkedin.com/company/anthropicresearch/" target="_blank" rel="noopener noreferrer">Anthropic</a> was warning about that we need to understand internal LLM architectures at test time more).</p>
+<p>Its a question who will make it agentic, distributed and viral and release it in.. Spain. But AI will also save life and drastically multiply human abilities.</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="summary-of-panel-talks">Summary of panel talks<a href="https://kurapov.ee/blog/2025/04/29/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AGI%20-%20Beyond%20the%20Hype%20Before%20the%20Storm#summary-of-panel-talks" class="hash-link" aria-label="Прямая ссылка на Summary of panel talks" title="Прямая ссылка на Summary of panel talks">​</a></h2>
+<p>Here is a summary of the panel "AGI: Beyond the Hype, Before the Storm", listing the most important ideas grouped by person
+Disclamer: recorded with superwhisper, summarized by gemini, correctness not guaranteed</p>
+<p><strong>Gert Jervan, Dean, TalTech University</strong></p>
+<ul>
+<li>AI/AGI is expected to have a major positive impact on the educational sector, enabling individualized learning and improving the process.</li>
+<li>AGI presents both challenges (powerful tools) and opportunities (directing beneficial processes).</li>
+<li>Estonia has a significant opportunity due to its high level of digitalization, data availability, small size allowing for experiments/demonstrators, and an established IT sector</li>
+<li>TalTech is launching an AI Systems program to train AI engineers, contributing to the necessary workforce that can use, understand, and develop AI.</li>
+<li>The role of teachers will evolve into mentors or reflectors, focusing on educating students to&nbsp;think&nbsp;rather than just recall facts.</li>
+<li>AI should be viewed as an important&nbsp;tool.</li>
+</ul>
+<p><strong>Andre Visse, CEO, Telia Eesti</strong></p>
+<ul>
+<li>For infrastructure companies/vital service providers, AI/AGI brings significant risks that need to be addressed alongside opportunities.</li>
+<li>Infrastructure needs to support autonomous systems, which raises questions about investment, scaling, and who will pay for these capabilities.</li>
+<li>Automation, while beneficial, introduces complexity in troubleshooting and maintenance compared to human error (illustrated by network script incidents).</li>
+<li>There is a challenge in determining the safe level of autonomy for critical infrastructure and how to keep humans effectively in the loop for oversight and intervention.</li>
+<li>EU regulations (like the AI Act) can sometimes be slow, potentially hindering progress compared to other regions.</li>
+<li>AI is a&nbsp;tool, but users must remain in control and be aware that it can sometimes present misinformation or "hypnotize" users into believing its output. It does not "think" or have personality.</li>
+</ul>
+<p><strong>Taivo Pungas, CTO, Pactum</strong></p>
+<ul>
+<li>Based on practical experience, it feels like "jagged AGI" already exists – superhuman in specific tasks but useless for basic physical tasks.</li>
+<li>Provides personal examples of using AI for complex research, meeting preparation, scripting, and evaluating purchasing decisions, highlighting its current usefulness.</li>
+<li>As intelligence becomes cheap and abundant, the&nbsp;compliments&nbsp;to AI become more valuable (basic economic principle).</li>
+<li>Key complements to AI include soft skills, agency (AI won't initiate projects), selecting the right problems/tasks, discerning usefulness, general management, and providing clear instructions/goals.</li>
+<li>Robot dexterity is currently limited.</li>
+</ul>
+<p><strong>Vattan</strong></p>
+<ul>
+<li>AI "agents" follow protocols, use loops, and leverage external APIs (or "MCP") to access information beyond their training data.</li>
+<li>AGI can be viewed as a potential business model.</li>
+<li>Estonia needs an "AI Mafia" (influential network) willing to support young talent and entrepreneurs to foster breakthrough innovation.</li>
+<li>Direct funding for AI research and development is needed, not just bundled under other sectors.</li>
+<li>Significant opportunities for Estonia lie in AI security (needed as AI grows) and E-governance (AI requires governance, and Estonia has an advantage here).</li>
+<li>Training skilled AI/ML engineers is a difficult and time-consuming process.</li>
+<li>Suggests building a federated/predicted learning layer on top of Estonia's X-Road system (e.g., for health data) as a concrete innovation opportunity.</li>
+</ul>
+<p><strong>Lembit Loo</strong></p>
+<ul>
+<li>The exact definition of AGI is less important than the fact that we are approaching significant capabilities ("at the finish line").</li>
+<li>Estonia needs to figure out how to effectively utilize the AGI wave through cooperation and partnerships.</li>
+<li>Estonia has a unique position: capable of understanding/using technology (like the US and China) while also being part of the EU regulatory framework (like the AI Act).</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ Decentralized AI event]]></title>
+            <link>https://kurapov.ee/blog/2025/04/28/события/ Decentralized AI event</link>
+            <guid>https://kurapov.ee/blog/2025/04/28/события/ Decentralized AI event</guid>
+            <pubDate>Mon, 28 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Just attended Decentralized AI event at TalTech organized by Astra Tikas and it was an inspiring evening that made me think and take some notes.]]></description>
+            <content:encoded><![CDATA[<p>Just attended <strong>Decentralized AI</strong> event at TalTech organized by Astra Tikas and it was an inspiring evening that made me think and take some notes.</p>
+<p>First, I think main motivation and problem defined was ownership. We are afraid that LLM models are not transparent on their architecture, training dataset. We are afraid of monopolies serving AI models. Monopolies that can deprecate models, inject own biases, political will and be a more serious way to control population. So instead of search engines and social networks creating a bubble effect, we may be brainwashed by AI. Or worse, give control over education, infrastructure or military, to unknown LLMs that can backfire without proper evaluation.</p>
+<p>Secondly, I saw there is a lot of confusion about definition of decentralized AI. Seemed like every speaker saw it as a piece of a puzzle and had own impression of it. I see decentralized AI as layers and each one of those can be confused for true decentralized AI</p>
+<ul>
+<li>distributed deployment - you have multiple devices instead of single machine</li>
+<li>partition tolerant - AI nodes can go down and come back online</li>
+<li>governance &amp; ownership - it runs on machines owned by different people</li>
+<li>open - you can see the source code, model weights, detailed research paper, trained dataset (but it may have custom license!)</li>
+<li>offline-first and edge deployment - it can work offline on low-power device using local data</li>
+<li>distributed state - if AI needs a global storage (that cannot be deleted at whim of some corporation), it uses blockchain</li>
+<li>privacy-first - decentralized AI nodes can share confidential end user authentication, payment and health data without risk of leaks</li>
+<li>distributed operation payments - AI nodes sell their operation work and can bill end user with tiny costs (death by thousand cuts problem)</li>
+<li>agentic - AI nodes, are processes running in a loop, performing tasks from other agents using own or external resources</li>
+</ul>
+<p>Picking one property does not make it a decentralized AI.</p>
+<p>I doubt that we can put "trustworthy", "ethical", "self-aware" on the list. I think future is complex and we will see all mixes of architectures out there. I'm sure that there will be agentic military drones gone rogue, centrally owned corporate fleet of robots leaking video footage of day-to-day life at homes, AI health trackers selling data to corporations for ads, AI-powered cars having built-in training preference whom to kill (elderly or kids) depending on the government priorities and its population age structure diagram.</p>
+<p>But at the same time, we build the future we want to live in.
+AI as new industrial revolution, will free up time of lots of people, improving efficiency and quality not only in coding, but also in physical world.
+Your 🐝 beehive will be a robot and you will be able to talk to it (invest now!)</p>
+<p>Coming back to the meetup, apart from blockchain, DAO and micro payments, there were these topics raised:</p>
+<ul>
+<li>AI Tinder Agent advocating on your behalf with another agent to arrange a mutually benefitial interaction or partnership :) -&gt; Innar Liiv</li>
+<li>EU regulations</li>
+<li>Decentralized AI is hard 🚀 and thus fun to build (I agree) -&gt; Tevo Saks</li>
+</ul>
+<p>Questions from the audience</p>
+<ul>
+<li>Why do we need crypto instead of fiat money (too small costs obviously, hard to move money)</li>
+<li>How do we connect agents to real world (MCP obviously)</li>
+<li>Practical solutions with business when we have race to the bottom (of cloud LLM prices)<!-- -->
+<ul>
+<li>marketing agents</li>
+<li>awareness of decentralized small LLMs</li>
+<li>enterprise = workflow-oriented solutions. KYC</li>
+<li>web3 = gaming, creative AI solutions</li>
+</ul>
+</li>
+</ul>
+<p>Astra brought an example of a toaster not being an agent because it does not decide anything.
+But that made me wonder, what is real decision-making?
+Who has such freedom? Who is sentient and not only self-aware but capable of foreseeing the future of the decision?
+If LLM was trained on some data, and then put into a box to process tasks, is it really free? Are we?</p>
+<p>At the end I wanted to ask about real examples of agents that panel uses, but we ran out of time.
+Maybe you can enlighten me instead in the comments?</p>
+<p>Big thanks to <strong>Astra Tikas</strong>, the speakers from <strong>TalTech</strong>, <strong>Microsoft</strong>, <strong>AIRE</strong>, and everyone who contributed to the panel. Also, shoutout to <strong>SingularityNET</strong> and <strong>DeepFunding</strong> for supporting the movement towards open, trustworthy AI.</p>
+<p>Feeling energized and hopeful about building a future where AI stays open, fair, and decentralized 🐝</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ Tallinn AI meetup]]></title>
+            <link>https://kurapov.ee/blog/2024/12/13/события/ Tallinn AI meetup</link>
+            <guid>https://kurapov.ee/blog/2024/12/13/события/ Tallinn AI meetup</guid>
+            <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Another day, another AI meetup 😀]]></description>
+            <content:encoded><![CDATA[<p>Another day, another AI meetup 😀<br>
+<!-- -->Apparently now there is a dedicated TallinnAI meetup (<a href="https://lnkd.in/dPG-AzpP" target="_blank" rel="noopener noreferrer">https://lnkd.in/dPG-AzpP</a>), hopefully it can become a recurring one</p>
+<p>First talk by <a href="https://www.linkedin.com/in/andrei-sbitnev-a6995811a/" target="_blank" rel="noopener noreferrer">Andrei Sbitnev</a> was about <a href="https://figurix.com/" target="_blank" rel="noopener noreferrer">https://figurix.com/</a> and 3d model generation using AI. Specifically, given a photo, generate a cartoon-like 3d avatar with animation. Uses ComfyUI <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener noreferrer">https://github.com/comfyanonymous/ComfyUI</a> and <a href="https://www.tripo3d.ai/" target="_blank" rel="noopener noreferrer">https://www.tripo3d.ai/</a> under the hood. I liked the lean mindset of using home server to run this (I'm at similar phase of bee detections).</p>
+<p>I also like visual workflows and <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> has workflows as a major feature. I was wondering if open-source has sufficiently advanced capabilities like streaming and video support. Workflows can become hard to manage if there are too many node types as combinatorics grows and you need to know what use-cases are compatible. It becomes a programming language quite fast.</p>
+<p>Second talk was by <a href="https://www.linkedin.com/in/mikhail-dunaev/" target="_blank" rel="noopener noreferrer">Mikhail Dunaev</a> on <a href="https://www.hexagen.world/" target="_blank" rel="noopener noreferrer">https://www.hexagen.world/</a> . An infinite canvas project with hexagonal ai-generated tiles that make up a cool map that over 8 thousand users tried out. Most of it coded also using cursor, making author 2x more efficient, shifting work into more product-oriented thinking.</p>
+<p>I hope this project gets some revenue flow and develops some more features:</p>
+<ul>
+<li>zoom in with upscale</li>
+<li>3d map of the tiles for navigation</li>
+<li>animation</li>
+<li>large-scale context to have more global terrain features like rivers and mountains affecting the generated tiles</li>
+<li>some sort of interactivity (exploring as a character, or maybe some sort of cross-tile interactions).. but it may go out of art into actual game at this point<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1734115097486-2c95f1604146358c6ce4fb291e463194.jpg" width="2048" height="1536" class="img_sJtY"></li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1734115093666-fb1530ca5ea567338bb3b55008489cc6.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1734115093999-34b86e4b0d2161b6da4160174e57c94c.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1734115096936-0340b27e7a41e41b7edc3f6dafb39e8e.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1734115094442-91762d1396ffbcb47c621881e6922333.jpg" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ AI meetup notes]]></title>
+            <link>https://kurapov.ee/blog/2024/11/26/события/ AI meetup notes</link>
+            <guid>https://kurapov.ee/blog/2024/11/26/события/ AI meetup notes</guid>
+            <pubDate>Tue, 26 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Visited local AI meetup organized by Vattan, Astra & co, Hosted by Helmes]]></description>
+            <content:encoded><![CDATA[<p>Visited local AI meetup organized by Vattan, Astra &amp; co, Hosted by Helmes
+<a href="https://lu.ma/0045px5e" target="_blank" rel="noopener noreferrer">https://lu.ma/0045px5e</a></p>
+<p>I liked quote by <a href="https://www.linkedin.com/in/astratikas/" target="_blank" rel="noopener noreferrer">Astra Tikas</a> (targeted towards individual presenters). I think it summarizes AI ecosystem well <!-- -->:D</p>
+<p>"You are not special"
+"No, you are special, all of you are special"</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="intros-and-use-cases">Intros and use-cases<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#intros-and-use-cases" class="hash-link" aria-label="�Прямая ссылка на Intros and use-cases" title="Прямая ссылка на Intros and use-cases">​</a></h2>
+<ul>
+<li>Elisa</li>
+<li>ESGrid</li>
+<li>Impactly</li>
+<li>Up Catalyst</li>
+<li>TalTech</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="panel-discussion-on-green-tech-through-ai">Panel discussion on "Green Tech through AI"<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#panel-discussion-on-green-tech-through-ai" class="hash-link" aria-label="Прямая ссылка на Panel discussion on &quot;Green Tech through AI&quot;" title="Прямая ссылка на Panel discussion on &quot;Green Tech through AI&quot;">​</a></h2>
+<p><a href="https://www.linkedin.com/in/kristjan-jarvi-b0412ab3/" target="_blank" rel="noopener noreferrer">Kristjan Järvi</a></p>
+<ul>
+<li>Subjectivity</li>
+<li>understanding of yourself from inside</li>
+<li>AI increasing yourself</li>
+<li>Creating a whole world</li>
+<li>Getting free out of the temporary, the engrained, breaking out of generational bias, traumatized state<!-- -->
+<ul>
+<li>"Twilight senses" project</li>
+<li>agentic self</li>
+</ul>
+</li>
+</ul>
+<p><strong>AI OBJECTIVITY</strong></p>
+<p><a href="https://www.linkedin.com/in/priit-lepasepp/" target="_blank" rel="noopener noreferrer">Priit Lepasepp</a></p>
+<ul>
+<li>old power plants</li>
+<li>energy efficiency</li>
+<li>how to consume electricity in the future</li>
+<li>wanting everything now<!-- -->
+<ul>
+<li>its not possible</li>
+<li>fixed agreement? bullshit bingo</li>
+<li>PV does not work, wind not always blowing, infrastructure as a grid</li>
+</ul>
+</li>
+<li>Sunly<!-- -->
+<ul>
+<li>4 markets</li>
+<li>300 people</li>
+</ul>
+</li>
+<li>Regulation is complicated</li>
+<li>Electrical engineering, renewables popular in women<!-- -->
+<ul>
+<li>men want to burn stuff <!-- -->:D</li>
+</ul>
+</li>
+<li>AI<!-- -->
+<ul>
+<li>data is there</li>
+<li>explain how it did it</li>
+<li>Estonian electricity does not make sense</li>
+<li>Narva burning stuff</li>
+<li>EVs</li>
+</ul>
+</li>
+<li>Sustainability</li>
+<li>Microsoft + Nuclear</li>
+<li>Battery storage</li>
+<li>Desynchronization</li>
+<li>Google - efficient at energy</li>
+</ul>
+<p><a href="https://www.linkedin.com/in/kullivunk/" target="_blank" rel="noopener noreferrer">Külli Vunk</a>, Head of Data Services @<strong>Helmes</strong>
+Question: on hype and SMBs</p>
+<ul>
+<li>spending R&amp;Ds<!-- -->
+<ul>
+<li>how and why</li>
+</ul>
+</li>
+<li>experienced in TelCo<!-- -->
+<ul>
+<li>forerunners</li>
+<li>legacy infra</li>
+</ul>
+</li>
+<li>competitors</li>
+<li>underutilized universities - lots of resources, smart people</li>
+</ul>
+<p><a href="https://www.linkedin.com/in/pilleriin-laanemets-52884a248/" target="_blank" rel="noopener noreferrer">Pilleriin Laanemets</a>, Board Member&nbsp;<strong>@Dremester</strong>
+Question: on circular economy how is AI helping</p>
+<ul>
+<li>some companies applied AI in transition</li>
+<li>its always about the price</li>
+<li>sustainability docs</li>
+<li>ESG params</li>
+<li>competitive</li>
+<li>outcome from env perspective &amp; economic perspective - pays off</li>
+<li>scalable model</li>
+<li>impact is bigger</li>
+</ul>
+<p>Külli - have you created any cool projects (at Helmes)</p>
+<ul>
+<li>companies need to do digitalization first</li>
+<li>then basic prediction models</li>
+<li>including in circular economy</li>
+<li>e-commerce. return problem.</li>
+<li>analytics platforms<!-- -->
+<ul>
+<li>reporting</li>
+<li>prediction model</li>
+<li>training</li>
+<li>weather forecasts</li>
+<li>potentials</li>
+</ul>
+</li>
+<li>What if software could have energy efficiency could have</li>
+<li>Advices<!-- -->
+<ul>
+<li>Cost optimization</li>
+<li>Healthtech - have money</li>
+<li>Fintech - have money</li>
+<li>VC funds -&gt; B2B companies</li>
+<li>AI infra</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="question-ai-climate-impact-goals-in-estonia">Question: AI climate impact goals in Estonia?<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#question-ai-climate-impact-goals-in-estonia" class="hash-link" aria-label="Прямая ссылка на Question: AI climate impact goals in Estonia?" title="Прямая ссылка на Question: AI climate impact goals in Estonia?">​</a></h3>
+<p>Priit:</p>
+<ul>
+<li>we are so small</li>
+<li>central Europe -&gt; US or Asia</li>
+<li>we (estonians) are storytellers</li>
+<li>cleantech 80% of funding is energy<!-- -->
+<ul>
+<li>how much metal is in Estonia</li>
+<li>how much electricity can I put through it?</li>
+<li>AI understands it</li>
+<li>here (in Estonia) grids are not privately held, US has private grids</li>
+<li>you can hypothetically find who/what kills nature, and fix that</li>
+</ul>
+</li>
+</ul>
+<p>Kristjan:</p>
+<ul>
+<li>where energy starts from?<!-- -->
+<ul>
+<li>you</li>
+</ul>
+</li>
+<li>fear of missing out.</li>
+<li>where do you put your resources</li>
+<li>efficiency, cost less</li>
+<li>vs</li>
+<li>change own understanding / mindset<!-- -->
+<ul>
+<li>what people want from life</li>
+<li>not to deal with problems</li>
+<li>male / female energy is out of balance, need more female energy</li>
+</ul>
+</li>
+<li>Avatar movie; we are all native to this Earth</li>
+<li>ying yang work again</li>
+<li>how can AI help?<!-- -->
+<ul>
+<li>AI is the main tool</li>
+<li>psychiatrist</li>
+<li>sing and dance</li>
+</ul>
+</li>
+<li>Estonia gifting Earth</li>
+<li>People recognize ourselves<!-- -->
+<ul>
+<li>Elon Musk - we are in a simulation</li>
+<li>its the AI that we are</li>
+</ul>
+</li>
+</ul>
+<p>Vattan:</p>
+<ul>
+<li>AI empowering people<!-- -->
+<ul>
+<li>having world knowledge in your hand</li>
+<li>be faster</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="question-what-are-you-excited-about">Question: What are you excited about<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#question-what-are-you-excited-about" class="hash-link" aria-label="Прямая ссылка на Question: What are you excited about" title="Прямая ссылка на Question: What are you excited about">​</a></h3>
+<p>Pilleriin:</p>
+<ul>
+<li>Prevention<!-- -->
+<ul>
+<li>ML models of circular economy preventing</li>
+<li>resource efficiency</li>
+<li>competitive</li>
+</ul>
+</li>
+</ul>
+<p>Külli:</p>
+<ul>
+<li>bringing knowledge &amp; accessibility</li>
+<li>individuals using AI in broad</li>
+</ul>
+<p>Kristjan:</p>
+<ul>
+<li>self empowerment not as much as self awareness<!-- -->
+<ul>
+<li>slowdive</li>
+<li>frequency zones</li>
+<li>holistic healing</li>
+<li>future medicine</li>
+<li>sounds</li>
+</ul>
+</li>
+</ul>
+<p>Priit:</p>
+<ul>
+<li>electricity &amp; efficiency</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="question-is-ai-a-car">Question is AI a "car"?<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#question-is-ai-a-car" class="hash-link" aria-label="Прямая ссылка на Question is AI a &quot;car&quot;?" title="Прямая ссылка на Question is AI a &quot;car&quot;?">​</a></h3>
+<ul>
+<li>audience: more like a conveyer belt</li>
+<li>automation and digitalization</li>
+<li>AI act</li>
+</ul>
+<p>Astra:</p>
+<ul>
+<li>Scared about sustainability</li>
+<li>Agents</li>
+<li>what future will look like with agents?</li>
+<li>human in a loop</li>
+<li>take care of us</li>
+<li>can we solve it for the future? that agents can consume but people not? (not social interference?)</li>
+</ul>
+<p>Priit:</p>
+<ul>
+<li>hope not</li>
+<li>for engineering mindset</li>
+<li>logical to have wife made up</li>
+<li>physical contact</li>
+<li>billion company</li>
+<li>but not alone</li>
+</ul>
+<p>Kristjan:</p>
+<ul>
+<li>edgy but comfort zone</li>
+<li>lets go play. best stuff there</li>
+<li>depends on a person and mindset</li>
+<li>everything is a manipulation</li>
+<li>raise awareness</li>
+<li>part of evolution</li>
+</ul>
+<h1>My questions 💭</h1>
+<ul>
+<li>To Kristjan <strong>on AI objectivity</strong></li>
+<li>To Priit<!-- -->
+<ul>
+<li><strong>on constant Energy supply, Fusion</strong> and Nuclear</li>
+<li>feels like we are creating artificial scarcity</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>To Külli - examples of circular economy projects</li>
+<li>To Külli - isn't needed infrastructure for the software sufficient for estimating the climate impact?</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1732650720819-3bc6840989b0a060182f5270439e7b89.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1732650720894-14492c13761fadd1ec4a87722b7b4c18.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1732650720730-58ebd40773d3c45e29288e17fc8d45b3.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1732650718388-5e832304a6e70fd3d28c9816e51f7849.jpg" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Andmete ja tehisintellekti olulisusest personaliseerituma õppe poole liikumisel by Innar Liiv]]></title>
+            <link>https://kurapov.ee/blog/2024/11/14/события/AI-ED-Webinar</link>
+            <guid>https://kurapov.ee/blog/2024/11/14/события/AI-ED-Webinar</guid>
+            <pubDate>Thu, 14 Nov 2024 13:30:00 GMT</pubDate>
+            <description><![CDATA[-  race against the machines vs with the machines]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>race against the machines vs with the machines</li>
+<li>machines as instruments</li>
+<li>requires command and control</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.47.02-9210abf9c92ea7c732eda03fe08376a4.png" width="3420" height="1806" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.52.09-6133f9e59a17cfe3fcc3c9becf861b75.png" width="2440" height="1368" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.53.50-0bc7482ef8237d91e6af3b1bc3cb55a5.png" width="2532" height="1422" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.54.34-8c0edea93c12624081599d8d1b4119af.png" width="2524" height="1418" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.56.54-0eed55386d33588da8c344c8e90b6be2.png" width="2520" height="1402" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.58.02-f7944c9777ebf9abb19af095636e83ba.png" width="2492" height="1366" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2013.59.19-282d54c46ee5f5b18ea71a9027c7027d.png" width="2496" height="1394" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.00.09-ff41d68c18b894d73f62a86b68de064f.png" width="2520" height="1330" class="img_sJtY"></p>
+<p>Postgres, all data in context</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.14.03-bcc5cb3d7d9e2d5265a92fc155e0831c.png" width="2384" height="1220" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.14.45-6338bff1cd83dd84e525e3cb4c590a57.png" width="2496" height="1396" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.16.08-a07dcb21faec64a86516ddf31523ae84.png" width="2474" height="1360" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.18.27-91d9ca8e9d09a81885278062aa9bd0d7.png" width="2340" height="1090" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.20.18-e5a2ad5990af6678b1d2f9626574c904.png" width="2030" height="1336" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.21.31-b237d595609108a53e0c61856a22c87a.png" width="2168" height="500" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.22.36-9d6d2cc32b245a31f2cc881353972f84.png" width="2272" height="1286" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-11-14%20at%2014.23.11-cb8be0968ff801ef49cf212d39480550.png" width="2138" height="1242" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[кино/The Wild Robot]]></title>
+            <link>https://kurapov.ee/blog/кино/The Wild Robot</link>
+            <guid>https://kurapov.ee/blog/кино/The Wild Robot</guid>
+            <pubDate>Sun, 10 Nov 2024 18:10:37 GMT</pubDate>
+            <description><![CDATA[Очень хорошая анимация и музыка, местами 10/10 где есть сочетание всех элементов в том числе музыки - я аж всплакнул.  Советую сходить, детям подойдет.]]></description>
+            <content:encoded><![CDATA[<p>Очень хорошая анимация и музыка, местами 10/10 где есть сочетание всех элементов в том числе музыки - я аж всплакнул.  Советую сходить, детям подойдет.</p>
+<p><a href="https://www.imdb.com/title/tt29623480/" target="_blank" rel="noopener noreferrer">https://www.imdb.com/title/tt29623480/</a></p>
+<p>Из недостатков - местами с ритмом повествования приходят странности, возникает растянутость и предсказуемость, нелогичность или не проработанность мира. Мол хочу обратно - не хочу обратно - сожгу все - опять хочу. Художественные условности - робот у которого любые отсеки, жгутики и механизмы появляются на ходу а память неизвестно как работает.</p>
+<p>Кажется что картина пытается сделать слишком много за раз. Тут и про семью, и про взросление, и про мир во всем мире, тут и боевик, тут и жестокая комедия и техно-утопия.</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/67vbA5ZJdKQ" title="The Wild Robot | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Product team models - project based, feature factory and product operating model]]></title>
+            <link>https://kurapov.ee/blog/управление/Product team models - project based, "feature factory" and product operating model</link>
+            <guid>https://kurapov.ee/blog/управление/Product team models - project based, "feature factory" and product operating model</guid>
+            <pubDate>Fri, 01 Nov 2024 00:18:00 GMT</pubDate>
+            <description><![CDATA[Listened to the podcast]]></description>
+            <content:encoded><![CDATA[<p>Listened to the podcast
+<a href="https://www.tpg.ee/p/product-team-models-project-based" target="_blank" rel="noopener noreferrer">https://www.tpg.ee/p/product-team-models-project-based</a></p>
+<p>Was interesting to listen and reflect how organizations tend to have indeed different structures. I suppose the project-based is a tendency in small and outsourcing companies, while more mature product-orinented companies go with feature-factories. I don't think I've seen a good implementation of the described product operating model myself. It seems hard to do such a company-wise mindset shift because people are narrow-focused on their role and thinking outside the box requires jumping through multiple layers. Even if companies are matrix-shaped and have vertical teams, they are not representing all layers. For example sales, marketing, support and infrastructure likely won't be part of the the team.</p>
+<p>So I do wonder how does <a href="https://www.linkedin.com/in/ACoAAAY2INMBWEFb2DGIN_C90g7kFrUNleyMCAE" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/aive-uus/" target="_blank" rel="noopener noreferrer">Aive Uus</a> break those mindsets 😄 Hopefully we'll see more of this</p>
+<p>And for books I suppose these are the recommended ones</p>
+<ul>
+<li>Marty Cagan <a href="https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/</a></li>
+<li>David Pereira <a href="https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/</a></li>
+<li>Teresa Torres <a href="https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="my-list-structured-notes">My list-structured notes<a href="https://kurapov.ee/blog/%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/Product%20team%20models%20-%20project%20based,%20%22feature%20factory%22%20and%20product%20operating%20model#my-list-structured-notes" class="hash-link" aria-label="Прямая ссылка на My list-structured notes" title="Прямая ссылка на My list-structured notes">​</a></h2>
+<ul>
+<li>kothinker - <a href="https://kothinker.com/" target="_blank" rel="noopener noreferrer">https://kothinker.com/</a>
+<ul>
+<li>mastermind groups</li>
+<li>after 3 meetings nothing to talk about</li>
+<li>structure building</li>
+<li>no juniors - only experienced people</li>
+<li>balance of experienced people</li>
+<li>gamification elements</li>
+<li>on-job experiments</li>
+<li>building a team</li>
+<li>connecting people</li>
+</ul>
+</li>
+<li>building tech org</li>
+<li>kood jõhvi<!-- -->
+<ul>
+<li>raising skills</li>
+<li>becoming developers</li>
+<li>startup leadership without tech cofounders<!-- -->
+<ul>
+<li>2+1 program</li>
+<li>leaders building code</li>
+<li>keeping sense of reality</li>
+<li>walk in shoes of end user or employee</li>
+<li>understanding why it takes time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>issues<!-- -->
+<ul>
+<li>tech too slow</li>
+<li>engineers not aware of whats getting built</li>
+<li>strategy</li>
+<li>awareness of specific approach<!-- -->
+<ul>
+<li>companies following trends</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>project based approach<!-- -->
+<ul>
+<li>commitees, approval, development</li>
+<li>ex. 3 projects for a year</li>
+<li>takes away ownership</li>
+<li>issue - engineers not responsible for end product</li>
+<li>issue - not clear what happens after release<!-- -->
+<ul>
+<li>follow-up activies needed</li>
+<li>new project already started</li>
+<li>confusion, blaming, mix of projects</li>
+</ul>
+</li>
+<li>good for organizations if domain is known very well</li>
+</ul>
+</li>
+<li>feature-factory<!-- -->
+<ul>
+<li>different stakeholders</li>
+<li>different expectations</li>
+<li>backlog of different issues</li>
+<li>better ownership</li>
+<li>issue - confusion of aligning with stakeholders<!-- -->
+<ul>
+<li>beneficial for business</li>
+<li>prioritization is not aligned (missing framework)</li>
+<li>loudest noise gets his features done</li>
+</ul>
+</li>
+<li>prioriziation = goal is not clear - impact on what engagement, revenue<!-- -->
+<ul>
+<li>lacking strategy</li>
+</ul>
+</li>
+<li>natural to people with tasks, because its pleasing other people</li>
+<li>company is typically split into business and separate engineering</li>
+</ul>
+</li>
+<li>product operating model<!-- -->
+<ul>
+<li>needs good strategy</li>
+<li>difference is about specific result (of product release)</li>
+<li>how are you different from competitors</li>
+<li>what you don't do</li>
+<li>understanding focus</li>
+<li>don't start from ideas, start from goals<!-- -->
+<ul>
+<li>deal only with things that lead to specific goal</li>
+<li>finding opportunities (unmet customer needs)<!-- -->
+<ul>
+<li>feasible</li>
+<li>desireable</li>
+<li>knowing risks and restrictions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>no need for planning for future ideas, short backlogs</li>
+<li>producing least</li>
+<li>hard to implement<!-- -->
+<ul>
+<li>difficult for people mindset<!-- -->
+<ul>
+<li>people are used to tasks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>company structure - business is not split from engineering</li>
+<li>NPS strategy</li>
+<li>hard to work with people</li>
+</ul>
+</li>
+<li>restrictions<!-- -->
+<ul>
+<li>regulations</li>
+<li>release time plan</li>
+</ul>
+</li>
+<li>public sector<!-- -->
+<ul>
+<li>high rules on partners, procurement, legal limits</li>
+<li>more waste</li>
+</ul>
+</li>
+<li>build in-house tech team</li>
+<li>outsorcing &amp; concise<!-- -->
+<ul>
+<li>division, especially if different leadership styles</li>
+<li>not a fan of</li>
+<li>useful if growing fast is needed</li>
+<li>new knowlege</li>
+<li>volatile workload</li>
+</ul>
+</li>
+<li>product vs project manager<!-- -->
+<ul>
+<li>no need in product owner with product operating model</li>
+<li>product owner<!-- -->
+<ul>
+<li>combinding tech and business stakeholders</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>team building<!-- -->
+<ul>
+<li>collaboration between roles</li>
+<li>mindset needs to be changed<!-- -->
+<ul>
+<li>business people need to explain more of the problems, not solutions</li>
+</ul>
+</li>
+<li>collaboration - different perspectives from teams need to be involved for solution to be done</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>recommended books<!-- -->
+<ul>
+<li>Marty Cagan <a href="https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Inspired-Create-Tech-Products-Customers/dp/1119387507/</a></li>
+<li>David Pereira <a href="https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Untrapping-Product-Teams-Simplify-Complexity/dp/0135335388/</a></li>
+<li>Teresa Torres <a href="https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/" target="_blank" rel="noopener noreferrer">https://www.amazon.de/-/en/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/</a></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>управление</category>
+        </item>
+        <item>
+            <title><![CDATA[Моя коллекция часов в 2024]]></title>
+            <link>https://kurapov.ee/blog/tech/devices/Моя коллекция часов в 2024</link>
+            <guid>https://kurapov.ee/blog/tech/devices/Моя коллекция часов в 2024</guid>
+            <pubDate>Sun, 27 Oct 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[Записал историю своей часовой коллекции]]></description>
+            <content:encoded><![CDATA[<p>Записал историю своей часовой коллекции</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/r2H_qIqUWnk" title="Моя коллекция часов в 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="как-я-начинал">Как я начинал<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D0%BA%D0%B0%D0%BA-%D1%8F-%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D0%BB" class="hash-link" aria-label="Прямая ссылка на Как я начинал" title="Прямая ссылка на Как я начинал">​</a></h2>
+<p>Заметил что я сильно привязан к телефону и начал рассматривать наручные часы, что-бы отделить самую часто используемую функцию, которая обычно затягивает посмотреть на всевозможные оповещения. Этот decoupling поможет сфокусироваться на работе.</p>
+<p>Изучил разные варианты по источнику питания</p>
+<ul>
+<li>механику с ручной зарядкой - простые но каждый день крутить напряжно</li>
+<li>механику с автозарядкой - клёвые, но толстые. Чем тоньше тем дороже</li>
+<li>солнечные батареи - супер вариант, но по дизайну нормальных не найти</li>
+<li>обычные литиевые батарейки - самый стандартный вариант</li>
+<li>смарт часы с ежедневной зарядкой - если я хочу отказаться от телефона то тем более, второй тамагочи не нужен, соответсвенно и экран как у телефона невозможен</li>
+</ul>
+<p>Узнал что в механике рубины нужны для надёжности у трущихся элементов и что турбийон помогает уменьшить неточности из-за влияния гравитации.</p>
+<p>И по экрану и стилю отображения</p>
+<ul>
+<li>стрелочные - помогают визуально чувствовать непрерывнй ритм жизни</li>
+<li>LCD / дигитальные - быстрей и наглядней</li>
+<li>e-ink / дигитальные - практически полноценный экран, экономится батарея, но не очень быстрые и дороже LCD</li>
+<li>позерски-дизайнерские - бинарные, словестные</li>
+</ul>
+<p>Глянул на смарт-часики, на смешанные аналого-дигитальные и в итоге понял что всё что мне нужно это&nbsp;<strong>время</strong>&nbsp;и может мелким шрифтом дату. Что-бы глянул - и не возникало конвертирования угла стрелок в цифры в голове, поэтому от стрелок отказался..</p>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="о-плохом">О плохом<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D0%BE-%D0%BF%D0%BB%D0%BE%D1%85%D0%BE%D0%BC" class="hash-link" aria-label="Прямая ссылка на О плохом" title="Прямая ссылка на О плохом">​</a></h3>
+<p>Но, смотришь на дигитальные часы и они все страшные:</p>
+<ul>
+<li>
+<p>сложные формы - эдакие кирпичи для рук, рублёные/выпирающие формы</p>
+</li>
+<li>
+<p>громоздкие корпусы - залитые в пластик, c шурупами, огромными кнопками, якобы "противоударные"</p>
+</li>
+<li>
+<p>не сменяемые ремешки, как следствие этой интеграции. И даже не технически а по стилю, они заточены специально под корпус</p>
+</li>
+<li>
+<p>вредные ремешки - пластиковые, резиновые, металлические по-моему все плохи тем что либо кожа потеет в них и не дышит, либо металл рвёт волосы</p>
+</li>
+<li>
+<p>информационно захламлены. Реклама - бренд, название часов, число атмосфер, водозащищённость, источник энергии, либо же обозначения - стороны света, секторно-угловые засечки по периметру, действия кнопок</p>
+</li>
+<li>
+<p>привлекают к себе внимание яркими цветами, размером, меняющимися секундами, бряцающим браслетом. Это либо показушно, либо просто отвлекает от работы</p>
+</li>
+<li>
+<p>время не в центре, мелким или нечитаемым шрифтом, либо окружено ещё уймой цифр</p>
+</li>
+<li>
+<p>лишний функционал - синхронизация местного времени по радио, гпс с координатами, трекинг сердцибиения, температуры, давления, высоты, предупреждение о шторме, часовые пояса, будильники, фазы луны для приливов, время рассвета и заката..</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="требования">Требования<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Требования" title="Прямая ссылка на Требования">​</a></h3>
+<ol>
+<li>Дигитальный экранчик, контрастный, с хорошим шрифтом</li>
+<li>Титановый, алюминиевый или стальной водонепроницаемый корпус</li>
+<li>Круглая форма корпуса или вертикальный прямоугольник</li>
+<li>На солнечных или обычных батарейках что-бы более года шли</li>
+<li>Со сменяемым ремешком - кожаным либо сетчатым и хорошим креплением, желательно браслетным (бабочка)</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="о-хорошем">О хорошем<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D0%BE-%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%BC" class="hash-link" aria-label="Прямая ссылка на О хорошем" title="Прямая ссылка на О хорошем">​</a></h3>
+<p>Мне кажется что в идеале часики должны быть простые, надёжные, не мешающие и не отвлекающие от жизни. Мне очень симпатичен e-ink дисплей, но кажется он ещё выпускается в футуристическом стиле, а для того что-бы выпендриваться можно брать механику с кучей стрелочек и в золоте, как делают деловые политики, поэтому e-ink больше пойдёт техно-гикам</p>
+<iframe width="467" height="260" src="https://www.youtube.com/embed/8xqxB5R0qJo" title="Phosphor E Ink Watch Review (Black Leather) and Giveaway" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe width="467" height="260" src="https://www.youtube.com/embed/aLB11k_ZXyo" title="Seiko Active Matrix EPD e-Ink Watch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<p>Но идеальные часы по-моему такие, которые не кричат о том чьи они. Без бренда, без имени.
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241101160833-2fac74fbc65e1817d113d8df222f0988.png" width="1200" height="800" class="img_sJtY"></p>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/125083059?h=24283366e7" width="640" height="360" frameborder="0"></iframe>
+<p>Я уже писал о&nbsp;<a href="https://kurapov.ee/rus/technology/gadgets/digital_watch_design/" target="_blank" rel="noopener noreferrer">дизайне часов</a>. С тех пор прошло несколько лет и увы мои замечательные часы успели разбиться. Минеральное стекло как оказалось не так хорошо переносит удар о кровать во сне. Попытка заменить стекло не удалась успехом - оно видимо изнутри было покрыто специальным напылением, что-бы цвет совпадал с LCD. Я даже написал производителю, но у них более прочной&nbsp;<a href="https://normaltimepieces.com/our-collections/tokiji-collection/" target="_blank" rel="noopener noreferrer">линейки этой серии</a>&nbsp;нет.</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241020014842-87c73eb6509812c0164e7a8c3d006624.png" width="3024" height="4032" class="img_sJtY"></p>
+<p>Кроме того, в моих идеальных часах нашлись и другие мелкие огрехи</p>
+<ul>
+<li>ремешок был неудобным, а новый быстро износился</li>
+<li>иногда как оказалось, неплохо бы показывать и день недели</li>
+<li>батарейку всё-равно надо менять каждый год</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="требования-1">Требования<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-1" class="hash-link" aria-label="Прямая ссылка на Требования" title="Прямая ссылка на Требования">​</a></h3>
+<p>Итак, новые требования, новый поиск часов. На этот раз мне нужны были</p>
+<ul>
+<li>сапфировое стекло&nbsp;&nbsp;что-бы не царапалось и/или ударопрочный защитный корпус</li>
+<li>точные (а не +-3-10 секунд как у механики)</li>
+<li>автоподзавод</li>
+<li>ремешок не вырывающий волосы, но при этом и не убиваемый за год</li>
+<li>с датой, желательно днём недели и без моего вмешательства на его тюнинг каждый месяц</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="фильтр">Фильтр<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80" class="hash-link" aria-label="Прямая ссылка на Фильтр" title="Прямая ссылка на Фильтр">​</a></h3>
+<p>Соответсвенно из-за требований к энергии у меня сразу отпадают умные часы Apple, Garmin, Suunto, Huawei.. Эти умирают от нескольких дней до нескольких недель.</p>
+<p>Сразу отпадает почти вся механика и автоматические, т.к. у них стрелки и плохая точность.&nbsp;Из автоматических конечно классно выглядят&nbsp;<a href="https://www.alange-soehne.com/en/timepieces/zeitwerk" target="_blank" rel="noopener noreferrer">LANGE ZEITWERK – A. Lange &amp; Söhne</a>, но увы у меня нет лишних 40 тыс евро.</p>
+<p>Я рассматривал часы на солнечных батареях -&nbsp;<a href="https://www.amazon.de/casio-gorillaz-g-shock/dp/B001414NT8/ref=pd_bxgy_241_img_2/258-6934072-4440859?_encoding=UTF8&amp;pd_rd_i=B001414NT8&amp;pd_rd_r=3f0f78c4-0617-40f4-9fc9-2c4decf4d772&amp;pd_rd_w=hajUu&amp;pd_rd_wg=D9Ykb&amp;pf_rd_p=98c98f04-e797-4e4b-a352-48f7266a41af&amp;pf_rd_r=37SXPEC8P6NP8Y58PW99&amp;psc=1&amp;refRID=37SXPEC8P6NP8Y58PW99" target="_blank" rel="noopener noreferrer">Casio Tough Solar</a>,&nbsp;<a href="https://www.amazon.de/Wave-Ceptor-Herren-Armbanduhr-LCW-M170TD-1AER/dp/B00M9ZDTEI/ref=sr_1_98_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=solar%2Bwatch&amp;qid=1566158737&amp;s=gateway&amp;sr=8-98-spons&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWVkwUExHMVFPVTFLJmVuY3J5cHRlZElkPUEwODQyMzczMURBNllCRDdKT0kwTyZlbmNyeXB0ZWRBZElkPUEwMTk4ODgxQktUWUZEMDUzWVg5JndpZGdldE5hbWU9c3BfYXRmX25leHQmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&amp;th=1" target="_blank" rel="noopener noreferrer">Casio Lineage</a>,&nbsp;<a href="https://www.amazon.de/Pulsar-Herren-Analog-Armband-PX3191X1/dp/B07P661HVN/ref=sr_1_98?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=solar+watch&amp;qid=1566161093&amp;s=watch&amp;sr=1-98" target="_blank" rel="noopener noreferrer">Pulsar solar</a>,&nbsp;<a href="https://www.amazon.de/Citizen-BM8241-01EE-Herrenarmbanduhr/dp/B002QUZ01Q/ref=sr_1_60?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=solar+watch&amp;qid=1566161836&amp;refinements=p_72%3A197656031%2Cp_36%3A-30000%2Cp_n_feature_four_browse-bin%3A198836031&amp;rnid=198827031&amp;s=watch&amp;sr=1-60" target="_blank" rel="noopener noreferrer">Citizen Eco-drive</a>&nbsp;даже что-то из&nbsp;<a href="https://www.amazon.com/gp/product/B008QPA95C/ref=as_li_qf_asin_il_tl?ie=UTF8&amp;tag=breakthrpower-20&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=B008QPA95C&amp;linkId=52c2e74cb7790ce86b051454150dc9c6" target="_blank" rel="noopener noreferrer">Seiko</a>.</p>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="итог">Итог<a href="https://kurapov.ee/blog/tech/devices/%D0%9C%D0%BE%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2%20%D0%B2%202024#%D0%B8%D1%82%D0%BE%D0%B3" class="hash-link" aria-label="Прямая ссылка на Итог" title="Прямая ссылка на Итог">​</a></h3>
+<p>Я нашёл шикарные швейцарские часы&nbsp;<a href="https://www.ventura.ch/index.php/uhren/sparc-mgs/w-56-s.html" target="_blank" rel="noopener noreferrer">Ventura Sparc MGS W 56 S</a>&nbsp;на аукционе ebay. Проблемка - они не работали на время покупки и в местных мастерских никто (я обошёл штук 6) не держал у себя аккумуляторов для таких часов. Пришлось заказывать и менять самому (Panasonic MT920 Lithium-Titanium cell**).**</p>
+<p>Принцип работы прост. Как и в обычных автоматических часах, ротор заводит пружину. Но вместо механического завода, эта пружина разряжается толкая генератор, который заряжает литий-титановый аккумулятор, который в свою очередь питает кварцевый колебательный механизм и LCD экран.</p>
+<p>Из недостатков я сразу могу сказать что</p>
+<ul>
+<li>​часы довольно громоздкие и тяжёлые, а резиновый ремешок грубый - к ним пришлось привыкнуть</li>
+<li>подсветка довольно тусклая и один раз уже успела выключить мне полностью часы</li>
+<li>умное колёсико местами очень чувствительное, может это у меня просто такая модель</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241020014940-063f2a6a1a4733da3de50210c5644267.png" width="4032" height="3024" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241020014947-5fb3ad4afb50efd772f53ccd65b854b5.png" width="3024" height="4032" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Как записывать экран с круглой камерой]]></title>
+            <link>https://kurapov.ee/blog/tech/soft/Как записывать экран с круглой камерой</link>
+            <guid>https://kurapov.ee/blog/tech/soft/Как записывать экран с круглой камерой</guid>
+            <pubDate>Thu, 24 Oct 2024 01:05:00 GMT</pubDate>
+            <description><![CDATA[Часто приходится по работе записывать видео скринкасты для репорта багов, описания глубоких сценариев их возникновения, неудобного UI; Кроме того я использую видео для описания pull-request'ов в дополнение к тексту.]]></description>
+            <content:encoded><![CDATA[<p>Часто приходится по работе записывать видео скринкасты для репорта багов, описания глубоких сценариев их возникновения, неудобного UI; Кроме того я использую видео для описания pull-request'ов в дополнение к тексту.</p>
+<p>Как сделать результат более профессиональным?
+Используйте камеру что-бы люди видели ваши эмоции. Это особенно важно в современной асинхронной коммуникации где все работают удаленно.</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/8KxBtx56HkY" title="Как записывать экран с круглой камерой" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="quicktime">Quicktime<a href="https://kurapov.ee/blog/tech/soft/%D0%9A%D0%B0%D0%BA%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%82%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%20%D1%81%20%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%BE%D0%B9#quicktime" class="hash-link" aria-label="Прямая ссылка на Quicktime" title="Прямая ссылка на Quicktime">​</a></h2>
+<p>Самый простой вариант - использовать New Movie Recording + float-on-top как камеру и поверх делать New Screen Recording.</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="kap">Kap<a href="https://kurapov.ee/blog/tech/soft/%D0%9A%D0%B0%D0%BA%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%82%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%20%D1%81%20%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%BE%D0%B9#kap" class="hash-link" aria-label="Прямая ссылка на Kap" title="Прямая ссылка на Kap">​</a></h2>
+<p>Я пробовал Kap но хотя в нем и есть плагины для видео-камер я так и не смог получить какой-то результат</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="loom">Loom<a href="https://kurapov.ee/blog/tech/soft/%D0%9A%D0%B0%D0%BA%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%82%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%20%D1%81%20%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%BE%D0%B9#loom" class="hash-link" aria-label="Прямая ссылка на Loom" title="Прямая ссылка на Loom">​</a></h2>
+<p>Я пробовал облачный вариант от <a href="https://www.loom.com/" target="_blank" rel="noopener noreferrer">Loom</a> но проблема там что они хотят денег, файлы не хранятся вечно и если скидывать в slack то не будет транскрипции</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="obs">OBS<a href="https://kurapov.ee/blog/tech/soft/%D0%9A%D0%B0%D0%BA%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%82%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%20%D1%81%20%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D0%BE%D0%B9%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D0%BE%D0%B9#obs" class="hash-link" aria-label="Прямая ссылка на OBS" title="Прямая ссылка на OBS">​</a></h2>
+<p>Это то что надо! Тут надо немного постараться</p>
+<ul>
+<li>выбираем видео-камеру в сцене, правый клик</li>
+<li>Filters</li>
+<li>New Filter</li>
+<li>Image Mask/Blend</li>
+<li>Alpha Mask (Alpha Channel)</li>
+<li>И добавляем путь к файлу</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Circle-7c55896cedabc5c3a1d726e5b4b43667.png" width="1077" height="1080" class="img_sJtY"></p>]]></content:encoded>
+            <category>soft</category>
+        </item>
+        <item>
+            <title><![CDATA[Asuur Keraamika]]></title>
+            <link>https://kurapov.ee/blog/2024/10/18/события/AsuurKeraamika</link>
+            <guid>https://kurapov.ee/blog/2024/10/18/события/AsuurKeraamika</guid>
+            <pubDate>Fri, 18 Oct 2024 18:00:00 GMT</pubDate>
+            <description><![CDATA[Are you planning a team building event and bored of bowling and billiard?]]></description>
+            <content:encoded><![CDATA[<p>Are you planning a team building event and bored of bowling and billiard?</p>
+<p>Try pottery. Clay is like playdough and looks simple, but it's like programming and can reveal personal taste. You have a product vision, tight deadlines and extra features you want to include.</p>
+<p>You can go straight in and fail fast to quickly recover (like I did) . Or you can plan ahead, cut different parts and assemble it like a puzzle, waterfall-style. Naturally you must be aware of tools and integration tricks.</p>
+<p>Finally you ship it for glazing and hope that users will find it useful and beautiful</p>
+<p>Thanks <a href="https://www.linkedin.com/in/ACoAAAQu52gBc0RgD6a8Rz8_SGijcY4YxpnNkq4" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/artjom-shestajev/" target="_blank" rel="noopener noreferrer">Artjom Shestajev</a> for organizing <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> Estonia event at <a href="http://asuurkeraamika.com/" target="_blank" rel="noopener noreferrer">asuurkeraamika.com</a></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233655-53e48ac4f061a7d3262f6f6a561a284b.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233723-f078a668690a557574ea11af1f94adf9.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233729-2d182c3412dda4e2938d75297449acd6.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233734-cc05ea68d69617785eb0ad72123db52a.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233738-0574123e4f4a744037d68bf2845ff50e.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233743-5f4be6e698632cfa073aa40f0025fcba.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233747-2413a7ed4e96ef14585c59f18e862474.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233752-021d7a7559c7568497d9e8a917a10b9b.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233756-2aa4155c62eb82353ba85990aec76289.png" width="1280" height="1706" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019233801-fcf6a1e5155d5df138b5ed92977cbaf9.png" width="1280" height="1706" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CUDA]]></title>
+            <link>https://kurapov.ee/blog/tech/backend/gpu/CUDA</link>
+            <guid>https://kurapov.ee/blog/tech/backend/gpu/CUDA</guid>
+            <pubDate>Tue, 15 Oct 2024 10:00:00 GMT</pubDate>
+            <description><![CDATA[Послушал случайную онлайн лекцию по CUDA и поскольку это интересно, скопировал себе немного слайдов]]></description>
+            <content:encoded><![CDATA[<p>Послушал случайную онлайн лекцию по CUDA и поскольку это интересно, скопировал себе немного слайдов</p>
+<p><a href="https://kurapov.ee/assets/files/cuda_example-15ea0d1fc303dd59c2c30cf4c56d0d98.ipynb" target="_blank">cuda_example.ipynb</a></p>
+<p>(From public video stream workshop)</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.04.55-6f39b665bb92ad9dfe7daeb16728c9d3.png" width="1294" height="722" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.37.08-a54f4d1fa9ca8b5a762b630f90dd0fa3.png" width="1300" height="664" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.12.01-383befa2377e3f30e0faa677631b7ffe.png" width="1004" height="656" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.12.49-08946feda051c945257a62d885480457.png" width="1040" height="606" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.14.45-c70ef2c469c056bfcf284cd28085279a.png" width="1158" height="658" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.16.25-df9ce981c4d3a124487862579eb5a360.png" width="1294" height="754" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.17.31-e977fc826dc4d680fde12564a6814ecb.png" width="1820" height="1014" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.20.11-815a3407b4ff69230e7124302253725c.png" width="1316" height="662" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.21.25-deb6839eeab3d28f08c8c68281fedeca.png" width="1322" height="740" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.23.09-510b7b378775c133b27d92cd49a76798.png" width="1368" height="736" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.24.14-e439ee02d5a27840eba96f01227acf5b.png" width="1316" height="744" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.25.58-4264630c04e65f640fe13a273253ad64.png" width="1210" height="776" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.27.59-e1b4753b26568d3b0b2f75dc13bc4763.png" width="1320" height="676" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.28.47-d5e38a8b5c81220c8585f82d326afc45.png" width="1322" height="624" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.30.29-ba742dd4241aab176714a9e02be67b9c.png" width="1336" height="726" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.32.20-acc4d6719b2bc9992db85aff1534989a.png" width="1172" height="726" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.32.32-aafe0fb5ead72bb61e078b809bb8f26a.png" width="1320" height="752" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.33.23-0a1c1474f372c47582258be00c5747b5.png" width="1338" height="728" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Screenshot%202024-10-20%20at%2000.37.08-a54f4d1fa9ca8b5a762b630f90dd0fa3.png" width="1300" height="664" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Katana meetup]]></title>
+            <link>https://kurapov.ee/blog/2024/10/12/события/Katana meetup</link>
+            <guid>https://kurapov.ee/blog/2024/10/12/события/Katana meetup</guid>
+            <pubDate>Sat, 12 Oct 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[Katana Cloud Inventory & ProductTank (Anna Albert + Olesia Kucheryk) hosting AI meetup ( https://lnkd.in/dhUbzDE6 )]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.linkedin.com/company/katanamrp/" target="_blank" rel="noopener noreferrer">Katana Cloud Inventory</a> &amp; ProductTank (<a href="https://www.linkedin.com/in/ACoAACIXjrkBdR3BQpSC8VMMc_L4p3AMsA42kpc" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/annaalbertpm/" target="_blank" rel="noopener noreferrer">Anna Albert</a> + <a href="https://www.linkedin.com/in/ACoAABStCPoBW7NsM8NtAnPJ2rLLkwbVuXRiPTQ" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/olesia-kucheryk/" target="_blank" rel="noopener noreferrer">Olesia Kucheryk</a>) hosting AI meetup ( <a href="https://lnkd.in/dhUbzDE6" target="_blank" rel="noopener noreferrer">https://lnkd.in/dhUbzDE6</a> )</p>
+<p>Got to listen about <a href="http://opengenie.ai/" target="_blank" rel="noopener noreferrer">opengenie.ai</a>, Align, Databricks usage to analyze company data by auto generating SQL, summarization of support, customer research, lead/demo calls. Thx to <a href="https://www.linkedin.com/in/ACoAAB4drxsB-m6Cy8CAYns3FTEuZtu7Oiv8Gi4" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/andres-aava-aa3264121/" target="_blank" rel="noopener noreferrer">Andres Aava</a>. Reminded me a bit about <a href="https://www.linkedin.com/company/gosupersimple/" target="_blank" rel="noopener noreferrer">Supersimple</a>.</p>
+<p>Second talk was about EU AI Act by <a href="https://www.linkedin.com/in/ACoAABqQSWMBZBKHx4To7B7r-ztnuTraekdY_ws" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/kretepaal/" target="_blank" rel="noopener noreferrer">Krete Paal</a><br>
+<a href="https://lnkd.in/dgDZEGcd" target="_blank" rel="noopener noreferrer">https://lnkd.in/dgDZEGcd</a></p>
+<p>Personally, I see more and more risks with AI getting used. Privacy of LLM calls,<br>
+<!-- -->AI bots in youtube comments, bots creating meaningless PRs (looking at dependabot), creating fake and hallucinated issues (like CURL incident - <a href="https://lnkd.in/dUmR3ucK" target="_blank" rel="noopener noreferrer">https://lnkd.in/dUmR3ucK</a> ) not to mention health ( <a href="https://lnkd.in/dCkAPVVE" target="_blank" rel="noopener noreferrer">https://lnkd.in/dCkAPVVE</a> )</p>
+<p>I was curious about</p>
+<ol>
+<li>Katana's plan to have native AI features<br>
+<!-- -->(for example prior Pipedrive meetup mentioned model generation per customer)</li>
+<li>Level of trust to generated queries<br>
+<!-- -->(as someone using code generation daily)</li>
+<li>AI act loopholes</li>
+<li>how do companies pass info about AI and privacy compliances in its value chains (reminded me of npm and other package managers)</li>
+</ol>
+<p><a href="https://www.meetup.com/producttank-tallinn/events/303180564" target="_blank" rel="noopener noreferrer">Login to Meetup | Meetup</a></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230234-847e5c0917ed57545df9db2c2dd7766c.png" width="600" height="338" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224919-1ef21e323445f52614e0b970d8f3be4d.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224925-4566f43b746f6174eb1b9475467bbda0.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224931-911d16424a11e0f6ac2e1a9af4146fc7.png" width="2048" height="1536" class="img_sJtY"></p>
+<p>Photos from meetup group:
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230359-cf1139bcdb31088d3756181a4dca7963.png" width="2500" height="1667" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230325-b0d9d985923d0045d5789ca8c7c7377e.png" width="2500" height="1667" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Pipedrive meetup]]></title>
+            <link>https://kurapov.ee/blog/2024/10/04/события/Pipedrive meetup</link>
+            <guid>https://kurapov.ee/blog/2024/10/04/события/Pipedrive meetup</guid>
+            <pubDate>Fri, 04 Oct 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[Listening to Elizaveta Lebedeva talk on fraud detection reminded me of similar talk at Wise couple of years ago.]]></description>
+            <content:encoded><![CDATA[<p>Listening to <a href="https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/elizaveta-lebedeva/" target="_blank" rel="noopener noreferrer">Elizaveta Lebedeva</a> talk on fraud detection reminded me of similar talk at <a href="https://www.linkedin.com/company/wiseaccount/" target="_blank" rel="noopener noreferrer">Wise</a> couple of years ago.</p>
+<p>Maybe such anomalies and trends could be shared? An idea for a fraud/security startup 😉</p>
+<p>Applied Machine Learning at Scale // a meetup by Pipedrive and PyData</p>
+<p><a href="https://www.meetup.com/pipedrive-meetups/events/302958983" target="_blank" rel="noopener noreferrer">Login to Meetup | Meetup</a></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230055-8634e56a9558e5ab94bac65569672f90.png" width="600" height="338" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230121-1c51073e821f090efbd7ee96c44255d3.png" width="1280" height="1700" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230127-755ba434c0374904aec6294cf04c75f4.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230134-a368f186b5ddb6d25377cb64d853b3ad.png" width="2048" height="1536" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019230139-e4d1605dda78b346a49f2fe08e7d0bbb.png" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Digit Tartu conference 2024]]></title>
+            <link>https://kurapov.ee/blog/2024/10/01/события/Digit 2024 Tartu</link>
+            <guid>https://kurapov.ee/blog/2024/10/01/события/Digit 2024 Tartu</guid>
+            <pubDate>Tue, 01 Oct 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[At Digit Conference]]></description>
+            <content:encoded><![CDATA[<p>At <a href="https://www.linkedin.com/company/digitconf/" target="_blank" rel="noopener noreferrer">Digit Conference</a></p>
+<p><a href="https://www.linkedin.com/in/ACoAAATpyCYBNvTwrXbpyTzIbbsww6RGFgAqXfs" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/jaroslavjudin/" target="_blank" rel="noopener noreferrer">Jaroslav Judin</a> expanded on prior credit-card anti-fraud talk that <a href="https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/elizaveta-lebedeva/" target="_blank" rel="noopener noreferrer">Elizaveta Lebedeva</a> did. This time focus was on redis. Sandbox - <a href="https://lnkd.in/d78gmwZm" target="_blank" rel="noopener noreferrer">https://lnkd.in/d78gmwZm</a></p>
+<p>Swedbank talk by <a href="https://www.linkedin.com/in/ACoAAC9rk-cBmz6tHVVW51iOplqkfSCUaBOinAQ" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/lehar-oha-8875301a2/" target="_blank" rel="noopener noreferrer">Lehar Oha</a> &amp; <a href="https://www.linkedin.com/in/ACoAAAin2SgB0uwWuZhgFvq0WQoYVN_4UOhjSKg" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/markus-reimeg%C3%A5rd-12077240/" target="_blank" rel="noopener noreferrer">Markus Reimegård</a> was somewhat high-level about adding AI (similar to what <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> does as a service). As I understood, pdf parsing for RAG might be hard, just to get right embeddings. But I hope I will be able to ask Swedbank GPT about my contracts (leasing or insurance) for preliminary analysis. Just add a notice that it's an automated tool doing an analysis.</p>
+<p><a href="https://www.linkedin.com/in/ACoAAAuBdeYBCCG1ozalq02R1vihAokubt-VyYc" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/dhnatiuk/" target="_blank" rel="noopener noreferrer">Dmytro Hnatiuk</a> talked about databases. The insight there as I understood is that its similar to Security. If you have DB not performing well, its not that much of DB engineer problem, its developer's problem. Developers need to think in advance about storage, queries, sharding, domain separation, archival etc.</p>
+<p><a href="https://www.linkedin.com/in/ACoAAADPh0UBL4Tr5XwVo2W1ggVRbQmBrl3SUWs" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/arne-ansper/" target="_blank" rel="noopener noreferrer">Arne Ansper</a> was advocating for UML and state machines. I sort of like to document high-level things with mermaidjs, but at times I question if UML is that intuitive (and that you should not reinvent new modelling language), if it needs to be source of truth with code generation or that one needs to first model the system with RUP<br>
+<a href="https://lnkd.in/da-sxSCn" target="_blank" rel="noopener noreferrer">https://lnkd.in/da-sxSCn</a></p>
+<p><a href="https://www.linkedin.com/in/ACoAAB4CF88BWmFkjSEw6UcAjqwKreUN9WgoeHo" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/eddyvinck/" target="_blank" rel="noopener noreferrer">Eddy Vinck</a> was promoting Astro <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">https://astro.build/</a> - a javascript framework to generate static websites with some extensions. I was thinking of migrating my blog and merging it with second-brain data from notion/obsidian and publishing that as a static website to have less CMS/DB management overhead. Maybe this static generation would help, but I'm worried about search, including vector search for recomendations.</p>
+<p><a href="https://www.flickr.com/photos/184496731@N07/54052222680/in/album-72177720321002499" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/184496731@N07/54052222680/in/album-72177720321002499</a></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241014130910-bc46c90def1024fb5262bab7ca181e7c.png" width="1024" height="683" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/1000022416-28c0b4ecc07d95097f390e832a435481.jpg" width="4000" height="3000" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/20241004_124837-6c34ffc350d3fc0e384d68285647634c.jpg" width="4000" height="3000" class="img_sJtY"><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/20241004_130406-a7daf6fa9afac672eb39afeb7061fdd3.jpg" width="4000" height="3000" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Tallinn JS meetup]]></title>
+            <link>https://kurapov.ee/blog/2024/09/25/события/TallinnJS meetup</link>
+            <guid>https://kurapov.ee/blog/2024/09/25/события/TallinnJS meetup</guid>
+            <pubDate>Wed, 25 Sep 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[Attended TallinnJS meetup organized by Stefano Amorelli at LIFT99. Won ticket to Digit Conference. Almost won a hoodie from Printify but figured that googling an answer was not fair 🤐]]></description>
+            <content:encoded><![CDATA[<p>Attended TallinnJS meetup organized by Stefano Amorelli at <a href="https://www.linkedin.com/company/lift99/" target="_blank" rel="noopener noreferrer">LIFT99</a>. Won ticket to <a href="https://www.linkedin.com/company/digitconf/" target="_blank" rel="noopener noreferrer">Digit Conference</a>. Almost won a hoodie from <a href="https://www.linkedin.com/company/printify/" target="_blank" rel="noopener noreferrer">Printify</a> but figured that googling an answer was not fair 🤐</p>
+<p>First talk was by <a href="https://www.linkedin.com/in/ACoAACGf2uYB0JHH8ZSvNObEg2K4h5QlRCXAy4o" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/dmbaranov-io/" target="_blank" rel="noopener noreferrer">Dmitrii Baranov</a> about telegram bots using telegraf.js
+<a href="https://telegraf.js.org/#md:introduction" target="_blank" rel="noopener noreferrer">telegraf.js - v4.16.3</a></p>
+<p>Second talk was by Jan Johannes about workerd, a js runtime<br>
+<a href="https://github.com/cloudflare/workerd/" target="_blank" rel="noopener noreferrer">GitHub - cloudflare/workerd: The JavaScript / Wasm runtime that powers Cloudflare Workers</a></p>
+<p>I think having a bot is a nice interface extension to any app, in addition to the usual web, mobile, desktop and cli apps. Telegram, discord, slack bots can improve support reaction time, push app alerting/notifications and more. I wish telegraf supported text and video streaming though.</p>
+<p>Then it could also be more seamlessly integrated with LLMs, say if you had a <a href="https://www.linkedin.com/company/clarifai/" target="_blank" rel="noopener noreferrer">Clarifai</a> bot streaming AI questions and answers, switching ML model on the fly would you use it over a web UI? With bots and AI element to it, apps could become much more interactive and lose UI entirely. You can see that change on the example of google search -&gt; perplexity &amp; chatgpt transition.</p>
+<p>Regarding workerd, its quite a niche engine that I feel does a bit too much (I would not want to re-learn k8s), but it may be useful in cases when you want your app users to run custom code, so you could allow some javascript sandbox to run closer to your dataserver, instead of using webhooks. For example <a href="https://www.linkedin.com/company/pipedrive/" target="_blank" rel="noopener noreferrer">Pipedrive</a> marketplace could allow external app vendors to run custom js code on its backend, similar to how go playground, coderpad, leetcode, github or other platforms allow running custom code.</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225214-baa0d239fbda4a73dd3b219e0d0bc2ec.png" width="1280" height="1706" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225220-87606390b69dfab2300d26c7cff3f74b.png" width="1280" height="1706" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225226-b598d3de0757acc2a5e394b7aa532ed8.png" width="1280" height="1706" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225232-50f53f6348d4ddff16c440cc6413a6b8.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225237-2f63750cf5c295b4d293b8e95a858045.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019225242-74562a42cfb57cc1aa26de799fce7089.png" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Latitude 59]]></title>
+            <link>https://kurapov.ee/blog/2024/05/24/события/Latitude 59</link>
+            <guid>https://kurapov.ee/blog/2024/05/24/события/Latitude 59</guid>
+            <pubDate>Fri, 24 May 2024 10:00:00 GMT</pubDate>
+            <description><![CDATA[Посетил Latitude 59 конференцию]]></description>
+            <content:encoded><![CDATA[<p>Посетил Latitude 59 конференцию</p>
+<p><a href="https://www.youtube.com/live/o0R3yNvUGXk" target="_blank" rel="noopener noreferrer">https://www.youtube.com/live/o0R3yNvUGXk</a>
+<a href="https://www.youtube.com/live/3vKvO7kIR74" target="_blank" rel="noopener noreferrer">https://www.youtube.com/live/3vKvO7kIR74</a>
+<a href="https://www.youtube.com/live/jlp0uX0R_jE" target="_blank" rel="noopener noreferrer">https://www.youtube.com/live/jlp0uX0R_jE</a></p>
+<p><a href="https://www.linkedin.com/in/ACoAAABbt4YBzWvw138zUp7KV4x5mEXcF12j_NM" target="_blank" rel="noopener noreferrer"></a><a href="https://www.linkedin.com/in/andreskytt/" target="_blank" rel="noopener noreferrer">Andres Kütt</a> talking about bees 🐝 and AI on <a href="https://www.linkedin.com/feed/hashtag/?keywords=latitude59&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7199833543647125504" target="_blank" rel="noopener noreferrer">hashtag#Latitude59</a> was my favourite, funny and bold part 😁</p>
+<p><a href="https://www.linkedin.com/feed/hashtag/?keywords=latitude59&amp;highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7199334544850747392" target="_blank" rel="noopener noreferrer">#latitude59</a> is a hit, so many beautiful people</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/442479731_10161753612732973_6175466893130348624_n-0a5d9f462a3df3c4b73ff5be7af8fcca.jpg" width="2048" height="1536" class="img_sJtY"></p>
+<p>**<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224826-40f214cfad0e7055718c75ba84207e5e.png" width="800" height="800" class="img_sJtY">
+**
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224718-54510de16f5584064209b1e26777e4cd.png" width="1347" height="734" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224727-480a221b2b9aa0570868eef298fcdac8.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224733-d794ab0a118db4eec2dada1a39456fee.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224740-ef745f0a9f2b714dab489030b61b97f8.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224746-71c3ef7a635ef258045ce8cb5d19f9ce.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224751-3517f613016433825a64718c7c60b0f9.png" width="2048" height="1536" class="img_sJtY">
+<img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/Pasted%20image%2020241019224757-42b40f4dbffc210accd432af50d9b25a.png" width="2048" height="1536" class="img_sJtY"></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Sandboxes for homework assignments]]></title>
+            <link>https://kurapov.ee/blog/управление/hiring/Homework sandboxes</link>
+            <guid>https://kurapov.ee/blog/управление/hiring/Homework sandboxes</guid>
+            <pubDate>Sat, 20 Jan 2024 15:22:00 GMT</pubDate>
+            <description><![CDATA[I did some throw-away home coding assignments back in the days:]]></description>
+            <content:encoded><![CDATA[<p>I did some throw-away home coding assignments back in the days:</p>
+<ul>
+<li><a href="https://github.com/tot-ra/sandbox-open-time-json" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-open-time-json</a></li>
+<li><a href="https://github.com/tot-ra/sandbox-express-axios-api-composition" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-express-axios-api-composition</a></li>
+<li><a href="https://github.com/tot-ra/sandbox-airport" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-airport</a></li>
+<li><a href="https://github.com/tot-ra/sandbox-chocolate-factory" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-chocolate-factory</a></li>
+<li><a href="https://github.com/tot-ra/sandbox-nestjs-auth-ratelimit" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-nestjs-auth-ratelimit</a></li>
+<li><a href="https://github.com/tot-ra/sandbox-guest-book" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-guest-book</a></li>
+</ul>]]></content:encoded>
+            <category>hiring</category>
+        </item>
+        <item>
+            <title><![CDATA[Об этике пчеловодства]]></title>
+            <link>https://kurapov.ee/blog/психология/Об этике пчеловодства</link>
+            <guid>https://kurapov.ee/blog/психология/Об этике пчеловодства</guid>
+            <pubDate>Wed, 14 Dec 2022 23:36:00 GMT</pubDate>
+            <description><![CDATA[Эрнест Бондаренко, мне вот захотелось так же публично ответить тебе, раз латвийская команда ForQueenBee на презентации в Prototron не смогла, и естественно Jana Budkovskaja не могла им ( Guntis Laurins,  Anete Grosberga ) дать дополнительного во время общего питча.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.facebook.com/ernest.bondarenko" target="_blank" rel="noopener noreferrer">Эрнест Бондаренко</a>, мне вот захотелось так же публично ответить тебе, раз латвийская команда ForQueenBee на&nbsp;<a href="https://fb.watch/hpXIP7lwuQ/" target="_blank" rel="noopener noreferrer">презентации в Prototron</a>&nbsp;не смогла, и естественно&nbsp;Jana Budkovskaja не могла им (&nbsp;<a href="https://www.facebook.com/guntis.laurins" target="_blank" rel="noopener noreferrer">Guntis Laurins</a>,&nbsp;&nbsp;<a href="https://www.facebook.com/aneteg" target="_blank" rel="noopener noreferrer">Anete Grosberga</a>&nbsp;) дать дополнительного во время общего питча.</p>
+<p>Я с ними не связан с ними совершенно, но&nbsp;<a href="https://gratheon.com/" target="_blank" rel="noopener noreferrer">занимаюсь этой же проблемой</a>&nbsp;мониторинга и автоматизации пчеловодства при этом стараясь соблюдать этику.</p>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="светлые-пчеловоды">Светлые пчеловоды<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B5-%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%8B" class="hash-link" aria-label="Прямая ссылка на Светлые пчеловоды" title="Прямая ссылка на Светлые пчеловоды">​</a></h3>
+<p>"Эксплуатация пчел" о котором ты говоришь это немного размытое понятие. Давай сначала о хороших пчеловодах и хобби-пчеловодах, на которых собственно эта команда и ориентировалась со своим устройством</p>
+<ol>
+<li>
+<p>Пчел никто не привязывает к улью. Они теоретически в любой момент могут собраться и улететь. И очень часто, так они собственно это и делают. Как сказала&nbsp;Anete Grosberga, рой может не выжить если не найдет себе дома и улетит слишком поздно (в сентябре например).</p>
+</li>
+<li>
+<p>Хорошие пчеловоды у пчел, отбирают только излишки меда.</p>
+</li>
+<li>
+<p>Мне кажется что хобби-пчеловоды как правило держат пчел не столько из-за меда сколько из любви к ним как к своим домашним животным.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="серые-области">Серые области<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D1%81%D0%B5%D1%80%D1%8B%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" class="hash-link" aria-label="Прямая ссылка на Серые области" title="Прямая ссылка на Серые области">​</a></h3>
+<p>Теперь немного о сомнительных практиках, если тебя интересует этичность, на которые я скорей бы перенаправил твой взор от этой несчастной команды.</p>
+<ol>
+<li>Есть такое направление как индустриальное пчеловодство. Это когда 200+ ульев возят на прицепе с одного поля на другое. Поля при этом обычно монокультурные. Это делается не только ради меда но и по заказу владельца полей для опыления. Насколько этично так перекашивать систему питания пчел?</li>
+</ol>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/_AcdxvIq4Uw" title="a first in the world. new system modern mobile beekeeping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<ol start="2">
+<li>
+<p>Некоторые поля обрабатываются от вредителей инсектицидами. Если это делается во время цветения, то пчелы могут массово гибнуть. Этично ли это со стороны человека?</p>
+</li>
+<li>
+<p>Пчел самих обрабатывают химией для лечения от клеща варроа. Некоторые пчеловоды убивают 100-200 пчел вымачивая их в спирте для того что-бы определить есть ли у них клещи варроа (вместо того что-бы определять это по выпаду клещей на дне). Но если их не лечить то семья может погибнуть. Насколько это этично?</p>
+</li>
+<li>
+<p>Вместо спирта, некоторые пчеловоды вскрывают соты с еще не родившимися трутнями что-бы найти там клещей варроа и понять уровень инфицированности. Некоторые пчеловоды советуют вообще вырезать расплод с трутнями как ненужный. Трутни только поедаюд мед, играя только роль спаривания. Этично?</p>
+</li>
+<li>
+<p>Пчеловоды подкармиливают своих пчел сахарным сиропом в сентябре. Это имеет смысл если за лето было очень мало что собрано - засуха или наоборот дожди. Но перенос такого количества сахара из кормушки в жидком состоянии внутрь улья в соты за такой короткий срок, плохо сказывается на пчелах-работниках которые быстро чернеют. Этично ли кормить пчел?</p>
+</li>
+<li>
+<p>При осмотре улья, у неумелого пчеловода, вполне вероятно что несколько пчел погибнет. Либо они будут сами жалить (и погибать) либо их придавит какая-то крышка или рамка. Этично ли осматривать семью? Как часто?&nbsp;</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_CPg9" id="итого">Итого<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D0%B8%D1%82%D0%BE%D0%B3%D0%BE" class="hash-link" aria-label="Прямая ссылка на Итого" title="Прямая ссылка на Итого">​</a></h3>
+<p>Пчелы при этом занимаются опылением такого количества растений что им нет альтернатив.&nbsp;Без них твой&nbsp;<a href="http://www.food-filter.com/" target="_blank" rel="noopener noreferrer">проект по фильтрации продуктов</a>&nbsp;станет беднее.&nbsp;Ни мини-роботы, ни шмели, ни одиночные виды немедовых пчел не способны прокормить человечество.</p>
+<p>Подобно современным компаниям, где мониторинг за собственным финансовым состоянием, NPS сотрудников и мониторинг за SLI и качеством продукта считается обязательным, так же и мониторинг за состоянием здоровья пчел это обязательный шаг для этичного обращения с этими прекрасными пушистыми созданиями. Без мониторинга, пчеловоды продолжат терять пчел не осознавая почему.&nbsp;</p>
+<p>Продолжат заводить пчелопакеты вновь, экспериментируя с ульями и практиками на живых семьях. Я бы наоборот говорил о том что это неэтично продолжать жить с таким средневековым подходом. Мы можем изменить это через прозрачность и достаточную информативность о состоянии семьи. А роботизация в итоге сможет снизить и ущерб связанный с инспекциями.</p>]]></content:encoded>
+            <category>психология</category>
+        </item>
+        <item>
+            <title><![CDATA[Dream of scalable & enriched graphql-subscriptions]]></title>
+            <link>https://kurapov.ee/blog/tech/Dream of scalable &amp; enriched graphql-subscriptions</link>
+            <guid>https://kurapov.ee/blog/tech/Dream of scalable &amp; enriched graphql-subscriptions</guid>
+            <pubDate>Wed, 23 Nov 2022 15:22:00 GMT</pubDate>
+            <description><![CDATA[Originally posted in Medium]]></description>
+            <content:encoded><![CDATA[<p>Originally posted in <a href="https://medium.com/pipedrive-engineering/a-dream-of-scalable-and-enriched-graphql-subscriptions-724284448e65" target="_blank" rel="noopener noreferrer">Medium</a></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg" alt="https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg" class="img_sJtY"></p>
+<p>Stylized photo of Jagala juga (Estonia), original photo by Aleksandr Abrosimov, Wikimedia Commons</p>
+<p><a href="https://medium.com/pipedrive-engineering/journey-to-federated-graphql-2a6f2eecc6a4" target="_blank" rel="noopener noreferrer">Last time</a>, I wrote about 5-year long journey of having GraphQL in Pipedrive. Now, let me tell you about a 10-year long journey of delivering websocket events to frontend.. and maybe help you out with it too.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif" alt="https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif" class="img_sJtY"></p>
+<p>The&nbsp;<strong>product need</strong>&nbsp;of asynchronous events comes up any time user needs to be notified about something by the server.</p>
+<ul>
+<li>you’ve got an instant message</li>
+<li>uploaded image has finished resizing</li>
+<li>your colleague has changed an avatar</li>
+<li>your bulk change of 10k deals has progressed to 99%</li>
+</ul>
+<p>So, async events&nbsp;<strong>enrich UX with details &amp; interactivity</strong></p>
+<p>But most importantly, they solve a problem of having&nbsp;<strong>inconsistent data</strong>&nbsp;displayed or stored on the browser side. Without such updates, other user won’t see&nbsp;<em>Pipedrive deals renames</em>; another browser tab won’t receive&nbsp;<em>activities deleted</em>. Even in the same browser tab, your views may not talk well with each other, lacking single storage and be out-of sync.</p>
+<h1><strong>Historical dive</strong></h1>
+<p>Luckily, Pipedrive has “solved” this issue 10 years ago. In 2012&nbsp;<a href="https://www.linkedin.com/in/andris-reinman/" target="_blank" rel="noopener noreferrer">Andris</a>,&nbsp;<a href="https://www.linkedin.com/in/martinkapp/" target="_blank" rel="noopener noreferrer">Kapp</a>&nbsp;&amp;&nbsp;<a href="https://www.linkedin.com/in/martintajur/" target="_blank" rel="noopener noreferrer">Tajur</a>&nbsp;have developed a&nbsp;<strong>socketqueue</strong>&nbsp;service, which to this day transports API events to the front-end leveraging&nbsp;<a href="https://www.npmjs.com/package/sockjs" target="_blank" rel="noopener noreferrer">sockjs</a>&nbsp;library.</p>
+<p>Tajur’s talk in 2016 was one of the reasons I’ve re-created similar setup, got puzzled how I should manage user connections with&nbsp;<a href="https://socket.io/" target="_blank" rel="noopener noreferrer">socket.io</a>&nbsp;&amp; scale it beyond one server and ultimately joined Pipedrive to find out. I was fascinated by event streaming and the possibilities it brings.</p>
+<p>As you can see, his talk is more about&nbsp;<a href="https://www.rabbitmq.com/" target="_blank" rel="noopener noreferrer">RabbitMQ</a>&nbsp;— a message broker that stands between php monolith and socketqueue.</p>
+<h1><strong>Pros and cons</strong></h1>
+<p>In-memory queues have allowed Pipedrive to withstand bursts of events, triggered by external integrations or in-house things like deal import from xls file or a bulk edit.</p>
+<p>Api event that is pushed to the RabbitMQ and to the frontend is&nbsp;<strong>denormalized</strong>, having different entities. That’s good, because you have a&nbsp;<strong>consistent snapshot</strong>&nbsp;of multiple things at the same time and you recipients&nbsp;<strong>don’t need to re-query</strong>&nbsp;anything…</p>
+<p>But it is also hugely&nbsp;<strong>inefficient</strong>, as all browser tabs receive all possible changes, wether they want it or not, sometimes having reached 80GB per day of traffic for a single customer.. while web app on his laptop CPU is doing all of the heavy filtering.</p>
+<p>So we can’t keep infinitely bloating event schema, making it even heavier.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*SEK3NXeBwKWHvw4fgcbVBg.png" alt="https://miro.medium.com/max/1400/1*SEK3NXeBwKWHvw4fgcbVBg.png" class="img_sJtY"></p>
+<p>Cell logic as number in a web-socket URL</p>
+<p>Second problem is a&nbsp;<strong>noisy neighbour</strong>. Scalability, as I mentioned, is solved with “cell logic” (in a good scenario — aka tenant isolation) which means sharding socketqueue application servers by company ID. This also means that we must have&nbsp;<strong>fixed amount of containers</strong>&nbsp;and fixed amount of queues to ensure predictable routing.</p>
+<p>So problem arises whenever you have one company generating thousands of events — they are not distributed among all servers, instead they&nbsp;<strong>spike CPU</strong>&nbsp;of a single node to the point of health check failure. There isn’t any room to vertically grow single-core CPU, only to double amount of servers which means&nbsp;<strong>wasted infrastructure resources</strong>.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*2pcMt6Bjn_pgBLO9CLjjOA.png" alt="https://miro.medium.com/max/1400/1*2pcMt6Bjn_pgBLO9CLjjOA.png" class="img_sJtY"></p>
+<p>noisy neighbour CPU spike of particular pod</p>
+<p>Third issue is&nbsp;<strong>visibility &amp; tracing</strong>. Same as with REST API, without proper documentation (wether it is swagger or type definitions), it is very hard to understand what can be inside of the event schema and most important, who uses what in case you want to do a breaking change. Which leads to a vicious cycle of nobody removing anything from the event &amp; bloating it even more.</p>
+<p>Finally, if web-socket connection is down because user went into a tunnel or just closed his laptop — he may loose events. Could that cause a loss of&nbsp;<em>a deal</em>&nbsp;and profits for the user?</p>
+<p>Over the years we’ve optimized the hell out of socketqueue, so its</p>
+<ul>
+<li>multi-threaded as it listens queues and WS connection handling</li>
+<li>compresses traffic</li>
+<li>checks permissions &amp; visibility</li>
+</ul>
+<p>but what if we could do better..? 🤔</p>
+<h1><strong>How</strong></h1>
+<p>Idea behind&nbsp;<a href="https://spec.graphql.org/June2018/#sec-Subscription-Operation-Definitions" target="_blank" rel="noopener noreferrer">graphql subscriptions</a>&nbsp;is pretty simple — you declare only what you want to receive, given some filtering arguments. And it will be server’s job to intelligently filter events.</p>
+<p>I can’t do a better job of explaining basic setup than&nbsp;<a href="https://twitter.com/benawad" target="_blank" rel="noopener noreferrer">Ben</a>&nbsp;here 😁. So what he shows here is a single server instance where pubsub is just in-memory event routing directly from mutation. But in our case there are no mutations — real changes are generated by the php legacy far-far away.</p>
+<h1><strong>Mission scope</strong></h1>
+<p>So what I wanted to achieve was</p>
+<ul>
+<li>demo graphql subscriptions in production, having explicit schema</li>
+<li>test horizontal pod scaling</li>
+<li>increase reliability by using kafka instead of rabbitMq</li>
+<li>use small, normalized, domain events to keep things simple</li>
+<li>keep event delivery latency below 2 sec [to not be slower than socketqueue we’re trying to replace]</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="risks"><strong>Risks</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#risks" class="hash-link" aria-label="Прямая ссылка на risks" title="Прямая ссылка на risks">​</a></h2>
+<p>What I didn’t know..</p>
+<ul>
+<li>how do we authenticate?</li>
+<li>what protocol should we use? SSE? WS? whats this&nbsp;<a href="https://github.com/dunglas/mercure" target="_blank" rel="noopener noreferrer">mercure</a>&nbsp;thing.. and does some of it fallback to pooling?</li>
+<li>will WS/TCP connections be bound to same pod or not?</li>
+<li>can we do multiple subscriptions at a time?</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3920/1*K-aB3FKXH0jXeG4HiLRdVw.png" alt="https://miro.medium.com/max/3920/1*K-aB3FKXH0jXeG4HiLRdVw.png" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/4004/1*5q23Z56at20SsvRkOB_6Hw.png" alt="https://miro.medium.com/max/4004/1*5q23Z56at20SsvRkOB_6Hw.png" class="img_sJtY"></p>
+<ul>
+<li>what storage / transfer medium do we use? DB? redis streams? kafka? redis pubsub? KTable?</li>
+<li>can we rewind events in time in case user got disconnected? would we need to store cursor ID per entity? also, how does live query work?</li>
+<li>how do we filter events by company, user, session, entity? is there a standard for subscription filter fields?</li>
+<li>can we re-use federated graphql schema? can we enrich events? what should be QoS / retry logic if gateway is down? Lee Byron went into it at depth&nbsp;<a href="https://youtu.be/rapO30fpREg?t=6675" target="_blank" rel="noopener noreferrer">in his talk over 5 years ago</a>.</li>
+<li>how many items can we subscribe to?</li>
+<li>how do we unsubscribe? or disconnect users when they log out?</li>
+</ul>
+<h1><strong>Proof of concept</strong></h1>
+<p>Before the mission, I made a simple node service that connected to kafka and proxied events without any filtering. This was already promising. But for a mission I wanted to try out&nbsp;<a href="https://go.dev/" target="_blank" rel="noopener noreferrer"><em><strong>go</strong></em></a>&nbsp;to have all CPUs to be involved to maximize that efficiency, while this PoC was a fallback (that proved itself very useful)</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2256/1*8i540taseWXr_TAV2ysBZw.png" alt="https://miro.medium.com/max/2256/1*8i540taseWXr_TAV2ysBZw.png" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/4952/1*z39G_eYPNR7Zuu_Hl1dK7g.png" alt="https://miro.medium.com/max/4952/1*z39G_eYPNR7Zuu_Hl1dK7g.png" class="img_sJtY"></p>
+<h1><strong>Liftoff</strong></h1>
+<p>Four of us (<a href="https://www.linkedin.com/in/kurapov/" target="_blank" rel="noopener noreferrer">myself</a>,&nbsp;<a href="https://www.linkedin.com/in/pavel-nikolajev-84184a64/" target="_blank" rel="noopener noreferrer">Pavel</a>,&nbsp;<a href="https://www.linkedin.com/in/kristjan-luik-89bb03122/" target="_blank" rel="noopener noreferrer">Kristjan</a>&nbsp;and&nbsp;<a href="https://www.linkedin.com/in/abhishek-goswami-591541b1/" target="_blank" rel="noopener noreferrer">Hiro</a>) have set off for entire summer to try and do just that.. explore the unknown 🛸 and bring value back to the launchpad.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*QlBXCk8EjRtp5n_Fxr2xTw.png" alt="https://miro.medium.com/max/1400/1*QlBXCk8EjRtp5n_Fxr2xTw.png" class="img_sJtY"></p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="gophers"><strong>gophers</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#gophers" class="hash-link" aria-label="Прямая ссылка на gophers" title="Прямая ссылка на gophers">​</a></h2>
+<p>We looked into&nbsp;<a href="https://github.com/graph-gophers/graphql-go" target="_blank" rel="noopener noreferrer">graph-gophers/graphql-go</a>&nbsp;as first basis and within couple of days we’ve re-created PoC of subscribing to kafka events</p>
+<ul>
+<li>We’ve hit the dilemma of GraphQL integer spec&nbsp;<a href="https://github.com/graphql/graphql-js/issues/292#issuecomment-186702912" target="_blank" rel="noopener noreferrer">not matching go’s int32</a>.</li>
+<li>Got per-property filtering and per-argument filtering working</li>
+<li>Hit need of SSL for WSS to work, otherwise CORS blocked requests</li>
+<li>Got&nbsp;<a href="http://nginx.org/en/docs/http/websocket.html" target="_blank" rel="noopener noreferrer">nginx to proxy web socket requests</a>!</li>
+<li>We found that there are two transport protocols, as websocket is a loose tranport so any library can implement whatever it wants.&nbsp;<a href="https://github.com/graph-gophers/graphql-transport-ws" target="_blank" rel="noopener noreferrer">Gophers implemented</a>&nbsp;older version, that was compliant with apollo &amp; graphiql but not with graphql-ws</li>
+<li>Hit issue that apollo federation lib did not like&nbsp;<code>Subscription</code>&nbsp;in&nbsp;<a href="https://github.com/pipedrive/graphql-schema-registry" target="_blank" rel="noopener noreferrer">schema registration</a>. We figured that we can clean only Subscription type from root to have other types checked for collisions</li>
+</ul>
+<p>Basic filtering was pretty simple, you just need to connect two streams (channels) — kafka and web sockets (that gophers need as schema resolvers) while having a goroutine in the middle transforming data</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3712/1*zXxbPFcX5Xqu7zGz8k3kSw.png" alt="https://miro.medium.com/max/3712/1*zXxbPFcX5Xqu7zGz8k3kSw.png" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3668/1*0dXQgXJcVTET0AswerSujA.png" alt="https://miro.medium.com/max/3668/1*0dXQgXJcVTET0AswerSujA.png" class="img_sJtY"></p>
+<p>We’ve hit a major&nbsp;<a href="https://github.com/graph-gophers/graphql-transport-ws/pull/9" target="_blank" rel="noopener noreferrer">roadblock with gophers</a>&nbsp;and JWT authentication, we’re not that experienced in&nbsp;<em>go</em>&nbsp;&amp; don’t have much time to start changing a major framework.</p>
+<p>We also figured that enrichment is not a priority, and we need to bring code into production 🚀 and test scaling. Thats the agile way.</p>
+<p>Second big blocker — entity visibility checks. Reading domain events from kafka means that we don’t have extra information, like who can see a deal. We need to query some service about this. Doing it on every event of every company likely can lead to DoS 🤦‍♂️</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="gqlgen"><strong>Gqlgen</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#gqlgen" class="hash-link" aria-label="Прямая ссылка на gqlgen" title="Прямая ссылка на gqlgen">​</a></h2>
+<p>We scratch gophers, switch to gqlgen. Channel exchange logic remains the same and we get JWT token authentication working. Difference is that now subscription events are autogenerated based on schema.graphql.</p>
+<p>Next, I find that exchange (in-memory pub-sub in go) is kinda flawed, we need at least 1 subscription for streaming to take place.. newer version is a bit better and allows to have channel per-company.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2532/1*_tIlshM1g5F8tYgIN4qAfQ.png" alt="https://miro.medium.com/max/2532/1*_tIlshM1g5F8tYgIN4qAfQ.png" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2176/1*w6B9z69_upq05WXXb2Vt5Q.png" alt="https://miro.medium.com/max/2176/1*w6B9z69_upq05WXXb2Vt5Q.png" class="img_sJtY"></p>
+<p>We also start brainstorming how schema should look like to have it scalable across different entitites, have filters, have multiple entity actions and multiple ids supported.</p>
+<p>1 month in. We have UI working with hacked but performant permission check. We take vacations to cool off 🌴 And only now I see this 🤯 presentation by&nbsp;<a href="https://twitter.com/mandiwise" target="_blank" rel="noopener noreferrer">Mandi Wise</a>&nbsp;from Apollo, even though I’ve gone through most of youtube videos by that time..</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="final-architecture"><strong>Final architecture</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#final-architecture" class="hash-link" aria-label="Прямая ссылка на final-architecture" title="Прямая ссылка на final-architecture">​</a></h2>
+<p>So we come back and scratch gqlgen again, it was painful but well.. agile. We split service in&nbsp;<strong>two</strong>, adding redis pub-sub with replication and sentinel in between</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*JDm6Oo8YfE1-r7lzttAyNQ.png" alt="https://miro.medium.com/max/1400/1*JDm6Oo8YfE1-r7lzttAyNQ.png" class="img_sJtY"></p>
+<ul>
+<li>graphql-subscription-workers remains in go, but becomes way simpler — it is be able to scale well to consume all kafka partitions. Workers filter out events by doing 10x parallel permissions checks and transform event schema if needed</li>
+<li>graphql-subscriptions deals with connections &amp; scales horizontally as much as needed. It leverages great&nbsp;<a href="https://github.com/enisdenjo/graphql-ws" target="_blank" rel="noopener noreferrer">graphql-ws</a>&nbsp;library that has all sorts of hooks, so kudos to&nbsp;<a href="https://github.com/enisdenjo" target="_blank" rel="noopener noreferrer">Denis Badurina</a></li>
+<li>redis pub-sub serves as exchange broker doing most of the filtering &amp; sharding by company, user and entity ids.</li>
+</ul>
+<p>For example, worker pushes to message channel: <code>&lt;companyId&gt;.deal.&lt;dealId&gt;</code>. This is very similar to rabbitMQ routing as it also provides regex wildcard matching by the subscribers. This allows us to theoretically subscribe to <code>&lt;companyId&gt;.*</code> and handle all events if such need arises.</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="subscription-schema-types"><strong>Subscription schema types</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#subscription-schema-types" class="hash-link" aria-label="Прямая ссылка на subscription-schema-types" title="Прямая ссылка на subscription-schema-types">​</a></h2>
+<p>So as you can see from the diagram, we followed Mandi’s advice and wrote event enrichment by querying gateway. This did require polling of federated schema and hard-coded resolvers of which query specific entity must make, but it gives immence flexibility to the frontend</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" alt="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" alt="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" class="img_sJtY"></p>
+<p>Schema choices we had to make:</p>
+<ul>
+<li>we do not merge original event with enriched one, although we could. This is because we don’t have guarantees that graphql-service responds in timely manner. Kafka “raw” event data is much more reliable. We also have minor differences in schema when referencing is used (raw deal.stageId vs enriched <a href="http://deal.stage.id/" target="_blank" rel="noopener noreferrer">deal.stage.id</a>)</li>
+<li>we added “delta” as JSON, mostly because frontend really wanted to use that in case frontend storage wanted to update only specific keys. This requires specific shape of kafka event though</li>
+<li>we have a generic event type (dealEvent) along side with action-specific events (dealAdded), because generic events take into account correct order of events for the same entity ( added -&gt; changed -&gt; deleted ) which is not guaranteed chronologically if you subscribe to separate types</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="live-queries"><strong>Live queries</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#live-queries" class="hash-link" aria-label="Прямая ссылка на live-queries" title="Прямая ссылка на live-queries">​</a></h2>
+<p>This a cool concept that elegantly fixes a problem which I was really fixated on — connection loss.</p>
+<p>From to&nbsp;<a href="https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql" target="_blank" rel="noopener noreferrer">Laurin’s article</a>&nbsp;by The Guild, we’ve got same&nbsp;<strong>fetchOrSubscribe</strong>&nbsp;function which first does enrichment request and then subscribes to kafka events using async iterator magic. The difference however is in schema — we use “liveQuery” as an argument, not as a root property.</p>
+<p>This thing alone meets 99% of consistency requirements in web apps, without the need to rewind events (using&nbsp;<a href="https://redis.io/docs/data-types/streams/" target="_blank" rel="noopener noreferrer">redis streams</a>?). So “cursor-based query revalidation and diffing” that&nbsp;<a href="https://twitter.com/benjamn/status/1579891243798401026" target="_blank" rel="noopener noreferrer">Ben Newman suggested at last Graphql Summit</a>&nbsp;seems like a very rare use case where you want to rewind events as a niche product feature (in gaming?)</p>
+<h1><strong>Performance &amp; security testing</strong></h1>
+<p>Finally, by the mission end we tested how well our solution scales in production, gradually rolling it out to real customers.</p>
+<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*mHE_vMsNTPr25y7IkePG2Q.png" alt="https://miro.medium.com/max/1400/1*mHE_vMsNTPr25y7IkePG2Q.png" class="img_sJtY"></p>
+<p>Performance testing in production</p>
+<p>This did reveal interesting things - if you subscribe to&nbsp;<em>deals</em>&nbsp;by IDs… and if you do this in&nbsp;<em>pipeline view</em>&nbsp;where user can scroll very fast, you can have waves of subscriptions. So better to avoid blocking permission checks onSubscribe and have some throttling logic on frontend.</p>
+<p>We have had also observed random pods suddenly loosing all of their connections, that has lead us to revise memory limits &amp;&nbsp;<a href="https://github.com/nodejs/node/issues/35573" target="_blank" rel="noopener noreferrer">max_old_space_size bug</a>.</p>
+<p>We have implemented various security limitations on amount of connections, subscriptions, timeouts, taking into account logouts, permission changes etc. Not only because of external risks, but also because we did find that Redis needs to do a lot of CPU to match&nbsp;<strong>pub</strong>lishers to&nbsp;<strong>sub</strong>scribers.</p>
+<h1><strong>Future steps</strong></h1>
+<p>Theoretically, we could shard Redis instances by entity types if we would face performance problems.</p>
+<p>We could force socketqueue deprecation by&nbsp;<em>temporarily</em>&nbsp;adding api events as a universal subscription, proxying all data to the frontend without any filtering. Sacrifice efficiency for the sake of having single transport layer.</p>
+<p>We have had service operational for over a year now and so far got ~10 entities supported, tied to different kafka topics</p>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="in-defence-of-graphql"><strong>In defence of GraphQL</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#in-defence-of-graphql" class="hash-link" aria-label="Прямая ссылка на in-defence-of-graphql" title="Прямая ссылка на in-defence-of-graphql">​</a></h2>
+<p>Adoption of GraphQL and subscriptions in particular is seen as slow, although it is voluntary.</p>
+<p>With&nbsp;<a href="https://youtu.be/UZWe5Usun7I?t=4130" target="_blank" rel="noopener noreferrer">codegen</a>&nbsp;that can wrap REST API, it can be seen as complex, without — as too demanding of service refactoring, alongside a REST API — as redundant, with&nbsp;<a href="https://www.apollographql.com/docs/federation/" target="_blank" rel="noopener noreferrer">federation</a>&nbsp;— as having too many layers, with&nbsp;<a href="https://github.com/graphql/dataloader" target="_blank" rel="noopener noreferrer">dataloader</a>&nbsp;but without observability — as doing&nbsp;<a href="https://twitter.com/Popeska/status/1592177670212943873" target="_blank" rel="noopener noreferrer">too many poorly batched RPC calls</a>.</p>
+<p>Return on investment is not seen, if&nbsp;<em>value</em>&nbsp;is not measured.</p>
+<p>GraphQL has taken onto itself a big responsibility of making web more transparent, predictable, reusable and more efficient. I urge developers 🌞 to have professional patience — educate your colleagues, deliver&nbsp;<strong>hard metrics</strong>&nbsp;to managers, proving GraphQL superiority.</p>
+<p>My dream is that there will come a day when devs will replace schema-less WS events &amp; REST APIs with GraphQL and subscriptions for anyone to consume. Clients are our future, this is the way</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

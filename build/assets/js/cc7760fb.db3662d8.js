@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkurapov_ee=self.webpackChunkkurapov_ee||[]).push([["33779"],{82640:function(e){e.exports=JSON.parse('{"metadata":{"permalink":"/blog/page/11","page":11,"postsPerPage":5,"totalPages":52,"totalCount":257,"previousPage":"/blog/page/10","nextPage":"/blog/page/12","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

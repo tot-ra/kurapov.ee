@@ -1,9 +1,11 @@
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# ENABLE WHEN docusaurus no longer needs gigabytes of RAM
 
-nvm use
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-curl -fsSL https://get.pnpm.io/install.sh | sh -
+# nvm use
 
-/home/www/.local/share/pnpm/pnpm install
-/home/www/.local/share/pnpm/pnpm build
+# curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+# /home/www/.local/share/pnpm/pnpm install
+# /home/www/.local/share/pnpm/pnpm build

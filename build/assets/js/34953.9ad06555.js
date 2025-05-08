@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkurapov_ee=self.webpackChunkkurapov_ee||[]).push([["34953"],{35789:function(e,u,c){c.d(u,{createPacketServices:function(){return r.g}});var r=c(93919);c(36902)}}]);
