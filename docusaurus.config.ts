@@ -54,11 +54,11 @@ const config: Config = {
         },
         blog: {
 
-          blogSidebarCount: 20,
+          blogSidebarCount: 10,
           showLastUpdateTime: false,
           blogSidebarTitle: 'Последние заметки',
           showReadingTime: true,
-          postsPerPage: 20,
+          postsPerPage: 5,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
