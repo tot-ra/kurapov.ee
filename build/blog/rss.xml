@@ -215,7 +215,7 @@ Maybe you can enlighten me instead in the comments?</p>
 <p>I liked quote by <a href="https://www.linkedin.com/in/astratikas/" target="_blank" rel="noopener noreferrer">Astra Tikas</a> (targeted towards individual presenters). I think it summarizes AI ecosystem well <!-- -->:D</p>
 <p>"You are not special"
 "No, you are special, all of you are special"</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="intros-and-use-cases">Intros and use-cases<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#intros-and-use-cases" class="hash-link" aria-label="�Прямая ссылка на Intros and use-cases" title="Прямая ссылка на Intros and use-cases">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="intros-and-use-cases">Intros and use-cases<a href="https://kurapov.ee/blog/2024/11/26/%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/%20AI%20meetup%20notes#intros-and-use-cases" class="hash-link" aria-label="Прямая ссылка на Intros and use-cases" title="Прямая ссылка на Intros and use-cases">​</a></h2>
 <ul>
 <li>Elisa</li>
 <li>ESGrid</li>
@@ -1168,7 +1168,7 @@ Question: on circular economy how is AI helping</p>
 <li>redis pub-sub serves as exchange broker doing most of the filtering &amp; sharding by company, user and entity ids.</li>
 </ul>
 <p>For example, worker pushes to message channel: <code>&lt;companyId&gt;.deal.&lt;dealId&gt;</code>. This is very similar to rabbitMQ routing as it also provides regex wildcard matching by the subscribers. This allows us to theoretically subscribe to <code>&lt;companyId&gt;.*</code> and handle all events if such need arises.</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="subscription-schema-types"><strong>Subscription schema types</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#subscription-schema-types" class="hash-link" aria-label="Прямая ссылка на subscription-schema-types" title="Прямая ссылка на subscription-schema-types">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_CPg9" id="subscription-schema-types"><strong>Subscription schema types</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#subscription-schema-types" class="hash-link" aria-label="Прямая ссы�лка на subscription-schema-types" title="Прямая ссылка на subscription-schema-types">​</a></h2>
 <p>So as you can see from the diagram, we followed Mandi’s advice and wrote event enrichment by querying gateway. This did require polling of federated schema and hard-coded resolvers of which query specific entity must make, but it gives immence flexibility to the frontend</p>
 <p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" alt="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" class="img_sJtY"></p>
 <p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" alt="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" class="img_sJtY"></p>
