@@ -13,13 +13,7 @@ jobs:
         run: git reset --hard && git pull
       - name: install
         working-directory: /www/kurapov.ee/
-        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
-      - name: build
-        working-directory: /www/kurapov.ee/
-        run: pnpm install && pnpm build
+        run: ./restart.sh
       - name: move
         working-directory: /www/kurapov.ee/
         run: rm -rf /www/kurapov.ee/public && mv /www/kurapov.ee/build /www/kurapov.ee/public
-      - name: cleanup
-        working-directory: /www/kurapov.ee/
-        run: rm -rf /www/kurapov.ee/node_modules
