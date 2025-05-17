@@ -18,7 +18,7 @@ date: 2017-12-15T10:00
 ![](img/armitage.png)
 
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 1](img/96.pdf)
-- [PHP Security Crash Course at Dutch PHP Conference 2009 - part 2](./img/97.pdf)
+- [PHP Security Crash Course at Dutch PHP Conference 2009 - part 2](img/97.pdf)
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 3](img/98.pdf)
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 5](img/99.pdf)
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 6](img/100.pdf)
