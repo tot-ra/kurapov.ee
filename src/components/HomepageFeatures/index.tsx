@@ -16,36 +16,36 @@ const ProjectList: ProjectItem[] = [
   {
     title: '🐝 Gratheon',
     link: 'https://gratheon.com',
-    description: 'A startup. Modular robotic beehive and app with data analytics and AI.',
+    description: 'Startup to save the bees. Modular robotic beehive and app with data analytics.',
     image: '/img/projects/gratheon.png',
   },
 
   {
     title: 'GraphQL Schema Registry',
     link: 'https://github.com/tot-ra/graphql-schema-registry',
-    description: 'A registry for GraphQL schemas, allowing you to manage and version your schemas easily on premise.',
+    description: 'The go-to graphql schema registry for your services. Allowing you to manage and version your schemas easily on premise.',
     image: '/img/projects/gql.png',
   },
 
 
+  {
+    title: 'Ka-Ba',
+    link: 'https://github.com/tot-ra/ka_ba',
+    description: 'AI agent orchestration app with fast runtime',
+    image: '/img/projects/kaba.png',
+  },
 
   {
     title: 'Workstation',
     link: 'https://github.com/tot-ra/workstation',
-    description: 'Collection of scripts to automate the setup of a new workstation',
+    description: 'CLI-focused scripts to automate the setup of a new workstation',
     image: '/img/projects/work.png',
   },
-
   
   {
     title: 'Clarifai Docusaurus integration',
     link: 'https://github.com/tot-ra/clarifai-docusaurus',
     description: 'Add AI search capabilities to your docusaurus website.',
-  },
-  {
-    title: 'Ka-Ba',
-    link: 'https://github.com/tot-ra/ka_ba',
-    description: 'AI agent orchestration app with agent runtime',
   },
 
   {
