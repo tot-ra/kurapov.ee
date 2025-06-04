@@ -115,7 +115,7 @@ const config: Config = {
           title: 'Media',
           items: [
             {
-              label: 'Short news on Twitter',
+              label: 'Short thoughts on Twitter',
               href: 'https://twitter.com/tot_ra',
             },
             {
@@ -134,6 +134,10 @@ const config: Config = {
               label: 'Short videos on TikTok',
               href: 'https://www.tiktok.com/@artkurapov',
             },
+                        {
+              label: 'Short thoughts on Bluesky',
+              href: 'https://bsky.app/profile/tot-ra.bsky.social',
+            }
           ],
         },
 
