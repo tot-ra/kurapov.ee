@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kurapov.ee/blog</id>
     <title>Артём Курапов Blog</title>
-    <updated>2025-05-07T00:00:00.000Z</updated>
+    <updated>2025-06-09T20:29:22.459Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kurapov.ee/blog"/>
     <subtitle>Артём Курапов Blog</subtitle>
     <icon>https://kurapov.ee/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[вера/От чего спасает Христос]]></title>
+        <id>https://kurapov.ee/blog/вера/От чего спасает Христос</id>
+        <link href="https://kurapov.ee/blog/вера/От чего спасает Христос"/>
+        <updated>2025-06-09T20:29:22.459Z</updated>
+        <summary type="html"><![CDATA[Будучи Христианином я тем не менее долгое время не мог понять от чего же спасает Христос? Почему дорога к Богу-Отцу лежит через Христа? Почему я не могу восстановить связь с Богом (отсюда слово "религия") сам? Я что за Адама должен отдуваться? Причем тут заветы?]]></summary>
+        <content type="html"><![CDATA[<p>Будучи Христианином я тем не менее долгое время не мог понять от чего же спасает Христос? Почему дорога к Богу-Отцу лежит через Христа? Почему я не могу восстановить связь с Богом (отсюда слово "религия") сам? Я что за Адама должен отдуваться? Причем тут заветы?</p>
+<p>Я не очень поддерживаю идею коллективной вины, проклятий до 7 колена - когда индивид должен страдать за поступки которые он не совершал. Поэтому идея первородного греха мне мало понятна. Но будучи пчеловодом я допускаю что предрасположенность будь то генетическая или фенотипическая или культурная может воспроизводить ошибки в поколениях и поэтому сверх-существу проще описать наследственные болезни общим термином.</p>
+<p>Таким образом грех это просто ошибки или информационные болезни людей. Людей крайне сложно излечить всех разом, потому что люди с одной стороны глупы что-бы быстро учиться на своих ошибках и не повторять их, а с другой их время жизни очень ограничено и новые поколения начинают по-сути идти по тем же граблям.</p>
+<p>Если проводить аналогию с программированием, то это как если бы вы пытались писать проект где у вас высокая текучка кадров и нанимают только джунов. К тому времени как вы обучаете работника, он уже "переходит в мир иной".</p>
+<p>Проводя аналогию с пчелами, если вы вообще не лечите пчел от клещей то за несколько поколений пчел, колония погибает.</p>
+<p>Появление Христа это исторический феномен, повлиявший на историю человечества.</p>
+<p>До Христа человек и цивилизация вокруг видели смысл жизни в</p>
+<ul>
+<li>балансе с природой через обмен и жертвы (язычество)</li>
+<li>в безопасности (местные боги городов)</li>
+<li>в понимании природы через очеловечение ее (греческие и египетские пантеоны)</li>
+<li>осознании и управлении собой (буддизм)</li>
+</ul>
+<p>То Христос превозносит смысл пробуждения до космических высот. Мало того что ты, Человек, страдаешь из-за своих ошибок (грехов) и ты можешь от них избавиться, но ты это должен сделать это коллективно. Ты должен вылечить все человечество и Христос - первый кто показывает путь как. В Нагорной проповеди он пробуждает эту новую этику человечества.</p>
+<p>И дальшье золотой путь, дхарма Христа, ведет его невинного на смерть. Цивилизация съедает его. Зачем? Какой смысл оказываться на кресте? В подтверждении своего учения. Любовь через поступок.</p>
+<p>Даже если вы атеист  и не верите в божественную природу, согласитесь что это удивительно как одна смерть смогла преобразить природу человечества на тысячелетия вперед.</p>
+<p>Ведь если подумать, цивилизация строится именно на доверии человека к человеку. Если бы вы вдруг перенеслись в альтернативную вселенную, что останавливает людей от убийства друг друга, каннибализма, дикарства? Только программа в вашей голове. Программа которую Спаситель исправляет рекурсивным самоочищением на долгие поколения.</p>
+<p>Христос спасает человека от его греха. Это заплатка от вируса которая говорит да, ты совершаешь ошибки головой, но в сердце ты знаешь как правильно. Не унывай, я рядом, прислушайся, не бойся, измени себя к лучшему и спасешься.</p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/b45674e7-588b-400b-b481-a19478c28847-da0ad861074c891de2437e6aa8bcafce.png" width="1024" height="1024" class="img_sJtY"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ AWS Gen AI meetup]]></title>
         <id>https://kurapov.ee/blog/2025/05/07/события/ AWS Gen AI meetup</id>
@@ -1053,150 +1079,5 @@ Question: on circular economy how is AI helping</p>
 <p>Подобно современным компаниям, где мониторинг за собственным финансовым состоянием, NPS сотрудников и мониторинг за SLI и качеством продукта считается обязательным, так же и мониторинг за состоянием здоровья пчел это обязательный шаг для этичного обращения с этими прекрасными пушистыми созданиями. Без мониторинга, пчеловоды продолжат терять пчел не осознавая почему.&nbsp;</p>
 <p>Продолжат заводить пчелопакеты вновь, экспериментируя с ульями и практиками на живых семьях. Я бы наоборот говорил о том что это неэтично продолжать жить с таким средневековым подходом. Мы можем изменить это через прозрачность и достаточную информативность о состоянии семьи. А роботизация в итоге сможет снизить и ущерб связанный с инспекциями.</p>]]></content>
         <category label="психология" term="психология"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dream of scalable & enriched graphql-subscriptions]]></title>
-        <id>https://kurapov.ee/blog/tech/Dream of scalable &amp; enriched graphql-subscriptions</id>
-        <link href="https://kurapov.ee/blog/tech/Dream of scalable &amp; enriched graphql-subscriptions"/>
-        <updated>2022-11-23T15:22:00.000Z</updated>
-        <summary type="html"><![CDATA[Originally posted in Medium]]></summary>
-        <content type="html"><![CDATA[<p>Originally posted in <a href="https://medium.com/pipedrive-engineering/a-dream-of-scalable-and-enriched-graphql-subscriptions-724284448e65" target="_blank" rel="noopener noreferrer">Medium</a></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg" alt="https://miro.medium.com/max/1400/1*Rvb94EOQA-BzsmYJ4TklGg.jpeg" class="img_sJtY"></p>
-<p>Stylized photo of Jagala juga (Estonia), original photo by Aleksandr Abrosimov, Wikimedia Commons</p>
-<p><a href="https://medium.com/pipedrive-engineering/journey-to-federated-graphql-2a6f2eecc6a4" target="_blank" rel="noopener noreferrer">Last time</a>, I wrote about 5-year long journey of having GraphQL in Pipedrive. Now, let me tell you about a 10-year long journey of delivering websocket events to frontend.. and maybe help you out with it too.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif" alt="https://miro.medium.com/max/1400/1*xffiu2fshUMbBFm-JlSAGw.gif" class="img_sJtY"></p>
-<p>The&nbsp;<strong>product need</strong>&nbsp;of asynchronous events comes up any time user needs to be notified about something by the server.</p>
-<ul>
-<li>you’ve got an instant message</li>
-<li>uploaded image has finished resizing</li>
-<li>your colleague has changed an avatar</li>
-<li>your bulk change of 10k deals has progressed to 99%</li>
-</ul>
-<p>So, async events&nbsp;<strong>enrich UX with details &amp; interactivity</strong></p>
-<p>But most importantly, they solve a problem of having&nbsp;<strong>inconsistent data</strong>&nbsp;displayed or stored on the browser side. Without such updates, other user won’t see&nbsp;<em>Pipedrive deals renames</em>; another browser tab won’t receive&nbsp;<em>activities deleted</em>. Even in the same browser tab, your views may not talk well with each other, lacking single storage and be out-of sync.</p>
-<h1><strong>Historical dive</strong></h1>
-<p>Luckily, Pipedrive has “solved” this issue 10 years ago. In 2012&nbsp;<a href="https://www.linkedin.com/in/andris-reinman/" target="_blank" rel="noopener noreferrer">Andris</a>,&nbsp;<a href="https://www.linkedin.com/in/martinkapp/" target="_blank" rel="noopener noreferrer">Kapp</a>&nbsp;&amp;&nbsp;<a href="https://www.linkedin.com/in/martintajur/" target="_blank" rel="noopener noreferrer">Tajur</a>&nbsp;have developed a&nbsp;<strong>socketqueue</strong>&nbsp;service, which to this day transports API events to the front-end leveraging&nbsp;<a href="https://www.npmjs.com/package/sockjs" target="_blank" rel="noopener noreferrer">sockjs</a>&nbsp;library.</p>
-<p>Tajur’s talk in 2016 was one of the reasons I’ve re-created similar setup, got puzzled how I should manage user connections with&nbsp;<a href="https://socket.io/" target="_blank" rel="noopener noreferrer">socket.io</a>&nbsp;&amp; scale it beyond one server and ultimately joined Pipedrive to find out. I was fascinated by event streaming and the possibilities it brings.</p>
-<p>As you can see, his talk is more about&nbsp;<a href="https://www.rabbitmq.com/" target="_blank" rel="noopener noreferrer">RabbitMQ</a>&nbsp;— a message broker that stands between php monolith and socketqueue.</p>
-<h1><strong>Pros and cons</strong></h1>
-<p>In-memory queues have allowed Pipedrive to withstand bursts of events, triggered by external integrations or in-house things like deal import from xls file or a bulk edit.</p>
-<p>Api event that is pushed to the RabbitMQ and to the frontend is&nbsp;<strong>denormalized</strong>, having different entities. That’s good, because you have a&nbsp;<strong>consistent snapshot</strong>&nbsp;of multiple things at the same time and you recipients&nbsp;<strong>don’t need to re-query</strong>&nbsp;anything…</p>
-<p>But it is also hugely&nbsp;<strong>inefficient</strong>, as all browser tabs receive all possible changes, wether they want it or not, sometimes having reached 80GB per day of traffic for a single customer.. while web app on his laptop CPU is doing all of the heavy filtering.</p>
-<p>So we can’t keep infinitely bloating event schema, making it even heavier.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*SEK3NXeBwKWHvw4fgcbVBg.png" alt="https://miro.medium.com/max/1400/1*SEK3NXeBwKWHvw4fgcbVBg.png" class="img_sJtY"></p>
-<p>Cell logic as number in a web-socket URL</p>
-<p>Second problem is a&nbsp;<strong>noisy neighbour</strong>. Scalability, as I mentioned, is solved with “cell logic” (in a good scenario — aka tenant isolation) which means sharding socketqueue application servers by company ID. This also means that we must have&nbsp;<strong>fixed amount of containers</strong>&nbsp;and fixed amount of queues to ensure predictable routing.</p>
-<p>So problem arises whenever you have one company generating thousands of events — they are not distributed among all servers, instead they&nbsp;<strong>spike CPU</strong>&nbsp;of a single node to the point of health check failure. There isn’t any room to vertically grow single-core CPU, only to double amount of servers which means&nbsp;<strong>wasted infrastructure resources</strong>.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*2pcMt6Bjn_pgBLO9CLjjOA.png" alt="https://miro.medium.com/max/1400/1*2pcMt6Bjn_pgBLO9CLjjOA.png" class="img_sJtY"></p>
-<p>noisy neighbour CPU spike of particular pod</p>
-<p>Third issue is&nbsp;<strong>visibility &amp; tracing</strong>. Same as with REST API, without proper documentation (wether it is swagger or type definitions), it is very hard to understand what can be inside of the event schema and most important, who uses what in case you want to do a breaking change. Which leads to a vicious cycle of nobody removing anything from the event &amp; bloating it even more.</p>
-<p>Finally, if web-socket connection is down because user went into a tunnel or just closed his laptop — he may loose events. Could that cause a loss of&nbsp;<em>a deal</em>&nbsp;and profits for the user?</p>
-<p>Over the years we’ve optimized the hell out of socketqueue, so its</p>
-<ul>
-<li>multi-threaded as it listens queues and WS connection handling</li>
-<li>compresses traffic</li>
-<li>checks permissions &amp; visibility</li>
-</ul>
-<p>but what if we could do better..? 🤔</p>
-<h1><strong>How</strong></h1>
-<p>Idea behind&nbsp;<a href="https://spec.graphql.org/June2018/#sec-Subscription-Operation-Definitions" target="_blank" rel="noopener noreferrer">graphql subscriptions</a>&nbsp;is pretty simple — you declare only what you want to receive, given some filtering arguments. And it will be server’s job to intelligently filter events.</p>
-<p>I can’t do a better job of explaining basic setup than&nbsp;<a href="https://twitter.com/benawad" target="_blank" rel="noopener noreferrer">Ben</a>&nbsp;here 😁. So what he shows here is a single server instance where pubsub is just in-memory event routing directly from mutation. But in our case there are no mutations — real changes are generated by the php legacy far-far away.</p>
-<h1><strong>Mission scope</strong></h1>
-<p>So what I wanted to achieve was</p>
-<ul>
-<li>demo graphql subscriptions in production, having explicit schema</li>
-<li>test horizontal pod scaling</li>
-<li>increase reliability by using kafka instead of rabbitMq</li>
-<li>use small, normalized, domain events to keep things simple</li>
-<li>keep event delivery latency below 2 sec [to not be slower than socketqueue we’re trying to replace]</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="risks"><strong>Risks</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#risks" class="hash-link" aria-label="Прямая ссылка на risks" title="Прямая ссылка на risks">​</a></h2>
-<p>What I didn’t know..</p>
-<ul>
-<li>how do we authenticate?</li>
-<li>what protocol should we use? SSE? WS? whats this&nbsp;<a href="https://github.com/dunglas/mercure" target="_blank" rel="noopener noreferrer">mercure</a>&nbsp;thing.. and does some of it fallback to pooling?</li>
-<li>will WS/TCP connections be bound to same pod or not?</li>
-<li>can we do multiple subscriptions at a time?</li>
-</ul>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3920/1*K-aB3FKXH0jXeG4HiLRdVw.png" alt="https://miro.medium.com/max/3920/1*K-aB3FKXH0jXeG4HiLRdVw.png" class="img_sJtY"></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/4004/1*5q23Z56at20SsvRkOB_6Hw.png" alt="https://miro.medium.com/max/4004/1*5q23Z56at20SsvRkOB_6Hw.png" class="img_sJtY"></p>
-<ul>
-<li>what storage / transfer medium do we use? DB? redis streams? kafka? redis pubsub? KTable?</li>
-<li>can we rewind events in time in case user got disconnected? would we need to store cursor ID per entity? also, how does live query work?</li>
-<li>how do we filter events by company, user, session, entity? is there a standard for subscription filter fields?</li>
-<li>can we re-use federated graphql schema? can we enrich events? what should be QoS / retry logic if gateway is down? Lee Byron went into it at depth&nbsp;<a href="https://youtu.be/rapO30fpREg?t=6675" target="_blank" rel="noopener noreferrer">in his talk over 5 years ago</a>.</li>
-<li>how many items can we subscribe to?</li>
-<li>how do we unsubscribe? or disconnect users when they log out?</li>
-</ul>
-<h1><strong>Proof of concept</strong></h1>
-<p>Before the mission, I made a simple node service that connected to kafka and proxied events without any filtering. This was already promising. But for a mission I wanted to try out&nbsp;<a href="https://go.dev/" target="_blank" rel="noopener noreferrer"><em><strong>go</strong></em></a>&nbsp;to have all CPUs to be involved to maximize that efficiency, while this PoC was a fallback (that proved itself very useful)</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2256/1*8i540taseWXr_TAV2ysBZw.png" alt="https://miro.medium.com/max/2256/1*8i540taseWXr_TAV2ysBZw.png" class="img_sJtY"></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/4952/1*z39G_eYPNR7Zuu_Hl1dK7g.png" alt="https://miro.medium.com/max/4952/1*z39G_eYPNR7Zuu_Hl1dK7g.png" class="img_sJtY"></p>
-<h1><strong>Liftoff</strong></h1>
-<p>Four of us (<a href="https://www.linkedin.com/in/kurapov/" target="_blank" rel="noopener noreferrer">myself</a>,&nbsp;<a href="https://www.linkedin.com/in/pavel-nikolajev-84184a64/" target="_blank" rel="noopener noreferrer">Pavel</a>,&nbsp;<a href="https://www.linkedin.com/in/kristjan-luik-89bb03122/" target="_blank" rel="noopener noreferrer">Kristjan</a>&nbsp;and&nbsp;<a href="https://www.linkedin.com/in/abhishek-goswami-591541b1/" target="_blank" rel="noopener noreferrer">Hiro</a>) have set off for entire summer to try and do just that.. explore the unknown 🛸 and bring value back to the launchpad.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*QlBXCk8EjRtp5n_Fxr2xTw.png" alt="https://miro.medium.com/max/1400/1*QlBXCk8EjRtp5n_Fxr2xTw.png" class="img_sJtY"></p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="gophers"><strong>gophers</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#gophers" class="hash-link" aria-label="Прямая ссылка на gophers" title="Прямая ссылка на gophers">​</a></h2>
-<p>We looked into&nbsp;<a href="https://github.com/graph-gophers/graphql-go" target="_blank" rel="noopener noreferrer">graph-gophers/graphql-go</a>&nbsp;as first basis and within couple of days we’ve re-created PoC of subscribing to kafka events</p>
-<ul>
-<li>We’ve hit the dilemma of GraphQL integer spec&nbsp;<a href="https://github.com/graphql/graphql-js/issues/292#issuecomment-186702912" target="_blank" rel="noopener noreferrer">not matching go’s int32</a>.</li>
-<li>Got per-property filtering and per-argument filtering working</li>
-<li>Hit need of SSL for WSS to work, otherwise CORS blocked requests</li>
-<li>Got&nbsp;<a href="http://nginx.org/en/docs/http/websocket.html" target="_blank" rel="noopener noreferrer">nginx to proxy web socket requests</a>!</li>
-<li>We found that there are two transport protocols, as websocket is a loose tranport so any library can implement whatever it wants.&nbsp;<a href="https://github.com/graph-gophers/graphql-transport-ws" target="_blank" rel="noopener noreferrer">Gophers implemented</a>&nbsp;older version, that was compliant with apollo &amp; graphiql but not with graphql-ws</li>
-<li>Hit issue that apollo federation lib did not like&nbsp;<code>Subscription</code>&nbsp;in&nbsp;<a href="https://github.com/pipedrive/graphql-schema-registry" target="_blank" rel="noopener noreferrer">schema registration</a>. We figured that we can clean only Subscription type from root to have other types checked for collisions</li>
-</ul>
-<p>Basic filtering was pretty simple, you just need to connect two streams (channels) — kafka and web sockets (that gophers need as schema resolvers) while having a goroutine in the middle transforming data</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3712/1*zXxbPFcX5Xqu7zGz8k3kSw.png" alt="https://miro.medium.com/max/3712/1*zXxbPFcX5Xqu7zGz8k3kSw.png" class="img_sJtY"></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3668/1*0dXQgXJcVTET0AswerSujA.png" alt="https://miro.medium.com/max/3668/1*0dXQgXJcVTET0AswerSujA.png" class="img_sJtY"></p>
-<p>We’ve hit a major&nbsp;<a href="https://github.com/graph-gophers/graphql-transport-ws/pull/9" target="_blank" rel="noopener noreferrer">roadblock with gophers</a>&nbsp;and JWT authentication, we’re not that experienced in&nbsp;<em>go</em>&nbsp;&amp; don’t have much time to start changing a major framework.</p>
-<p>We also figured that enrichment is not a priority, and we need to bring code into production 🚀 and test scaling. Thats the agile way.</p>
-<p>Second big blocker — entity visibility checks. Reading domain events from kafka means that we don’t have extra information, like who can see a deal. We need to query some service about this. Doing it on every event of every company likely can lead to DoS 🤦‍♂️</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="gqlgen"><strong>Gqlgen</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#gqlgen" class="hash-link" aria-label="Прямая ссылка на gqlgen" title="Прямая ссылка на gqlgen">​</a></h2>
-<p>We scratch gophers, switch to gqlgen. Channel exchange logic remains the same and we get JWT token authentication working. Difference is that now subscription events are autogenerated based on schema.graphql.</p>
-<p>Next, I find that exchange (in-memory pub-sub in go) is kinda flawed, we need at least 1 subscription for streaming to take place.. newer version is a bit better and allows to have channel per-company.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2532/1*_tIlshM1g5F8tYgIN4qAfQ.png" alt="https://miro.medium.com/max/2532/1*_tIlshM1g5F8tYgIN4qAfQ.png" class="img_sJtY"></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2176/1*w6B9z69_upq05WXXb2Vt5Q.png" alt="https://miro.medium.com/max/2176/1*w6B9z69_upq05WXXb2Vt5Q.png" class="img_sJtY"></p>
-<p>We also start brainstorming how schema should look like to have it scalable across different entitites, have filters, have multiple entity actions and multiple ids supported.</p>
-<p>1 month in. We have UI working with hacked but performant permission check. We take vacations to cool off 🌴 And only now I see this 🤯 presentation by&nbsp;<a href="https://twitter.com/mandiwise" target="_blank" rel="noopener noreferrer">Mandi Wise</a>&nbsp;from Apollo, even though I’ve gone through most of youtube videos by that time..</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="final-architecture"><strong>Final architecture</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#final-architecture" class="hash-link" aria-label="Прямая ссылка на final-architecture" title="Прямая ссылка на final-architecture">​</a></h2>
-<p>So we come back and scratch gqlgen again, it was painful but well.. agile. We split service in&nbsp;<strong>two</strong>, adding redis pub-sub with replication and sentinel in between</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*JDm6Oo8YfE1-r7lzttAyNQ.png" alt="https://miro.medium.com/max/1400/1*JDm6Oo8YfE1-r7lzttAyNQ.png" class="img_sJtY"></p>
-<ul>
-<li>graphql-subscription-workers remains in go, but becomes way simpler — it is be able to scale well to consume all kafka partitions. Workers filter out events by doing 10x parallel permissions checks and transform event schema if needed</li>
-<li>graphql-subscriptions deals with connections &amp; scales horizontally as much as needed. It leverages great&nbsp;<a href="https://github.com/enisdenjo/graphql-ws" target="_blank" rel="noopener noreferrer">graphql-ws</a>&nbsp;library that has all sorts of hooks, so kudos to&nbsp;<a href="https://github.com/enisdenjo" target="_blank" rel="noopener noreferrer">Denis Badurina</a></li>
-<li>redis pub-sub serves as exchange broker doing most of the filtering &amp; sharding by company, user and entity ids.</li>
-</ul>
-<p>For example, worker pushes to message channel: <code>&lt;companyId&gt;.deal.&lt;dealId&gt;</code>. This is very similar to rabbitMQ routing as it also provides regex wildcard matching by the subscribers. This allows us to theoretically subscribe to <code>&lt;companyId&gt;.*</code> and handle all events if such need arises.</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="subscription-schema-types"><strong>Subscription schema types</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#subscription-schema-types" class="hash-link" aria-label="Прямая ссы�лка на subscription-schema-types" title="Прямая ссылка на subscription-schema-types">​</a></h2>
-<p>So as you can see from the diagram, we followed Mandi’s advice and wrote event enrichment by querying gateway. This did require polling of federated schema and hard-coded resolvers of which query specific entity must make, but it gives immence flexibility to the frontend</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" alt="https://miro.medium.com/max/2376/1*zBOSyHn9wocWYbXR7r80gA.gif" class="img_sJtY"></p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" alt="https://miro.medium.com/max/3504/1*dauu7v8ZBwU667SdCCBBnA.png" class="img_sJtY"></p>
-<p>Schema choices we had to make:</p>
-<ul>
-<li>we do not merge original event with enriched one, although we could. This is because we don’t have guarantees that graphql-service responds in timely manner. Kafka “raw” event data is much more reliable. We also have minor differences in schema when referencing is used (raw deal.stageId vs enriched <a href="http://deal.stage.id/" target="_blank" rel="noopener noreferrer">deal.stage.id</a>)</li>
-<li>we added “delta” as JSON, mostly because frontend really wanted to use that in case frontend storage wanted to update only specific keys. This requires specific shape of kafka event though</li>
-<li>we have a generic event type (dealEvent) along side with action-specific events (dealAdded), because generic events take into account correct order of events for the same entity ( added -&gt; changed -&gt; deleted ) which is not guaranteed chronologically if you subscribe to separate types</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="live-queries"><strong>Live queries</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#live-queries" class="hash-link" aria-label="Прямая ссылка на live-queries" title="Прямая ссылка на live-queries">​</a></h2>
-<p>This a cool concept that elegantly fixes a problem which I was really fixated on — connection loss.</p>
-<p>From to&nbsp;<a href="https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql" target="_blank" rel="noopener noreferrer">Laurin’s article</a>&nbsp;by The Guild, we’ve got same&nbsp;<strong>fetchOrSubscribe</strong>&nbsp;function which first does enrichment request and then subscribes to kafka events using async iterator magic. The difference however is in schema — we use “liveQuery” as an argument, not as a root property.</p>
-<p>This thing alone meets 99% of consistency requirements in web apps, without the need to rewind events (using&nbsp;<a href="https://redis.io/docs/data-types/streams/" target="_blank" rel="noopener noreferrer">redis streams</a>?). So “cursor-based query revalidation and diffing” that&nbsp;<a href="https://twitter.com/benjamn/status/1579891243798401026" target="_blank" rel="noopener noreferrer">Ben Newman suggested at last Graphql Summit</a>&nbsp;seems like a very rare use case where you want to rewind events as a niche product feature (in gaming?)</p>
-<h1><strong>Performance &amp; security testing</strong></h1>
-<p>Finally, by the mission end we tested how well our solution scales in production, gradually rolling it out to real customers.</p>
-<p><img decoding="async" loading="lazy" src="https://miro.medium.com/max/1400/1*mHE_vMsNTPr25y7IkePG2Q.png" alt="https://miro.medium.com/max/1400/1*mHE_vMsNTPr25y7IkePG2Q.png" class="img_sJtY"></p>
-<p>Performance testing in production</p>
-<p>This did reveal interesting things - if you subscribe to&nbsp;<em>deals</em>&nbsp;by IDs… and if you do this in&nbsp;<em>pipeline view</em>&nbsp;where user can scroll very fast, you can have waves of subscriptions. So better to avoid blocking permission checks onSubscribe and have some throttling logic on frontend.</p>
-<p>We have had also observed random pods suddenly loosing all of their connections, that has lead us to revise memory limits &amp;&nbsp;<a href="https://github.com/nodejs/node/issues/35573" target="_blank" rel="noopener noreferrer">max_old_space_size bug</a>.</p>
-<p>We have implemented various security limitations on amount of connections, subscriptions, timeouts, taking into account logouts, permission changes etc. Not only because of external risks, but also because we did find that Redis needs to do a lot of CPU to match&nbsp;<strong>pub</strong>lishers to&nbsp;<strong>sub</strong>scribers.</p>
-<h1><strong>Future steps</strong></h1>
-<p>Theoretically, we could shard Redis instances by entity types if we would face performance problems.</p>
-<p>We could force socketqueue deprecation by&nbsp;<em>temporarily</em>&nbsp;adding api events as a universal subscription, proxying all data to the frontend without any filtering. Sacrifice efficiency for the sake of having single transport layer.</p>
-<p>We have had service operational for over a year now and so far got ~10 entities supported, tied to different kafka topics</p>
-<h2 class="anchor anchorWithStickyNavbar_CPg9" id="in-defence-of-graphql"><strong>In defence of GraphQL</strong><a href="https://kurapov.ee/blog/tech/Dream%20of%20scalable%20&amp;%20enriched%20graphql-subscriptions#in-defence-of-graphql" class="hash-link" aria-label="Прямая ссылка на in-defence-of-graphql" title="Прямая ссылка на in-defence-of-graphql">​</a></h2>
-<p>Adoption of GraphQL and subscriptions in particular is seen as slow, although it is voluntary.</p>
-<p>With&nbsp;<a href="https://youtu.be/UZWe5Usun7I?t=4130" target="_blank" rel="noopener noreferrer">codegen</a>&nbsp;that can wrap REST API, it can be seen as complex, without — as too demanding of service refactoring, alongside a REST API — as redundant, with&nbsp;<a href="https://www.apollographql.com/docs/federation/" target="_blank" rel="noopener noreferrer">federation</a>&nbsp;— as having too many layers, with&nbsp;<a href="https://github.com/graphql/dataloader" target="_blank" rel="noopener noreferrer">dataloader</a>&nbsp;but without observability — as doing&nbsp;<a href="https://twitter.com/Popeska/status/1592177670212943873" target="_blank" rel="noopener noreferrer">too many poorly batched RPC calls</a>.</p>
-<p>Return on investment is not seen, if&nbsp;<em>value</em>&nbsp;is not measured.</p>
-<p>GraphQL has taken onto itself a big responsibility of making web more transparent, predictable, reusable and more efficient. I urge developers 🌞 to have professional patience — educate your colleagues, deliver&nbsp;<strong>hard metrics</strong>&nbsp;to managers, proving GraphQL superiority.</p>
-<p>My dream is that there will come a day when devs will replace schema-less WS events &amp; REST APIs with GraphQL and subscriptions for anyone to consume. Clients are our future, this is the way</p>]]></content>
     </entry>
 </feed>
