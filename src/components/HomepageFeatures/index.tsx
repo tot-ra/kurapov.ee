@@ -60,23 +60,6 @@ const ProjectList: ProjectItem[] = [
     link: 'https://github.com/tot-ra/clarifai-PR',
     description: 'Github workflow to automate your pull request reviewing with LLMs',
   },
-
-  {
-    title: 'KidsTV',
-    link: 'https://github.com/tot-ra/ktv/',
-    description: 'A glorified youtube playlist to get a random cartoon episode for your kids',
-  },
-
-  {
-    title: 'Telepathy',
-    link: 'https://github.com/tot-ra/telepathy/',
-    description: 'A contract-testing framework',
-  },
-  {
-    title: 'Grapheon',
-    link: 'https://github.com/tot-ra/grapheon/',
-    description: 'A graph visualization library in javascript',
-  },
 ];
 
 const Project: React.FC<ProjectItem> = ({title, link, description, image}) => {
@@ -117,6 +100,10 @@ export default function HomepageFeatures(): React.ReactElement {
             ))}
           </div>
         </div>
+
+
+        <p>Need something similar for your project? Let's talk!</p>
+        <a href="https://calendly.com/artkurapov/30min">Book a call</a>
       </div>
     </section>
   );
