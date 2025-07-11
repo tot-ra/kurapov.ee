@@ -115,8 +115,23 @@ const config: Config = {
           title: 'Media',
           items: [
             {
-              label: 'Short thoughts on Twitter',
+              label: 'Мысли в Twitter',
               href: 'https://twitter.com/tot_ra',
+            },
+
+            {
+              label: 'Мысли в Telegram',
+              href: 'https://t.me/+4kDpExZlraQ0NGZk',
+            },
+
+            {
+              label: 'Мысли в Threads',
+              href: 'https://www.threads.com/@tot_ra',
+            },
+
+            {
+              label: 'Мысли в Bluesky',
+              href: 'https://bsky.app/profile/tot-ra.bsky.social',
             },
             {
               label: 'Long videos on Youtube',
@@ -127,17 +142,13 @@ const config: Config = {
               href: 'https://www.twitch.tv/tot_ra/',
             },
             {
-              label: 'Nature on Instagram',
+              label: 'Природа в Instagram',
               href: 'https://www.instagram.com/tot_ra/',
             },
             {
-              label: 'Short videos on TikTok',
+              label: 'Видео-мысли в TikTok',
               href: 'https://www.tiktok.com/@artkurapov',
             },
-                        {
-              label: 'Short thoughts on Bluesky',
-              href: 'https://bsky.app/profile/tot-ra.bsky.social',
-            }
           ],
         },
 
