@@ -199,10 +199,9 @@ const config: Config = {
               href: 'https://www.reddit.com/user/tot_ra/',
             },
             {
-              label: 'LiveJournal',
+              label: 'ЖЖ',
               href: 'https://tot-ra.livejournal.com/',
             },
-            
           ],
         },
         {
@@ -232,6 +231,11 @@ const config: Config = {
             {
               label: '3D models on Thingiverse',
               href: 'https://www.thingiverse.com/tot_ra/designs',
+            },
+
+            {
+              label: 'Interests',
+              href: 'https://www.pinterest.com/tot_ra/',
             }
           ],
         },
