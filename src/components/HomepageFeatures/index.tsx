@@ -100,10 +100,6 @@ export default function HomepageFeatures(): React.ReactElement {
             ))}
           </div>
         </div>
-
-
-        <p>Need something similar for your project? Let's talk!</p>
-        <a href="https://calendly.com/artkurapov/30min">Book a call</a>
       </div>
     </section>
   );

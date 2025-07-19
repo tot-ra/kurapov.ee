@@ -112,27 +112,84 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Media',
+          title: 'Короткие мысли',
           items: [
             {
-              label: 'Мысли в Twitter',
+              label: 'TikTok',
+              href: 'https://www.tiktok.com/@artkurapov',
+            },
+            {
+              label: 'Twitter',
               href: 'https://twitter.com/tot_ra',
             },
-
             {
-              label: 'Мысли в Telegram',
-              href: 'https://t.me/+4kDpExZlraQ0NGZk',
-            },
-
-            {
-              label: 'Мысли в Threads',
+              label: 'Threads',
               href: 'https://www.threads.com/@tot_ra',
             },
-
             {
-              label: 'Мысли в Bluesky',
+              label: 'Telegram',
+              href: 'https://t.me/+4kDpExZlraQ0NGZk',
+            },
+            {
+              label: 'Bluesky',
               href: 'https://bsky.app/profile/tot-ra.bsky.social',
             },
+            {
+              label: 'ВКонтакте',
+              href: 'https://vk.com/artkurapov',
+            },
+            {
+              label: 'ЖЖ',
+              href: 'https://tot-ra.livejournal.com/',
+            },
+          ],
+        },
+
+
+        {
+          title: 'Business',
+          items: [
+            {
+              label:"Calendly",
+              href: 'https://calendly.com/artkurapov/30min',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/kurapov/',
+            },
+
+            {
+              label: 'GitHub',
+              href: 'https://github.com/tot-ra',
+            },
+
+            {
+              label: 'Medium',
+              href: 'https://medium.com/@tot_ra',
+            },
+
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/users/158448/artjom-kurapov?tab=profile',
+            },
+            
+            {
+              label: 'Slideshare',
+              href: 'https://www.slideshare.net/totra/presentations',
+            },
+
+            {
+              label: 'Habr',
+              href: 'https://habr.com/ru/users/tot_ra/posts/',
+            },
+            
+          ],
+        },
+
+        {
+          title: 'Community',
+          items: [
+
             {
               label: 'Long videos on Youtube',
               href: 'https://www.youtube.com/user/artkurapov/',
@@ -145,67 +202,20 @@ const config: Config = {
               label: 'Природа в Instagram',
               href: 'https://www.instagram.com/tot_ra/',
             },
-            {
-              label: 'Видео-мысли в TikTok',
-              href: 'https://www.tiktok.com/@artkurapov',
-            },
-          ],
-        },
 
-
-        {
-          title: 'Business',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/kurapov/',
-            },
-
-            {
-              label: 'GitHub',
-              href: 'https://github.com/tot-ra',
-            },
-
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/users/158448/artjom-kurapov?tab=profile',
-            },
-            
-            {
-              label: 'Slideshare',
-              href: 'https://www.slideshare.net/totra/presentations',
-            },
-            {
-              label: 'Habr',
-              href: 'https://habr.com/ru/users/tot_ra/posts/',
-            },
-            
-          ],
-        },
-
-        {
-          title: 'Community',
-          items: [
             {
               label: 'Facebook',
               href: 'https://www.facebook.com/artkurapov',
             },
-            {
-              label: 'ВКонтакте',
-              href: 'https://vk.com/artkurapov',
-            },
+
             {
               label: 'Reddit',
               href: 'https://www.reddit.com/user/tot_ra/',
             },
-            {
-              label: 'ЖЖ',
-              href: 'https://tot-ra.livejournal.com/',
-            },
           ],
         },
         {
-          title: 'Media',
+          title: 'Multimedia',
           items: [
             {
               label: 'Music on Suno',
@@ -234,7 +244,7 @@ const config: Config = {
             },
 
             {
-              label: 'Interests',
+              label: 'Pinterest',
               href: 'https://www.pinterest.com/tot_ra/',
             }
           ],
