@@ -13,6 +13,13 @@ type ProjectItem = {
 
 // Example project data - user wants to keep these
 const ProjectList: ProjectItem[] = [
+  {
+    title: 'RPG "Rebel Reval"',
+    link: 'https://github.com/tot-ra/rebel-reval',
+    description: 'Go back in time to 14th century Estonia and fight for freedom in this action RPG.',
+    image: '/img/projects/rr.png',
+  },
+
 
   {
     title: 'Альбом "Легкие пустыни"',
