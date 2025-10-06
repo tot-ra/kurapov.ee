@@ -89,7 +89,7 @@ const config: Config = {
       title: 'Артём Курапов',
       logo: {
         alt: 'Artjom Kurapov',
-        src: 'img/artjom.jpg',
+        src: 'img/artjom.webp',
       },
       items: [
         {

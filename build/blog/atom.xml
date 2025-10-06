@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kurapov.ee/blog</id>
     <title>Артём Курапов Blog</title>
-    <updated>2025-06-09T21:37:45.000Z</updated>
+    <updated>2025-09-20T19:08:17.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kurapov.ee/blog"/>
     <subtitle>Артём Курапов Blog</subtitle>
     <icon>https://kurapov.ee/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[всякое/Фото старинного Таллинна]]></title>
+        <id>https://kurapov.ee/blog/всякое/Фото старинного Таллинна</id>
+        <link href="https://kurapov.ee/blog/всякое/Фото старинного Таллинна"/>
+        <updated>2025-09-20T19:08:17.000Z</updated>
+        <summary type="html"><![CDATA[Исследовал для своей рпг игры по Таллинну старинные фотки например башня крепостной стены Hinketorn что рядом с макдаком видимо сфоткана была когда еще было видно саму стену (не очень в курсе - там был ров?). Сейчас по юго-восточной и южной части трудно что-то найти.]]></summary>
+        <content type="html"><![CDATA[<p>Исследовал для своей рпг игры по Таллинну старинные фотки например башня крепостной стены Hinketorn что рядом с макдаком видимо сфоткана была когда еще было видно саму стену (не очень в курсе - там был ров?). Сейчас по юго-восточной и южной части трудно что-то найти.</p>
+<p>Конечно в средневековье не нырнешь но на 150 лет назад можно. А с современным AI можно восстанавливать цвет фото и качество без проблем.</p>
+<p>Вот пару интересных моментов</p>
+<ul>
+<li>купола собора Александра Невского видимо изначально были золотыми</li>
+<li>почти до ратуши ходил трамвай</li>
+<li>на ратушной площади видимо раньше было какое-то большое здание</li>
+</ul>
+<p>Ч/б оригиналы можно найти на<br>
+<a href="https://ajapaik.ee/?raised_viewpoint_elevation=1&amp;date_from=1800-01-01&amp;date_to=1901-12-31&amp;order1=closest&amp;page=1&amp;lat=59.45905769567053&amp;lon=24.878309013812647" target="_blank" rel="noopener noreferrer">https://ajapaik.ee/?raised_viewpoint_elevation=1&amp;date_from=1800-01-01&amp;date_to=1901-12-31&amp;order1=closest&amp;page=1&amp;lat=59.45905769567053&amp;lon=24.878309013812647</a></p>
+<p><a href="https://www.etera.ee/browse" target="_blank" rel="noopener noreferrer">https://www.etera.ee/browse</a></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/61862874-6078-48e8-bcc7-31e04c3df917-34b0bc59959128e4c0ea86036bbca0da.jpg" width="1280" height="800" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/40bfd29d-3680-4e43-9fd0-638fed6aec36-273755b53d267db7b0ecc6b42d56f572.jpg" width="1472" height="704" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/407bd9aa-8af7-4b99-8bd2-29a509c47fe2-ff3cf6a7f7f75623e19cebd322b5172b.jpg" width="1280" height="800" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/0eab2fef-c028-4cd3-a137-454f25796232-d39fb06a49993125c567d864b6b93752.jpg" width="800" height="1280" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/7c984b0d-0e47-42cd-99c1-1c4c4f2535b0-3c62ba1e3f7cf119b2b42ced3a5a0821.jpg" width="864" height="1184" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/31d7c138-a9fd-436e-b09c-d967de50d55f-9a565606262e5ac9a5a6e745b702ddc7.jpg" width="1248" height="832" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/364c3bb4-bbd8-49c5-b593-8bb288437b17-d28f9f8fb4a7681fe197aee0876ae909.jpg" width="1280" height="800" class="img_sJtY"></p>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/9507a6f8-5f71-4b37-ac40-744a855ec8be-7bc8bd09d7e362f8fa860f47c4b3655a.jpg" width="832" height="1248" class="img_sJtY"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[вера/От чего спасает Христос]]></title>
         <id>https://kurapov.ee/blog/вера/От чего спасает Христос</id>
@@ -32,7 +58,8 @@
 <p>Даже если вы атеист  и не верите в божественную природу, согласитесь что это удивительно как одна смерть смогла преобразить природу человечества на тысячелетия вперед.</p>
 <p>Ведь если подумать, цивилизация строится именно на доверии человека к человеку. Если бы вы вдруг перенеслись в альтернативную вселенную, где ничто не останавливает людей от убийства друг друга, каннибализма, дикарства (как например в Rick and Morty эпизоде про жатву), то поняли бы что цивилизация и доверие это только программа в вашей голове. И эта программа легко может сбоить. Сейчас вы видите это в новостях, а до Христа уровень жестокости был еще выше. И эту программа Спаситель исправляет рекурсивным самоочищением на долгие поколения.</p>
 <p>Христос спасает человека от его греха. Это заплатка от вируса которая говорит да, ты совершаешь ошибки головой, но в сердце ты знаешь как правильно. Не унывай, я рядом, прислушайся, не бойся, измени себя к лучшему и спасешься.</p>
-<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/b45674e7-588b-400b-b481-a19478c28847-da0ad861074c891de2437e6aa8bcafce.png" width="1024" height="1024" class="img_sJtY"></p>]]></content>
+<p><img decoding="async" loading="lazy" src="https://kurapov.ee/assets/images/b45674e7-588b-400b-b481-a19478c28847-da0ad861074c891de2437e6aa8bcafce.png" width="1024" height="1024" class="img_sJtY"></p>
+<iframe width="1051" height="492" src="https://www.youtube.com/embed/Bgv93Ndunjg" title="Отчего нас спас Христос? Жертва, воскресение и тайна ипостаси — объясняет �Кураев" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[ AWS Gen AI meetup]]></title>
@@ -1030,55 +1057,5 @@ Question: on circular economy how is AI helping</p>
 <li><a href="https://github.com/tot-ra/sandbox-guest-book" target="_blank" rel="noopener noreferrer">https://github.com/tot-ra/sandbox-guest-book</a></li>
 </ul>]]></content>
         <category label="hiring" term="hiring"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Об этике пчеловодства]]></title>
-        <id>https://kurapov.ee/blog/психология/Об этике пчеловодства</id>
-        <link href="https://kurapov.ee/blog/психология/Об этике пчеловодства"/>
-        <updated>2022-12-14T23:36:00.000Z</updated>
-        <summary type="html"><![CDATA[Эрнест Бондаренко, мне вот захотелось так же публично ответить тебе, раз латвийская команда ForQueenBee на презентации в Prototron не смогла, и естественно Jana Budkovskaja не могла им ( Guntis Laurins,  Anete Grosberga ) дать дополнительного во время общего питча.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://www.facebook.com/ernest.bondarenko" target="_blank" rel="noopener noreferrer">Эрнест Бондаренко</a>, мне вот захотелось так же публично ответить тебе, раз латвийская команда ForQueenBee на&nbsp;<a href="https://fb.watch/hpXIP7lwuQ/" target="_blank" rel="noopener noreferrer">презентации в Prototron</a>&nbsp;не смогла, и естественно&nbsp;Jana Budkovskaja не могла им (&nbsp;<a href="https://www.facebook.com/guntis.laurins" target="_blank" rel="noopener noreferrer">Guntis Laurins</a>,&nbsp;&nbsp;<a href="https://www.facebook.com/aneteg" target="_blank" rel="noopener noreferrer">Anete Grosberga</a>&nbsp;) дать дополнительного во время общего питча.</p>
-<p>Я с ними не связан с ними совершенно, но&nbsp;<a href="https://gratheon.com/" target="_blank" rel="noopener noreferrer">занимаюсь этой же проблемой</a>&nbsp;мониторинга и автоматизации пчеловодства при этом стараясь соблюдать этику.</p>
-<h3 class="anchor anchorWithStickyNavbar_CPg9" id="светлые-пчеловоды">Светлые пчеловоды<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B5-%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%8B" class="hash-link" aria-label="Прямая ссылка на Светлые пчеловоды" title="Прямая ссылка на Светлые пчеловоды">​</a></h3>
-<p>"Эксплуатация пчел" о котором ты говоришь это немного размытое понятие. Давай сначала о хороших пчеловодах и хобби-пчеловодах, на которых собственно эта команда и ориентировалась со своим устройством</p>
-<ol>
-<li>
-<p>Пчел никто не привязывает к улью. Они теоретически в любой момент могут собраться и улететь. И очень часто, так они собственно это и делают. Как сказала&nbsp;Anete Grosberga, рой может не выжить если не найдет себе дома и улетит слишком поздно (в сентябре например).</p>
-</li>
-<li>
-<p>Хорошие пчеловоды у пчел, отбирают только излишки меда.</p>
-</li>
-<li>
-<p>Мне кажется что хобби-пчеловоды как правило держат пчел не столько из-за меда сколько из любви к ним как к своим домашним животным.</p>
-</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_CPg9" id="серые-области">Серые области<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D1%81%D0%B5%D1%80%D1%8B%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8" class="hash-link" aria-label="Прямая ссылка на Серые области" title="Прямая ссылка на Серые области">​</a></h3>
-<p>Теперь немного о сомнительных практиках, если тебя интересует этичность, на которые я скорей бы перенаправил твой взор от этой несчастной команды.</p>
-<ol>
-<li>Есть такое направление как индустриальное пчеловодство. Это когда 200+ ульев возят на прицепе с одного поля на другое. Поля при этом обычно монокультурные. Это делается не только ради меда но и по заказу владельца полей для опыления. Насколько этично так перекашивать систему питания пчел?</li>
-</ol>
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/_AcdxvIq4Uw" title="a first in the world. new system modern mobile beekeeping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<ol start="2">
-<li>
-<p>Некоторые поля обрабатываются от вредителей инсектицидами. Если это делается во время цветения, то пчелы могут массово гибнуть. Этично ли это со стороны человека?</p>
-</li>
-<li>
-<p>Пчел самих обрабатывают химией для лечения от клеща варроа. Некоторые пчеловоды убивают 100-200 пчел вымачивая их в спирте для того что-бы определить есть ли у них клещи варроа (вместо того что-бы определять это по выпаду клещей на дне). Но если их не лечить то семья может погибнуть. Насколько это этично?</p>
-</li>
-<li>
-<p>Вместо спирта, некоторые пчеловоды вскрывают соты с еще не родившимися трутнями что-бы найти там клещей варроа и понять уровень инфицированности. Некоторые пчеловоды советуют вообще вырезать расплод с трутнями как ненужный. Трутни только поедаюд мед, играя только роль спаривания. Этично?</p>
-</li>
-<li>
-<p>Пчеловоды подкармиливают своих пчел сахарным сиропом в сентябре. Это имеет смысл если за лето было очень мало что собрано - засуха или наоборот дожди. Но перенос такого количества сахара из кормушки в жидком состоянии внутрь улья в соты за такой короткий срок, плохо сказывается на пчелах-работниках которые быстро чернеют. Этично ли кормить пчел?</p>
-</li>
-<li>
-<p>При осмотре улья, у неумелого пчеловода, вполне вероятно что несколько пчел погибнет. Либо они будут сами жалить (и погибать) либо их придавит какая-то крышка или рамка. Этично ли осматривать семью? Как часто?&nbsp;</p>
-</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_CPg9" id="итого">Итого<a href="https://kurapov.ee/blog/%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/%D0%9E%D0%B1%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%20%D0%BF%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0#%D0%B8%D1%82%D0%BE%D0%B3%D0%BE" class="hash-link" aria-label="Прямая ссылка на Итого" title="Прямая ссылка на Итого">​</a></h3>
-<p>Пчелы при этом занимаются опылением такого количества растений что им нет альтернатив.&nbsp;Без них твой&nbsp;<a href="http://www.food-filter.com/" target="_blank" rel="noopener noreferrer">проект по фильтрации продуктов</a>&nbsp;станет беднее.&nbsp;Ни мини-роботы, ни шмели, ни одиночные виды немедовых пчел не способны прокормить человечество.</p>
-<p>Подобно современным компаниям, где мониторинг за собственным финансовым состоянием, NPS сотрудников и мониторинг за SLI и качеством продукта считается обязательным, так же и мониторинг за состоянием здоровья пчел это обязательный шаг для этичного обращения с этими прекрасными пушистыми созданиями. Без мониторинга, пчеловоды продолжат терять пчел не осознавая почему.&nbsp;</p>
-<p>Продолжат заводить пчелопакеты вновь, экспериментируя с ульями и практиками на живых семьях. Я бы наоборот говорил о том что это неэтично продолжать жить с таким средневековым подходом. Мы можем изменить это через прозрачность и достаточную информативность о состоянии семьи. А роботизация в итоге сможет снизить и ущерб связанный с инспекциями.</p>]]></content>
-        <category label="психология" term="психология"/>
     </entry>
 </feed>
