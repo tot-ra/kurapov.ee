@@ -150,10 +150,6 @@ const config: Config = {
           title: 'Business',
           items: [
             {
-              label:"Calendly",
-              href: 'https://calendly.com/artkurapov/30min',
-            },
-            {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/in/kurapov/',
             },
