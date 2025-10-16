@@ -6,7 +6,7 @@
 .heroBanner {
   position: relative;
   overflow: hidden;
-  background: url('/img/bg.webp') no-repeat center center;
+  background: url('/img/bg.webp') #20241f no-repeat center center;
   background-size: cover;
   color: #FFF;
 }
