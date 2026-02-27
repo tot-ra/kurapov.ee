@@ -11,37 +11,22 @@ jobs:
       - name: pull site
         working-directory: /www/kurapov.ee/
         run: git reset --hard && git pull --ff-only
+
       - name: pull blog-engine-md
         working-directory: /www/blog-engine-md/
         run: git reset --hard && git pull --ff-only
-      - name: select local go
-        run: |
-          set -e
-          candidates="/usr/bin/go /usr/local/bin/go /usr/local/go/bin/go $(command -v go || true)"
-          for candidate in $candidates; do
-            if [ -x "$candidate" ]; then
-              echo "checking $candidate"
-              if "$candidate" version >/dev/null 2>&1; then
-                tmp="$(mktemp -d)"
-                printf 'package main\nfunc main(){}\n' > "$tmp/main.go"
-                if "$candidate" build -o "$tmp/testbin" "$tmp/main.go" >/dev/null 2>&1; then
-                  echo "GO_BIN=$candidate" >> "$GITHUB_ENV"
-                  "$candidate" version
-                  rm -rf "$tmp"
-                  exit 0
-                fi
-                rm -rf "$tmp"
-              fi
-            fi
-          done
-          echo "no working local go toolchain found" >&2
-          exit 1
+
+      - name: check go
+        run: /usr/local/go/bin/go version
+
       - name: build blog-engine-md binary
         working-directory: /www/blog-engine-md/
-        run: "$GO_BIN" version && "$GO_BIN" build -o /www/blog-engine-md/bin/blog-engine ./cmd/blog-engine
+        run: /usr/local/go/bin/go build -buildvcs=false -o /www/blog-engine-md/bin/blog-engine ./cmd/blog-engine
+
       - name: build production html
         working-directory: /www/kurapov.ee/
         run: rm -rf /www/kurapov.ee/dist && /www/blog-engine-md/bin/blog-engine build
+
       - name: publish for nginx
         working-directory: /www/kurapov.ee/
         run: rm -rf /www/kurapov.ee/public && mv /www/kurapov.ee/dist /www/kurapov.ee/public
