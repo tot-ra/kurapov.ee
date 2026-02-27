@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: url('/assets/fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --accent: #0042db;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans Caption', 'Segoe UI', sans-serif;
+}
+
+p, a, li, span, table, th, td {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Article typography: larger text + cleaner sans-serif stack */
+.site-content article,
+.site-content article .content {
+  font-family: "Iowan Old Style", "Noto Serif", "PT Serif", "Georgia", "Times New Roman", serif;
+  font-size: 1.08rem;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
+}
+
+.site-content article .content p,
+.site-content article .content li {
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+/* Proper article list indentation and spacing */
+.site-content article .content ul,
+.site-content article .content ol {
+  margin: 0.9rem 0 1rem;
+  padding-left: 1.7rem;
+  list-style-position: outside;
+}
+
+.site-content article .content li {
+  margin: 0.2rem 0;
+}
+
+.site-content article .content li > ul,
+.site-content article .content li > ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+/* TOC block pushed to the right, text stays left-aligned */
+.toc {
+  margin-left: auto;
+  text-align: left;
+}
+
+.toc-title {
+  text-align: left;
+}
+
+.toc-item a {
+  border-right: 0;
+  border-left: 2px solid transparent;
+  padding-right: 0;
+  padding-left: 8px;
+}
+
+.toc-item a:hover {
+  border-right-color: transparent;
+  border-left-color: var(--accent);
+}
+
+pre code, code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+html[data-theme='dark'] pre {
+  background: #1b1f27;
+  color: #e9eef8;
+  border: 1px solid #2f3643;
+}
+
+html[data-theme='dark'] code {
+  background: #232a36;
+  color: #f1f5ff;
+}
+
+html[data-theme='dark'] pre code {
+  background: transparent;
+  color: inherit;
+}
+
+.site-header {
+  background: #fff;
+  padding: 11px 17px;
+  min-height: 52px;
+}
+
+html[data-theme='dark'] .site-header {
+  background: #24282f;
+}
+
+.site-header h1 a {
+  color: #111;
+}
+
+.navbar-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.site-nav a {
+  color: #1a1f2e;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+#theme-toggle.theme-toggle {
+  border: 0;
+  box-shadow: none;
+  color: #1a1f2e;
+  background: transparent;
+}
+
+html[data-theme='dark'] #theme-toggle.theme-toggle {
+  color: #dce6ff;
+}
+
+#theme-toggle.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+article h1 {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+body.homepage .hero h1 {
+  font-weight: 800;
+}
+
+html:not([data-theme='dark']) body.homepage,
+html[data-theme='light'] body.homepage {
+  background: #fff !important;
+}
+
+html:not([data-theme='dark']) body.homepage .main-content,
+html[data-theme='light'] body.homepage .main-content {
+  background: #fff !important;
+}
+
+a {
+  color: var(--accent);
+}
+
+html[data-theme='dark'] a {
+  color: #8bb8ff;
+}
+
+/* Keep homepage CTA buttons visually identical to light mode */
+html[data-theme='dark'] .hero-cta .btn-primary {
+  background: #0042db !important;
+  color: #fff !important;
+}
+
+html[data-theme='dark'] .hero-cta .btn-primary:hover {
+  background: #0f55ff !important;
+  color: #fff !important;
+}
+
+html[data-theme='dark'] .hero-cta .btn-secondary {
+  background: transparent !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+html[data-theme='dark'] .hero-cta .btn-secondary:hover {
+  background: transparent !important;
+  color: #0042db !important;
+  border-color: #0042db !important;
+}
+
+.main-content div[style*="text-align:center"] {
+  margin: 0.5rem 0 0.75rem !important;
+}
+
+.main-content iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Match old Docusaurus dark footer style */
+.social-section,
+.site-footer {
+  background: #000;
+  color: #d0d0d0;
+}
+
+body.homepage .site-footer {
+  display: none !important;
+}
+
+.social-group h3 {
+  color: #ffd900;
+}
+
+.social-links li {
+  margin-bottom: 0;
+}
+
+.social-links a {
+  color: #f2f2f2;
+  line-height: 1.2;
+  padding: 1px 0;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  color: #ffd900;
+}

@@ -1,0 +1,207 @@
+site:
+  title: "Артём Курапов"
+  tagline: "Наблюдения и размышления..."
+  url: "https://kurapov.ee"
+  baseUrl: "/"
+  language: "ru"
+  favicon: "/assets/img/favicon/favicon.ico"
+
+author:
+  name: "Артём Курапов"
+  email: ""
+
+build:
+  contentDir: "content"
+  outputDir: "dist"
+  cacheDir: ".cache"
+  parallelWorkers: 4
+
+homepage:
+  enabled: true
+  hero:
+    enabled: true
+    background: "/assets/img/bg.webp"
+    title: "Artjom Kurapov"
+    subtitle: "Full-Stack Product Engineer based in Estonia"
+    description: "Development using Typescript, React, Go, MySQL/Postgres stack with AI superpowers"
+    videoEmbed: "https://www.youtube.com/embed/aLRu5WpA1dU"
+    ctaButtons:
+      - label: "Chat in Telegram"
+        url: "https://t.me/tot_ra"
+        icon: "primary"
+      - label: "Book a meeting"
+        url: "https://calendly.com/artkurapov/30min"
+  projects:
+    - title: "Blog Engine MD"
+      description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
+      url: "https://github.com/tot-ra/blog-engine-md"
+      tags: ["Go", "SSG", "Markdown"]
+      image: "/assets/img/projects/blog.png"
+    - title: "A2gent Marketplace"
+      description: "The agentic marketplace."
+      url: "https://a2gent.net/"
+      image: "/assets/img/projects/a2gent.png"
+      tags: ["AI", "Marketplace"]
+    - title: "Caesar"
+      description: "AI agent(s) management web-app. Allows to control brute agents."
+      url: "https://github.com/a2gent/caesar"
+      image: "/assets/img/projects/caesar.png"
+      tags: ["AI", "Web App"]
+    - title: "Brute"
+      image: "/assets/img/projects/brute.png"
+      description: "AI agent with terminal UI and HTTP API. Can run in secure container."
+      url: "https://github.com/A2gent/brute"
+      tags: ["AI", "TUI", "API"]
+    - title: "RPG Rebel Reval"
+      description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
+      image: "/assets/img/projects/rr.png"
+      url: "https://github.com/tot-ra/rebel-reval"
+      tags: ["Game", "RPG"]
+    - title: "Альбом Легкие пустыни"
+      description: "Один из моих музыкальных альбомов, выпущенный в 2025 году."
+      image: "/assets/img/projects/album.jpg"
+      url: "/docs/muzyka/legkie-pustyni/"
+      tags: ["Music"]
+    - title: "Gratheon"
+      description: "Startup to save the bees. Modular robotic beehive and app with data analytics."
+      image: "/assets/img/projects/gratheon.png"
+      url: "https://gratheon.com"
+      tags: ["Startup", "IoT"]
+    - title: "GraphQL Schema Registry"
+      description: "Schema registry for GraphQL services with versioning and on-prem deployment."
+      image: "/assets/img/projects/gql.png"
+      url: "https://github.com/tot-ra/graphql-schema-registry"
+      tags: ["GraphQL", "Go"]
+    - title: "Workstation"
+      description: "CLI-focused scripts to automate setup of a new workstation."
+      image: "/assets/img/projects/work.png"
+      url: "https://github.com/tot-ra/workstation"
+      tags: ["CLI", "DevOps"]
+  socialLinks:
+    - title: "Короткие мысли"
+      links:
+        - label: "TikTok"
+          url: "https://www.tiktok.com/@artkurapov"
+        - label: "Twitter"
+          url: "https://twitter.com/tot_ra"
+        - label: "Threads"
+          url: "https://www.threads.com/@tot_ra"
+        - label: "Telegram"
+          url: "https://t.me/+4kDpExZlraQ0NGZk"
+        - label: "Bluesky"
+          url: "https://bsky.app/profile/tot-ra.bsky.social"
+        - label: "ВКонтакте"
+          url: "https://vk.com/artkurapov"
+        - label: "ЖЖ"
+          url: "https://tot-ra.livejournal.com/"
+    - title: "Business"
+      links:
+        - label: "LinkedIn"
+          url: "https://www.linkedin.com/in/kurapov/"
+        - label: "GitHub"
+          url: "https://github.com/tot-ra"
+        - label: "Medium"
+          url: "https://medium.com/@tot_ra"
+        - label: "Stack Overflow"
+          url: "https://stackoverflow.com/users/158448/artjom-kurapov"
+        - label: "Slideshare"
+          url: "https://www.slideshare.net/totra/presentations"
+        - label: "Habr"
+          url: "https://habr.com/ru/users/tot_ra/posts/"
+    - title: "Community"
+      links:
+        - label: "Long videos on Youtube"
+          url: "https://www.youtube.com/user/artkurapov/"
+        - label: "Streams on Twitch"
+          url: "https://www.twitch.tv/tot_ra/"
+        - label: "Природа в Instagram"
+          url: "https://www.instagram.com/tot_ra/"
+        - label: "Facebook"
+          url: "https://www.facebook.com/artkurapov"
+        - label: "Reddit"
+          url: "https://www.reddit.com/user/tot_ra/"
+    - title: "Multimedia"
+      links:
+        - label: "Music on Suno"
+          url: "https://suno.com/@tot_ra"
+        - label: "Books on Goodreads"
+          url: "https://goodreads.com/tot_ra"
+        - label: "Games on Steam"
+          url: "https://steamcommunity.com/id/tot_ra/"
+        - label: "Music on Spotify"
+          url: "https://open.spotify.com/user/1176479585"
+        - label: "Music on Soundcloud"
+          url: "https://soundcloud.com/tot_ra"
+        - label: "3D models on Thingiverse"
+          url: "https://www.thingiverse.com/tot_ra/designs"
+        - label: "Pinterest"
+          url: "https://www.pinterest.com/tot_ra/"
+
+navigation:
+  sidebar:
+    collapsed: true
+    maxDepth: 3
+  breadcrumbs:
+    enabled: true
+    homeLabel: "Home"
+  prevNext:
+    enabled: true
+
+assets:
+  cache:
+    enabled: false
+    directory: ".cache/images"
+  images:
+    enabled: true
+    quality: 85
+    sizes:
+      thumbnail: 180
+      preview: 480
+      full: 1200
+    lazyLoading: true
+  css:
+    enabled: true
+    minify: true
+  js:
+    enabled: true
+    minify: true
+
+feeds:
+  rss:
+    enabled: true
+    path: "rss.xml"
+    items: 30
+    fullContent: false
+  atom:
+    enabled: true
+    path: "atom.xml"
+    items: 30
+
+sitemap:
+  enabled: true
+
+tags:
+  enabled: true
+
+archive:
+  enabled: true
+
+pagination:
+  enabled: true
+  pageSize: 30
+
+advanced:
+  mermaid:
+    enabled: true
+    theme: "default"
+  graph:
+    enabled: true
+    path: "graph"
+  theme:
+    default: "auto"
+    allowToggle: true
+
+seo:
+  defaultTitle: "Артём Курапов"
+  titleSeparator: " | "
+  generateSocialMeta: true

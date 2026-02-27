@@ -2,7 +2,7 @@
 /node_modules
 
 # Generated files
-.docusaurus
+dist
 .cache-loader
 
 # Misc
