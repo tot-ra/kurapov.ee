@@ -16,7 +16,7 @@ jobs:
         run: git reset --hard && git pull --ff-only
       - name: build blog-engine-md binary
         working-directory: /www/blog-engine-md/
-        run: go build -o /www/blog-engine-md/bin/blog-engine ./cmd/blog-engine
+        run: export PATH=$PATH:/usr/local/go/bin && go build -o /www/blog-engine-md/bin/blog-engine ./cmd/blog-engine
       - name: build production html
         working-directory: /www/kurapov.ee/
         run: rm -rf /www/kurapov.ee/dist && /www/blog-engine-md/bin/blog-engine build
