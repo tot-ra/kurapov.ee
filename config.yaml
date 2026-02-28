@@ -31,6 +31,11 @@ homepage:
         icon: "primary"
       - label: "Book a meeting"
         url: "https://calendly.com/artkurapov/30min"
+  chat:
+    enabled: true
+    baseUrl: "http://localhost:9080"
+    recipientAgentId: "09fd65e9-a5f0-47f7-8130-55bace363fb3"
+    title: "Artjom's brute agent running on-prem on mac mini"
   projects:
     - title: "Blog Engine MD"
       description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
@@ -52,6 +57,10 @@ homepage:
       description: "AI agent with terminal UI and HTTP API. Can run in secure container."
       url: "https://github.com/A2gent/brute"
       tags: ["AI", "TUI", "API"]
+    - title: "Tarot Star"
+      image: "/assets/img/projects/tarot.png"
+      url: "http://tarot.kurapov.ee"
+      tags: ["Art", "Web App"]
     - title: "RPG Rebel Reval"
       description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
       image: "/assets/img/projects/rr.png"
