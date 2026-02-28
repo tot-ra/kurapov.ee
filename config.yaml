@@ -60,6 +60,7 @@ homepage:
     - title: "Tarot Star"
       image: "/assets/img/projects/tarot.png"
       url: "http://tarot.kurapov.ee"
+      description: "A beautiful tarot cards set with random shuffling, drang-and-drop and custom spreads"
       tags: ["Art", "Web App"]
     - title: "RPG Rebel Reval"
       description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
