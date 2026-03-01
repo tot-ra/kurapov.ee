@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkurapov_ee=self.webpackChunkkurapov_ee||[]).push([["86828"],{45045:function(e,r,u){u.d(r,{createArchitectureServices:function(){return c.i}});var c=u(1041);u(36902)}}]);
