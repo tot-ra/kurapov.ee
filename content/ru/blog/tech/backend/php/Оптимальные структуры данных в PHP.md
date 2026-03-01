@@ -67,3 +67,9 @@ $priorityQueue->insert("Zjuganov", 15);
 
 
 ![](img/Pasted%20image%2020241019200734.png)
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

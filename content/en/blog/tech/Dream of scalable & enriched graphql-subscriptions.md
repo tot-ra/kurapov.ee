@@ -1,6 +1,7 @@
 ---
 title: Dream of scalable & enriched graphql-subscriptions
 date: 2022-11-23T15:22
+tags: [ai, frontend, go, graphql, php]
 ---
 
 Originally posted in [Medium](https://medium.com/pipedrive-engineering/a-dream-of-scalable-and-enriched-graphql-subscriptions-724284448e65)
@@ -224,3 +225,9 @@ Return on investment is not seen, if _value_ is not measured.
 GraphQL has taken onto itself a big responsibility of making web more transparent, predictable, reusable and more efficient. I urge developers 🌞 to have professional patience — educate your colleagues, deliver **hard metrics** to managers, proving GraphQL superiority.
 
 My dream is that there will come a day when devs will replace schema-less WS events & REST APIs with GraphQL and subscriptions for anyone to consume. Clients are our future, this is the way
+
+## Related
+
+- [README.md - how to document your repo](/en/blog/tech/readmemd-how-to-document-your-repo/)
+- [Journey to a Federated GraphQL](/en/blog/tech/journey-to-a-federated-graphql/)
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)

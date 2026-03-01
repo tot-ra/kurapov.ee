@@ -1,6 +1,7 @@
 ---
 title: Авторизация в Twitter с OAuth 1.0
 date: 2010-09-09T10:00
+tags: [go, integration, php, tech]
 ---
 
 Твиттер (а также Yahoo, Google, Facebook и LinkedIn ) штоб-его-заногу перешёл на безопасный [OAuth](http://oauth.net/) и я вспомнил как в своё время с матюгами несколько дней ставил серверную часть [OpenID](http://kurapov.name/rus/technology/web/openid/) на сайт. А они ведь похожи (авторам нравится буковка О, ага). Вобщем - как это работает? Если раньше был пользователь и твиттер, а мы со своим приложением _притворялись_ пользователем используя его логин-пароль, то теперь чётко выделяются три лица
@@ -49,3 +50,9 @@ $arrPosts = $connection->get('statuses/user_timeline');
 - [Авторизация на основе Zend Framework](http://framework.zend.com/manual/en/zend.oauth.introduction.html) (Oauth + Crypt компоненты)  
     
 - [Длинное описание протокола простым и понятным языком на примере PHP, rutvit, Andy Smith lib](http://habrahabr.ru/blogs/social_networks/77648/)
+
+## Related
+
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Пингуем technorati и feedburner по XML-RPC](/ru/blog/tech/integration/pinguem-technorati-i-feedburner-po-xml-rpc/)
+- [Swagger](/ru/blog/tech/integration/swagger/)

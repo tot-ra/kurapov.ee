@@ -33,3 +33,9 @@ for (var i=0; i<xpathResult.snapshotLength; i++) {
 
 },6000);
 ```
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)

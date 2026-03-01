@@ -77,3 +77,9 @@ tags: [frontend]
 - [Wimpy](http://www.wimpyplayer.com/) для музыки, интегрируется на php, asp и coldfusion
 - [Создание flv-player'a](http://www.helpexe.ru/effect_18.php) с конвертацией при помощи sothnk swf quicker
 - Будущее за большими видео-роликами - [Russia.ru](http://russia.ru/), [vimeo](http://www.vimeo.com/362259), [adobe](http://onair.adobe.com/blogs/videos/2007/06/14/tinic-uro-shows-new-fullscreen-hd-video-in-flash-player/), [madeinrussia](http://madeinrussia.tv/).
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)

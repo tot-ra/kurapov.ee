@@ -1,6 +1,7 @@
 ---
 title: Mysql rownum
 date: 2008-01-01T10:00
+tags: [backend, mysql, php, tech]
 ---
 
 вторник, 1 января 2008 г. в 22:40:38
@@ -21,3 +22,9 @@ UPDATE `menu` SET order_id=(
 SELECT @rank:=@rank+1 FROM `menu2` WHERE `menu`.id=`menu2`.id LIMIT 1  
 ) WHERE parentID=0 ORDER BY `title` ASC;
 ```
+
+## Related
+
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)
+- [Random order в Postgres](/ru/blog/tech/backend/DB/postgres/random-order-v-postgre/)

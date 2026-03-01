@@ -102,3 +102,9 @@ this.update=CommentControl.Read(ID); //ссылка на }
 ![](../img/Pasted%20image%2020241016182535.png)
 
 <iframe width="934" height="350" src="https://www.youtube.com/embed/8mwKq7_JlS8" title="jQuery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

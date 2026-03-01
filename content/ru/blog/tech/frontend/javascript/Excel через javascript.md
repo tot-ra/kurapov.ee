@@ -27,3 +27,9 @@ Simple spreadsheet хранит все данные в своём "javascript" �
 `if (keyCode==9) {   saveCell();   ret=false;   editCell(currRow,currCol+1,keyCode);   }`
 
 Если csv не подходящий вариант, и хочется создания xls, можно воспользоваться портированным с perl, [writeexcel](http://www.bettina-attack.de/jonny/view.php/projects/php_writeexcel/demo/) 'ем, а для импорта xls есть [spreadsheet_excel_reader](http://pear.php.net/pepr/pepr-proposal-show.php?id=304) однако проблемы с utf8 всё ещё не имеются..
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)
+- [jQuery для продолжающих (с плагинами)](/ru/blog/tech/frontend/javascript/jquery-dlya-prodolzhayuschih-s-plaginami/)

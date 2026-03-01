@@ -34,3 +34,9 @@ tags: [backend, db]
 - [Субъективная разница Postgre и MySQL  
     ](http://valera.ws/2007.09.04~postgresql-vs-mysql/)
 - [Замена SQL_CALC_FOUND_ROWS](http://valera.ws/2008.07.24~calc-found-rows-in-postgresql/) из MySQL в Postgre
+
+## Related
+
+- [Экспорт данных используя Create View и Aggregate-функции](/ru/blog/tech/backend/DB/postgres/eksport-dannyh-ispolzuya-create-view-i-aggregate-funktsii/)
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)

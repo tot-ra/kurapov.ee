@@ -42,3 +42,9 @@ tags: [кино]
 
 - Неплохая более [детальная рецензия](http://www.interkino.ru/reviews/deadman)
 - [torrents.ru](http://torrents.ru/forum/viewtopic.php?t=94159)
+
+## Related
+
+- [A serious man](/ru/blog/кино/a-serious-man/)
+- [Dark Knight Rises](/ru/blog/кино/dark-knight-rises/)
+- [Home](/ru/blog/кино/dom/)

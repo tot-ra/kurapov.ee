@@ -256,3 +256,9 @@ buildFederatedSchema([{typeDefs, resolvers}])
 Что касается внешнего мира, надеюсь Apollo со своим [проектом Constellation](https://www.youtube.com/watch?v=MvHzOwdLb_o) ускорят обработку запроса на Rust что-бы небыло этих 10% налога на производительность и смогут федерировать graphql сервисы без серьезных изменений последних.
 
 Вобщем прекрасное время что-бы наслаждаться разработкой где уйма сложности!
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

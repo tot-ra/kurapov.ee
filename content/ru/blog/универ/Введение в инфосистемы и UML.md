@@ -25,3 +25,9 @@ UML можно рисовать как от руки, на доске, так и
 
   
 Кроме того существуют STATE diagram, Collaboration diagram и прочие
+
+## Related
+
+- [Web-службы и архитектуры приложений для интернета](/ru/blog/универ/web-sluzhby-i-arhitektury-prilozheniy-dlya-interneta/)
+- [Алгоритмы и структуры данных](/ru/blog/универ/algoritmy-i-struktury-dannyh/)
+- [Анализ сетей](/ru/blog/универ/analiz-setey/)

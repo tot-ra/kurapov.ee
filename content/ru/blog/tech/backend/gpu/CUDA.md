@@ -1,6 +1,7 @@
 ---
 title: CUDA
 date: 2024-10-15T10:00
+tags: [backend, tech]
 ---
 
 Послушал случайную онлайн лекцию по CUDA и поскольку это интересно, скопировал себе немного слайдов
@@ -27,3 +28,9 @@ date: 2024-10-15T10:00
 ![](Screenshot%202024-10-20%20at%2000.32.20.png)
 ![](Screenshot%202024-10-20%20at%2000.32.32.png)
 ![](Screenshot%202024-10-20%20at%2000.33.23.png)![](Screenshot%202024-10-20%20at%2000.37.08.png)
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [DB дизайн](/ru/blog/tech/backend/DB/db-dizayn/)
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)

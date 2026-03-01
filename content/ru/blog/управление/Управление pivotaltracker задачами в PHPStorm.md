@@ -25,3 +25,8 @@ API ключ надо получать из [API самого трекера](h
 ![](../img/Pasted%20image%2020241020022958.png)
 
 Теперь в Tools → Context можно сохранять табы, а в Tools → Task можно прочитать описание, открыть в браузере или переключиться на другую задачу. Success!
+
+## Related
+
+- [Code review и конфликт в динамике команды](/ru/blog/управление/code-review-i-konflikt-v-dinamike-komandy/)
+- [Система прав в инфосистемах](/ru/blog/управление/sistema-prav-v-infosistemah/)

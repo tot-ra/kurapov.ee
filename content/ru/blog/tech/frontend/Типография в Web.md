@@ -57,3 +57,9 @@ PS. Интересные шрифты можно найти на [fuelfonts](ht
 Читайте также:
 
 - [font face in IE](http://jontangerine.com/log/2008/10/font-face-in-ie-making-web-fonts-work)
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)

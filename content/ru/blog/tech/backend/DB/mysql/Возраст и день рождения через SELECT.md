@@ -1,6 +1,7 @@
 ---
 title: Возраст и день рождения через SELECT
 date: 2008-01-12T10:00
+tags: [backend, mysql, tech]
 ---
 
 Иногда хочется быстро вычислить сколько дней до дня рождения пользователя. Вы все видели это в Одноклассниках и ЖЖ. Это можно делать в запросе например таким образом для mysql 5
@@ -31,3 +32,9 @@ DATEDIFF(
    ) YEAR ),NOW()) as next_birth_days
 FROM users
 ```
+
+## Related
+
+- [DB дизайн](/ru/blog/tech/backend/DB/db-dizayn/)
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

@@ -1,6 +1,7 @@
 ---
 title: Аутентификация с ID-card
 date: 2007-01-25T10:00
+tags: [go, php, server, tech]
 ---
 
 ID-карта это обычная пластиковая карточка с чипом, где хранятся личные сертификаты гражданина или постоянного жителя Эстонии.
@@ -30,3 +31,9 @@ ID-карта это обычная пластиковая карточка с �
 https://github.com/riho/Drupal-ID-Card   
 
 http://code.google.com/p/esteid/source/browse/misc/configure-apache.sh
+
+## Related
+
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)

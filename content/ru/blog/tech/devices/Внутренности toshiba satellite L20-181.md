@@ -1,6 +1,7 @@
 ---
 title: Toshiba Satellite L20-181
 date: 2007-01-27T10:00
+tags: [devices, tech, вера, университет]
 ---
 
 Лет пять назад, когда я ещё в армии был, купил я себе дешёвенький лаптоп Toshiba satellite. По уровню развития можно сказать что 128 мб оперативки позволяли запускать максимум Windows XP. Время шло, он хорошо отслужил мне в университете в качестве доступа в интернет и записной книжки.
@@ -30,3 +31,9 @@ date: 2007-01-27T10:00
 ![](img/IMG_0449.jpg)
 ![](img/IMG_0454.jpg)
 ![](img/IMG_0455.jpg)
+
+## Related
+
+- [Управление курсором с клавиатуры](/ru/blog/tech/devices/upravlenie-kursorom-s-klaviatury/)
+- [Dell Latitude E6400](/ru/blog/tech/devices/dell-latitude-e6400/)
+- [Nintendo Wii](/ru/blog/tech/devices/nintendo-wii/)

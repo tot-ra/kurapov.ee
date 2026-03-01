@@ -1,6 +1,7 @@
 ---
 title: Cosmic Encounter
 date: 2012-04-16T18:31:00
+tags: [ai, board-games, go, игры]
 ---
 
 Прибыла заказанная мною на амазоне настольная игра Cosmic encounter и дополнение к ней Cosmic incursion. Я играл в неё три раза, всякий раз проигрывал и тем не менее очень нравился процесс, поэтому объясню основы..
@@ -144,3 +145,9 @@ date: 2012-04-16T18:31:00
 [../img/267.pdf](../img/267.pdf)
 
 [../img/268.pdf](../img/268.pdf)
+
+## Related
+
+- [League of legends](/ru/blog/игры/league-of-legends/)
+- [Skyrim](/ru/blog/игры/skyrim/)
+- [Создание компьютерной игры](/ru/blog/игры/sozdanie-kompyuternoy-igry/)

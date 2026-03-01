@@ -1,6 +1,7 @@
 ---
 title: Транзакции InnoDB
 date: 2009-01-06T10:00
+tags: [backend, mysql, php, tech, вера]
 ---
 
 InnoDB это транзакционный, реляционный движок работающий на основе MySQL сервера. Начиная с 2001 года он поставляется в стандартной сборке, а с версии 5.1 может устанавливаться в качестве плагина (без необходимости перекомпилировать ядро сервера). Синтаксис очень простой.
@@ -70,3 +71,9 @@ Deadlock'и, т.е. тупиковая ситуация одновременны
 - [Сравнение нагрузок на MyIsam и InnoDB](http://www.mysqlperformanceblog.com/2007/01/08/innodb-vs-myisam-vs-falcon-benchmarks-part-1/) в 2007 году
 - [Ссылочная целостность](http://ru.wikipedia.org/wiki/%D0%A1%D1%81%D1%8B%D0%BB%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D1%86%D0%B5%D0%BB%D0%BE%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
 - [XtraBackup](http://highload.com.ua/index.php/2009/09/16/xtrabackup-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-innodb/) для создания резервных копий InnoDB
+
+## Related
+
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)
+- [Mysql rownum](/ru/blog/tech/backend/DB/mysql/mysql-rownum/)

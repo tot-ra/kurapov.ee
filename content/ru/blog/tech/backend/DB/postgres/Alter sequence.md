@@ -1,6 +1,7 @@
 ---
 title: Alter sequence
 date: 2007-11-29T10:00
+tags: [backend, postgres, tech]
 ---
 
 Обычно в Postgre последовательности (sequence) обновляются естественно, но как и в случае с дупликатами, порой иногда хочется одним запросом восстановить правильный максимум .. Сначала я подумал что сработает обычный под-запрос типа
@@ -12,3 +13,9 @@ date: 2007-11-29T10:00
 `   SELECT setval('sysusers_id_seq', (select max(id)+1 from sysusers))+1;`
 
 Теперь можно просто продублировать этот запрос для разных таблиц и последовательностей и беззаботно продолжать работу..
+
+## Related
+
+- [Random order в Postgres](/ru/blog/tech/backend/DB/postgres/random-order-v-postgre/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)
+- [DB дизайн](/ru/blog/tech/backend/DB/db-dizayn/)

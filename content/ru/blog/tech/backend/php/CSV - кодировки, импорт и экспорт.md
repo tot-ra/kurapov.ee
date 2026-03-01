@@ -95,3 +95,9 @@ function getCSVValues($sString, $sSeparator = ",") {
     return $aElements;
 }
 ```
+
+## Related
+
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)

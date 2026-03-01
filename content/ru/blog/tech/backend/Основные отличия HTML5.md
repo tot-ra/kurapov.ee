@@ -51,3 +51,9 @@ HTML5 всё ещё в режиме черновика, многие брауз�
 - [W3C - разница между html4 и 5](http://www.w3.org/TR/2009/WD-html5-diff-20090825/)
 - [](http://www.w3.org/TR/2009/WD-html5-diff-20090825/)[Web Forms](http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html)
 - [On HTML5 Drag and Drop](http://www.alertdebugging.com/2009/08/16/on-html-5-drag-and-drop/)
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

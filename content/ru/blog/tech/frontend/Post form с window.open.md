@@ -19,3 +19,9 @@ tags: [frontend]
 ```
 $('#report_form').submit(function(){           if ($('#csv_radio').attr('checked')!=true){               this.target="foo";               window.open('', 'foo', 'width=950,height=400,status=yes,resizable=yes,scrollbars=yes');           }           else this.target="_self";       });
 ```
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)

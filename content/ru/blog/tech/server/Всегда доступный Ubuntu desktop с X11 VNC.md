@@ -1,6 +1,7 @@
 ---
 title: Всегда доступный Ubuntu desktop с X11 VNC
 date: 2013-12-19T10:00
+tags: [server, tech]
 ---
 
 четверг, 19 декабря 2013 г. в 14:22:34
@@ -20,3 +21,9 @@ date: 2013-12-19T10:00
 Ставим [поддержку fuxe4x](https://www.macupdate.com/app/mac/39025/fuse4x) для osx. Теперь маунтим удалённый рабочий стол на папку у себя на столе..
 
 `sshfs vnc@x.x.x.x:/home/vnc/Desktop Droplet`
+
+## Related
+
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)
+- [Crontab](/ru/blog/tech/server/crontab/)
+- [Crontab](/ru/blog/tech/server/vagrant/)

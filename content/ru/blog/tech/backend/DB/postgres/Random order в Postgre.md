@@ -1,8 +1,7 @@
 ---
 title: Random order в Postgres
 date: 2008-03-03T10:05:00
-tags:
-  - db
+tags: [backend, mysql, php, postgres, tech]
 ---
 
 > Случайность — маска неузнанной закономерности  
@@ -33,3 +32,9 @@ tags:
 `SELECT CEIL(RANDOM()*(SELECT COUNT(*) AS cnt FROM mytable)); --получим из базы offset   SELECT * FROM quotes LIMIT 1 OFFSET 43600; --и передадим в явном виде в запрос   `
 
 LIMIT сразу перейдёт к нужному ряду - нет нужды в ID, а значит больше свободы. Единственный вопрос в скорости. Ведь используемая внутри COUNT функция - аггрегирующая, а в Postgre она отличается от обычного счётчика в MySQL. Ко всему прочему, как говорит документация - OFFSET [может быть неэффективным](http://www.postgresql.org/docs/current/static/queries-limit.html) в больших базах из-за того, что обработка предыдущих рядов всё-равно происходит.
+
+## Related
+
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)
+- [Mysql rownum](/ru/blog/tech/backend/DB/mysql/mysql-rownum/)

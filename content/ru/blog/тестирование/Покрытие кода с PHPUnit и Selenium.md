@@ -37,3 +37,9 @@ Cмотрим папку [SeleniumCommon](https://github.com/sebastianbergmann/
 Но иногда хочется быстро тесты изменять с помощью браузерного IDE, поэтому я сохраняю тесты в html формате, а автоматизирую их запуск из phpunit с помощью runSelenese(). Тогда для сохранения сессий надо ещё добавить в bootstrap `PHPUnit_Extensions_SeleniumTestCase::shareSession(true);`
 
 Тесты бегают, взаимозависимы, покрытие в PHPStorm наглядно, изменять просто.
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

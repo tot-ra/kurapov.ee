@@ -32,3 +32,9 @@ Scrum - одна из методик гибкой разработки прог�
 
 
 [../img/86.pdf](../img/86.pdf)
+
+## Related
+
+- [Estonian Mafia](/ru/blog/философия/estonian-mafia/)
+- [OpenUP](/ru/blog/философия/openup/)
+- [Rapid application development](/ru/blog/философия/rapid-application-development/)

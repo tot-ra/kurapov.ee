@@ -1,6 +1,7 @@
 ---
 title: Kings bounty
 date: 2008-07-05T00:22:00
+tags: [php, игры]
 ---
 
 Первое впечателение [от игры](http://www.kingsbounty.ru/) — клон серии Heroes of Might and Magic, добротно сделанный на русском с мультяшной 3х-мерной графикой и сказочным интерфейсом. В отличие от HOMM, игрушка более квестовая чем стратегическая, а управлять можно только одним героем, недавно вышедшим из академии на службу короля.
@@ -30,3 +31,9 @@ date: 2008-07-05T00:22:00
 
 - [обзор на CRPG.ru](http://www.crpg.ru/sections.php?op=viewarticle&artid=2287)
 - об [особенностях семейной жизни](http://soul-n-music.livejournal.com/62770.html) в «Легенде»
+
+## Related
+
+- [Call of Duty 4](/ru/blog/игры/call-of-duty-4/)
+- [Call of Duty 4](/ru/blog/игры/crysis-warhead/)
+- [DeathSpank](/ru/blog/игры/deathspank/)

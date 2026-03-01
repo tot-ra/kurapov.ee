@@ -28,3 +28,9 @@ $.when(Model1.fetch(), Model2.fetch(), Model3.fetch(), Model4.fetch(), Model5.fe
 ```
 
 ![](../img/Pasted%20image%2020241016183133.png)
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

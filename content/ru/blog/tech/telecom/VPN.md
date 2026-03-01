@@ -1,6 +1,7 @@
 ---
 title: VPN
 date: 2007-10-09T10:00
+tags: [php, tech, telecom]
 ---
 
 Virtual Private Network это искусственный защищённый канал связи между двумя LAN-сетями использующий протоколы аутидентификации IPSec, PPTP или L2TP и алгоритмы криптографии DES, triple DES, AES.
@@ -23,3 +24,9 @@ VPN-соединение устанавливается программами:
 Если возникает ошибка ROUTE, то можно создать .bat файлик и прописать туда нужные пути таким образом..
 
 `route ADD 10.138.12.4 MASK 255.255.255.255 10.138.11.109`
+
+## Related
+
+- [Взлом Wi-Fi access point-а с WEP](/ru/blog/tech/telecom/vzlom-wi-fi-access-point-a-s-wep/)
+- [Две lan карты одновременно](/ru/blog/tech/telecom/dve-lan-karty-odnovremenno/)
+- [Как настроить live видео вещание](/ru/blog/tech/telecom/kak-nastroit-live-video-veschanie/)

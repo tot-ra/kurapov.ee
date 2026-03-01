@@ -15,3 +15,9 @@ tags: [php]
 session_write_close();
 
 Закрываем явно запись в сессию. Читать мы всё ещё сможем оттуда, но зато следующие запросы смогут быстро исполняться. Я это делаю ещё до того как файл начнётся обрабатываться
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

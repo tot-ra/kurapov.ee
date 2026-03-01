@@ -13,3 +13,7 @@ I did some throw-away home coding assignments back in the days:
 - https://github.com/tot-ra/sandbox-chocolate-factory
 - https://github.com/tot-ra/sandbox-nestjs-auth-ratelimit
 - https://github.com/tot-ra/sandbox-guest-book
+
+## Related
+
+- [README.md - how to document your repo](/en/blog/tech/readmemd-how-to-document-your-repo/)

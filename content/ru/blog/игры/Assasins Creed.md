@@ -1,6 +1,7 @@
 ---
 title: Assasins Creed
 date: 2008-03-23T01:07:00
+tags: [go, игры]
 ---
 
 Игрушка по вводному сюжету схожая с Timeshift - учёный-идеалист _Vidic_ из фармацевтической компании _Abstergo Industries_ (лат. "очищать") находит главного героя - бармена _Desmond_'а, убежавшего с фермы сектантов, который в прошлой жизни был клановым наёмным убийцей. Благодаря специальному устройству _Animus_ (лат. дух), теперь можно прочитать генетическую память из прошлого, а самому герою - _Альтаиру_ прийдётся пережить приключения в "центре мира" 1191 года - на Священной земле.
@@ -79,3 +80,9 @@ date: 2008-03-23T01:07:00
 - [Превью игры](http://xtgamers.com/page-id-1637.html)
 - [О бедном убийце замолвите слово](http://www.gametech.ru/cgi-bin/show.pl?option=review&id=178) - Александр Тутевич
 - [Обзор Assasin's creed](http://www.uaplay.com/games/action/assassins/review.html) - Demetrius
+
+## Related
+
+- [Cosmic Encounter](/ru/blog/игры/board-games/cosmic-encounter/)
+- [DeathSpank](/ru/blog/игры/deathspank/)
+- [Dragon Age Origins](/ru/blog/игры/dragon-age-origins/)

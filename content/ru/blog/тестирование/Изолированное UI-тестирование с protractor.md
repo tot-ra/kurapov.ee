@@ -61,3 +61,9 @@ it('File editing', function (done) {
 
 
 <iframe width="934" height="350" src="https://www.youtube.com/embed/n3APDzvPF0k" title="2015.12.29 Никита Макаров - Микросервисы для автоматизации тестирования («Одноклассники»)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Интеграционное тестирование веб-приложения на инъекции](/ru/blog/тестирование/integratsionnoe-testirovanie-veb-prilozheniya-na-inektsii/)

@@ -130,3 +130,9 @@ $this->assertEquals(4, $o->a(2));
 Недостатки — тесты становятся на строчку сложней, т.к. надо заменять методы зависимостей, вместо передачи в качестве аргумента. А из-за того что код вызывается через мок обьекта, а не его instance, IDE не сможет автоматически рефакторить и находить использование.. это конечно неприятно, но аннотации спасают
 
 Остаётся проблема с [parent-методами](http://stackoverflow.com/questions/6711647/in-phpunit-how-do-i-mock-parent-methods)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

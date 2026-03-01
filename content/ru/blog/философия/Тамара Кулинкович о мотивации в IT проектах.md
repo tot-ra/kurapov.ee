@@ -35,4 +35,8 @@ tags: [управление]
 9. Самодостаточность и независимость
 10. Достижение совершенства и неуязвимости
 
+## Related
 
+- [Estonian Mafia](/ru/blog/философия/estonian-mafia/)
+- [OpenUP](/ru/blog/философия/openup/)
+- [Rapid application development](/ru/blog/философия/rapid-application-development/)

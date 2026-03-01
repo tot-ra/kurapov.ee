@@ -150,3 +150,9 @@ gems.DocumentModel = gems.BaseModel.extend(
         }
     });
 ```
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [jQuery для продолжающих (с плагинами)](/ru/blog/tech/frontend/javascript/jquery-dlya-prodolzhayuschih-s-plaginami/)

@@ -22,3 +22,9 @@ tags: [soft]
 Читайте также:
 
 - [Синхронизация с мобильным телефоном](https://kurapov.ee/article/phone_synchronize/)
+
+## Related
+
+- [CVS и SVN](/ru/blog/tech/soft/cvs-i-svn/)
+- [Unity3D](/ru/blog/tech/soft/unity3d/)
+- [Как записывать экран с круглой камерой](/ru/blog/tech/soft/kak-zapisyvat-ekran-s-krugloy-kameroy/)

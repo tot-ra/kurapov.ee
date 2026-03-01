@@ -1,6 +1,7 @@
 ---
 title: Object mapping и Active record
 date: 2007-02-01T21:50
+tags: [tech]
 ---
 
 [ORM](http://en.wikipedia.org/wiki/Object-relational_mapping) (практически в коде известный как [Active record](http://en.wikipedia.org/wiki/Active_Record) ) - достаточно простой, но очень эффективный метод соединения принципов объектно-ориентированного программирования с базой данных.
@@ -21,3 +22,9 @@ date: 2007-02-01T21:50
 Для более изощрённых вариантов существуют и функции возвращающие массив статей, добавляющие новую статью, обновляющие данные определённой статьи. Объектность данных способствует более простой работе с данными..
 
 `$recordComment=arr2obj($_POST, 'myprefix_' );   $table_article->insert($recordComment);`
+
+## Related
+
+- [20 типичных уязвимостей в коде](/ru/blog/tech/security/20-tipichnyh-uyazvimostey-v-kode/)
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Backend-авторизация в facebook через OAuth 2.0](/ru/blog/tech/integration/backend-avtorizatsiya-v-facebook-cherez-oauth-20/)

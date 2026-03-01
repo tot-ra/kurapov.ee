@@ -56,3 +56,9 @@ _Reports_ полезны своими календарями. Сразу вид
 - Антон Шевчук тоже пишет о [планировании web 2.0 проекта](http://anton.shevchuk.name/estimation/estimation-for-beginners/) с нуля
 - [MicrosoftProject.ru](http://www.microsoftproject.ru/articles.phtml?gid=33) 
 - [Gantter.com](http://gantter.com/)
+
+## Related
+
+- [Избранность](/ru/blog/философия/izbrannost/)
+- [О целостности](/ru/blog/философия/o-tselostnosti/)
+- [Про аннотации и авторство кода](/ru/blog/философия/pro-annotatsii-i-avtorstvo-koda/)

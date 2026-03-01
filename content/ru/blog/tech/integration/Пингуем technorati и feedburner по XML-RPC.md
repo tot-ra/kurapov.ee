@@ -1,6 +1,7 @@
 ---
 title: Пингуем technorati и feedburner по XML-RPC
 date: 2007-10-25T10:00
+tags: [go, integration, php, tech]
 ---
 
 Я уже писал [про XML-RPC](https://kurapov.ee/article/xml-rpc_and_livejournal/) и использование его с livejournal.
@@ -57,3 +58,9 @@ return(true);
 - [Поддомены в apache](http://zliypes.com.ua/blog/2007/10/25/serveralias/) - наконец-то ценный пост от злого пса
 
 А не по теме - вчера купил куртку в [reserved](http://www.re-reserved.com/), где кстати очень грамотно всё сделано - цены не слишком высокие как в monton, сразу женщина подошла и помогла выбрать, освещение, размещение, музыка - всё оптимально и не броско. Видел сегодня Андрея и [Катю](http://katjona.livejournal.com/profile), на работе переезд, а офис ещё не найден.
+
+## Related
+
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Авторизация в Twitter с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-twitter-s-oauth-10/)
+- [Swagger](/ru/blog/tech/integration/swagger/)

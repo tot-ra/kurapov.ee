@@ -199,3 +199,9 @@ myApp.usePageAs('artjom@kurapov.name', 'admin/dash', function () {
 - [Egghead - Getting started with Protractor](https://egghead.io/lessons/angularjs-getting-started-with-protractor)   
     
 - [Тестируем AngularJS используя Protractor](http://stepansuvorov.com/blog/2014/02/angularjs-protractor/)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)
+- [Интеграционное тестирование веб-приложения на инъекции](/ru/blog/тестирование/integratsionnoe-testirovanie-veb-prilozheniya-na-inektsii/)

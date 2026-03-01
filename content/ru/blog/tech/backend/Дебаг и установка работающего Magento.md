@@ -17,3 +17,9 @@ tags: [backend]
     Этого может быть мало. В моём случае хардкорный дебаг Varien_Simplexml_Configкласса указал что файлы подтягиваются из временных папок.. в моём случае на маке в /var/tmp. Тоесть надо ещё  
     rm -rf /var/tmp/magento/*
 - Ещё одна фишка - [не ставьте](http://www.magentocommerce.com/boards/viewthread/43148/) localhost в качестве base_url
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

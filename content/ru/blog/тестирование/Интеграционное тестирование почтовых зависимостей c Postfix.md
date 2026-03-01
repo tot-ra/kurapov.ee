@@ -58,3 +58,9 @@ tags: [tests]
 
 - [PHPUnit email integration testing](http://www.thedeveloperday.com/phpunit-email-integration-testing-using-sendmai/)
 - [MailCatcher](http://mailcatcher.me/)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

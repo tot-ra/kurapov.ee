@@ -1,6 +1,7 @@
 ---
 title: Теоретические основы CMS
 date: 2006-12-13T15:22
+tags: [css, php, tech, игры]
 ---
 
 [CMS matrix](http://www.cmsmatrix.org/matrix/cms-matrix) и отечественный [CMSlist](http://cmslist.ru/) предлагают огромные списки доступных opensource систем управления сайтами. Многие из них имеют множество недостатков, такие как
@@ -97,3 +98,9 @@ date: 2006-12-13T15:22
 
 - [ru_cms](http://community.livejournal.com/ru_cms/)
 - [недовольный отзыв](http://chelovek.com.ua/2009/04/06/%D1%81%D0%B8%D0%BC%D1%84%D0%BE%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B7%D0%B2%D1%83%D1%87%D0%B0%D0%BB%D0%B0-symfony-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BD%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%81%D1%8F/) о symphony
+
+## Related
+
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)

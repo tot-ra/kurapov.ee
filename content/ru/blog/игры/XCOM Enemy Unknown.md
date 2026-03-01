@@ -1,6 +1,7 @@
 ---
 title: XCOM Enemy Unknown
 date: 2012-10-14T00:44:00
+tags: [go, игры]
 ---
 
 В XCOM:Enemy Unknown, вы управляете международным центром борьбы с инопланетными захватчиками - XCOM. Этот центр на практике занимается высылкой группы из 4-6 человек на место атаки, крушения или спасения, либо следит за воздушным пространством и сбивает летающие тарелки.
@@ -153,3 +154,9 @@ date: 2012-10-14T00:44:00
 Ещё обзоры..
 
 - [Дениса Охакаса](http://kocmoc.livejournal.com/202022.html)
+
+## Related
+
+- [Assasins Creed](/ru/blog/игры/assasins-creed/)
+- [Cosmic Encounter](/ru/blog/игры/board-games/cosmic-encounter/)
+- [DeathSpank](/ru/blog/игры/deathspank/)

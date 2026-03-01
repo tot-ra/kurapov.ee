@@ -1,6 +1,7 @@
 ---
 title: DeathSpank
 date: 2010-11-21T19:50:00
+tags: [go, php, игры]
 ---
 
 **DeathSpank** или же "Смертельный Шлепок" это уморительная игра и сатира на rpg-мочилово вышедшая под креативным руководством Рона Гилберта, в своё время работавшего над квестами Monkey Island и Grim Fandango и если вы в них играли и помните сюрреализм и сногсшибающую фантазию, то вам понравится и это творение.
@@ -47,3 +48,9 @@ date: 2010-11-21T19:50:00
 ![](img/orphan-signs.jpg)
 
 ![](img/vicious-chickens.jpg)
+
+## Related
+
+- [League of legends](/ru/blog/игры/league-of-legends/)
+- [Skyrim](/ru/blog/игры/skyrim/)
+- [Создание компьютерной игры](/ru/blog/игры/sozdanie-kompyuternoy-igry/)

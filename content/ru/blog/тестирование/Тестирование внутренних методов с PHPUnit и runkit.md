@@ -36,3 +36,9 @@ Runkit это экспериментальное расширение для php
 См. также..
 
 - [Testing protected methods](http://www.littlehart.net/atthekeyboard/2012/04/19/metatesting-extending-your-testing-tools/)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

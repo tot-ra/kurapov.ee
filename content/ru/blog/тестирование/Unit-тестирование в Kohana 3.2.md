@@ -41,3 +41,9 @@ class MessageTest extends Unittest_TestCase {
 
 Сам тестируемый объект я не привожу, тут важно как идёт подгрузка, запуск и результат:
 ![](../img/Screen+Shot+2011-12-06+at+14.46.42.png)
+
+## Related
+
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)
+- [Интеграционное тестирование веб-приложения на инъекции](/ru/blog/тестирование/integratsionnoe-testirovanie-veb-prilozheniya-na-inektsii/)

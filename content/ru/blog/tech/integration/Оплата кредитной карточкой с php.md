@@ -1,6 +1,7 @@
 ---
 title: Оплата кредитной карточкой с php
 date: 2008-06-05T10:00
+tags: [integration, php, tech]
 ---
 
 Большинство систем оплат работают по принципу ворот (gateway) - передал данные, они обработались и вернулись. С клиентом или без него. Сегодня на devclub я рассказывал об эстонских pangalink'ах, но на самом деле я в последнее время интересовался кредитками. О них сегодня тоже рассказывали, перескажу коротко.
@@ -27,3 +28,9 @@ date: 2008-06-05T10:00
 - [Telepay](http://billing-system.org/)
 - [ChargeGateway](http://chargegateway.com/)
 - [Miva Merchant](http://www.mivamerchant.com/services/payment/)
+
+## Related
+
+- [Backend-авторизация в facebook через OAuth 2.0](/ru/blog/tech/integration/backend-avtorizatsiya-v-facebook-cherez-oauth-20/)
+- [OpenID](/ru/blog/tech/integration/openid/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)

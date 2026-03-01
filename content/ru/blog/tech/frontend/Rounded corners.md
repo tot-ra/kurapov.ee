@@ -24,3 +24,9 @@ tags: [frontend]
     
 - [Сводная таблица](http://www.smileycat.com/miaow/archives/000044.php) всех продуктов по этой теме
 - [Поддержка закруглённых углов](http://shapeshed.com/journal/curved_boxes_in_css/) в некоторых браузерах, а в будующем и в CSS3
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)

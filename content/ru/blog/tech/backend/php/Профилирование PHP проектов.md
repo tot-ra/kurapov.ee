@@ -138,3 +138,9 @@ fclose($fp);
 ```
 
 С этим несколько проблем. Первая - это полуфабрикат - данные для dot уже агрегированные, есть только label, куда засунули и время, название метода, число вызовов, проценты и тп. Вторая - файл генерируется только когда открыть генерацию графа в png-формате в браузере
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

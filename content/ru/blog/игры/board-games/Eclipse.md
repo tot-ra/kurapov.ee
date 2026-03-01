@@ -1,6 +1,7 @@
 ---
 title: Eclipse
 date: 2012-05-09T21:58:00
+tags: [board-games, игры]
 ---
 
 Поиграли в финскую настольную игру Eclipse, эдакую смесь Cosmic Encounter, Twilight Imperium и Endeavor. Играть могут до шести человек и в зависимости от опыта, занимает от 30 до 60 минут на человека. Мы играли впятером с двумя новичками четыре часа.
@@ -96,3 +97,9 @@ Master of Orion II : Battle at Antares - культовая компьютерн
 См. также
 
 - [Первые впечатления Александра Белякова](http://boardgameblog.ru/2012/03/19/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D0%B2%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-eclipse/)
+
+## Related
+
+- [Cosmic Encounter](/ru/blog/игры/board-games/cosmic-encounter/)
+- [Assasins Creed](/ru/blog/игры/assasins-creed/)
+- [Call of Duty 4](/ru/blog/игры/call-of-duty-4/)

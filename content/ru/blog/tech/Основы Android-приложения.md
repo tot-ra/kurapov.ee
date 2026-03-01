@@ -1,6 +1,7 @@
 ---
 title: Основы Android приложения в 2010
 date: 2010-09-03T15:22
+tags: [ai, go, mysql, tech, игры]
 ---
 
 ![](img/Pasted%20image%2020241020175759.png)
@@ -146,3 +147,8 @@ settings.getString("MyMinionName",""); //читаем
 
 <iframe width="816" height="350" src="https://www.youtube.com/embed/nhyoGR3ndQE" title="Android Phone Development - Lecture 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Related
+
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)

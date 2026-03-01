@@ -31,3 +31,9 @@ echo $rss->saveFeed("RSS2.0", "feed.xml");
 
 И в результате  
 [![[Valid RSS]](http://feedvalidator.org/images/valid-rss.png "Validate my RSS feed")](http://feedvalidator.org/check.cgi?url=http%3A//kurapov.name/rss)
+
+## Related
+
+- [Microsoft Word 2003 XML](/ru/blog/tech/backend/форматы/microsoft-word-2003-xml/)
+- [RSS2.0](/ru/blog/tech/backend/форматы/rss20/)
+- [WSDL](/ru/blog/tech/backend/форматы/wsdl/)

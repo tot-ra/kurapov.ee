@@ -1,6 +1,7 @@
 ---
 title: UserScripts
 date: 2014-11-11T15:22
+tags: [ai, css, go, php, tech]
 ---
 
 Часто сталкиваюсь с желанием поменять что-то на сайтах, добавив свой функционал, сделав их удобней или автоматизировав многие вещи. Во многих случаях это становится **хорошим лайфхаком**. К счастью для браузеров есть расширения, добавляющие возможность запуска user-скриптов. Для firefox это [greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey/), а для chrome - [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=ru).
@@ -165,3 +166,9 @@ $(document).ready(function(){
 [https://monkeyguts.com/](https://monkeyguts.com/)  
 [https://greasyfork.org/en](https://greasyfork.org/en)  
 [https://openuserjs.org/](https://openuserjs.org/)
+
+## Related
+
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)

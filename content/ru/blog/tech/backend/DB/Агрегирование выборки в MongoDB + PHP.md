@@ -1,6 +1,7 @@
 ---
 title: Агрегирование выборки в MongoDB + PHP
 date: 2010-09-07T10:00
+tags: [backend, go, javascript, mysql, php]
 ---
 
 [MongoDB](http://www.mongodb.org/) - очередное веяние моды в веб-разработке, когда хранение данных заранее планируется таким огромным, что необходимо их распределение на несколько серверов с помощью шардирования. Поизучаем же непростой синтаксис агрегирования данных в mongo + php
@@ -57,3 +58,9 @@ print_r(iterator_to_array($aList)); //распечатаем что-бы пос�
 - [MongoDB Aggregation III: Map-Reduce Basics](http://kylebanker.com/blog/2009/12/mongodb-map-reduce-basics/)
 - [Counting Unique Items with Map-Reduce](http://cookbook.mongodb.org/patterns/unique_items_map_reduce/)
 - [Stackoverflow: How to use map/reduce to handle more than 10000 unique keys for grouping in MongoDB?](http://stackoverflow.com/questions/2599665/how-to-use-map-reduce-to-handle-more-than-10000-unique-keys-for-grouping-in-mongo/2608439#2608439)
+
+## Related
+
+- [Sphinx](/ru/blog/tech/backend/DB/sphinx/)
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Unity3D](/ru/blog/tech/soft/unity3d/)

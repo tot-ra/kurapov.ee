@@ -64,3 +64,9 @@ tags: [css]
 [Некоторые](http://www.contentwithstyle.co.uk/content/modular-css) предпочитают отдельно выделять ещё и типографику. Я не такой профессионал в вёрстке, может это и имеет смысл, но по-моему это излишне.
 
 ![](img/Pasted%20image%2020241019192626.png)
+
+## Related
+
+- [Blockquote](/ru/blog/tech/frontend/css/blockquote/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)

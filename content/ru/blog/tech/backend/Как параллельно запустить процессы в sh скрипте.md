@@ -34,3 +34,9 @@ upd. как оказалось, более простой и эффективн�
    
 
 В таком случае jobs показывает работающий mongod и вобщем то его тоже приходится убивать вручную.
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

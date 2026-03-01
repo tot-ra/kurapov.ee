@@ -1,6 +1,7 @@
 ---
 title: Spore - симулятор жизни
 date: 2008-09-14T11:09:00
+tags: [игры]
 ---
 
 _Что наша жизнь? Игра!_
@@ -58,3 +59,9 @@ _Что наша жизнь? Игра!_
 По теме:
 
 - [Дима Смирнов о Spore](http://nudnik.ru/entry/3593)
+
+## Related
+
+- [Assasins Creed](/ru/blog/игры/assasins-creed/)
+- [Call of Duty 4](/ru/blog/игры/call-of-duty-4/)
+- [Call of Duty 4](/ru/blog/игры/crysis-warhead/)

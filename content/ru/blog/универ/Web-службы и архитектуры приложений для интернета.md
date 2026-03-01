@@ -3,6 +3,7 @@ title: Web-службы и архитектуры приложений для и
 date: 2008-05-13T10:00
 tags: [университет]
 ---
+
 вторник, 13 мая 2008 г. в 19:26:38
 
 Данный предмет (IDU0080 - Web-teenused ja internetilahenduste arhitektuur) преподаётся в ТТУ будующим бакалаврам Информатики профессором Enn Õunapuu, а практические задачи ведутся работниками из Webmedia.
@@ -14,3 +15,9 @@ tags: [университет]
 - Java RMI и FTP
 - REST
 - Web-сервисы (via SOAP & WSDL). Генерация сервера с помощью xfire
+
+## Related
+
+- [Алгоритмы и структуры данных](/ru/blog/универ/algoritmy-i-struktury-dannyh/)
+- [Анализ сетей](/ru/blog/универ/analiz-setey/)
+- [Введение в инфосистемы и UML](/ru/blog/универ/vvedenie-v-infosistemy-i-uml/)

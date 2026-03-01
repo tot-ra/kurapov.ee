@@ -1,6 +1,7 @@
 ---
 title: Авторизация в Google с OAuth 1.0
 date: 2010-12-10T10:00
+tags: [ai, go, integration, php, tech]
 ---
 
 Google как и Твиттер, предоставляет разработчикам возможность использовать **OAuth 1.0** для авторизации пользователя [стороннему приложению](https://www.google.com/accounts/IssuedAuthSubTokens) предоставлению конкретных данных по API, причём поскольку Google не централизованный Facebook и у него много полноценных сервисов типа Youtube и Picasa, то для каждого из них выборка данных своя. В общем эта авторизация (ключевые слова - OpenID, AuthSub, Federated Login) и доступ к данным (ключевые слова - JSON, XML, REST, Atom) называется [**Google Data Protocol**](http://code.google.com/intl/ru/apis/gdata/).
@@ -109,3 +110,9 @@ else{
 
 
 ![](img/Pasted%20image%2020241020020924.png)
+
+## Related
+
+- [Swagger](/ru/blog/tech/integration/swagger/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)
+- [Авторизация в Twitter с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-twitter-s-oauth-10/)

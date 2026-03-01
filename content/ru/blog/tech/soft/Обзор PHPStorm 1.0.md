@@ -66,3 +66,9 @@ tags: [soft]
 1. XDebug для профилирования скриптов.. Для удалённого проекта надо что-бы расширение на сервере было установлено, поэтому всюду использовать нельзя.  
 2. PHPUnit для автоматического тестирования кода
 3. [SASS](http://sass-lang.com/) для более гибкого написания css
+
+## Related
+
+- [CVS и SVN](/ru/blog/tech/soft/cvs-i-svn/)
+- [Unity3D](/ru/blog/tech/soft/unity3d/)
+- [Как записывать экран с круглой камерой](/ru/blog/tech/soft/kak-zapisyvat-ekran-s-krugloy-kameroy/)

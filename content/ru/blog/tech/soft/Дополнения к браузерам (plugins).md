@@ -1,8 +1,7 @@
 ---
 title: Плагины браузеров
 date: 2007-03-08T10:05:00
-tags:
-  - soft
+tags: [ai, css, design, go, javascript]
 ---
 
 Поскольку браузер сейчас практически самая важная программа в операционной системе я привожу тут наиболее востребованные (мной) расширения и улучшения.
@@ -68,3 +67,9 @@ Chrome
 Остальные:
 
 - [Dragonfly](http://www.opera.com/products/dragonfly/) - аналог firebug для Opera, в Safari он встроенных
+
+## Related
+
+- [Unity3D](/ru/blog/tech/soft/unity3d/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [Swagger](/ru/blog/tech/integration/swagger/)

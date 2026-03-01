@@ -4,7 +4,6 @@ date: 2007-01-27T10:00
 tags: [форматы]
 ---
 
-
 [RSS](http://en.wikipedia.org/wiki/RSS_(file_format)) это чистое содержание сайта, завёрнутое в стандартном XML формате
 
 RSS позволяет
@@ -20,3 +19,9 @@ RSS позволяет
 Достаточно добавить в head вашего сайта  тэг`link rel="alternate" type="application/rdf+xml" title="RSS feed" href="/pathto/rss" /`
 
 и Firefox укажет в адрессной строке rss иконку.
+
+## Related
+
+- [Microsoft Word 2003 XML](/ru/blog/tech/backend/форматы/microsoft-word-2003-xml/)
+- [RSS generator](/ru/blog/tech/backend/форматы/rss-generator/)
+- [WSDL](/ru/blog/tech/backend/форматы/wsdl/)

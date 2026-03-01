@@ -1,6 +1,7 @@
 ---
 title: MySQL триггеры на страже скорости и целостности
 date: 2017-01-10T10:00
+tags: [ai, backend, go, mysql, tech]
 ---
 
 Недавно начал использовать триггеры в БД. Полезная штука.
@@ -36,3 +37,9 @@ FOR EACH ROW UPDATE category c SET
 	size = (SELECT count(a.id) FROM article a WHERE a.categoryID=NEW.categoryID AND a.status='published')
 WHERE c.id=NEW.campaignID;
 ```
+
+## Related
+
+- [Основы Android приложения в 2010](/ru/blog/tech/osnovy-android-prilozheniya/)
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)
+- [Sphinx](/ru/blog/tech/backend/DB/sphinx/)

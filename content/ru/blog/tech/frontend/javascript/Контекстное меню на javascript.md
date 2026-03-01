@@ -54,3 +54,9 @@ function ContextMenu(e,ID){
 
 - [Небольшое но мощное](http://habrahabr.ru/blogs/javascript/43111/);Хабрахабр
 - [Обработка нажатия](http://webew.ru/articles/180.webew) правой кнопки мыши; Александр Бурцев, webew
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

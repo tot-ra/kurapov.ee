@@ -1,6 +1,7 @@
 ---
 title: Сборка php-проекта с selenium и jenkins
 date: 2011-08-15T15:22
+tags: [ai, go, php, tech, testing]
 ---
 
 В этой статье я теперь попытаюсь описать как собирать php-проект вместе и как проводить deployment так, что-бы разработчики видели прогресс и состояние здоровья проекта с помощью инструментов [статического анализа](http://kurapov.name/rus/lab/php_code_analysis/) кода, что-бы были видны результаты запуска unit- и selenium- тестов с результатом покрытия, что-бы проверялся принятый стиль кода. В качестве груши для битья я возьму Drupal 7.8 для анализа.
@@ -105,3 +106,9 @@ Jenkins хорошо работает и с SVN, но я использую gi
 | `FATAL: command execution failed.Maybe you need to configure the job to choose one of your Ant installations? java.io.IOException: Cannot run program "ant" (in directory "/var/lib/jenkins/jobs/wordpress/workspace"): java.io.IOException: error=2, No such file or directory` | Разрешилось тем, что в настройках Jenkins надо добавить версию ant (по видимому у меня в системе он не установлен был) и дальше связать проект с этой версией |
 | `/var/lib/jenkins/jobs/wordpress/workspace/build.xml:19: Execute failed: java.io.IOException: Cannot run program "phpunit": java.io.IOException: error=2, No such file or directory`                                                                                             | Разрешилось обновлением Pear установкой PHPUnit:  `pear update sudo pear install phpunit/PHPUnit`                                                         |
 | `[exec] The Xdebug extension is not loaded. [exec] PHP Fatal error: Allowed memory size of 268435456 bytes exhausted (tried to allocate 4194304 bytes) in ..`                                                                                                                    | при анализе кода надо дофига оперативки. Если возникнет такая ошибка, то падает весь билд.                                                                    |
+
+## Related
+
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)

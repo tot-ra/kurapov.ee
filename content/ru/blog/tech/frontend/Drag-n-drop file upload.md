@@ -175,3 +175,9 @@ $.fn.upload5 = function upload5(options){
 	return this;
 };
 ```
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Post form с window.open](/ru/blog/tech/frontend/post-form-s-windowopen/)

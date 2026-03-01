@@ -1,6 +1,7 @@
 ---
 title: Удаление дубликатов в Mysql
 date: 2007-11-09T10:00
+tags: [ai, backend, mysql, tech]
 ---
 
 Очень часто всплывает тема поиска дубликатов в таблицах, особенно когда надо установить UNIQUE constraint. Всегда можно обойтись таким запросом..
@@ -27,3 +28,9 @@ ALTER IGNORE TABLE sys_users ADD UNIQUE INDEX(login);
 Читайте также:
 
 - [Синтаксис DELETE](http://dev.mysql.com/doc/refman/5.0/en/delete.html) в mysql
+
+## Related
+
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)
+- [Введение в Foreign keys](/ru/blog/tech/backend/DB/vvedenie-v-foreign-keys/)
+- [Замена данных одного ряда таблиц Mysql](/ru/blog/tech/backend/DB/zamena-dannyh-odnogo-ryada-tablits-mysql/)

@@ -1,3 +1,8 @@
+---
+title: 2024-12-13 Tallinn AI meetup
+tags: [ai, events, go, события]
+---
+
 Another day, another AI meetup 😀  
 Apparently now there is a dedicated TallinnAI meetup ([https://lnkd.in/dPG-AzpP](https://lnkd.in/dPG-AzpP)), hopefully it can become a recurring one  
   
@@ -23,3 +28,9 @@ I hope this project gets some revenue flow and develops some more features:
 ![](/ru/blog/события/img/1734115096936.jpg)
 
 ![](/ru/blog/события/img/1734115094442.jpg)
+
+## Related
+
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2025-05-07 AWS Gen AI meetup](/en/blog/events/2025-05-07-aws-gen-ai-meetup/)
+- [Asuur Keraamika](/en/blog/events/2024-10-18-asuurkeraamika/)

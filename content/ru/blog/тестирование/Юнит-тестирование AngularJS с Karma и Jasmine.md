@@ -124,3 +124,8 @@ describe('In memory cache service', function () {
     
 - [Injecting a mock into an AngularJS service](http://stackoverflow.com/questions/14773269/injecting-a-mock-into-an-angularjs-service)
 
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

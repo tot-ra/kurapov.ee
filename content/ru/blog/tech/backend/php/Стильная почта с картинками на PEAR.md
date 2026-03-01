@@ -38,3 +38,9 @@ $mail->send($arrParams['email'], $hdrs, $body);
 ```
 
 Если будете интегрировать, гляньте баги [1436](http://pear.php.net/bugs/bug.php?id=1436) и [12216](http://pear.php.net/bugs/bug.php?id=12216) тоже
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

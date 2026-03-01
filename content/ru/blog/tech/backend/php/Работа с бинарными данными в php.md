@@ -193,3 +193,9 @@ function hex2str($hex){
 
 - [Binary parsing with PHP](https://igor.io/2012/09/24/binary-parsing.html)
 - [Функции pack и unpack. Работа с бинарными данными](http://kamashev.name/2012/06/function-pack-and-unpack-process-binary-data/)
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

@@ -182,3 +182,9 @@ class EndpointConnector extends \PHPUnit_Framework_TestCase {
 
 
 Из недостатков — хотя по полю «Tests» можно искать, фильтрация недостаточно удобная, нет подсветки (как у статуса выше), нет вида для всех фич-тестов, нет лога, ссылок. Это всё-таки не полноценная интеграция с CI сервером. Вторая проблема - обновление тестов забивает «Activity stream» реальных пользователей. Наконец, это решение пока работает только с phpunit и я ничего не делал с protractor e2e тестами, которые по-хорошему, были бы ещё полезней в Jira
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

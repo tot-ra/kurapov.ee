@@ -1,6 +1,7 @@
 ---
 title: Google AI challenge - стратегии ботов
 date: 2010-09-23T12:53
+tags: [ai, go, php, tech, игры]
 ---
 
 Университет Ватерлоо при поддержке Google [организовал состязание](http://ai-contest.com/) по спортивному программированию ботов для игры стратегии реального времени Galcon. С виду игра очень простая - есть планеты и корабли (на планетах или в полёте) надо захватить или преобладать на всей карте. Бот можно написать на большинстве популярных языков - C#, Java, Python, C++, Scala, PHP - для этого надо скачать "starter package", запустить у себя из консоли эмулятор и тренироваться покуда не будет Совершенство которое можно залить на сайт.
@@ -46,3 +47,9 @@ date: 2010-09-23T12:53
 
 [PDF](../img/Войны%20планет.pdf)
 [../img/Войны%20планет.pdf](../img/Войны%20планет.pdf)
+
+## Related
+
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)

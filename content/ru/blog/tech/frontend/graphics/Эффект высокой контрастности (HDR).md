@@ -18,3 +18,9 @@ tags: [графика]
 - [HDRi для фотографа](http://community.livejournal.com/ru_hdr/1253.html)
 - Примеры в hdr-группе на [flickr](http://www.flickr.com/photos/tags/hdr/)
 - [Технология HDR в фотографии](http://creative.jera.com.ua/2008/10/02/hdr/)
+
+## Related
+
+- [Favicon](/ru/blog/tech/frontend/graphics/favicon/)
+- [QR код](/ru/blog/tech/frontend/graphics/qr-kod/)
+- [Прозрачность с PNG](/ru/blog/tech/frontend/graphics/prozrachnost-s-png/)

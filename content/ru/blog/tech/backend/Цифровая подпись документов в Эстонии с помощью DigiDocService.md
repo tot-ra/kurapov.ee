@@ -137,3 +137,9 @@ dsiglite2.cab это альтернатива для создания подп�
 [img/173.pdf](img/173.pdf)
 
 [img/174.pdf](img/174.pdf)
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

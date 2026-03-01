@@ -1,6 +1,7 @@
 ---
 title: OpenID
 date: 2007-01-08T10:00
+tags: [integration, php, security, tech, вера]
 ---
 
 [OpenID](http://openid.net/) это логика разделения аутентификации ([authentication](http://en.wikipedia.org/wiki/AAA_protocol)), которая в свою очередь отвечает за то, что-бы пользователь был в действительности тем за кого он себя выдаёт. В качестве методов authentication можно выделить пароль, сертификат, биометрические данные.
@@ -65,3 +66,9 @@ RewriteRule (.*) ?%{QUERY_STRING}&auth=%{HTTP:Authorization} [L]
     
 - [Plug-in для Wordpress](http://verselogic.net/projects/wordpress/wordpress-openid-plugin/)
 - [Установка в Drupal](http://www.solargate.ru/ustanovka-openid-servera-v-drupal)
+
+## Related
+
+- [Hacking essentials](/ru/blog/tech/security/hacking-essentials/)
+- [Backend-авторизация в facebook через OAuth 2.0](/ru/blog/tech/integration/backend-avtorizatsiya-v-facebook-cherez-oauth-20/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)

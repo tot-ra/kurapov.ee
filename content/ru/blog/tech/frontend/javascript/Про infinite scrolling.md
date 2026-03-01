@@ -61,3 +61,9 @@ tags: [javascript]
 - [Masonry docs - appended](http://masonry.desandro.com/methods.html#appended)   
 - [Wordpress infinite scroll](http://jetpack.me/support/infinite-scroll/) 
 - [Clusterize.js](http://nexts.github.io/Clusterize.js/)
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

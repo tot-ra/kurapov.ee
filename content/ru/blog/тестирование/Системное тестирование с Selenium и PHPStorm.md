@@ -84,3 +84,9 @@ protected function onNotSuccessfulTest(Exception $e){
 - [Юнит-тесты уровня браузера на связке Selenium+PHP](http://javascript.ru/unsorted/selenium-rc)
 - [Блог LogicSoftware](http://blogs.logicsoftware.net/qa/)  
 - [Selenium и PHPUnit](http://symfonyru.blogspot.com/2008/12/selenium-phpunit.html)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

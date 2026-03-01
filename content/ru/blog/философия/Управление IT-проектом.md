@@ -66,3 +66,9 @@ tags: [управление]
 ### Версионность и документация
 
 Если проект достаточно велик, что имеет смысл вести историю его развития, то используется [SVN](http://en.wikipedia.org/wiki/Subversion_(software)) -система, где подобно FTP сохраняются все изменения в файлах проекта. [Документирование](https://kurapov.ee/article/project_documentation/) в свою очередь делается достаточно редко
+
+## Related
+
+- [Estonian Mafia](/ru/blog/философия/estonian-mafia/)
+- [OpenUP](/ru/blog/философия/openup/)
+- [Rapid application development](/ru/blog/философия/rapid-application-development/)

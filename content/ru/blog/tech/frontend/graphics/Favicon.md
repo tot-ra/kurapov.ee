@@ -21,3 +21,9 @@ tags: [графика]
 Полезно также:
 
 - [blogosphere](http://blogosphera.net/) набор популярных иконок сайтов
+
+## Related
+
+- [QR код](/ru/blog/tech/frontend/graphics/qr-kod/)
+- [Прозрачность с PNG](/ru/blog/tech/frontend/graphics/prozrachnost-s-png/)
+- [Эффект высокой контрастности (HDR)](/ru/blog/tech/frontend/graphics/effekt-vysokoy-kontrastnosti-hdr/)

@@ -1,8 +1,10 @@
 ---
 title: Journey to a Federated GraphQL
 date: 2020-09-09T16:34
+tags: [ai, backend, frontend, go, golang]
 image: https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png
 ---
+
 Original post [at medium](https://medium.com/pipedrive-engineering/journey-to-federated-graphql-2a6f2eecc6a4)
 
 ![https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png](https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png)
@@ -277,3 +279,9 @@ As we have services in [go](https://golang.org/), it's unclear how internal com
 As for the outside world, I hope Apollo’s roadmap with [project Constellation](https://www.youtube.com/watch?v=MvHzOwdLb_o) will optimize _Query planner_ in [Rust](https://www.rust-lang.org/) so that we don’t see that 10% _gateway tax_ on performance, as well as enable flexible federation of services without their knowledge.
 
 Exciting times to enjoy software development, full of complexity!
+
+## Related
+
+- [Dream of scalable & enriched graphql-subscriptions](/en/blog/tech/dream-of-scalable-enriched-graphql-subscriptions/)
+- [README.md - how to document your repo](/en/blog/tech/readmemd-how-to-document-your-repo/)
+- [Tallinn JS meetup](/en/blog/events/2024-09-25-tallinnjs-meetup/)

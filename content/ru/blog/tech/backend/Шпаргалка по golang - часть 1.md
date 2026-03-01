@@ -152,3 +152,9 @@ func mysql(file File, bool x){
 - [Slice tricks](https://github.com/golang/go/wiki/SliceTricks)
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/9Pk7xAT_aCU" title="1. Программирование на Go. Введение" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

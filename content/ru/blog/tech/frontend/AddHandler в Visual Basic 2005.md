@@ -17,3 +17,9 @@ tags: [frontend]
 Как оказалось, третьи примеры кода следовали всё тому же AddHandler, но уникальность того, что за кнопка из сотни кнопок была нажата брали из ActiveControl.Text! Это всё равно что баловаться фокусом в среде где фокус легко может отбираться или вообще не присваиваться, как это у меня с Label и происходило. Просто взять и добавить в объект новый параметр ID и по нему найти объект обратно, подобно getElementById в Javascript, тоже задача не из лёгких - надо тогда делать новый класс и наследовать контрол.. дебри.
 
 Программу спас параметр Tag и занесение объектов в массив.
+
+## Related
+
+- [Datasync между браузерами](/ru/blog/tech/frontend/datasync-mezhdu-brauzerami/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)
+- [Post form с window.open](/ru/blog/tech/frontend/post-form-s-windowopen/)

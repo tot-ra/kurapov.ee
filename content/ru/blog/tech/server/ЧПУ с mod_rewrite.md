@@ -1,6 +1,7 @@
 ---
 title: ЧПУ с mod_rewrite
 date: 2007-05-30T10:00
+tags: [php, server, tech]
 ---
 
 Человеко-понятный URL нужен. Так наглядней видеть где вы находитесь. Реализовать ЧПУ можно несколькими способами.
@@ -46,3 +47,9 @@ $arrURL=explode('/',$_SERVER['REQUEST_URI']);
 ```
 
 Не забудьте проверять существует ли такой модуль в системе, и сделать обработку ошибок, в том числе и на уровне header-ов, иначе поисковики могут посчитать что у вас всюду брак.
+
+## Related
+
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)
+- [Crontab](/ru/blog/tech/server/crontab/)
+- [Crontab](/ru/blog/tech/server/vagrant/)

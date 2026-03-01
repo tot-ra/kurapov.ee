@@ -1,6 +1,7 @@
 ---
 title: Crontab
 date: 2005-01-19T10:00
+tags: [go, mysql, php, server, tech]
 ---
 
 понедельник, 19 января 2015 г. в 16:37:51
@@ -152,3 +153,9 @@ vagrant snapshot go MyCentOS freshInstallation
 
 - [Getting started with Vagrant](http://www.todaysoftmag.com/article/749/getting-started-with-vagrant)
 - [Настройка Vagrant для удобной разработки](http://freetonik.com/blog/all/vagrant/)
+
+## Related
+
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)
+- [Аутентификация с ID-card](/ru/blog/tech/server/autentifikatsiya-s-id-card/)
+- [Sphinx](/ru/blog/tech/backend/DB/sphinx/)

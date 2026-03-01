@@ -1,6 +1,7 @@
 ---
 title: Кэширование js сжатием gzip
 date: 2008-06-10T10:00
+tags: [css, javascript, server, tech, вера]
 ---
 
 Cache — временные данные или устройство по их хранению, созданные для ускорения чтения/записи. Все программисты это знают. Ускорение загрузки web-сайтов тема обширная, начинающаяся с сервера и заканчивающаяся клиентом. К сожалению я не нашёл более-менее подходящих решений по объединению и кэшированию js-кода, поэтому к своему блогу я написал свою схему, о которой вкратце и расскажу..
@@ -50,3 +51,9 @@ function cache_js(){
 - [Практический JS/CSS](http://webo.in/articles/habrahabr/07-gzip-all/): архивируем всё
 - [Сжатие css и js](http://vectora.ru/articles-and-tutorials/49-web-technologies/117-css-js-compression-without-performance-penalties) без потери производительности
 - [Best practices](http://developer.yahoo.com/performance/rules.html) for speeding up your web-site
+
+## Related
+
+- [Плагины браузеров](/ru/blog/tech/soft/dopolneniya-k-brauzeram-plugins/)
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)
+- [Crontab](/ru/blog/tech/server/crontab/)

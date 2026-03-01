@@ -1,3 +1,8 @@
+---
+title: 2025-04-28 Decentralized AI event
+tags: [ai, events, go]
+---
+
 Just attended **Decentralized AI** event at TalTech organized by Astra Tikas and it was an inspiring evening that made me think and take some notes.
 
 First, I think main motivation and problem defined was ownership. We are afraid that LLM models are not transparent on their architecture, training dataset. We are afraid of monopolies serving AI models. Monopolies that can deprecate models, inject own biases, political will and be a more serious way to control population. So instead of search engines and social networks creating a bubble effect, we may be brainwashed by AI. Or worse, give control over education, infrastructure or military, to unknown LLMs that can backfire without proper evaluation.
@@ -51,3 +56,9 @@ Maybe you can enlighten me instead in the comments?
 Big thanks to **Astra Tikas**, the speakers from **TalTech**, **Microsoft**, **AIRE**, and everyone who contributed to the panel. Also, shoutout to **SingularityNET** and **DeepFunding** for supporting the movement towards open, trustworthy AI.
 
 Feeling energized and hopeful about building a future where AI stays open, fair, and decentralized 🐝
+
+## Related
+
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
+- [2025-05-07 AWS Gen AI meetup](/en/blog/events/2025-05-07-aws-gen-ai-meetup/)

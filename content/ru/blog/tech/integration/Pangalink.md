@@ -1,6 +1,7 @@
 ---
 title: Pangalink
 date: 2007-04-25T10:00
+tags: [ai, integration, php, tech]
 ---
 
 Банковская ссылка (pangalink) — способ обмена данных купли-продажи между клиентом, банком и магазином, очень распространённая в Эстонии. Эта услуга предоставляется банками в виде услуги магазинам, которым надо платить
@@ -137,3 +138,9 @@ else{} //failure
 - [хорошо структурированная библиотека](http://banklink.inoryy.com/#examples) на php от Романа
 [img/61.pdf](img/61.pdf)
 [img/60.pdf](img/60.pdf)
+
+## Related
+
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Интеграция оплаты paypal](/ru/blog/tech/integration/integratsiya-oplaty-paypal/)
+- [Соединяем блог и Livejournal через XML-RPC](/ru/blog/tech/integration/soedinyaem-blog-i-livejournal-cherez-xml-rpc/)

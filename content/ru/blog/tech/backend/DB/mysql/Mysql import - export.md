@@ -1,6 +1,7 @@
 ---
 title: Mysql import - export
 date: 2007-01-29T10:00
+tags: [backend, mysql, php, tech]
 ---
 
 Экспорт БД через shell
@@ -18,3 +19,9 @@ date: 2007-01-29T10:00
 При переносе данных учитывайте что переносимые данные будут в местном часовом поясе и вам может понадобится либо конвертирование данных, либо ручная установка временной зоны  
 
 `select timediff(now(),convert_tz(now(),@@session.time_zone,'+00:00'));`
+
+## Related
+
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)
+- [Mysql rownum](/ru/blog/tech/backend/DB/mysql/mysql-rownum/)
+- [Random order в Postgres](/ru/blog/tech/backend/DB/postgres/random-order-v-postgre/)

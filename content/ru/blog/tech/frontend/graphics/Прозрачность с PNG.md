@@ -28,3 +28,9 @@ CSS background ещё можно исправить, заменив наприм
 `filter:alpha(opacity=25);-moz-opacity:.25;opacity:.25;`
 
 Как альтернативу CSS, можно использовать [PNGPong](http://blog.psyrendust.com/pngpong/), который через javascript создаёт flash-объект и загружает в него png, который в свою очередь отображается с прозрачностью.
+
+## Related
+
+- [Favicon](/ru/blog/tech/frontend/graphics/favicon/)
+- [QR код](/ru/blog/tech/frontend/graphics/qr-kod/)
+- [Эффект высокой контрастности (HDR)](/ru/blog/tech/frontend/graphics/effekt-vysokoy-kontrastnosti-hdr/)

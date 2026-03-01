@@ -1,6 +1,7 @@
 ---
 title: Интеграция оплаты paypal
 date: 2009-08-04T10:00
+tags: [ai, integration, php, tech]
 ---
 
 Деловые люди сталкивающиеся с интернетом хотят **заработать денег**, поэтому paypal позволяющий делать оплату _кредитными картами_ по всему миру - ценнейшая услуга для интеграции на свой сайт. Примерные цены за услугу: 2-4% от суммы +  0,3$ за транзакцию зависит от типа оплаты.  
@@ -119,3 +120,9 @@ private function verifyPaypalNotification($sGatewayURL,$sMerchantEmail,$sError){
   
 См также
 - [Начало работы с PayPal на PHP](http://kichrum.org.ua/paypal-on-php-01-03-2014.html)
+
+## Related
+
+- [Pangalink](/ru/blog/tech/integration/pangalink/)
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Соединяем блог и Livejournal через XML-RPC](/ru/blog/tech/integration/soedinyaem-blog-i-livejournal-cherez-xml-rpc/)

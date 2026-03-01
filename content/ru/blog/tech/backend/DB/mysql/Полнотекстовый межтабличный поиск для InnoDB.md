@@ -1,6 +1,7 @@
 ---
 title: Полнотекстовый межтабличный поиск для InnoDB
 date: 2009-01-08T10:00
+tags: [backend, tech]
 ---
 
 Предлагаю решить интересную SQL-задачу. Думаю у среднего девелопера она займёт пол часа или больше (я же сразу спросил у SQL-гуру).
@@ -53,3 +54,9 @@ INNER JOIN search_words w1 ON w1.id = sf1.word_id AND w1.word LIKE 'cat%'
 INNER JOIN search_word_fields sf2 ON sf2.field_id = f.field_id  
 INNER JOIN search_words w2 ON w2.id = sf2.word_id AND w2.word LIKE 'dog%'
 ```
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)
+- [DB дизайн](/ru/blog/tech/backend/DB/db-dizayn/)

@@ -43,3 +43,9 @@ tags: [javascript]
 Теперь мне интересно как устроена модель обработки событий в других языках и платформах - Java, NET, Flash..
 
 Написано по мотивам статьи "[Event order](http://www.quirksmode.org/js/events_order.html)".
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

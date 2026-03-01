@@ -1,8 +1,7 @@
 ---
 title: Phonegap приложение
 date: 2014-01-02T10:05:00
-tags:
-  - tech
+tags: [ai, css, go, php, tech]
 ---
 
 Решил тут поиграть с двумя технологиями которые прям bleeding edge нынче в IT - [phonegap](http://phonegap.com/) и [angularjs](http://angularjs.org/). Первый позволяет абстрагироваться от родных языков для каждой платформы.. а это между прочим
@@ -255,3 +254,8 @@ function PerformancesCtrl($scope, $http, localStorageService) {
 
 В следующих статьях я постараюсь раскрыть более продвинутые штучки, по мере того как буду их изучать. Stay tuned
 
+## Related
+
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)

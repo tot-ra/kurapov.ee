@@ -1,8 +1,7 @@
 ---
 title: Unity3D
 date: 2009-11-16T10:05:00
-tags:
-  - soft
+tags: [ai, go, javascript, php, soft]
 ---
 
 [Unity3D](http://unity3d.com/) это игровой движок 3D-игр в основном стрелялок и аркад, но при большой сноровке можно реализовать и [RPG](http://krankyboygames.com/), RTS, квесты, 2D-игры, [встраиваемые в браузер](http://www.interstellarmarines.com/game/bullseye/?guest), iPhone и с использованием сети. Движок понимает множество разные форматы файлов
@@ -155,3 +154,9 @@ Unity позволяет не только писать скрипты под с
 - [Turbosquid](http://www.turbosquid.com/) - коллекции 3д моделей (в т.ч. платные)  
     
 - [Unity3D Answers](http://answers.unity3d.com/) - своего рода база проблем и решений
+
+## Related
+
+- [Плагины браузеров](/ru/blog/tech/soft/dopolneniya-k-brauzeram-plugins/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)

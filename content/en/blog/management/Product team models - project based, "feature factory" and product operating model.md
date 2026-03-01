@@ -3,6 +3,7 @@ tags: [management]
 date: 2024-11-01T00:18
 title: "Product team models - project based, feature factory and product operating model"
 ---
+
 Listened to the podcast
 https://www.tpg.ee/p/product-team-models-project-based
 

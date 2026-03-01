@@ -132,3 +132,9 @@ drush cc all
 - drupal.org/project/**машинное_имя_модуля**
 - [Setting up Jetbrains PhpStorm for use as a Drupal IDE](http://tiger-fish.com/blog/setting-jetbrains-phpstorm-use-drupal-ide)
 - [Drupal formatting](http://blog.jetbrains.com/webide/2012/03/new-in-4-0-drupal-coding-style-support/)
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)

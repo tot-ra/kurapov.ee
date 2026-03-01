@@ -1,6 +1,7 @@
 ---
 title: Многоязычность Smarty
 date: 2007-03-31T15:22
+tags: [go, php, tech]
 ---
 
 Многоязычность сайта - важный фактор для корпоративных сайтов. Какие существуют подходы?
@@ -49,3 +50,9 @@ date: 2007-03-31T15:22
 #### Стандарты
 
 При создании таблиц языков, стран и зависимостей других объектов (статей, продуктов и тп) надо использовать индексы. Я советую использовать в качестве primary-ключей не нумерацию, а ISO-коды как для [языков](http://www.loc.gov/standards/iso639-2/php/code_list.php), так и для [стран](http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm) - это упростит понимание данных в будующем.
+
+## Related
+
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)

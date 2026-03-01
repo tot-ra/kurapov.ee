@@ -36,3 +36,9 @@ function xml2array($text) {
 Не забывайте правда и о том, что рекурсия вызывает нехилую нагрузку на память и xml-файл в 400 кб может спокойно разрастись и перейти лимит в 10 мб, отведённый по умолчанию под php-процесс.  
   
 `ini_set('memory_limit','30M');`
+
+## Related
+
+- [Microsoft Word 2003 XML](/ru/blog/tech/backend/форматы/microsoft-word-2003-xml/)
+- [RSS generator](/ru/blog/tech/backend/форматы/rss-generator/)
+- [RSS2.0](/ru/blog/tech/backend/форматы/rss20/)

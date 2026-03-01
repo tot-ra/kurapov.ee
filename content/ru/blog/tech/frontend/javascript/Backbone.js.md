@@ -92,3 +92,9 @@ $params = (array)json_decode(file_get_contents('php://input'));
 <iframe width="467" height="260" src="https://www.youtube.com/embed/lPiM4T1lR58" title="Using Backbone.js with Rails: Patterns from the Wild by Sarah Mei" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/28096809?h=40c7590e64" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+
+## Related
+
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)
+- [jQuery для продолжающих (с плагинами)](/ru/blog/tech/frontend/javascript/jquery-dlya-prodolzhayuschih-s-plaginami/)

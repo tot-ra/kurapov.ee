@@ -1,3 +1,8 @@
+---
+title: 2024-11-26 AI meetup notes
+tags: [ai, events, go, события]
+---
+
 Visited local AI meetup organized by Vattan, Astra & co, Hosted by Helmes
 https://lu.ma/0045px5e
 
@@ -205,3 +210,9 @@ Kristjan:
 ![](/ru/blog/события/img/1732650720730.jpg)
 
 ![](/ru/blog/события/img/1732650718388.jpg)
+
+## Related
+
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
+- [2025-05-07 AWS Gen AI meetup](/en/blog/events/2025-05-07-aws-gen-ai-meetup/)
+- [Asuur Keraamika](/en/blog/events/2024-10-18-asuurkeraamika/)

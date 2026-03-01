@@ -109,3 +109,9 @@ header('P3P: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CN
 
 - Более [тягучее введение](http://blog.cmsdevelopment.com/0000414/) от Димы Шейко
 - Некоторые заметки от [cr_it](http://cr-it.livejournal.com/6764.html)
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

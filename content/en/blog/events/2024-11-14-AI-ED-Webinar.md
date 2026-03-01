@@ -1,7 +1,9 @@
 ---
 date: 2024-11-14T13:30
+tags: [ai, events, postgres, события]
 title: Andmete ja tehisintellekti olulisusest personaliseerituma õppe poole liikumisel by Innar Liiv
 ---
+
 -  race against the machines vs with the machines
 - machines as instruments
 - requires command and control
@@ -34,3 +36,8 @@ Postgres, all data in context
 
 ![](/ru/blog/события/img/Screenshot%202024-11-14%20at%2014.23.11.png)
 
+## Related
+
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
+- [2025-05-07 AWS Gen AI meetup](/en/blog/events/2025-05-07-aws-gen-ai-meetup/)

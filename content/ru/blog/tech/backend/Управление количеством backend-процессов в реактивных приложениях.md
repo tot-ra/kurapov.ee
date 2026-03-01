@@ -13,3 +13,9 @@ tags: [backend]
 ```
 
 Заметьте что ключевая комманда -lt. Если коротко, то мы ищем процессы (ps) по их имени (grep), исключая самих себя и считаем количество найденных строк (wc), количество которых должно быть меньше (lt) количества заданных мною инстансов. Как вариант вместо -lt можно использовать -eq 0, если хочется только одного демона
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

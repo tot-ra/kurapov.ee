@@ -1,6 +1,7 @@
 ---
 title: Swagger
 date: 2012-10-12T10:00
+tags: [ai, design, go, integration, php]
 ---
 
 [Swagger UI](http://swagger.wordnik.com/) это небольшая коллекция скриптов для создания интерактивной документации для API веб-приложений с REST протоколом. Очень полезно, если вы пишете приложение которое должно взаимодействовать с внешней системой, а договориться друг с другом в текстовом формате мало. Интерактивность проявляется в том что из документации можно делать HTTP-запросы, а сама документация зависит от комментариев в вашем коде.
@@ -198,3 +199,9 @@ class LeadResponder_RoutesController{}
  */
 class Model_LeadResponder_Route{}
 ```
+
+## Related
+
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Тихий компьютер к началу 2011 года](/ru/blog/tech/devices/tihiy-kompyuter-k-nachalu-2011-goda/)
+- [Создание компьютерной игры](/ru/blog/игры/sozdanie-kompyuternoy-igry/)

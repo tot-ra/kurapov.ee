@@ -77,3 +77,9 @@ influx.writePoints([
 Окей, данные плывут, теперь осталось совсем чуть-чуть что-бы они появились и в графане где можно будет подключить и другие источники данных тоже..
 
 ![](img/Pasted%20image%2020241016133611.png)
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)

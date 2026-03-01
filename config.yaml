@@ -24,6 +24,21 @@ build:
   cacheDir: ".cache"
   parallelWorkers: 4
 
+audio:
+  enabled: true
+  provider: "edge"
+  outputDir: "content/audio/posts"
+  recentPosts: 10
+  maxChars: 12000
+  edge:
+    binary: ".venv/bin/edge-tts"
+    rate: "+0%"
+    pitch: "+0Hz"
+    voice: "en-US-EmmaMultilingualNeural"
+  voices:
+    ru: "ru-RU-SvetlanaNeural"
+    en: "en-US-EmmaMultilingualNeural"
+
 homepage:
   enabled: true
   hero:

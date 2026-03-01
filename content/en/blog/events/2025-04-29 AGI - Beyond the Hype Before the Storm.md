@@ -1,6 +1,8 @@
 ---
 title: "AGI: Beyond the Hype, Before the Storm"
+tags: [ai, events, go, management, security]
 ---
+
 Visited another AI meetup on promoting Estonia as AI nation. After opening words from [](https://www.linkedin.com/in/ACoAACYD-BoBz1_dPvItXFafnO8EQ2fy3aGs78g)[Vattan PS](https://www.linkedin.com/in/vattan/) and [](https://www.linkedin.com/in/ACoAAAACUqYBhX9H-zK4-h5M2aOW3vpaeJonk6E)[Allan Martinson](https://www.linkedin.com/in/allanmartinson/):  
   
 First talk from [](https://www.linkedin.com/in/ACoAAAEmdswBnW8YpFLMVw-7_4SdKxHQiB7wCBQ)[Linnar Viik](https://www.linkedin.com/in/linnarviik/) about usage of OpenAI / Anthropic in education. I support it, AI is great at having student-tailored approach. There are however 2 dangers I see - model bias/ hallucinations in models and using closed API models as providers.  
@@ -79,3 +81,9 @@ Disclamer: recorded with superwhisper, summarized by gemini, correctness not gua
 - The exact definition of AGI is less important than the fact that we are approaching significant capabilities ("at the finish line").
 - Estonia needs to figure out how to effectively utilize the AGI wave through cooperation and partnerships.
 - Estonia has a unique position: capable of understanding/using technology (like the US and China) while also being part of the EU regulatory framework (like the AI Act).
+
+## Related
+
+- [Digit Tartu conference 2024](/en/blog/events/2024-10-01-digit-2024-tartu/)
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)

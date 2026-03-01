@@ -1,3 +1,8 @@
+---
+title: 2025-05-07 AWS Gen AI meetup
+tags: [ai, events, go, события]
+---
+
 Visited Gen AI meetup organized by AWS. Strangely, the meetup had a "Chatham House Rule" so I'm not sure if I can reveal who talked about what.  
 > neither the identity nor the affiliation of the speaker(s), nor that of any other participant, may be revealed  
   
@@ -38,3 +43,9 @@ Recommended [Clarifai](https://www.linkedin.com/company/clarifai/) as a model tr
 ![](/ru/blog/события/img/1746559633925.jpg)
 
 ![](/ru/blog/события/img/1746559637481.jpg)
+
+## Related
+
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
+- [Asuur Keraamika](/en/blog/events/2024-10-18-asuurkeraamika/)

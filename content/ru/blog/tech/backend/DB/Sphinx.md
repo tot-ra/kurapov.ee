@@ -1,6 +1,7 @@
 ---
 title: Sphinx
 date: 2007-02-02T10:00
+tags: [backend, go, mysql, php, tech]
 ---
 
 Sphinx - полнотекстовый поисковик по Mysql и Postgre, отличающийся скоростью от своих конкурентов, представленный на РИТ-2007 Петром Зайцевым . Использовать его имеет смысл только на больших проектах, где объем данных вынуждает уже использовать выделенный сервер.[Sphinx](http://www.sphinxsearch.com/) - полнотекстовый поисковик по Mysql и Postgre, отличающийся скоростью от своих конкурентов, представленный на [РИТ-2007](ht
@@ -19,3 +20,9 @@ Sphinx - полнотекстовый поисковик по Mysql и Postgre, 
     `indexer.exe --all`
 4. Запуск сервиса searchd.exe с портом 3312, который будет выдавать результаты поиска по индексу.
 5. Собственно запрос через API. В качестве примера есть test.php.
+
+## Related
+
+- [Агрегирование выборки в MongoDB + PHP](/ru/blog/tech/backend/DB/agregirovanie-vyborki-v-mongodb-php/)
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)

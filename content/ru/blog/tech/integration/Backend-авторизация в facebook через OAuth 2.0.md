@@ -1,6 +1,7 @@
 ---
 title: Backend-авторизация в facebook через OAuth 2.0
 date: 2010-09-13T10:00
+tags: [backend, integration, php, tech, события]
 ---
 
 Facebook [Graph API](http://developers.facebook.com/docs/api) - новая версия программного интерфейса фейсбука где данные пользователя передаются в JSON формате, а список связанных объектов и [привилегий](http://developers.facebook.com/docs/authentication/permissions) значительно понятней (друзья, фото, видео, события, группы, посещения, события и тп. ). Например так выглядит информация обо мне (я чуток урезал).
@@ -60,3 +61,9 @@ if(!$token){
 - [Facebook access tokens from canvas apps](http://sambro.is-super-awesome.com/2010/05/28/facebook-access-tokens-from-canvas-apps/)
 - Stackoverflow - [Do Facebook Oauth 2.0 Access Tokens Expire?](http://stackoverflow.com/questions/2687770/do-facebook-oauth-2-0-access-tokens-expire)
 - Stackoverflow - [Facebook access_token invalid](http://stackoverflow.com/questions/2705756/facebook-access-token-invalid)
+
+## Related
+
+- [OpenID](/ru/blog/tech/integration/openid/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)
+- [SMS gateway](/ru/blog/tech/integration/sms-gateway/)

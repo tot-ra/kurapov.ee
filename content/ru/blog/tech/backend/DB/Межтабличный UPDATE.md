@@ -1,6 +1,7 @@
 ---
 title: Межтабличный UPDATE
 date: 2007-12-09T10:00
+tags: [backend, php, tech]
 ---
 
 Редко когда, но всё же приходится делать в базе данных одиночные запросы по перемещению существующих данных из одной таблицы в другую. И если с добавлением рядов используя INSERT проблем возникает мало, то с обновлением существующих таблиц у меня возникла трудность. А именно - была старая таблица [Invision Powerboard](http://www.invisionpower.com/community/board/index.html) форума, и имелась новая таблица пользователей, с одинаковыми пользователями.
@@ -18,3 +19,9 @@ WHERE EXISTS ( SELECT 1
 ```
 
 Если интересно, то [EXISTS выражение](http://www.techonthenet.com/sql/exists.php) нужно только для возможности использования подзапроса, связывающего обе таблицы, раз уж в обычном UPDATE нельзя использовать несколько таблиц, единица это первое поле, а LIMIT нужен на случай дубликатов.
+
+## Related
+
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)
+- [Mysql rownum](/ru/blog/tech/backend/DB/mysql/mysql-rownum/)

@@ -36,3 +36,9 @@ Code - специальный тэг html, который часто связы�
 Читайте также
 
 - [Implementing a syntax-higlighting](http://marijn.haverbeke.nl/codemirror/story.html) JavaScript editor in JavaScript от создателя CodeMirror
+
+## Related
+
+- [Backbone.js](/ru/blog/tech/frontend/javascript/backbonejs/)
+- [Excel через javascript](/ru/blog/tech/frontend/javascript/excel-cherez-javascript/)
+- [JSDoc](/ru/blog/tech/frontend/javascript/jsdoc/)

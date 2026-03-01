@@ -1,6 +1,7 @@
 ---
 title: Call of Duty 4
 date: 2008-10-02T22:10:00
+tags: [php, игры]
 ---
 
 Crysis Warhead это не дополнение, а сиквел к выпущенному год назад 3d-shooter'у "Crysis" от немецкой компании Crytec, создавшей практически революцию качеством графики в своём движке CryEngine 2. Эту революцию раньше видели в Doom 3 от компании id software, а поздней в Half Life 2 от Valve. Игра нацелена на молодёжь от 16 лет и старше, ввиду обилия насилия
@@ -109,3 +110,9 @@ Crysis Warhead это не дополнение, а сиквел к выпуще
 ![](img/crysis_weapons_minigun.jpg)
 
 ![](img/crysis_weapons_pax.jpg)
+
+## Related
+
+- [Call of Duty 4](/ru/blog/игры/call-of-duty-4/)
+- [DeathSpank](/ru/blog/игры/deathspank/)
+- [Kings bounty](/ru/blog/игры/kings-bounty-legenda-o-rytsare/)

@@ -1,6 +1,7 @@
 ---
 title: Цвета терминала и управление вывода с sh и php echo
 date: 2016-01-13T10:00
+tags: [php, server, tech]
 ---
 
 Иногда, когда пишешь терминальное приложение (миграции например), хочется кроме стандартного потока, создавать более красочные сообщения и [прогресс-бары](https://github.com/MacroMan/PHPTerminalProgressBar). Для этого надо использовать [управляющие коды для шелла](http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/c327.html). Перепечатаю для себя шпаргалку на будущее..  
@@ -43,3 +44,9 @@ echo "\033[1;4;41;33m"; //Жирный и подчёркнутый
 ```
 
 Таким образом прогресс-бар достаточно просто можно реализовать сохранением состояния экрана и точечным добавлением символа по мере загрузки
+
+## Related
+
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)
+- [Crontab](/ru/blog/tech/server/crontab/)
+- [Crontab](/ru/blog/tech/server/vagrant/)

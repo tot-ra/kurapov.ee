@@ -34,3 +34,9 @@ tags: [php]
 
 - [Using php namespaces](http://www.phpfever.com/using-php-namespaces.html)
 - [PHPклуб о доступности в версии 5.3](http://phpclub.ru/talk/showthread.php?threadid=103418&perpage=20&pagenumber=1)
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

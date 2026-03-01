@@ -1,6 +1,7 @@
 ---
 title: SMS gateway
 date: 2007-01-17T10:00
+tags: [integration, php, tech]
 ---
 
 SMS или short message system разрабатывалась еще в восьмидесятых, но реально пришла на смену пейджерам с появлением мобильных телефонов.
@@ -61,3 +62,9 @@ $client->setParameterGet(array(
   'text'     => $txt
 ));
 ```
+
+## Related
+
+- [Backend-авторизация в facebook через OAuth 2.0](/ru/blog/tech/integration/backend-avtorizatsiya-v-facebook-cherez-oauth-20/)
+- [OpenID](/ru/blog/tech/integration/openid/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)

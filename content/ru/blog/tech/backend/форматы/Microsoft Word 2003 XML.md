@@ -33,3 +33,9 @@ tags: [форматы]
 Некоторые готовые продукты..
 
 -  [WordMLToFO](http://www.antennahouse.com/product/wordmltofo.htm) XSLT конвертор платный
+
+## Related
+
+- [RSS generator](/ru/blog/tech/backend/форматы/rss-generator/)
+- [RSS2.0](/ru/blog/tech/backend/форматы/rss20/)
+- [WSDL](/ru/blog/tech/backend/форматы/wsdl/)

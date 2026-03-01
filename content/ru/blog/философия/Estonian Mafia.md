@@ -52,3 +52,9 @@ tags: [управление]
 - [Defolio](http://defol.io/)  - дизайнерская оценка прототипа
 
 Местному IT рынку активно помогает [EAS](http://www.eas.ee/), и местные инвесторы и инкубаторы [EstBAN](http://www.estban.ee/), [SWG](http://startupwiseguys.com/), [GameFounders](http://www.gamefounders.com/), [MTVP](http://www.martinsontrigon.com/), [ASI](http://www.asi.ee/), [SmartCap](http://smartcap.ee/), [ArenguFond](http://www.arengufond.ee/).
+
+## Related
+
+- [OpenUP](/ru/blog/философия/openup/)
+- [Rapid application development](/ru/blog/философия/rapid-application-development/)
+- [Scrum](/ru/blog/философия/scrum/)

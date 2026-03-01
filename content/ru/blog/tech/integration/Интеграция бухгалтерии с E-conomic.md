@@ -1,6 +1,7 @@
 ---
 title: Интеграция бухгалтерии с E-conomic
 date: 2011-03-02T10:00
+tags: [integration, tech]
 ---
 
 [E-conomic](http://www.e-conomic.com/) это датская бухгалтерская (accounting) система. Нам то может и дела нет до неё, но всё-таки попробую описать её возможности и интеграцию, поскольку она активно расширяется (уже охватывает 9 стран) и полезна для деловых людей так или иначе связанных с продажами, счетами, юридическими лицами и налогами. Кроме того она уже интегрирована с некоторыми платёжными системами, например с датской [epay](http://epay.dk/).
@@ -90,3 +91,9 @@ $resClient->CurrentInvoiceLine_SetUnit(array(
     'valueHandle'=>array('Number' => номер_используемой_единицы_товара) // всякие килограммы, годы, метры..
 ));
 ```
+
+## Related
+
+- [Backend-авторизация в facebook через OAuth 2.0](/ru/blog/tech/integration/backend-avtorizatsiya-v-facebook-cherez-oauth-20/)
+- [OpenID](/ru/blog/tech/integration/openid/)
+- [Pangalink](/ru/blog/tech/integration/pangalink/)

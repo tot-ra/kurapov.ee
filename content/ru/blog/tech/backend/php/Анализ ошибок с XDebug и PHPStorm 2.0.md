@@ -56,3 +56,9 @@ set_error_handler('ErrorHandler');
 register_shutdown_function('shutdownFunction');
 set_exception_handler('exceptionHandler');  
 ```
+
+## Related
+
+- [CSV - кодировки, импорт и экспорт](/ru/blog/tech/backend/php/csv-kodirovki-import-i-eksport/)
+- [Drupal 7](/ru/blog/tech/backend/php/drupal-7/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)

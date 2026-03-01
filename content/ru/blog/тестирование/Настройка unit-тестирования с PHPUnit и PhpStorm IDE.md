@@ -43,3 +43,9 @@ Unit-тестирование это хорошо. Много [хороших �
 ![](../img/2010-10-28_1445.png)Теперь уже можно [разбираться с тест-пакетами](http://www.zyxist.com/en/archives/48), синтаксисом..
 
 В Zend Studio 8.0 после этого может возникнуть ошибка Fatal error: require_once() [function.require]: Failed opening required 'PHPUnit/TextUI/TestRunner.php'  in C:Program FilesZendZend Studio - 8.0.0pluginscom.zend.php.phpunit_8.0.0.v20101001-0100resourcesZendPHPUnit.php on line 87. Для этого переименуйте во что-нибудь PHPUnit из PEAR папки и скопируйте поставляемую в качестве плагина зендовскую phpunit на уровень выше.
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

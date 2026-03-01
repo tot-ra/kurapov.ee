@@ -1,6 +1,7 @@
 ---
 title: Замена данных одного ряда таблиц Mysql
 date: 2012-12-27T10:00
+tags: [ai, backend, mysql, tech]
 ---
 
 (копия статьи [Александра Макарова](http://rmcreative.ru/blog/post/mysql--replace-into-i-on-duplicate-key-update?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Rmcreative+%28RMCreative%29) )
@@ -40,3 +41,9 @@ ON DUPLICATE KEY UPDATE
 Отличия
 
 Кроме очевидного отличия в синтаксисе есть и очень важно отличие в том, как всё это работает. REPLACE при срабатывании ограничения удаляет запись (и вызывает ON DELETE CASCADE) и затем вставляет новую, что не так быстро, как ON DUPLICATE KEY UPDATE, который обновляет запись без удаления.
+
+## Related
+
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)
+- [Введение в Foreign keys](/ru/blog/tech/backend/DB/vvedenie-v-foreign-keys/)
+- [Удаление дубликатов в Mysql](/ru/blog/tech/backend/DB/udalenie-dublikatov-v-mysql/)

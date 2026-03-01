@@ -1,6 +1,7 @@
 ---
 title: Hacking essentials
 date: 2017-12-15T10:00
+tags: [php, security, tech, вера]
 ---
 
 Прошёл двухдневный workshop компании [Clarified Security](https://www.clarifiedsecurity.com/) по основам взлома в сети и серверы. Оплатил это Pipedrive, но вы можете [заказать себе](https://oppia.ee/) такую же тренировку. Тренинги построены по шагам с такой оценочной системой, что какое-то время можно самому искать решение, потом тебе объясняют как это сделать в действительности.
@@ -23,3 +24,8 @@ date: 2017-12-15T10:00
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 5](img/99.pdf)
 - [PHP Security Crash Course at Dutch PHP Conference 2009 - part 6](img/100.pdf)
 
+## Related
+
+- [OpenID](/ru/blog/tech/integration/openid/)
+- [20 типичных уязвимостей в коде](/ru/blog/tech/security/20-tipichnyh-uyazvimostey-v-kode/)
+- [Простейший backdoor на php](/ru/blog/tech/security/prosteyshiy-backdoor-na-php/)

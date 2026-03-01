@@ -1,6 +1,6 @@
 ---
 title: "Переписал блог на новый движок за 1 час"
-tags: [go, blog, obsidian, docusaurus, markdown, knowledge-management]
+tags: [blog, docusaurus, go, knowledge-management, markdown, obsidian]
 ---
 
 Год или больше я застрял на Docusaurus. Недавно я от него избавился — написал свой движок на Go за час. Вот почему и как.
@@ -49,3 +49,9 @@ Vibe-кодинг с AI — это реально работает для так
 
 Исходный код движка открыт:  
 👉 https://github.com/tot-ra/blog-engine-md
+
+## Related
+
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)

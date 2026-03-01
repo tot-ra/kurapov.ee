@@ -18,3 +18,9 @@ tags: [css]
 - [DesignMeme](http://www.designmeme.com/articles/csscurlyquotes/) вариант суперски использует дополнения before и after, которые увы IE не понимает
 
 Для русских сайтов полезно также знать о [знаках препинания](http://www.artlebedev.ru/kovodstvo/104/) .
+
+## Related
+
+- [CSS фреймворки](/ru/blog/tech/frontend/css/css-freymvorki/)
+- [Phonegap приложение](/ru/blog/tech/phonegap-prilozhenie-s-angularjs/)
+- [UserScripts](/ru/blog/tech/userscripts-i-userstyles-ili-kak-izmenit-lyuboy-sayt/)

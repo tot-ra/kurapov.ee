@@ -1,6 +1,7 @@
 ---
 title: Asuur Keraamika
 date: 2024-10-18T18:00:00
+tags: [ai, events, go, события]
 ---
 
 Are you planning a team building event and bored of bowling and billiard?  
@@ -25,3 +26,9 @@ Thanks [](https://www.linkedin.com/in/ACoAAAQu52gBc0RgD6a8Rz8_SGijcY4YxpnNkq4)[A
 ![](/ru/blog/события/img/Pasted%20image%2020241019233752.png)
 ![](/ru/blog/события/img/Pasted%20image%2020241019233756.png)
 ![](/ru/blog/события/img/Pasted%20image%2020241019233801.png)
+
+## Related
+
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
+- [2025-05-07 AWS Gen AI meetup](/en/blog/events/2025-05-07-aws-gen-ai-meetup/)

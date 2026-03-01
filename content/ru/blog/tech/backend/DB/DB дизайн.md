@@ -1,6 +1,7 @@
 ---
 title: DB дизайн
 date: 2007-02-02T10:00
+tags: [backend, design, mysql, tech]
 ---
 
 Дизайн базы данных дело приятное и также важное при создании новой системы.  
@@ -20,3 +21,9 @@ date: 2007-02-02T10:00
 - В MS Access уже встроено
 - [DB visualizer](http://www.minq.se/products/dbvis/)
 - SQL maestro for MySQL
+
+## Related
+
+- [MySQL триггеры на страже скорости и целостности](/ru/blog/tech/backend/DB/mysql/mysql-triggery-na-strazhe-skorosti-i-tselostnosti/)
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql prepared statements](/ru/blog/tech/backend/DB/mysql/mysql-prepared-statements/)

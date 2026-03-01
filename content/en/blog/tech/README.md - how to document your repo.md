@@ -1,3 +1,8 @@
+---
+title: README.md - how to document your repo
+tags: [ai, design, go, graphql, hiring]
+---
+
 ## TLDR
 Use github for documentation. For multiple services, use separate repo. Tie your tech doc to product.
 Create [readme.md](http://readme.md) in your repo and add there:
@@ -129,3 +134,9 @@ Suggested approach is to
 - Have diagrams **editable** by any developer (without explicit permission request)
 - Update docs with every github PR
     - include diagrams included in PR description
+
+## Related
+
+- [Dream of scalable & enriched graphql-subscriptions](/en/blog/tech/dream-of-scalable-enriched-graphql-subscriptions/)
+- [Journey to a Federated GraphQL](/en/blog/tech/journey-to-a-federated-graphql/)
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)

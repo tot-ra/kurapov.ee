@@ -1,6 +1,7 @@
 ---
 title: Crontab
 date: 2009-02-03T10:00
+tags: [ai, php, server, tech]
 ---
 
 понедельник, 8 января 2007 г. в 12:04:09
@@ -41,3 +42,9 @@ MAILTO="artkurapov@gmail.com"
 Если у нас маленький сайт/домашняя страница, где надёжность не настолько важна как в банковских системах, то можно использовать публичный ресурс [WebCron.org](http://www.webcron.org/)
 
 Если система - десктоп с Windows, то можно использовать удобно прячущуюся в tray, программку [nnCron](http://nncron.ru/) .
+
+## Related
+
+- [Мини-шпаргалка по Unix](/ru/blog/tech/server/mini-shpargalka-po-unix/)
+- [Basic auth с помошью .htaccess](/ru/blog/tech/server/basic-auth-s-pomoshyu-htaccess/)
+- [Crontab](/ru/blog/tech/server/vagrant/)

@@ -45,3 +45,9 @@ SELECT TRIM(';' FROM (SELECT CONCAT(id||'=>'||name||';') FROM FirmaSorted))
 ) WHERE strName='companies';
 ```
 ```
+
+## Related
+
+- [Введение в Postgre](/ru/blog/tech/backend/DB/postgres/vvedenie-v-postgre/)
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [Amazon S3 direct upload](/ru/blog/tech/backend/amazon-s3-direct-upload/)

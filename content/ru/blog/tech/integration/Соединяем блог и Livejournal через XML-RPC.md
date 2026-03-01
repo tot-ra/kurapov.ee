@@ -1,6 +1,7 @@
 ---
 title: Соединяем блог и Livejournal через XML-RPC
 date: 2007-07-12T10:00
+tags: [ai, integration, php, tech]
 ---
 
 XML remote procedure call на самом деле очень простая процедура, при помощи которой я теперь могу писать в своём блоге и копировать статью в livejournal.
@@ -50,3 +51,9 @@ XML remote procedure call на самом деле очень простая п�
 А что-бы не появилось ошибок типа **Application failed during request deserialization** проверьте кодировку в библиотеке - наверняка пытается utf отослать как iso (см xmlrpc.inc:222) 
 
 `$GLOBALS['xmlrpc_internalencoding']='UTF-8';//ISO-8859-1`
+
+## Related
+
+- [Pangalink](/ru/blog/tech/integration/pangalink/)
+- [Авторизация в Google с OAuth 1.0](/ru/blog/tech/integration/avtorizatsiya-v-google-s-oauth-10/)
+- [Интеграция оплаты paypal](/ru/blog/tech/integration/integratsiya-oplaty-paypal/)

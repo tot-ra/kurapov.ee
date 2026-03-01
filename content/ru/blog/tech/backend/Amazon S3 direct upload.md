@@ -15,3 +15,9 @@ bower install evaporate angular-evaporate --save
 echo base64_encode(hash_hmac('sha1', $_GET['to_sign'], AWS_SECRET, true));
 
 Добавляете CORS-файл на S3, вбиваете в нужные места ключи — вот у вас готов аплоадер, поддерживающий multipart, параллельную загрузку файлов, необходимую для файлов в 100MB и выше
+
+## Related
+
+- [Alter sequence](/ru/blog/tech/backend/DB/postgres/alter-sequence/)
+- [CUDA](/ru/blog/tech/backend/gpu/cuda/)
+- [DB дизайн](/ru/blog/tech/backend/DB/db-dizayn/)

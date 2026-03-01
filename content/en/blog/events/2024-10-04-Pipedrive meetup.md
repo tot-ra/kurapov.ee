@@ -1,6 +1,7 @@
 ---
 title: Pipedrive meetup
 date: 2024-10-04T15:22
+tags: [events, go, graphql, security, события]
 ---
 
 Listening to [](https://www.linkedin.com/in/ACoAABOtRMkBl5GVjNulXmUgn5Xp35BRy3kyqx8)[Elizaveta Lebedeva](https://www.linkedin.com/in/elizaveta-lebedeva/) talk on fraud detection reminded me of similar talk at [Wise](https://www.linkedin.com/company/wiseaccount/) couple of years ago.  
@@ -23,3 +24,8 @@ Applied Machine Learning at Scale // a meetup by Pipedrive and PyData
 
 ![](/ru/blog/события/img/Pasted%20image%2020241019230139.png)
 
+## Related
+
+- [AGI: Beyond the Hype, Before the Storm](/en/blog/events/2025-04-29-agi-beyond-the-hype-before-the-storm/)
+- [Dream of scalable & enriched graphql-subscriptions](/en/blog/tech/dream-of-scalable-enriched-graphql-subscriptions/)
+- [README.md - how to document your repo](/en/blog/tech/readmemd-how-to-document-your-repo/)

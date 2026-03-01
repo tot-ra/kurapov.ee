@@ -1,6 +1,7 @@
 ---
 title: Basic auth с помошью .htaccess
 date: 2009-02-03T10:00
+tags: [php, server, tech]
 ---
 
 Иногда надо быстро временно закрыть доступ к сайту, а писать красивые вещи, перетаскивать проект в другой каталог - лень. А иногда просто надо сделать закрытую область. Для этого в апаче можно легко с помощью .htaccess файла устроить простую авторизацию. Для этого понадобится
@@ -19,3 +20,9 @@ date: 2009-02-03T10:00
 В итоге получаем .htpasswd файл вида:
 
 `user:$apr1$r2zs21ge$V1CxOLm7r88XNYE0aaJKm.`
+
+## Related
+
+- [Crontab](/ru/blog/tech/server/crontab/)
+- [Crontab](/ru/blog/tech/server/vagrant/)
+- [Аутентификация с ID-card](/ru/blog/tech/server/autentifikatsiya-s-id-card/)

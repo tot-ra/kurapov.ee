@@ -1,6 +1,7 @@
 ---
 title: Mysql prepared statements
 date: 2007-04-22T10:00
+tags: [backend, mysql, php, tech]
 ---
 
 воскресенье, 22 апреля 2007 г. в 14:10:12
@@ -22,3 +23,9 @@ DEALLOCATE PREPARE some_statement_1;
 Всё достаточно просто - объявил запрос, вместо переменных поставил символы вопросов, потом по порядку этих символов [объявил переменные](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html) , выполнил запрос и удалил кэширование (которое только планируется сделать).
 
 Использование подобной техники через PHP на низком уровне занимается [PDO extension](http://ee.php.net/pdo) и [mysqli](http://ru.php.net/manual/en/function.mysqli-stmt-bind-param.php) правда порой не совсем удобным способом, ну а если хочется по-старинке эти запросы генерировать самому, то можно попробовать огромную [PEAR:DB](http://pear.php.net/package/DB) или [DbSimple](http://dklab.ru/lib/DbSimple/)
+
+## Related
+
+- [Mysql import - export](/ru/blog/tech/backend/DB/mysql/mysql-import-export/)
+- [Mysql rownum](/ru/blog/tech/backend/DB/mysql/mysql-rownum/)
+- [Random order в Postgres](/ru/blog/tech/backend/DB/postgres/random-order-v-postgre/)

@@ -217,3 +217,8 @@ tags: [управление]
 - [Top 10 obstacles to faster code review](https://hackernoon.com/top-10-obstacles-to-faster-code-reviews-and-better-code-quality-5b185df21577)
 - [Gitlab code review guidelines](https://docs.gitlab.com/ce/development/code_review.html)
 - [Refactoring guru](https://refactoring.guru/refactoring/what-is-refactoring)
+
+## Related
+
+- [Система прав в инфосистемах](/ru/blog/управление/sistema-prav-v-infosistemah/)
+- [Управление pivotaltracker задачами в PHPStorm](/ru/blog/управление/upravlenie-pivotaltracker-zadachami-v-phpstorm/)

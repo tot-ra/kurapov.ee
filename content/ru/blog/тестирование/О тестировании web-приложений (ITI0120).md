@@ -186,3 +186,9 @@ Quality Assurance часто считается синонимом тестир�
 ![](img/SilkTest+Recorder.jpg)
 
 ![](img/reporting_execution_trend.png)
+
+## Related
+
+- [Kohana](/ru/blog/тестирование/unit-testirovanie-v-kohana-32/)
+- [Protractor](/ru/blog/тестирование/protractor/)
+- [Изолированное UI тестирование с Protractor](/ru/blog/тестирование/izolirovannoe-ui-testirovanie-s-protractor/)

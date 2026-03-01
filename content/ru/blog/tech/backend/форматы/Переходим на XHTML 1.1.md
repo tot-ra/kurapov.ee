@@ -49,3 +49,9 @@ Character Data активно используется в XML что-бы пре
 - img.alt - приучает развивать фантазию на случай если картинки отключены или грузятся. Глядишь - и print-версию css напишешь.
 
 Для тестирования я использовал как валидатор W3C, так и [плагинами для браузеров](https://kurapov.ee/article/browser_plugins/).
+
+## Related
+
+- [Microsoft Word 2003 XML](/ru/blog/tech/backend/форматы/microsoft-word-2003-xml/)
+- [RSS generator](/ru/blog/tech/backend/форматы/rss-generator/)
+- [RSS2.0](/ru/blog/tech/backend/форматы/rss20/)

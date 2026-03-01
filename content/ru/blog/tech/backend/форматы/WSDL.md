@@ -24,3 +24,9 @@ tags: [форматы]
 См. также SOAP, [типы wsdl](http://www.raleigh.ru/XML/w3schools/wsdl/ports.php) операций
 
 <iframe width="934" height="350" src="https://www.youtube.com/embed/uPgrgX8PyyM" title="Just enough web services to survive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related
+
+- [Microsoft Word 2003 XML](/ru/blog/tech/backend/форматы/microsoft-word-2003-xml/)
+- [RSS generator](/ru/blog/tech/backend/форматы/rss-generator/)
+- [RSS2.0](/ru/blog/tech/backend/форматы/rss20/)

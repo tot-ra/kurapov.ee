@@ -72,3 +72,9 @@ Socket.io вы должны хостить сами и для этого нуж�
 
 
 [img/85.pdf](img/85.pdf)
+
+## Related
+
+- [AddHandler в Visual Basic 2005](/ru/blog/tech/frontend/addhandler-v-visual-basic-2005/)
+- [Drag-n-drop file upload](/ru/blog/tech/frontend/drag-n-drop-file-upload/)
+- [Post form с window.open](/ru/blog/tech/frontend/post-form-s-windowopen/)

@@ -1,6 +1,7 @@
 ---
 title: EDC
 date: 2007-12-19T13:50
+tags: [ai, edc, go]
 ---
 
 Интерес к апокалипсису (ок, апокалипсис буквально это "откровение", так что правильней - армегеддон) концу света всё больше и больше проявляется в американской культуре и мировоззрении. Теперь всё научно обосновывается как риски и неизбежность. Увеличивающиеся энергетические, экологические, террористические и духовные проблемы человечества. Я уже [написал про причины](http://kurapov.name/rus/pholosophica/survival/end_of_days_cause/), теперь попробую систематизировать решения
@@ -174,3 +175,9 @@ date: 2007-12-19T13:50
 - [Мини-видео](http://www.history.com/minisites/life_after_people) с компьютерной графикой
 - ЖЖ [alexeyt](http://alekseyt.livejournal.com/), владельца УАЗ Патриот
 - [VW California](http://exler.ru/blog/item/11465/)
+
+## Related
+
+- [Cosmic Encounter](/ru/blog/игры/board-games/cosmic-encounter/)
+- [Google AI challenge - стратегии ботов](/ru/blog/tech/google-ai-challenge-strategii-botov/)
+- [League of legends](/ru/blog/игры/league-of-legends/)

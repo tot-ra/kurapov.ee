@@ -1,6 +1,7 @@
 ---
 title: Tallinn JS meetup
 date: 2024-09-25T15:22
+tags: [ai, backend, events, go, javascript]
 ---
 
 Attended TallinnJS meetup organized by Stefano Amorelli at [LIFT99](https://www.linkedin.com/company/lift99/). Won ticket to [Digit Conference](https://www.linkedin.com/company/digitconf/). Almost won a hoodie from [Printify](https://www.linkedin.com/company/printify/) but figured that googling an answer was not fair 🤐  
@@ -25,3 +26,9 @@ Regarding workerd, its quite a niche engine that I feel does a bit too much (I w
 ![](/ru/blog/события/img/Pasted%20image%2020241019225232.png)
 ![](/ru/blog/события/img/Pasted%20image%2020241019225237.png)
 ![](/ru/blog/события/img/Pasted%20image%2020241019225242.png)
+
+## Related
+
+- [Digit Tartu conference 2024](/en/blog/events/2024-10-01-digit-2024-tartu/)
+- [2024-11-26 AI meetup notes](/en/blog/events/2024-11-26-ai-meetup-notes/)
+- [2024-12-13 Tallinn AI meetup](/en/blog/events/2024-12-13-tallinn-ai-meetup/)
