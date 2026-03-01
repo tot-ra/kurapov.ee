@@ -1,5 +1,5 @@
 ---
-tags: [управление]
+tags: [management]
 date: 2024-11-01T00:18
 title: "Product team models - project based, feature factory and product operating model"
 ---

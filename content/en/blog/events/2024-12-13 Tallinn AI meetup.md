@@ -14,12 +14,12 @@ I hope this project gets some revenue flow and develops some more features:
 - 3d map of the tiles for navigation  
 - animation  
 - large-scale context to have more global terrain features like rivers and mountains affecting the generated tiles  
-- some sort of interactivity (exploring as a character, or maybe some sort of cross-tile interactions).. but it may go out of art into actual game at this point![](img/1734115097486.jpg)
+- some sort of interactivity (exploring as a character, or maybe some sort of cross-tile interactions).. but it may go out of art into actual game at this point![](/ru/blog/события/img/1734115097486.jpg)
 
-![](img/1734115093666.jpg)
+![](/ru/blog/события/img/1734115093666.jpg)
 
-![](img/1734115093999.jpg)
+![](/ru/blog/события/img/1734115093999.jpg)
 
-![](img/1734115096936.jpg)
+![](/ru/blog/события/img/1734115096936.jpg)
 
-![](img/1734115094442.jpg)
+![](/ru/blog/события/img/1734115094442.jpg)

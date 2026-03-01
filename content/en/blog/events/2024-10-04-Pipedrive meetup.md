@@ -11,15 +11,15 @@ Applied Machine Learning at Scale // a meetup by Pipedrive and PyData
 
 [Login to Meetup | Meetup](https://www.meetup.com/pipedrive-meetups/events/302958983)
 
-![](img/Pasted%20image%2020241019230055.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230055.png)
 
 <!--truncate-->
 
-![](img/Pasted%20image%2020241019230121.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230121.png)
 
-![](img/Pasted%20image%2020241019230127.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230127.png)
 
-![](img/Pasted%20image%2020241019230134.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230134.png)
 
-![](img/Pasted%20image%2020241019230139.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230139.png)
 

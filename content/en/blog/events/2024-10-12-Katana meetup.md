@@ -25,15 +25,15 @@ I was curious about
 [Login to Meetup | Meetup](https://www.meetup.com/producttank-tallinn/events/303180564)
 
 
-![](img/Pasted%20image%2020241019230234.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230234.png)
 
-![](img/Pasted%20image%2020241019224919.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019224919.png)
 
-![](img/Pasted%20image%2020241019224925.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019224925.png)
 
-![](img/Pasted%20image%2020241019224931.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019224931.png)
 
 Photos from meetup group:
-![](img/Pasted%20image%2020241019230359.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230359.png)
 
-![](img/Pasted%20image%2020241019230325.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019230325.png)

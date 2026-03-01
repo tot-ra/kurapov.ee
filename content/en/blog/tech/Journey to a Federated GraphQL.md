@@ -3,8 +3,6 @@ title: Journey to a Federated GraphQL
 date: 2020-09-09T16:34
 image: https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png
 ---
-# Journey to a Federated GraphQL
-
 Original post [at medium](https://medium.com/pipedrive-engineering/journey-to-federated-graphql-2a6f2eecc6a4)
 
 ![https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png](https://miro.medium.com/max/1400/1*6ADAF1r2LFunXgdklnMRzw.png)

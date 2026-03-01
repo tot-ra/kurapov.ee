@@ -19,9 +19,9 @@ Then it could also be more seamlessly integrated with LLMs, say if you had a [Cl
   
 Regarding workerd, its quite a niche engine that I feel does a bit too much (I would not want to re-learn k8s), but it may be useful in cases when you want your app users to run custom code, so you could allow some javascript sandbox to run closer to your dataserver, instead of using webhooks. For example [Pipedrive](https://www.linkedin.com/company/pipedrive/) marketplace could allow external app vendors to run custom js code on its backend, similar to how go playground, coderpad, leetcode, github or other platforms allow running custom code.
 
-![](img/Pasted%20image%2020241019225214.png)
-![](img/Pasted%20image%2020241019225220.png)
-![](img/Pasted%20image%2020241019225226.png)
-![](img/Pasted%20image%2020241019225232.png)
-![](img/Pasted%20image%2020241019225237.png)
-![](img/Pasted%20image%2020241019225242.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225214.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225220.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225226.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225232.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225237.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019225242.png)

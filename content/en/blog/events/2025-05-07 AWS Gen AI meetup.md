@@ -11,7 +11,7 @@ So I'll say that:
 
 And later in networking, I got to talk to a startup that is working on making onboarding for sales/GTM easier using AI. 
 
-![](img/1746559637147.jpg)
+![](/ru/blog/события/img/1746559637147.jpg)
 
 <!--truncate-->
 
@@ -25,16 +25,16 @@ Recommended [Clarifai](https://www.linkedin.com/company/clarifai/) as a model tr
 
 
 
-![](img/1746559634261.jpg)
+![](/ru/blog/события/img/1746559634261.jpg)
 
-![](img/1746559634180.jpg)
+![](/ru/blog/события/img/1746559634180.jpg)
 
-![](img/1746559632600.jpg)
+![](/ru/blog/события/img/1746559632600.jpg)
 
-![](img/1746559634271.jpg)
+![](/ru/blog/события/img/1746559634271.jpg)
 
-![](img/1746559635724.jpg)
+![](/ru/blog/события/img/1746559635724.jpg)
 
-![](img/1746559633925.jpg)
+![](/ru/blog/события/img/1746559633925.jpg)
 
-![](img/1746559637481.jpg)
+![](/ru/blog/события/img/1746559637481.jpg)

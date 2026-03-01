@@ -13,15 +13,15 @@ Finally you ship it for glazing and hope that users will find it useful and beau
   
 Thanks [](https://www.linkedin.com/in/ACoAAAQu52gBc0RgD6a8Rz8_SGijcY4YxpnNkq4)[Artjom Shestajev](https://www.linkedin.com/in/artjom-shestajev/) for organizing [Clarifai](https://www.linkedin.com/company/clarifai/) Estonia event at [asuurkeraamika.com](http://asuurkeraamika.com/)
 
-![](img/Pasted%20image%2020241019233655.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233655.png)
 
-![](img/Pasted%20image%2020241019233723.png)
-![](img/Pasted%20image%2020241019233729.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233723.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233729.png)
 
-![](img/Pasted%20image%2020241019233734.png)
-![](img/Pasted%20image%2020241019233738.png)
-![](img/Pasted%20image%2020241019233743.png)
-![](img/Pasted%20image%2020241019233747.png)
-![](img/Pasted%20image%2020241019233752.png)
-![](img/Pasted%20image%2020241019233756.png)
-![](img/Pasted%20image%2020241019233801.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233734.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233738.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233743.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233747.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233752.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233756.png)
+![](/ru/blog/события/img/Pasted%20image%2020241019233801.png)
