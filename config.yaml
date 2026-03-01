@@ -6,6 +6,14 @@ site:
   language: "ru"
   favicon: "/assets/img/favicon/favicon.ico"
 
+i18n:
+  default: "ru"
+  languages:
+    - code: "ru"
+      label: "Русский"
+    - code: "en"
+      label: "English"
+
 author:
   name: "Артём Курапов"
   email: ""
@@ -21,69 +29,69 @@ homepage:
   hero:
     enabled: true
     background: "/assets/img/bg.webp"
-    title: "Artjom Kurapov"
-    subtitle: "Full-Stack Product Engineer based in Estonia"
-    description: "Development using Typescript, React, Go, MySQL/Postgres stack with AI superpowers"
+    title: "Артём Курапов"
+    subtitle: "Full-Stack продуктовый инженер в Эстонии"
+    description: "Разработка на TypeScript, React, Go и MySQL/Postgres с использованием AI-агентов"
     videoEmbed: "https://www.youtube.com/embed/aLRu5WpA1dU"
     ctaButtons:
-      - label: "Chat in Telegram"
+      - label: "Написать в Telegram"
         url: "https://t.me/tot_ra"
         icon: "primary"
-      - label: "Book a meeting"
+      - label: "Запланировать встречу"
         url: "https://calendly.com/artkurapov/30min"
   chat:
     enabled: true
     baseUrl: "http://localhost:9080"
     recipientAgentId: "09fd65e9-a5f0-47f7-8130-55bace363fb3"
-    title: "Artjom's brute agent running on-prem on mac mini"
+    title: "Мой агент Brute, работающий локально на Mac mini"
   projects:
     - title: "Blog Engine MD"
-      description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
+      description: "Эффективный генератор статических сайтов из Markdown. Моя альтернатива Hugo и Docusaurus, на которой работает этот сайт."
       url: "https://github.com/tot-ra/blog-engine-md"
       tags: ["Go", "SSG", "Markdown"]
       image: "/assets/img/projects/blog.png"
     - title: "A2gent Marketplace"
-      description: "The agentic marketplace."
+      description: "Маркетплейс AI-агентов."
       url: "https://a2gent.net/"
       image: "/assets/img/projects/a2gent.png"
       tags: ["AI", "Marketplace"]
     - title: "Caesar"
-      description: "AI agent(s) management web-app. Allows to control brute agents."
+      description: "Веб-приложение для управления AI-агентами. Позволяет контролировать агентов Brute."
       url: "https://github.com/a2gent/caesar"
       image: "/assets/img/projects/caesar.png"
       tags: ["AI", "Web App"]
     - title: "Brute"
       image: "/assets/img/projects/brute.png"
-      description: "AI agent with terminal UI and HTTP API. Can run in secure container."
+      description: "AI-агент с терминальным интерфейсом и HTTP API. Может запускаться в защищённом контейнере."
       url: "https://github.com/A2gent/brute"
       tags: ["AI", "TUI", "API"]
     - title: "Tarot Star"
       image: "/assets/img/projects/tarot.png"
       url: "http://tarot.kurapov.ee"
-      description: "A beautiful tarot cards set with random shuffling, drang-and-drop and custom spreads"
+      description: "Красивый набор карт таро с случайной перетасовкой, drag-and-drop и пользовательскими раскладами."
       tags: ["Art", "Web App"]
     - title: "RPG Rebel Reval"
-      description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
+      description: "Путешествие в Эстонию XIV века, где вы сражаетесь за свободу в action-RPG."
       image: "/assets/img/projects/rr.png"
       url: "https://github.com/tot-ra/rebel-reval"
       tags: ["Game", "RPG"]
     - title: "Альбом Легкие пустыни"
       description: "Один из моих музыкальных альбомов, выпущенный в 2025 году."
       image: "/assets/img/projects/album.jpg"
-      url: "/docs/muzyka/legkie-pustyni/"
+      url: "/ru/docs/muzyka/legkie-pustyni/"
       tags: ["Music"]
     - title: "Gratheon"
-      description: "Startup to save the bees. Modular robotic beehive and app with data analytics."
+      description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
       image: "/assets/img/projects/gratheon.png"
       url: "https://gratheon.com"
       tags: ["Startup", "IoT"]
     - title: "GraphQL Schema Registry"
-      description: "Schema registry for GraphQL services with versioning and on-prem deployment."
+      description: "Реестр схем для GraphQL-сервисов с версионированием и on-prem развертыванием."
       image: "/assets/img/projects/gql.png"
       url: "https://github.com/tot-ra/graphql-schema-registry"
       tags: ["GraphQL", "Go"]
     - title: "Workstation"
-      description: "CLI-focused scripts to automate setup of a new workstation."
+      description: "Набор CLI-скриптов для автоматизации настройки новой рабочей станции."
       image: "/assets/img/projects/work.png"
       url: "https://github.com/tot-ra/workstation"
       tags: ["CLI", "DevOps"]
@@ -146,6 +154,136 @@ homepage:
           url: "https://www.thingiverse.com/tot_ra/designs"
         - label: "Pinterest"
           url: "https://www.pinterest.com/tot_ra/"
+
+homepageI18n:
+  ru:
+    hero:
+      title: "Артём Курапов"
+      subtitle: "Full-Stack продуктовый инженер в Эстонии"
+      description: "Разработка на TypeScript, React, Go и MySQL/Postgres с использованием AI-агентов"
+      ctaButtons:
+        - label: "Написать в Telegram"
+          url: "https://t.me/tot_ra"
+          icon: "primary"
+        - label: "Запланировать встречу"
+          url: "https://calendly.com/artkurapov/30min"
+    chat:
+      title: "Мой агент Brute, работающий локально на Mac mini"
+    projects:
+      - title: "Blog Engine MD"
+        description: "Эффективный генератор статических сайтов из Markdown. Моя альтернатива Hugo и Docusaurus, на которой работает этот сайт."
+        url: "https://github.com/tot-ra/blog-engine-md"
+        tags: ["Go", "SSG", "Markdown"]
+        image: "/assets/img/projects/blog.png"
+      - title: "A2gent Marketplace"
+        description: "Маркетплейс AI-агентов."
+        url: "https://a2gent.net/"
+        image: "/assets/img/projects/a2gent.png"
+        tags: ["AI", "Marketplace"]
+      - title: "Caesar"
+        description: "Веб-приложение для управления AI-агентами. Позволяет контролировать агентов Brute."
+        url: "https://github.com/a2gent/caesar"
+        image: "/assets/img/projects/caesar.png"
+        tags: ["AI", "Web App"]
+      - title: "Brute"
+        image: "/assets/img/projects/brute.png"
+        description: "AI-агент с терминальным интерфейсом и HTTP API. Может запускаться в защищённом контейнере."
+        url: "https://github.com/A2gent/brute"
+        tags: ["AI", "TUI", "API"]
+      - title: "Tarot Star"
+        image: "/assets/img/projects/tarot.png"
+        url: "http://tarot.kurapov.ee"
+        description: "Красивый набор карт таро с случайной перетасовкой, drag-and-drop и пользовательскими раскладами."
+        tags: ["Art", "Web App"]
+      - title: "RPG Rebel Reval"
+        description: "Путешествие в Эстонию XIV века, где вы сражаетесь за свободу в action-RPG."
+        image: "/assets/img/projects/rr.png"
+        url: "https://github.com/tot-ra/rebel-reval"
+        tags: ["Game", "RPG"]
+      - title: "Альбом Легкие пустыни"
+        description: "Один из моих музыкальных альбомов, выпущенный в 2025 году."
+        image: "/assets/img/projects/album.jpg"
+        url: "/ru/docs/muzyka/legkie-pustyni/"
+        tags: ["Music"]
+      - title: "Gratheon"
+        description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
+        image: "/assets/img/projects/gratheon.png"
+        url: "https://gratheon.com"
+        tags: ["Startup", "IoT"]
+      - title: "GraphQL Schema Registry"
+        description: "Реестр схем для GraphQL-сервисов с версионированием и on-prem развертыванием."
+        image: "/assets/img/projects/gql.png"
+        url: "https://github.com/tot-ra/graphql-schema-registry"
+        tags: ["GraphQL", "Go"]
+      - title: "Workstation"
+        description: "Набор CLI-скриптов для автоматизации настройки новой рабочей станции."
+        image: "/assets/img/projects/work.png"
+        url: "https://github.com/tot-ra/workstation"
+        tags: ["CLI", "DevOps"]
+  en:
+    hero:
+      title: "Artjom Kurapov"
+      subtitle: "Full-Stack Product Engineer based in Estonia"
+      description: "Development using Typescript, React, Go, MySQL/Postgres stack with AI superpowers"
+      ctaButtons:
+        - label: "Chat in Telegram"
+          url: "https://t.me/tot_ra"
+          icon: "primary"
+        - label: "Book a meeting"
+          url: "https://calendly.com/artkurapov/30min"
+    chat:
+      title: "Artjom's brute agent running on-prem on mac mini"
+    projects:
+      - title: "Blog Engine MD"
+        description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
+        url: "https://github.com/tot-ra/blog-engine-md"
+        tags: ["Go", "SSG", "Markdown"]
+        image: "/assets/img/projects/blog.png"
+      - title: "A2gent Marketplace"
+        description: "The agentic marketplace."
+        url: "https://a2gent.net/"
+        image: "/assets/img/projects/a2gent.png"
+        tags: ["AI", "Marketplace"]
+      - title: "Caesar"
+        description: "AI agent(s) management web-app. Allows to control brute agents."
+        url: "https://github.com/a2gent/caesar"
+        image: "/assets/img/projects/caesar.png"
+        tags: ["AI", "Web App"]
+      - title: "Brute"
+        image: "/assets/img/projects/brute.png"
+        description: "AI agent with terminal UI and HTTP API. Can run in secure container."
+        url: "https://github.com/A2gent/brute"
+        tags: ["AI", "TUI", "API"]
+      - title: "Tarot Star"
+        image: "/assets/img/projects/tarot.png"
+        url: "http://tarot.kurapov.ee"
+        description: "A beautiful tarot cards set with random shuffling, drag-and-drop and custom spreads."
+        tags: ["Art", "Web App"]
+      - title: "RPG Rebel Reval"
+        description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
+        image: "/assets/img/projects/rr.png"
+        url: "https://github.com/tot-ra/rebel-reval"
+        tags: ["Game", "RPG"]
+      - title: "Easy Deserts Album"
+        description: "One of my music albums released in 2025."
+        image: "/assets/img/projects/album.jpg"
+        url: "/en/docs/about/"
+        tags: ["Music"]
+      - title: "Gratheon"
+        description: "Startup to save the bees. Modular robotic beehive and app with data analytics."
+        image: "/assets/img/projects/gratheon.png"
+        url: "https://gratheon.com"
+        tags: ["Startup", "IoT"]
+      - title: "GraphQL Schema Registry"
+        description: "Schema registry for GraphQL services with versioning and on-prem deployment."
+        image: "/assets/img/projects/gql.png"
+        url: "https://github.com/tot-ra/graphql-schema-registry"
+        tags: ["GraphQL", "Go"]
+      - title: "Workstation"
+        description: "CLI-focused scripts to automate setup of a new workstation."
+        image: "/assets/img/projects/work.png"
+        url: "https://github.com/tot-ra/workstation"
+        tags: ["CLI", "DevOps"]
 
 navigation:
   sidebar:

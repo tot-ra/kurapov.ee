@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap');
+
 @font-face {
   font-family: 'PT Sans Caption';
   src: url('/assets/fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf') format('truetype');
@@ -15,7 +17,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Sans Caption', 'Segoe UI', sans-serif;
+  font-family: 'TiemposText', 'Tiempos Text', 'Newsreader', Georgia, Times, serif;
 }
 
 p, a, li, span, table, th, td {
@@ -25,16 +27,26 @@ p, a, li, span, table, th, td {
 /* Article typography: larger text + cleaner sans-serif stack */
 .site-content article,
 .site-content article .content {
-  font-family: "Iowan Old Style", "Noto Serif", "PT Serif", "Georgia", "Times New Roman", serif;
+  font-family: 'TiemposText', 'Tiempos Text', 'Newsreader', Georgia, Times, serif;
   font-size: 1.08rem;
   line-height: 1.78;
   letter-spacing: 0.01em;
 }
 
 .site-content article .content p,
+.site-content article .content a,
+.site-content article .content li,
+.site-content article .content span,
+.site-content article .content table,
+.site-content article .content th,
+.site-content article .content td {
+  font-family: 'TiemposText', 'Tiempos Text', 'Newsreader', Georgia, Times, serif;
+}
+
+.site-content article .content p,
 .site-content article .content li {
-  font-size: 1.08rem;
-  line-height: 1.8;
+  font-size: 1.14rem;
+  line-height: 1.42;
 }
 
 /* Proper article list indentation and spacing */

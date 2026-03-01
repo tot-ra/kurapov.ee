@@ -1,5 +1,5 @@
 start:
-    pnpm start
+    ../blog-engine-md/blog-engine serve
 
 build:
-    pnpm build
+    ../blog-engine-md/blog-engine build
