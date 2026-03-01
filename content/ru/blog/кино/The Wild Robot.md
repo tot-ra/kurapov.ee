@@ -1,5 +1,6 @@
 ---
 title: The Wild Robot
+date: 2024-11-10T20:10
 tags: [ai, кино]
 ---
 

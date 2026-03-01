@@ -1,6 +1,6 @@
 ---
 title: Редакторы кода с помощью javascript
-date: 2008-04-31T10:00
+date: 2008-04-30T10:00
 tags: [javascript]
 ---
 
