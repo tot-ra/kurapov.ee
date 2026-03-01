@@ -31,10 +31,10 @@ audio:
   recentPosts: 10
   maxChars: 12000
   edge:
-    binary: ".venv/bin/edge-tts"
+    binary: "edge-tts"
     rate: "+0%"
     pitch: "+0Hz"
-    voice: "en-US-EmmaMultilingualNeural"
+    voice: "ru-RU-SvetlanaNeural"
   voices:
     ru: "ru-RU-SvetlanaNeural"
     en: "en-US-EmmaMultilingualNeural"
