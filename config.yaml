@@ -367,6 +367,9 @@ advanced:
     allowToggle: true
 
 seo:
-  defaultTitle: "Артём Курапов"
-  titleSeparator: " | "
-  generateSocialMeta: true
+  enabled: true
+  defaultDescription: "Наблюдения и размышления..."
+  defaultImage: "/assets/img/preview-banner.png"
+  twitter:
+    site: "@tot_ra"
+    creator: "@tot_ra"
