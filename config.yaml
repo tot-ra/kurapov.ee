@@ -369,7 +369,7 @@ advanced:
 seo:
   enabled: true
   defaultDescription: "Наблюдения и размышления..."
-  defaultImage: "/assets/img/preview-banner.png"
+  defaultImage: "/assets/img/preview.png"
   twitter:
     site: "@tot_ra"
     creator: "@tot_ra"

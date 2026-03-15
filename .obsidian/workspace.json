@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ru/blog/управление/Система прав в инфосистемах.md",
+                "file": "content/ru/docs/Об авторе.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Система прав в инфосистемах"
+              "title": "Об авторе"
             }
           }
         ]
@@ -174,16 +174,20 @@
     "dist/graph",
     "dist/graph.json",
     "dist/sitemap.xml",
-    "dist/assets/img/ru/blog/события/img/1732650720819-full.webp",
-    "dist/assets/img/ru/docs/img/P9080005-full.webp",
-    "dist/assets/img/ru/blog/игры/img/Глобус-классный-preview.webp",
-    "dist/assets/img/ru/blog/tech/backend/gpu/Screenshot 2024-10-20 at 00.17.31-full.webp",
-    "dist/assets/img/ru/blog/игры/img/Глобус-классный-preview.webp.tmp.png",
-    "dist/assets/img/ru/blog/игры/img/Глобус-классный-thumbnail.webp",
-    "dist/assets/img/ru/blog/игры/img/Глобус-классный-thumbnail.webp.tmp.png",
-    "dist/assets/img/ru/blog/игры/img/Глобус-классный-full.webp",
-    "dist/assets/img/ru/blog/tech/backend/gpu/Screenshot 2024-10-20 at 00.17.31-full.webp.tmp.png",
-    "dist/assets/img/ru/docs/img/P9080005-full.webp.tmp.png",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-full.webp",
+    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-full.webp",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-full.webp.tmp.png",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-preview.webp",
+    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-full.webp.tmp.png",
+    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-preview.webp",
+    "dist/assets/img/ru/docs/img/IMAG0187-full.webp",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-preview.webp.tmp.png",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-thumbnail.webp",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019225237-full.webp",
+    "content/ru/docs/Опыт работы/Clarifai.md",
+    "content/ru/docs/Опыт работы/Elitec.md",
+    "content/ru/blog/управление/Система прав в инфосистемах.md",
+    "content/ru/docs/Доклады/Как там пчелы.md",
     "content/ru/blog/управление/Code review и конфликт в динамике команды.md",
     "content/ru/blog/управление/Почему лайв-кодинг — плохой способ проверки знаний.md",
     "docs/Университет/Работа бакалавра.md",
@@ -205,10 +209,6 @@
     "blog/tech/devices/Часы Normal DG-L01.md",
     "blog/tech/devices/Моя коллекция часов в 2024.md",
     "node_modules/autocomplete.js/README.md",
-    "node_modules/autocomplete.js/CONTRIBUTING.md",
-    "node_modules/autocomplete.js/CHANGELOG.md",
-    "node_modules/lunr/CONTRIBUTING.md",
-    "node_modules/lunr/CHANGELOG.md",
     "Untitled.canvas"
   ]
 }
