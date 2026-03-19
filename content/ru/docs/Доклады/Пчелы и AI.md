@@ -1,5 +1,5 @@
 ---
-title: Пчелы и AI
+title: Пчелы и ИИ
 date: 2024-01-07T21:10:00
 sidebar_position: 1
 ---
@@ -8,5 +8,5 @@ sidebar_position: 1
 
 <!-- truncate -->
 
-- [PDF slides](Пчелы%20и%20AI.pdf)
-- [Presentation](https://docs.google.com/presentation/d/1KAnujHGjvP2_5-pCTwkA19-wS2ShN5P68OQ7h_hm4mo/edit#slide=id.g2a013bc333a_0_45)
+- [Слайды (PDF)](Пчелы%20и%20AI.pdf)
+- [Презентация](https://docs.google.com/presentation/d/1KAnujHGjvP2_5-pCTwkA19-wS2ShN5P68OQ7h_hm4mo/edit#slide=id.g2a013bc333a_0_45)

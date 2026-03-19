@@ -7,9 +7,9 @@ sidebar_position: 9
 
 [](http://mikare.net/)[![Mikare baltic](https://s3-eu-west-1.amazonaws.com/kurapov/image/5ac1121ddf72/original/mikare_160.gif)](https://s3-eu-west-1.amazonaws.com/kurapov/image/5ac1121ddf72/original/mikare_160.gif "Mikare baltic")
 
-Estonian market, small web-development company
+Эстонский рынок, небольшая компания по веб-разработке
 
-Gained experience integrating CMS with Smarty templates, developing custom applications (CRM, Email sender, SMS gateway), regular expressions
+Получил опыт интеграции CMS с шаблонами Smarty, разработки кастомных приложений (CRM, email-рассылка, SMS-шлюз), регулярных выражений
 
 
 ## Проекты
