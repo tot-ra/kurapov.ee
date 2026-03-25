@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/docs/About.md",
+                "file": "content/en/blog/tech/The-Escape-Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "About"
+              "title": "The-Escape-Theory"
             }
           }
         ]
@@ -163,8 +163,6 @@
   },
   "active": "3d04f97687f6724d",
   "lastOpenFiles": [
-    "content/en/index.md",
-    "content/ru/docs/Об авторе.md",
     "dist/index.html",
     "dist/en/graph.json",
     "dist/en/graph/index.html",
@@ -175,16 +173,22 @@
     "dist/graph/index.html",
     "dist/graph",
     "dist/graph.json",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-full.webp",
-    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-full.webp",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-full.webp.tmp.png",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-preview.webp",
-    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-full.webp.tmp.png",
-    "dist/assets/img/ru/blog/tech/devices/img/IMG_0454-preview.webp",
-    "dist/assets/img/ru/docs/img/IMAG0187-full.webp",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-preview.webp.tmp.png",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224746-thumbnail.webp",
-    "dist/assets/img/ru/blog/события/img/Pasted image 20241019225237-full.webp",
+    "dist/sitemap.xml",
+    "dist/assets/img/ru/blog/события/img/1734115097486-full.webp",
+    "dist/assets/img/ru/blog/события/img/1734115097486-full.webp.tmp.png",
+    "dist/assets/img/ru/blog/события/img/1734115097486-preview.webp",
+    "dist/assets/img/ru/docs/Университет/img/ttu-07-full.webp",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019233747-full.webp",
+    "dist/assets/img/ru/blog/события/img/1734115097486-preview.webp.tmp.png",
+    "dist/assets/img/ru/blog/события/img/1734115097486-thumbnail.webp",
+    "dist/assets/img/ru/docs/Университет/img/ttu-07-full.webp.tmp.png",
+    "dist/assets/img/ru/docs/Университет/img/ttu-07-preview.webp",
+    "dist/assets/img/ru/blog/события/img/Pasted image 20241019224757-full.webp",
+    "content/ru/blog/tech/The-Escape-Theory.md",
+    "content/en/blog/tech/The-Escape-Theory.md",
+    "content/en/docs/About.md",
+    "content/en/index.md",
+    "content/ru/docs/Об авторе.md",
     "content/ru/docs/Опыт работы/Clarifai.md",
     "content/ru/docs/Опыт работы/Elitec.md",
     "content/ru/blog/управление/Система прав в инфосистемах.md",
@@ -205,10 +209,6 @@
     "blog/события/2024-05-24-Latitude 59.md",
     "blog/tech/security/Hacking essentials.md",
     "blog/tech/security/20 типичных уязвимостей в коде.md",
-    "blog/tech/security/Простейший backdoor на php.md",
-    "blog/tech/backend/Infinite scolling.md",
-    "blog/tech/devices/Часы Normal DG-L01.md",
-    "blog/tech/devices/Моя коллекция часов в 2024.md",
     "Untitled.canvas"
   ]
 }
