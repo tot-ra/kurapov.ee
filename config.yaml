@@ -65,6 +65,11 @@ homepage:
       url: "https://github.com/tot-ra/blog-engine-md"
       tags: ["Go", "SSG", "Markdown"]
       image: "/assets/img/projects/blog.png"
+    - title: "Eesti Raha"
+      description: "Интерактивная Sankey-визуализация бюджетных потоков Эстонии на React, TypeScript и D3."
+      url: "https://github.com/tot-ra/eesti-raha"
+      tags: ["React", "TypeScript", "D3"]
+      image: "/assets/img/projects/eesti-raha.png"
     - title: "A2gent Marketplace"
       description: "Маркетплейс AI-агентов."
       url: "https://a2gent.net/"
@@ -192,6 +197,11 @@ homepageI18n:
         url: "https://github.com/tot-ra/blog-engine-md"
         tags: ["Go", "SSG", "Markdown"]
         image: "/assets/img/projects/blog.png"
+      - title: "Eesti Raha"
+        description: "Интерактивная Sankey-визуализация бюджетных потоков Эстонии на React, TypeScript и D3."
+        url: "https://github.com/tot-ra/eesti-raha"
+        tags: ["React", "TypeScript", "D3"]
+        image: "/assets/img/projects/eesti-raha.png"
       - title: "A2gent Marketplace"
         description: "Маркетплейс AI-агентов."
         url: "https://a2gent.net/"
@@ -256,6 +266,11 @@ homepageI18n:
         url: "https://github.com/tot-ra/blog-engine-md"
         tags: ["Go", "SSG", "Markdown"]
         image: "/assets/img/projects/blog.png"
+      - title: "Eesti Raha"
+        description: "Interactive Sankey visualization of Estonia's budget flows built with React, TypeScript, and D3."
+        url: "https://github.com/tot-ra/eesti-raha"
+        tags: ["React", "TypeScript", "D3"]
+        image: "/assets/img/projects/eesti-raha.png"
       - title: "A2gent Marketplace"
         description: "The agentic marketplace."
         url: "https://a2gent.net/"
