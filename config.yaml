@@ -56,7 +56,7 @@ homepage:
         url: "https://calendly.com/artkurapov/30min"
   chat:
     enabled: true
-    baseUrl: "http://localhost:9080"
+    baseUrl: "/"
     recipientAgentId: "09fd65e9-a5f0-47f7-8130-55bace363fb3"
     title: "Мой агент Brute, работающий локально на Mac mini"
   projects:

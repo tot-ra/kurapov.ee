@@ -8,6 +8,8 @@ Recently, I attended a fireside chat with the CTO of Wise and the Chief Research
 
 **Do you see any technology on the horizon that could fundamentally disrupt the market’s power-law distribution by decentralizing and empowering individuals in such a way that they no longer need companies?**
 
+![](../../../assets/HEM3v2hXMAAzGhN.jpg)
+
 For context, Wise built its empire by decentralizing cross-border payments — much like blockchain aims to do. Now, AI is doing the same to traditional SaaS. I wanted to know what else could break the massive corporate monopolies we all depend on and if software is now free, what are the moats that remain.
 
 Their answer was predictable: they don’t currently see any technology significantly impacting the fundamental structure of the market. I expected this response, but I asked the question to provoke a deeper dive into what theoretically could.
