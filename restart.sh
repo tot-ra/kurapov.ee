@@ -1,11 +1,29 @@
-# ENABLE WHEN docusaurus no longer needs gigabytes of RAM
+#!/usr/bin/env bash
+set -euo pipefail
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+BLOG_DIR="/www/kurapov.ee"
+ENGINE_DIR="/www/blog-engine-md"
+ENGINE_BIN="$ENGINE_DIR/bin/blog-engine"
+GO_BIN="/usr/local/go/bin/go"
 
-# nvm use
+echo "[1/7] Update blog-engine-md repository"
+git -C "$ENGINE_DIR" pull --ff-only
 
-# curl -fsSL https://get.pnpm.io/install.sh | sh -
+echo "[2/7] Build blog-engine binary"
+"$GO_BIN" build -buildvcs=false -o "$ENGINE_BIN" ./cmd/blog-engine
 
-# /home/www/.local/share/pnpm/pnpm install
-# /home/www/.local/share/pnpm/pnpm build
+echo "[3/7] Update kurapov.ee repository"
+git -C "$BLOG_DIR" pull --ff-only
+
+echo "[4/7] Build static site into dist/"
+rm -rf "$BLOG_DIR/dist"
+"$ENGINE_BIN" build --config "$BLOG_DIR/config.yaml" --workdir "$BLOG_DIR"
+
+echo "[5/7] Publish dist/ as public/"
+rm -rf "$BLOG_DIR/public"
+mv "$BLOG_DIR/dist" "$BLOG_DIR/public"
+
+echo "[6/7] Quick verification"
+grep -n 'import("/assets/triangle/embed.js")' "$BLOG_DIR/public/ru/index.html" >/dev/null
+echo "Deploy complete. Chat widget import verified."
+echo "Nginx reload is intentionally manual."
