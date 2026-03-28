@@ -10,7 +10,10 @@ echo "[1/7] Update blog-engine-md repository"
 git -C "$ENGINE_DIR" pull --ff-only
 
 echo "[2/7] Build blog-engine binary"
-"$GO_BIN" build -buildvcs=false -o "$ENGINE_BIN" ./cmd/blog-engine
+(
+    cd "$ENGINE_DIR"
+    "$GO_BIN" build -buildvcs=false -o "$ENGINE_BIN" ./cmd/blog-engine
+)
 
 echo "[3/7] Update kurapov.ee repository"
 git -C "$BLOG_DIR" pull --ff-only
