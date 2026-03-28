@@ -57,7 +57,7 @@ homepage:
   chat:
     enabled: true
     baseUrl: "/"
-    recipientAgentId: "09fd65e9-a5f0-47f7-8130-55bace363fb3"
+    recipientAgentId: "ab91b2c7-194d-4412-a622-47f7504107d8"
     title: "Мой агент Brute, работающий локально на Mac mini"
   projects:
     - title: "Blog Engine MD"
