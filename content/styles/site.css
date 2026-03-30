@@ -27,8 +27,8 @@ p, a, li, span, table, th, td {
 /* Article typography: larger text + cleaner sans-serif stack */
 .site-content article,
 .site-content article .content {
-  font-family: 'TiemposText', 'Tiempos Text', 'Newsreader', Georgia, Times, serif;
-  font-size: 1.08rem;
+  font-family: Merriweather, Georgia, Times, serif;
+  font-size: 20px;
   line-height: 1.78;
   letter-spacing: 0.01em;
 }
@@ -40,13 +40,22 @@ p, a, li, span, table, th, td {
 .site-content article .content table,
 .site-content article .content th,
 .site-content article .content td {
-  font-family: 'TiemposText', 'Tiempos Text', 'Newsreader', Georgia, Times, serif;
+  font-family: Merriweather, Georgia, Times, serif;
 }
 
 .site-content article .content p,
 .site-content article .content li {
-  font-size: 1.14rem;
+  font-size: 20px;
   line-height: 1.42;
+}
+
+.site-content article h1,
+.site-content article h2,
+.site-content article h3,
+.site-content article h4,
+.site-content article h5,
+.site-content article h6 {
+  font-weight: 300;
 }
 
 /* Proper article list indentation and spacing */
