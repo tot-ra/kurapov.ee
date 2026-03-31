@@ -100,6 +100,11 @@ homepage:
       image: "/assets/img/projects/album.jpg"
       url: "/ru/docs/muzyka/legkie-pustyni/"
       tags: ["Music"]
+    - title: "Intelligal"
+      description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
+      image: "/assets/img/projects/intelligal.webp"
+      url: "https://github.com/tot-ra/intellegal"
+      tags: ["AI", "LegalTech", "Go", "React"]
     - title: "Gratheon"
       description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
       image: "/assets/img/projects/gratheon.png"
@@ -232,6 +237,11 @@ homepageI18n:
         image: "/assets/img/projects/album.jpg"
         url: "/ru/docs/muzyka/legkie-pustyni/"
         tags: ["Music"]
+      - title: "Intelligal"
+        description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
+        image: "/assets/img/projects/intelligal.webp"
+        url: "https://github.com/tot-ra/intellegal"
+        tags: ["AI", "LegalTech", "Go", "React"]
       - title: "Gratheon"
         description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
         image: "/assets/img/projects/gratheon.png"
@@ -301,6 +311,11 @@ homepageI18n:
         image: "/assets/img/projects/album.jpg"
         url: "/en/docs/about/"
         tags: ["Music"]
+      - title: "Intelligal"
+        description: "AI assistant for contract and legal document analysis with search, checks, and version comparison."
+        image: "/assets/img/projects/intelligal.webp"
+        url: "https://github.com/tot-ra/intellegal"
+        tags: ["AI", "LegalTech", "Go", "React"]
       - title: "Gratheon"
         description: "Startup to save the bees. Modular robotic beehive and app with data analytics."
         image: "/assets/img/projects/gratheon.png"
