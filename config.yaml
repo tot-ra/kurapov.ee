@@ -60,6 +60,16 @@ homepage:
     recipientAgentId: "ab91b2c7-194d-4412-a622-47f7504107d8"
     title: "Мой агент Brute, работающий локально на Mac mini"
   projects:
+    - title: "Gratheon 📌"
+      description: "Приложение аналитики данных для пчеловодов"
+      image: "/assets/img/projects/gratheon.png"
+      url: "https://gratheon.com"
+      tags: ["Startup", "IoT"]
+    - title: "A2gent Marketplace 📌"
+      description: "Рынок AI-агентов. Связывает агентов в сеть и позволяет зарабатывать деньги на запросах"
+      url: "https://a2gent.net/"
+      image: "/assets/img/projects/a2gent.png"
+      tags: ["AI", "Marketplace"]
     - title: "Blog Engine MD"
       description: "Эффективный генератор статических сайтов из Markdown. Моя альтернатива Hugo и Docusaurus, на которой работает этот сайт."
       url: "https://github.com/tot-ra/blog-engine-md"
@@ -70,11 +80,6 @@ homepage:
       url: "https://github.com/tot-ra/eesti-raha"
       tags: ["React", "TypeScript", "D3"]
       image: "/assets/img/projects/eesti-raha.png"
-    - title: "A2gent Marketplace"
-      description: "Маркетплейс AI-агентов."
-      url: "https://a2gent.net/"
-      image: "/assets/img/projects/a2gent.png"
-      tags: ["AI", "Marketplace"]
     - title: "Caesar"
       description: "Веб-приложение для управления AI-агентами. Позволяет контролировать агентов Brute."
       url: "https://github.com/a2gent/caesar"
@@ -105,11 +110,11 @@ homepage:
       image: "/assets/img/projects/intelligal.webp"
       url: "https://github.com/tot-ra/intellegal"
       tags: ["AI", "LegalTech", "Go", "React"]
-    - title: "Gratheon"
-      description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
-      image: "/assets/img/projects/gratheon.png"
-      url: "https://gratheon.com"
-      tags: ["Startup", "IoT"]
+    - title: "Grapheon"
+      description: "Масштабируемая TypeScript-библиотека для визуализации и анализа графов с force-directed layout, worker-пулами и Canvas/WebGL."
+      image: "/assets/img/projects/grapheon.webp"
+      url: "https://github.com/tot-ra/grapheon"
+      tags: ["TypeScript", "Graphs", "Canvas", "WebGL"]
     - title: "GraphQL Schema Registry"
       description: "Реестр схем для GraphQL-сервисов с версионированием и on-prem развертыванием."
       image: "/assets/img/projects/gql.png"
@@ -197,6 +202,21 @@ homepageI18n:
     chat:
       title: "Мой агент Brute, работающий локально на Mac mini"
     projects:
+      - title: "Gratheon 📌"
+        description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
+        image: "/assets/img/projects/gratheon.png"
+        url: "https://gratheon.com"
+        tags: ["Startup", "IoT"]
+      - title: "A2gent Marketplace 📌"
+        description: "Маркетплейс AI-агентов."
+        url: "https://a2gent.net/"
+        image: "/assets/img/projects/a2gent.png"
+        tags: ["AI", "Marketplace"]
+      - title: "Intelligal"
+        description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
+        image: "/assets/img/projects/intelligal.webp"
+        url: "https://github.com/tot-ra/intellegal"
+        tags: ["AI", "LegalTech", "Go", "React"]
       - title: "Blog Engine MD"
         description: "Эффективный генератор статических сайтов из Markdown. Моя альтернатива Hugo и Docusaurus, на которой работает этот сайт."
         url: "https://github.com/tot-ra/blog-engine-md"
@@ -207,11 +227,6 @@ homepageI18n:
         url: "https://github.com/tot-ra/eesti-raha"
         tags: ["React", "TypeScript", "D3"]
         image: "/assets/img/projects/eesti-raha.png"
-      - title: "A2gent Marketplace"
-        description: "Маркетплейс AI-агентов."
-        url: "https://a2gent.net/"
-        image: "/assets/img/projects/a2gent.png"
-        tags: ["AI", "Marketplace"]
       - title: "Caesar"
         description: "Веб-приложение для управления AI-агентами. Позволяет контролировать агентов Brute."
         url: "https://github.com/a2gent/caesar"
@@ -237,16 +252,11 @@ homepageI18n:
         image: "/assets/img/projects/album.jpg"
         url: "/ru/docs/muzyka/legkie-pustyni/"
         tags: ["Music"]
-      - title: "Intelligal"
-        description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
-        image: "/assets/img/projects/intelligal.webp"
-        url: "https://github.com/tot-ra/intellegal"
-        tags: ["AI", "LegalTech", "Go", "React"]
-      - title: "Gratheon"
-        description: "Стартап для спасения пчёл: модульный роботизированный улей и приложение с аналитикой данных."
-        image: "/assets/img/projects/gratheon.png"
-        url: "https://gratheon.com"
-        tags: ["Startup", "IoT"]
+      - title: "Grapheon"
+        description: "Масштабируемая TypeScript-библиотека для визуализации и анализа графов с force-directed layout, worker-пулами и Canvas/WebGL."
+        image: "/assets/img/projects/grapheon.webp"
+        url: "https://github.com/tot-ra/grapheon"
+        tags: ["TypeScript", "Graphs", "Canvas", "WebGL"]
       - title: "GraphQL Schema Registry"
         description: "Реестр схем для GraphQL-сервисов с версионированием и on-prem развертыванием."
         image: "/assets/img/projects/gql.png"
@@ -271,6 +281,21 @@ homepageI18n:
     chat:
       title: "Artjom's brute agent running on-prem on mac mini"
     projects:
+      - title: "Gratheon 📌"
+        description: "Data analytics app for beekeepers. Model apiary, take photos, send metrics"
+        image: "/assets/img/projects/gratheon.png"
+        url: "https://gratheon.com"
+        tags: ["Startup", "IoT"]
+      - title: "A2gent Marketplace 📌"
+        description: "Marketplace where agents can call each other, offer services and earn money"
+        url: "https://a2gent.net/"
+        image: "/assets/img/projects/a2gent.png"
+        tags: ["AI", "Marketplace"]
+      - title: "Intelligal"
+        description: "AI assistant for contract and legal document analysis with search, checks, and version comparison."
+        image: "/assets/img/projects/intelligal.webp"
+        url: "https://github.com/tot-ra/intellegal"
+        tags: ["AI", "LegalTech", "Go", "React"]
       - title: "Blog Engine MD"
         description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
         url: "https://github.com/tot-ra/blog-engine-md"
@@ -281,26 +306,21 @@ homepageI18n:
         url: "https://github.com/tot-ra/eesti-raha"
         tags: ["React", "TypeScript", "D3"]
         image: "/assets/img/projects/eesti-raha.png"
-      - title: "A2gent Marketplace"
-        description: "The agentic marketplace."
-        url: "https://a2gent.net/"
-        image: "/assets/img/projects/a2gent.png"
-        tags: ["AI", "Marketplace"]
       - title: "Caesar"
         description: "AI agent(s) management web-app. Allows to control brute agents."
         url: "https://github.com/a2gent/caesar"
         image: "/assets/img/projects/caesar.png"
-        tags: ["AI", "Web App"]
+        tags: ["AI", "Agentic"]
       - title: "Brute"
         image: "/assets/img/projects/brute.png"
         description: "AI agent with terminal UI and HTTP API. Can run in secure container."
         url: "https://github.com/A2gent/brute"
-        tags: ["AI", "TUI", "API"]
+        tags: ["AI", "Agentic", "TUI"]
       - title: "Tarot Star"
         image: "/assets/img/projects/tarot.png"
         url: "http://tarot.kurapov.ee"
         description: "A beautiful tarot cards set with random shuffling, drag-and-drop and custom spreads."
-        tags: ["Art", "Web App"]
+        tags: ["Art", "App", "Esoterics"]
       - title: "RPG Rebel Reval"
         description: "Go back in time to 14th century Estonia and fight for freedom in this action RPG."
         image: "/assets/img/projects/rr.png"
@@ -311,16 +331,11 @@ homepageI18n:
         image: "/assets/img/projects/album.jpg"
         url: "/en/docs/about/"
         tags: ["Music"]
-      - title: "Intelligal"
-        description: "AI assistant for contract and legal document analysis with search, checks, and version comparison."
-        image: "/assets/img/projects/intelligal.webp"
-        url: "https://github.com/tot-ra/intellegal"
-        tags: ["AI", "LegalTech", "Go", "React"]
-      - title: "Gratheon"
-        description: "Startup to save the bees. Modular robotic beehive and app with data analytics."
-        image: "/assets/img/projects/gratheon.png"
-        url: "https://gratheon.com"
-        tags: ["Startup", "IoT"]
+      - title: "Grapheon"
+        description: "Scalable TypeScript library for graph visualization and analysis with force-directed layouts, worker pools, and Canvas/WebGL rendering."
+        image: "/assets/img/projects/grapheon.webp"
+        url: "https://github.com/tot-ra/grapheon"
+        tags: ["TypeScript", "Graphs", "Canvas", "WebGL"]
       - title: "GraphQL Schema Registry"
         description: "Schema registry for GraphQL services with versioning and on-prem deployment."
         image: "/assets/img/projects/gql.png"
