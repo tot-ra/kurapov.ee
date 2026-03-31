@@ -105,7 +105,7 @@ homepage:
       image: "/assets/img/projects/album.jpg"
       url: "/ru/docs/muzyka/legkie-pustyni/"
       tags: ["Music"]
-    - title: "Intelligal"
+    - title: "Intellegal"
       description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
       image: "/assets/img/projects/intelligal.webp"
       url: "https://github.com/tot-ra/intellegal"
@@ -212,7 +212,7 @@ homepageI18n:
         url: "https://a2gent.net/"
         image: "/assets/img/projects/a2gent.png"
         tags: ["AI", "Marketplace"]
-      - title: "Intelligal"
+      - title: "Intellegal"
         description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
         image: "/assets/img/projects/intelligal.webp"
         url: "https://github.com/tot-ra/intellegal"
@@ -291,7 +291,7 @@ homepageI18n:
         url: "https://a2gent.net/"
         image: "/assets/img/projects/a2gent.png"
         tags: ["AI", "Marketplace"]
-      - title: "Intelligal"
+      - title: "Intellegal"
         description: "AI assistant for contract and legal document analysis with search, checks, and version comparison."
         image: "/assets/img/projects/intelligal.webp"
         url: "https://github.com/tot-ra/intellegal"
