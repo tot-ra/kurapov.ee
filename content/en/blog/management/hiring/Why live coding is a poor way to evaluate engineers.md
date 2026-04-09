@@ -156,3 +156,11 @@ Ask directly: which languages do you prefer and why? Which databases have you wo
 The most honest format of all: the candidate and interviewer tackle a problem that **neither of them knows in advance**. It could be a task from an open source project, a small bug, or even a leetcode problem — as long as the interviewer is also seeing it for the first time.
 
 This eliminates the knowledge asymmetry. It's no longer an exam — it's collaborative work. Google, AI, and documentation are all fair game. What's interesting to observe is the process: how someone decomposes a problem, how they communicate, how they handle a dead end, how they use their tools. That's what real engineering looks like.
+
+### A Trial Day Instead of an Interview Marathon
+
+Many companies try to compensate for poor evaluation methods by simply adding more interview rounds. You can go through 6 rounds of interviews over two months, and in the end, neither the company nor the candidate really knows what it will be like to work together. This is often accompanied by the frustration of waiting weeks for HR to get back to you because they are busy interviewing others.
+
+The alternative to this is a paid trial day. In just one day, the candidate understands everything: what the real codebase looks like, the actual tech stack, how the team communicates, and who their manager will be.
+
+Essentially, live coding is an attempt to simulate this "trial day", but compressed 10 times in duration and completely stripped of context. You are given a task outside of the actual domain, and you don't get to see your future colleagues, manager, or real processes. It is a highly unnatural way to evaluate a team and the work itself. A trial day solves this problem radically better.
