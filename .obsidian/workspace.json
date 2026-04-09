@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 200
   },
   "right": {
     "id": "7ff0fc2c20dd250d",
@@ -161,8 +161,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d04f97687f6724d",
+  "active": "12138ffd3b9dff4b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "content/en/blog/tech/The-Escape-Theory.md",
     "dist/assets/img/ru/docs/img/P9080004-full.webp.tmp.png",
     "dist/assets/img/ru/docs/img/P9080004-preview.webp",
     "dist/assets/img/ru/docs/img/P9080004-preview.webp.tmp.png",
@@ -173,7 +175,6 @@
     "dist/assets/img/ru/docs/img/P9080005-preview.webp",
     "dist/assets/img/ru/docs/img/P8250013-preview.webp",
     "dist/assets/img/ru/docs/img/P2160010-thumbnail.webp",
-    "dist/assets/img/ru/docs/img/IMG_5500-full.webp.tmp.png",
     "dist/assets/img/ru/docs/img",
     "dist/assets/img/ru/docs",
     "dist/assets/img/ru/blog/тестирование/img",
@@ -185,7 +186,6 @@
     "dist/assets/img/ru/blog/кино/img",
     "dist/assets/img/ru/blog/кино",
     "content/ru/blog/tech/The-Escape-Theory.md",
-    "content/en/blog/tech/The-Escape-Theory.md",
     "content/en/docs/About.md",
     "content/en/index.md",
     "content/ru/docs/Об авторе.md",
