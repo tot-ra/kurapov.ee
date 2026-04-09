@@ -95,6 +95,12 @@ Live coding doesn't evaluate what matters more than algorithms for most roles:
 
 All of this is left untested if the candidate didn't pass the sorting problem in 45 minutes.
 
+## Sprint vs. Marathon
+
+Live coding is like testing someone for a sprint or a deadlift. Essentially, it's a test of raw "strength" — the volume of intellect a candidate can output in a fixed unit of time.
+
+But real projects are marathon distances that require endurance. They last for months and demand systems thinking, persistence, teamwork, and responsibility. If you only evaluate raw "strength" at the first interview and ignore other metrics, you are not approaching team-building systemically. Ironically, in a way, it might be for the best: this way, systemic thinkers won't end up in teams of "gym bros".
+
 ## Homework assignments: a good idea killed by AI
 
 The historical alternative to live coding was the take-home assignment. It was a fair format: candidates received a realistic problem — set up a microservice with a database, implement stream processing, handle async vs. sync trade-offs, process a huge file under memory constraints. The task tested how a person thinks, researches, and makes decisions — not whether they know syntax by heart.
@@ -150,3 +156,11 @@ Ask directly: which languages do you prefer and why? Which databases have you wo
 The most honest format of all: the candidate and interviewer tackle a problem that **neither of them knows in advance**. It could be a task from an open source project, a small bug, or even a leetcode problem — as long as the interviewer is also seeing it for the first time.
 
 This eliminates the knowledge asymmetry. It's no longer an exam — it's collaborative work. Google, AI, and documentation are all fair game. What's interesting to observe is the process: how someone decomposes a problem, how they communicate, how they handle a dead end, how they use their tools. That's what real engineering looks like.
+
+### A Trial Day Instead of an Interview Marathon
+
+Many companies try to compensate for poor evaluation methods by simply adding more interview rounds. You can go through 6 rounds of interviews over two months, and in the end, neither the company nor the candidate really knows what it will be like to work together. This is often accompanied by the frustration of waiting weeks for HR to get back to you because they are busy interviewing others.
+
+The alternative to this is a paid trial day. In just one day, the candidate understands everything: what the real codebase looks like, the actual tech stack, how the team communicates, and who their manager will be.
+
+Essentially, live coding is an attempt to simulate this "trial day", but compressed 10 times in duration and completely stripped of context. You are given a task outside of the actual domain, and you don't get to see your future colleagues, manager, or real processes. It is a highly unnatural way to evaluate a team and the work itself. A trial day solves this problem radically better.
