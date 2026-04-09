@@ -95,6 +95,12 @@ Live coding doesn't evaluate what matters more than algorithms for most roles:
 
 All of this is left untested if the candidate didn't pass the sorting problem in 45 minutes.
 
+## Sprint vs. Marathon
+
+Live coding is like testing someone for a sprint or a deadlift. Essentially, it's a test of raw "strength" — the volume of intellect a candidate can output in a fixed unit of time.
+
+But real projects are marathon distances that require endurance. They last for months and demand systems thinking, persistence, teamwork, and responsibility. If you only evaluate raw "strength" at the first interview and ignore other metrics, you are not approaching team-building systemically. Ironically, in a way, it might be for the best: this way, systemic thinkers won't end up in teams of "gym bros".
+
 ## Homework assignments: a good idea killed by AI
 
 The historical alternative to live coding was the take-home assignment. It was a fair format: candidates received a realistic problem — set up a microservice with a database, implement stream processing, handle async vs. sync trade-offs, process a huge file under memory constraints. The task tested how a person thinks, researches, and makes decisions — not whether they know syntax by heart.
