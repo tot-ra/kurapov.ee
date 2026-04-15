@@ -1,5 +1,6 @@
 ---
 sidebar_position: 7
+tags: [career, php, healthcare, cms, postgres]
 ---
 
 (2007 - 2008)

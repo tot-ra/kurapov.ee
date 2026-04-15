@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 date: 2011-06-09T15:23:00
+tags: [education, thesis, graphs, visualization, social networks]
 ---
 I decided to dedicate my master thesis to graphs. First, because I felt I had heard too little about them at TalTech, and second, because my [bachelor thesis](Bachelors%20Thesis.md) was related to web indexing.
 

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [education, thesis, crawling, search, php]
 ---
 For my bachelor thesis, I decided to build a web crawler using the technologies I knew at that time. Google was very popular, and I wanted to understand the nuances of crawling a specific area of the internet.
 

@@ -1,3 +1,6 @@
+---
+tags: [talks, cloud, aws]
+---
 Thursday, December 1, 2011 at 11:14:54
 
 Amazon is a rapidly growing company. Their [cloud hosting](http://aws.amazon.com/) with multiple datacenters worldwide is probably the most famous one. I prepared specifically for this talk at devclub, although I still did not manage to cover everything.

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 hide_table_of_contents: true
+tags: [about, career, education, beekeeping, ai, startups, estonia]
 ---
 My name is Artjom Kurapov. I am a father, software engineer, cat keeper, and beekeeper.
 - I build many side projects.

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+tags: [career, php, integration, social networks, mobile]
 ---
 (2008 - 2011)
 

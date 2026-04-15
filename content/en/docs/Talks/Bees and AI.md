@@ -2,6 +2,7 @@
 title: Bees and AI
 date: 2024-01-07T21:10:00
 sidebar_position: 1
+tags: [talks, ai, beekeeping]
 ---
 
 <iframe width="934" height="350" src="https://www.youtube.com/embed/f6splQuiLkY" title="2023.12.20 Артём Курапов - Пчеловодство и AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

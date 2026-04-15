@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 date: 2015-10-28T18:50:00
+tags: [talks, testing, quality, frontend]
 ---
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/A8MetRHGv4U" title="2015.10.28 Артём Курапов – Многообразие автоматических тестов" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

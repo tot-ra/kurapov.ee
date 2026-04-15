@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+tags: [career, php, integration, payments, cms]
 ---
 
 (2008 - 2011)

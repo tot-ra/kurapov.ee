@@ -1,3 +1,6 @@
+---
+tags: [talks, oauth, integration, social networks]
+---
 Wednesday, November 24, 2010 at 10:36:31
 
 Yesterday I gave a talk at [devclub](http://devclub.eu/) with a broad overview of social network APIs, and as usual, not everything I wanted to say made it into the talk. In particular, topics around [privacy and the future](http://kurapov.name/rus/lab/opensocial_networks/), and one question from the audience.

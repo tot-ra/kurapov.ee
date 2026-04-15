@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [career, graphql, go, platform-engineering, startups]
 ---
 (2017 - 2022)
 

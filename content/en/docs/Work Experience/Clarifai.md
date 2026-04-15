@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: [career, ai, machine-learning, datasets, startups]
 ---
 (2023-)
 

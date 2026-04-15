@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Netron & Tactic Realtime Marketing
+tags: [career, adtech, realtime, startups]
 ---
 (2014 - 2017)
 

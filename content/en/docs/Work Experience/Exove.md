@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Exove
+tags: [career, php, frontend, testing, startups]
 ---
 
 (2011 - 2014)
