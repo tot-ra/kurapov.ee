@@ -41,6 +41,7 @@ audio:
 
 homepage:
   enabled: true
+  hideProjects: true
   hero:
     enabled: true
     background: "/assets/img/bg.webp"
@@ -100,11 +101,6 @@ homepage:
       image: "/assets/img/projects/rr.png"
       url: "https://github.com/tot-ra/rebel-reval"
       tags: ["Game", "RPG"]
-    - title: "Альбом Легкие пустыни"
-      description: "Один из моих музыкальных альбомов, выпущенный в 2025 году."
-      image: "/assets/img/projects/album.jpg"
-      url: "/ru/docs/muzyka/legkie-pustyni/"
-      tags: ["Music"]
     - title: "Intellegal"
       description: "AI-помощник для анализа контрактов и юридических документов с поиском, проверками и сравнением версий."
       image: "/assets/img/projects/intelligal.webp"
@@ -247,11 +243,6 @@ homepageI18n:
         image: "/assets/img/projects/rr.png"
         url: "https://github.com/tot-ra/rebel-reval"
         tags: ["Game", "RPG"]
-      - title: "Альбом Легкие пустыни"
-        description: "Один из моих музыкальных альбомов, выпущенный в 2025 году."
-        image: "/assets/img/projects/album.jpg"
-        url: "/ru/docs/muzyka/legkie-pustyni/"
-        tags: ["Music"]
       - title: "Grapheon"
         description: "Масштабируемая TypeScript-библиотека для визуализации и анализа графов с force-directed layout, worker-пулами и Canvas/WebGL."
         image: "/assets/img/projects/grapheon.webp"
@@ -326,11 +317,6 @@ homepageI18n:
         image: "/assets/img/projects/rr.png"
         url: "https://github.com/tot-ra/rebel-reval"
         tags: ["Game", "RPG"]
-      - title: "Easy Deserts Album"
-        description: "One of my music albums released in 2025."
-        image: "/assets/img/projects/album.jpg"
-        url: "/en/docs/about/"
-        tags: ["Music"]
       - title: "Grapheon"
         description: "Scalable TypeScript library for graph visualization and analysis with force-directed layouts, worker pools, and Canvas/WebGL rendering."
         image: "/assets/img/projects/grapheon.webp"
@@ -348,6 +334,29 @@ homepageI18n:
         tags: ["CLI", "DevOps"]
 
 navigation:
+  header:
+    enabled: true
+    items:
+      - title: "Docs"
+        titleI18n:
+          ru: "Обо мне"
+          en: "About"
+        path: "docs"
+      - title: "Projects"
+        titleI18n:
+          ru: "Проекты"
+          en: "Projects"
+        path: "projects"
+      - title: "Music"
+        titleI18n:
+          ru: "Музыка"
+          en: "Music"
+        path: "music"
+      - title: "Blog"
+        titleI18n:
+          ru: "Блог"
+          en: "Blog"
+        path: "blog"
   sidebar:
     collapsed: true
     maxDepth: 3
