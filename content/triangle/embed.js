@@ -27,7 +27,7 @@ export function createTriangleWidget(cfg) {
       <div data-role="messages" style="display:none; max-height:320px; overflow:hidden; padding:0; background:transparent;"></div>
       <div style="padding: 10px; border-top: 1px solid #e4e4e7;">
         <div style="display:flex; align-items:flex-end; gap:8px;">
-          <img src="https://a2gent.net/logo.png" alt="" aria-hidden="true" style="width:46px;height:46px;object-fit:cover;display:block;border-radius:12px;flex:0 0 auto;" />
+          <img src="https://a2gent.net/a2gent.jpg" alt="" aria-hidden="true" style="width:46px;height:46px;object-fit:cover;display:block;border-radius:12px;flex:0 0 auto;" />
           <textarea data-role="input" rows="1" placeholder="Ask me anything..." style="flex:1; height:46px; min-height:46px; max-height:120px; box-sizing:border-box; resize:vertical; border:1px solid #d4d4d8; border-radius:10px; padding:10px 12px; text-align:left; font-family:inherit; font-size:14px; line-height:1.4;"></textarea>
           <input data-role="files" type="file" multiple accept="image/*,audio/*" style="display:none;" />
           <button data-role="file-pick" type="button" title="Attach files" style="width:46px;height:46px;border:1px solid #cbd5e1;background:#fff;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:#1d4ed8;">
