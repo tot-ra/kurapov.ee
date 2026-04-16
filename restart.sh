@@ -20,7 +20,10 @@ git -C "$BLOG_DIR" pull --ff-only
 
 echo "[4/7] Build static site into dist/"
 rm -rf "$BLOG_DIR/dist"
-"$ENGINE_BIN" build --config "$BLOG_DIR/config.yaml" --workdir "$BLOG_DIR"
+(
+    cd "$BLOG_DIR"
+    "$ENGINE_BIN" build
+)
 
 echo "[5/7] Publish dist/ as public/"
 rm -rf "$BLOG_DIR/public"
