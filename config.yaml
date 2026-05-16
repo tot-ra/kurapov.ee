@@ -4,6 +4,7 @@ site:
   url: "https://kurapov.ee"
   baseUrl: "/"
   language: "ru"
+  logo: "/assets/img/kurapov-logo.jpg"
   favicon: "/assets/img/favicon/favicon.ico"
 
 i18n:
