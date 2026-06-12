@@ -28,3 +28,6 @@ chmod +x /www/kurapov.ee/restart.sh
 ```
 
 This script updates both repos, rebuilds `blog-engine`, regenerates static output, publishes `public/`, reloads Nginx, and verifies that homepage imports `/assets/triangle/embed.js`.
+
+Production runs this as the `www` user because GitHub SSH credentials live under `/home/www/.ssh`.
+The `kurapov.ee` checkout is intentionally kept shallow with `fetch --depth=1` plus `reset --hard origin/main` so production can build from the repo without accumulating Git history on disk.
