@@ -16,7 +16,14 @@ echo "[2/7] Build blog-engine binary"
 )
 
 echo "[3/7] Update kurapov.ee repository"
-git -C "$BLOG_DIR" pull --ff-only
+# Production only needs the latest deployable snapshot, not Git history.
+# Keep this checkout shallow and compact so repeated deploys do not grow .git.
+git -C "$BLOG_DIR" remote set-branches origin main
+git -C "$BLOG_DIR" config remote.origin.fetch "+refs/heads/main:refs/remotes/origin/main"
+git -C "$BLOG_DIR" fetch --depth=1 --prune --no-tags origin +refs/heads/main:refs/remotes/origin/main
+git -C "$BLOG_DIR" reset --hard origin/main
+git -C "$BLOG_DIR" reflog expire --expire=now --all
+git -C "$BLOG_DIR" gc --prune=now
 
 echo "[4/7] Build static site into dist/"
 rm -rf "$BLOG_DIR/dist"
