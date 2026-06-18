@@ -107,6 +107,10 @@ homepage:
       image: "/assets/img/projects/intelligal.webp"
       url: "https://github.com/tot-ra/intellegal"
       tags: ["AI", "LegalTech", "Go", "React"]
+    - title: "Pixel Compare Pages"
+      description: "Минималистичное Chrome-расширение для визуального сравнения текущей страницы с другой через полупрозрачный overlay."
+      url: "https://github.com/tot-ra/pixel-compare-pages"
+      tags: ["Chrome Extension", "UI", "Testing"]
     - title: "Grapheon"
       description: "Масштабируемая TypeScript-библиотека для визуализации и анализа графов с force-directed layout, worker-пулами и Canvas/WebGL."
       image: "/assets/img/projects/grapheon.webp"
@@ -214,6 +218,10 @@ homepageI18n:
         image: "/assets/img/projects/intelligal.webp"
         url: "https://github.com/tot-ra/intellegal"
         tags: ["AI", "LegalTech", "Go", "React"]
+      - title: "Pixel Compare Pages"
+        description: "Минималистичное Chrome-расширение для визуального сравнения текущей страницы с другой через полупрозрачный overlay."
+        url: "https://github.com/tot-ra/pixel-compare-pages"
+        tags: ["Chrome Extension", "UI", "Testing"]
       - title: "Blog Engine MD"
         description: "Эффективный генератор статических сайтов из Markdown. Моя альтернатива Hugo и Docusaurus, на которой работает этот сайт."
         url: "https://github.com/tot-ra/blog-engine-md"
@@ -288,6 +296,10 @@ homepageI18n:
         image: "/assets/img/projects/intelligal.webp"
         url: "https://github.com/tot-ra/intellegal"
         tags: ["AI", "LegalTech", "Go", "React"]
+      - title: "Pixel Compare Pages"
+        description: "Tiny Chrome extension for visually comparing the current page against another page with a draggable, semi-transparent overlay."
+        url: "https://github.com/tot-ra/pixel-compare-pages"
+        tags: ["Chrome Extension", "UI", "Testing"]
       - title: "Blog Engine MD"
         description: "An efficient markdown-to-html blog generator. Custom alternative to Hugo and Docusaurus that powers this website."
         url: "https://github.com/tot-ra/blog-engine-md"
